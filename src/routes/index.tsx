@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import {
   Menu, X, Phone, Mail, MapPin, ArrowRight, Check, Shield, Building2,
@@ -43,12 +43,18 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const navLinks = [
-  { label: "Buy", href: "#services" },
+type NavLink = { label: string; href?: string; to?: "/buy" };
+const navLinks: NavLink[] = [
+  { label: "Buy", to: "/buy" },
   { label: "Sell", href: "#services" },
   { label: "Projects", href: "#projects" },
   { label: "Contact Us", href: "#contact" },
 ];
+
+function NavItem({ link, className, onClick }: { link: NavLink; className?: string; onClick?: () => void }) {
+  if (link.to) return <Link to={link.to} className={className} onClick={onClick}>{link.label}</Link>;
+  return <a href={link.href} className={className} onClick={onClick}>{link.label}</a>;
+}
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -61,7 +67,7 @@ function Header() {
         </a>
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((l) => (
-            <a key={l.label} href={l.href} className="text-sm font-medium text-foreground/80 hover:text-accent transition-colors">{l.label}</a>
+            <NavItem key={l.label} link={l} className="text-sm font-medium text-foreground/80 hover:text-accent transition-colors" />
           ))}
         </nav>
         <div className="hidden md:block">
@@ -76,7 +82,7 @@ function Header() {
           <SheetContent side="right" className="w-72">
             <div className="flex flex-col gap-6 mt-8">
               {navLinks.map((l) => (
-                <a key={l.label} href={l.href} onClick={() => setOpen(false)} className="text-lg font-medium text-foreground hover:text-accent">{l.label}</a>
+                <NavItem key={l.label} link={l} onClick={() => setOpen(false)} className="text-lg font-medium text-foreground hover:text-accent" />
               ))}
               <Button asChild className="bg-[image:var(--gradient-primary)]">
                 <a href="#contact" onClick={() => setOpen(false)}>Get in Touch</a>
@@ -495,9 +501,9 @@ function Footer() {
         <div>
           <h4 className="font-display text-lg font-semibold">Get in Touch</h4>
           <ul className="mt-4 space-y-3 text-sm text-white/70">
-            <li className="flex items-start gap-2"><MapPin className="w-4 h-4 mt-0.5 text-[var(--gold)]" /> Anna Nagar, Chennai, Tamil Nadu</li>
-            <li className="flex items-center gap-2"><Phone className="w-4 h-4 text-[var(--gold)]" /> +91 00000 00000</li>
-            <li className="flex items-center gap-2"><Mail className="w-4 h-4 text-[var(--gold)]" /> hello@landmarvel.com</li>
+            <li className="flex items-start gap-2"><MapPin className="w-4 h-4 mt-0.5 text-[var(--gold)]" /><span>Anna Nagar, Chennai, Tamil Nadu</span></li>
+            <li className="flex items-center gap-2"><Phone className="w-4 h-4 text-[var(--gold)]" /><span>+91 00000 00000</span></li>
+            <li className="flex items-center gap-2"><Mail className="w-4 h-4 text-[var(--gold)]" /><span>hello@landmarvel.com</span></li>
           </ul>
         </div>
       </div>
