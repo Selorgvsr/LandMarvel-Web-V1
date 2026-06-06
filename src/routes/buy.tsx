@@ -294,7 +294,7 @@ function BuyPage() {
           </div>
         </section>
 
-        <CategorySection id="plots" eyebrow="🏞" title="Premium Plots" items={plots} />
+        <CategorySection id="plots" eyebrow="" title="Premium Plots" items={plots} />
         <CategorySection id="residential" eyebrow="🏢" title="Residential Projects" items={residential} alt />
         <CategorySection id="commercial" eyebrow="🏬" title="Commercial Projects" items={commercial} />
 
