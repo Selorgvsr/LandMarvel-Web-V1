@@ -257,32 +257,6 @@ function SellForm() {
   );
 }
 
-function WhySell() {
-  const items = [
-    { icon: Users, title: "Genuine Buyer Network", desc: "Access to thousands of verified, serious property buyers across Chennai." },
-    { icon: TrendingUp, title: "Best Market Value", desc: "Expert valuation to ensure you get the maximum price for your property." },
-    { icon: ShieldCheck, title: "Verified & Secure", desc: "Legal verification, documentation support and end-to-end transparency." },
-    { icon: Handshake, title: "Dedicated Advisor", desc: "A personal property advisor to guide you through every step of the sale." },
-  ];
-  return (
-    <section className="py-20 sm:py-24 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading eyebrow="Why Choose Us" title="Why Sell With Land Marvel" desc="Trusted by thousands of property owners across Chennai for premium service and faster closures." />
-        <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {items.map(({ icon: Icon, title, desc }) => (
-            <div key={title} className="bg-card rounded-2xl p-7 border border-border hover:border-accent hover:shadow-[var(--shadow-card)] transition-all text-center">
-              <div className="mx-auto w-16 h-16 grid place-items-center rounded-2xl bg-[image:var(--gradient-primary)] text-primary-foreground shadow-[var(--shadow-card)]">
-                <Icon className="w-7 h-7" />
-              </div>
-              <h3 className="mt-5 font-display text-xl font-bold text-primary">{title}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">{desc}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 function Process() {
   const steps = [
