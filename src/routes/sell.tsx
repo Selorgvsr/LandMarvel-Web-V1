@@ -397,7 +397,6 @@ function SellPage() {
         </section>
 
         <SellForm />
-        <WhySell />
         <Process />
         <PropertyTypes />
         <Testimonials />
