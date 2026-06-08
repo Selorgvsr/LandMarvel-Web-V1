@@ -43,10 +43,10 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-type NavLink = { label: string; href?: string; to?: "/buy" };
+type NavLink = { label: string; href?: string; to?: "/buy" | "/sell" };
 const navLinks: NavLink[] = [
   { label: "Buy", to: "/buy" },
-  { label: "Sell", href: "#services" },
+  { label: "Sell", to: "/sell" },
   { label: "Projects", href: "#projects" },
   { label: "Contact Us", href: "#contact" },
 ];

@@ -9,9 +9,15 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SellRouteImport } from './routes/sell'
 import { Route as BuyRouteImport } from './routes/buy'
 import { Route as IndexRouteImport } from './routes/index'
 
+const SellRoute = SellRouteImport.update({
+  id: '/sell',
+  path: '/sell',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BuyRoute = BuyRouteImport.update({
   id: '/buy',
   path: '/buy',
@@ -26,31 +32,42 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/buy': typeof BuyRoute
+  '/sell': typeof SellRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/buy': typeof BuyRoute
+  '/sell': typeof SellRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/buy': typeof BuyRoute
+  '/sell': typeof SellRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/buy'
+  fullPaths: '/' | '/buy' | '/sell'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/buy'
-  id: '__root__' | '/' | '/buy'
+  to: '/' | '/buy' | '/sell'
+  id: '__root__' | '/' | '/buy' | '/sell'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   BuyRoute: typeof BuyRoute
+  SellRoute: typeof SellRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/sell': {
+      id: '/sell'
+      path: '/sell'
+      fullPath: '/sell'
+      preLoaderRoute: typeof SellRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/buy': {
       id: '/buy'
       path: '/buy'
@@ -71,6 +88,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   BuyRoute: BuyRoute,
+  SellRoute: SellRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
