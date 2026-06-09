@@ -68,7 +68,7 @@ function Header() {
         </a>
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((l) => (
-            <NavItem key={l.label} link={l} className="text-sm font-medium text-foreground/80 hover:text-accent transition-colors" />
+            <NavItem key={l.label} link={l} className="text-foreground/80 hover:text-accent transition-colors text-4xl font-bold" />
           ))}
         </nav>
         <div className="hidden md:block">
