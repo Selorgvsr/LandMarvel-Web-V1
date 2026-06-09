@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 import heroImg from "@/assets/hero-skyline.jpg";
+import heroVideo from "@/assets/hero-video.mp4.asset.json";
 import aboutImg from "@/assets/about-building.jpg";
 import catVilla from "@/assets/cat-villa.jpg";
 import catApartment from "@/assets/cat-apartment.jpg";
@@ -97,18 +98,27 @@ function Header() {
 
 function Hero() {
   return (
-    <section id="top" className="relative min-h-[92vh] flex items-center overflow-hidden">
-      <img src={heroImg} alt="Modern Chennai skyline" width={1920} height={1080} className="absolute inset-0 w-full h-full object-cover" />
-      <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
+    <section id="top" className="relative h-screen min-h-[640px] w-full flex items-center overflow-hidden">
+      <video
+        src={heroVideo.url}
+        poster={heroImg}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/40 via-primary/25 to-primary/70" />
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-20 text-primary-foreground">
         <div className="max-w-3xl">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-xs font-medium tracking-wide uppercase">
             <Star className="w-3.5 h-3.5 text-[var(--gold)]" /> Chennai's Trusted Developer
           </span>
-          <h1 className="mt-6 font-display text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05]">
+          <h1 className="mt-6 font-display text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] drop-shadow-[0_4px_20px_rgba(0,0,0,0.45)]">
             Find Your Dream Home with <span className="text-[var(--gold)]">Land Marvel</span>
           </h1>
-          <p className="mt-6 text-lg sm:text-xl text-white/85 max-w-2xl">
+          <p className="mt-6 text-lg sm:text-xl text-white/90 max-w-2xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
             Discover premium residential and commercial properties through our seamless buying, selling, and exchange services.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
@@ -120,13 +130,13 @@ function Hero() {
             </Button>
           </div>
         </div>
-        <div className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-3xl">
+        <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-3xl">
           {[
             ["20+", "Years"], ["150+", "Projects"], ["2000+", "Families"], ["6+", "Locations"],
           ].map(([n, l]) => (
             <div key={l} className="border-l-2 border-[var(--gold)] pl-4">
               <div className="font-display text-3xl font-bold">{n}</div>
-              <div className="text-sm text-white/75">{l}</div>
+              <div className="text-sm text-white/85">{l}</div>
             </div>
           ))}
         </div>
