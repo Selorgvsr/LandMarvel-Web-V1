@@ -109,7 +109,7 @@ function Hero() {
         preload="auto"
         className="absolute inset-0 w-full h-full object-cover"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-primary/40 via-primary/25 to-primary/70" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/25 to-transparent" />
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-20 text-primary-foreground">
         <div className="max-w-3xl">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-xs font-medium tracking-wide uppercase">
