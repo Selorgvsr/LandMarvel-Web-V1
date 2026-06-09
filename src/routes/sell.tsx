@@ -47,7 +47,7 @@ const navLinks = [
 function Header() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="sticky top-0 z-50 w-full bg-background/85 backdrop-blur-md border-b border-border">
+    <header className="sticky top-0 z-50 w-full bg-background/85 backdrop-blur-md border-b border-border bg-blue-600">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex h-16 lg:h-20 items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
           <span className="grid place-items-center w-9 h-9 rounded-lg bg-[image:var(--gradient-primary)] text-primary-foreground font-bold">LM</span>
@@ -55,7 +55,7 @@ function Header() {
         </Link>
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((l) => (
-            <Link key={l.label} to={l.to} hash={l.hash} className="text-sm font-medium text-foreground/80 hover:text-accent transition-colors" activeProps={{ className: "text-accent" }}>
+            <Link key={l.label} to={l.to} hash={l.hash} className="text-foreground/80 hover:text-accent transition-colors font-bold text-2xl" activeProps={{ className: "text-accent" }}>
               {l.label}
             </Link>
           ))}
