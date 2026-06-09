@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Menu, MapPin, ArrowRight, Phone, Mail, Calendar, Eye,
   Facebook, Instagram, Twitter, Linkedin, Building2, Ruler, Home,
@@ -9,6 +9,10 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 import buyHero from "@/assets/buy-hero.jpg";
 import buyCta from "@/assets/buy-cta.jpg";
+import palace1 from "@/assets/palace-1.png.asset.json";
+import palace2 from "@/assets/palace-2.png.asset.json";
+import palace3 from "@/assets/palace-3.png.asset.json";
+import palace4 from "@/assets/palace-4.png.asset.json";
 import plot1 from "@/assets/plot-1.jpg";
 import plot2 from "@/assets/plot-2.jpg";
 import plot3 from "@/assets/plot-3.jpg";
@@ -245,43 +249,8 @@ function BuyPage() {
     <div className="min-h-screen bg-background text-foreground">
       <Header />
       <main>
-        {/* Hero */}
-        <section className="relative overflow-hidden" style={{ background: "var(--gradient-soft)" }}>
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-accent">Buy Property</span>
-              <h1 className="mt-4 font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-primary leading-[1.05]">
-                Find Your <span className="text-[var(--gold)]">Dream Property</span>
-              </h1>
-              <p className="mt-6 text-lg text-muted-foreground max-w-xl">
-                Explore premium plots, residential apartments, villas, and commercial spaces in Chennai's most sought-after locations.
-              </p>
-              <div className="mt-8 flex flex-wrap gap-4">
-                <Button asChild size="lg" className="bg-[image:var(--gradient-primary)] hover:opacity-90 h-13 px-7 rounded-xl shadow-[var(--shadow-elegant)]">
-                  <a href="#plots">Browse Properties <ArrowRight className="ml-2 w-4 h-4" /></a>
-                </Button>
-                <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground h-13 px-7 rounded-xl">
-                  <Link to="/" hash="contact"><Calendar className="mr-2 w-4 h-4" />Book Site Visit</Link>
-                </Button>
-              </div>
-              <div className="mt-10 grid grid-cols-3 gap-6 max-w-md">
-                {[["20+", "Years"], ["150+", "Projects"], ["6+", "Locations"]].map(([n, l]) => (
-                  <div key={l}>
-                    <div className="font-display text-3xl font-bold text-primary">{n}</div>
-                    <div className="text-xs text-muted-foreground uppercase tracking-wider">{l}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="relative">
-              <img src={buyHero} alt="Luxury residential community" width={1536} height={1024} className="rounded-3xl shadow-[var(--shadow-elegant)] w-full h-[420px] lg:h-[540px] object-cover" />
-              <div className="absolute -bottom-6 -left-6 hidden sm:block bg-[image:var(--gradient-primary)] text-primary-foreground rounded-2xl px-6 py-5 shadow-[var(--shadow-elegant)]">
-                <div className="font-display text-3xl font-bold">2000+</div>
-                <div className="text-xs text-white/80 uppercase tracking-wider">Happy Families</div>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Hero — Full-screen auto-scrolling carousel */}
+        <HeroCarousel />
 
         {/* Ongoing Projects intro */}
         <section className="pt-16 sm:pt-20 bg-background">
