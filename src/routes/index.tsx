@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Menu, X, Phone, Mail, MapPin, ArrowRight, Check, Shield, Building2,
   HardHat, Handshake, Home, Building, Trees, Briefcase, Quote, Award,
@@ -9,7 +9,6 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 import heroImg from "@/assets/hero-skyline.jpg";
-import heroVideo from "@/assets/hero-video.mp4.asset.json";
 import aboutImg from "@/assets/about-building.jpg";
 import catVilla from "@/assets/cat-villa.jpg";
 import catApartment from "@/assets/cat-apartment.jpg";
@@ -19,6 +18,12 @@ import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
 import loanImg from "@/assets/home-loan.jpg";
+import home1 from "@/assets/home-1.jpeg.asset.json";
+import home2 from "@/assets/home-2.jpeg.asset.json";
+import home3 from "@/assets/home-3.jpeg.asset.json";
+import home4 from "@/assets/home-4.jpeg.asset.json";
+
+const heroSlides = [home1.url, home2.url, home3.url, home4.url];
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -97,19 +102,22 @@ function Header() {
 }
 
 function Hero() {
+  const [idx, setIdx] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => setIdx((i) => (i + 1) % heroSlides.length), 5000);
+    return () => clearInterval(id);
+  }, []);
   return (
     <section id="top" className="relative h-screen min-h-[640px] w-full flex items-center overflow-hidden">
-      <video
-        src={heroVideo.url}
-        poster={heroImg}
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="auto"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/25 to-transparent" />
+      {heroSlides.map((src, i) => (
+        <img
+          key={src}
+          src={src}
+          alt=""
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${i === idx ? "opacity-100" : "opacity-0"}`}
+        />
+      ))}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-black/10" />
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-20 text-primary-foreground">
         <div className="max-w-3xl">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-xs font-medium tracking-wide uppercase">
@@ -140,6 +148,16 @@ function Hero() {
             </div>
           ))}
         </div>
+      </div>
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+        {heroSlides.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setIdx(i)}
+            aria-label={`Slide ${i + 1}`}
+            className={`h-2 rounded-full transition-all ${i === idx ? "w-8 bg-[var(--gold)]" : "w-2 bg-white/50"}`}
+          />
+        ))}
       </div>
     </section>
   );
