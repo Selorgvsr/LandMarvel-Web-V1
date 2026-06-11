@@ -49,12 +49,12 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-type NavLink = { label: string; href?: string; to?: "/buy" | "/sell" | "/projects" };
+type NavLink = { label: string; href?: string; to?: "/buy" | "/sell" | "/projects" | "/contact" };
 const navLinks: NavLink[] = [
   { label: "Buy", to: "/buy" },
   { label: "Sell", to: "/sell" },
   { label: "Projects", to: "/projects" },
-  { label: "Contact Us", href: "#contact" },
+  { label: "Contact Us", to: "/contact" },
 ];
 
 function NavItem({ link, className, onClick }: { link: NavLink; className?: string; onClick?: () => void }) {
