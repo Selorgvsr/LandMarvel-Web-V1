@@ -267,8 +267,8 @@ function HeroCarousel() {
           <img src={s.img} alt={s.title} className="w-full h-full object-cover scale-105" />
         </div>
       ))}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/35 via-black/15 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
       <div className="relative z-10 h-full container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center text-primary-foreground">
         <div className="max-w-3xl">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-xs font-medium tracking-[0.2em] uppercase">
