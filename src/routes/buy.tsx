@@ -63,11 +63,6 @@ function Header() {
             </Link>
           ))}
         </nav>
-        <div className="hidden md:block">
-          <Button asChild className="bg-[image:var(--gradient-primary)] hover:opacity-90 shadow-[var(--shadow-card)]">
-            <Link to="/" hash="contact">Get in Touch</Link>
-          </Button>
-        </div>
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild className="md:hidden">
             <Button variant="ghost" size="icon" aria-label="Open menu"><Menu /></Button>
@@ -79,9 +74,6 @@ function Header() {
                   {l.label}
                 </Link>
               ))}
-              <Button asChild className="bg-[image:var(--gradient-primary)]">
-                <Link to="/" hash="contact" onClick={() => setOpen(false)}>Get in Touch</Link>
-              </Button>
             </div>
           </SheetContent>
         </Sheet>
