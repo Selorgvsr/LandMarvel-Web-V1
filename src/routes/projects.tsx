@@ -72,9 +72,6 @@ function Header() {
                   {l.label}
                 </Link>
               ))}
-              <Button asChild className="bg-[image:var(--gradient-primary)] mt-4">
-                <Link to="/" hash="contact" onClick={() => setOpen(false)}>Get in Touch</Link>
-              </Button>
             </div>
           </SheetContent>
         </Sheet>
