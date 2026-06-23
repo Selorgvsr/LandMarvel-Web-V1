@@ -77,11 +77,6 @@ function Header() {
             <NavItem key={l.label} link={l} className="text-white/80 hover:text-[var(--gold)] transition-colors font-bold text-2xl" />
           ))}
         </nav>
-        <div className="hidden md:block">
-          <Button asChild className="bg-[image:var(--gradient-primary)] hover:opacity-90 shadow-[var(--shadow-card)]">
-            <a href="#contact">Get in Touch</a>
-          </Button>
-        </div>
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild className="md:hidden">
             <Button variant="ghost" size="icon" aria-label="Open menu"><Menu /></Button>
@@ -91,9 +86,6 @@ function Header() {
               {navLinks.map((l) => (
                 <NavItem key={l.label} link={l} onClick={() => setOpen(false)} className="text-lg font-medium text-foreground hover:text-accent" />
               ))}
-              <Button asChild className="bg-[image:var(--gradient-primary)]">
-                <a href="#contact" onClick={() => setOpen(false)}>Get in Touch</a>
-              </Button>
             </div>
           </SheetContent>
         </Sheet>
