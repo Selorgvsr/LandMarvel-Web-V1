@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
 import {
   Menu, X, Phone, Mail, MapPin, ArrowRight, Check, Shield, Building2,
-  HardHat, Handshake, Home, Building, Trees, Briefcase, Quote, Award,
+  HardHat, Handshake, Home, Building, Trees, Briefcase, Award,
   Trophy, Star, Facebook, Instagram, Twitter, Linkedin, ChevronRight,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -367,37 +367,6 @@ function Stats() {
   );
 }
 
-function Testimonials() {
-  const items = [
-    { name: "Priya Raghavan", loc: "Anna Nagar", text: "Land Marvel made buying our first home effortless. The team's transparency and support throughout was exceptional." },
-    { name: "Karthik Suresh", loc: "OMR", text: "Outstanding construction quality and on-time delivery. Our apartment exceeded every expectation we had." },
-    { name: "Anitha & Vijay", loc: "Velachery", text: "From site visit to registration, every step felt smooth and trustworthy. Highly recommend Land Marvel." },
-  ];
-  return (
-    <section className="py-20 sm:py-28 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading eyebrow="Testimonials" title="What Our Families Say" />
-        <div className="mt-14 grid md:grid-cols-3 gap-6">
-          {items.map((t) => (
-            <div key={t.name} className="bg-card rounded-2xl p-8 border border-border shadow-[var(--shadow-card)]">
-              <Quote className="w-8 h-8 text-accent/30" />
-              <p className="mt-4 text-foreground leading-relaxed">"{t.text}"</p>
-              <div className="mt-6 flex items-center gap-3 pt-6 border-t border-border">
-                <div className="w-11 h-11 grid place-items-center rounded-full bg-[image:var(--gradient-primary)] text-primary-foreground font-semibold">
-                  {t.name.split(" ").map((p) => p[0]).join("").slice(0, 2)}
-                </div>
-                <div>
-                  <div className="font-semibold text-primary">{t.name}</div>
-                  <div className="text-xs text-muted-foreground">{t.loc}</div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 function Locations() {
   const locs = ["Anna Nagar", "Adyar", "OMR", "Velachery", "Tambaram", "Porur"];
@@ -551,7 +520,7 @@ function Index() {
         <Projects />
         <Timeline />
         <Stats />
-        <Testimonials />
+        
         <Locations />
         <Awards />
         <HomeLoan />
