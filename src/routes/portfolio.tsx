@@ -317,14 +317,25 @@ function SplitSection({ image, video, alt, imageLeft, eyebrow, icon, title, desc
               style={{ background: `linear-gradient(135deg, ${btnColor}33, transparent)` }}
             />
             <div className="relative overflow-hidden rounded-[24px] shadow-[0_30px_60px_-25px_rgba(10,29,99,0.35)]">
-              <img
-                src={image}
-                alt={alt}
-                width={1280}
-                height={960}
-                loading="lazy"
-                className="w-full h-[420px] lg:h-[560px] object-cover transition-transform duration-700 group-hover:scale-[1.04]"
-              />
+              {video ? (
+                <video
+                  src={video}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-[420px] lg:h-[560px] object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                />
+              ) : (
+                <img
+                  src={image}
+                  alt={alt}
+                  width={1280}
+                  height={960}
+                  loading="lazy"
+                  className="w-full h-[420px] lg:h-[560px] object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                />
+              )}
             </div>
           </div>
           <div>
