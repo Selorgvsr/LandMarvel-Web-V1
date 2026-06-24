@@ -291,8 +291,9 @@ function Hero() {
 }
 
 type SplitProps = {
-  image: string;
-  alt: string;
+  image?: string;
+  video?: string;
+  alt?: string;
   imageLeft: boolean;
   eyebrow: string;
   icon: React.ReactNode;
