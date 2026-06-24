@@ -252,8 +252,9 @@ function WhoWeAreSection() {
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
                   Land Marvel Group is one of South India's respected business
-                  conglomerates with interests spanning Real Estate, Animation,
-                  Amusement Parks, Resorts, Hotels, and Multiplexes.
+                  conglomerates with interests spanning Real Estate, Plotted
+                  Layout, Commercial Space, Interior, 3D Printing Home, Organic
+                  Home, Roof Top Solar.
                 </p>
                 <p>
                   Built upon trust, sincerity, and excellence, Land Marvel has
