@@ -427,7 +427,7 @@ function Timeline() {
 }
 
 function Stats() {
-  const stats = [["30+", "Years of Excellence"], ["200+", "Completed Projects"], ["2000+", "Happy Families"], ["6+", "Prime Locations"]];
+  const stats = [["30+", "Years of Excellence"], ["200+", "Completed Projects"], ["20K+", "Happy Families"], ["6+", "Prime Locations"]];
   return (
     <section className="py-20 relative overflow-hidden" style={{ background: "var(--gradient-cta)" }}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 lg:grid-cols-4 gap-10 text-primary-foreground text-center">
