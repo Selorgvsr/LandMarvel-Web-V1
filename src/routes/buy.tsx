@@ -201,7 +201,7 @@ function BuyPage() {
       <Header />
       <main>
         {/* Hero — Full-screen auto-scrolling carousel */}
-        <HeroCarousel />
+        <HeroSection />
 
         {/* Ongoing Projects intro */}
         <section className="pt-16 sm:pt-20 bg-background">
