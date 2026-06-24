@@ -33,6 +33,7 @@ import sustainability from "@/assets/portfolio-sustainability.jpg";
 import innovation from "@/assets/portfolio-innovation.jpg";
 import futureCta from "@/assets/portfolio-future-cta.jpg";
 import portfolioVideo from "@/assets/portfolio-video.mp4.asset.json";
+import portfolio3dVideo from "@/assets/portfolio-3d-video.mp4.asset.json";
 
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
