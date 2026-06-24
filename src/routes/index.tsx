@@ -777,9 +777,6 @@ function Index() {
         <SuccessVision />
         <FinalCTA />
         
-        <Locations />
-        <Awards />
-        <FinalCTA />
       </main>
       <Footer />
     </div>
