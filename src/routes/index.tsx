@@ -159,10 +159,10 @@ function About() {
         <div>
           <span className="text-xs font-semibold tracking-[0.2em] uppercase text-accent"></span>
           <h2 className="mt-3 font-display text-4xl sm:text-5xl font-bold text-primary leading-tight">
-            Building Trust. <br/>Creating Communities.
+            Your Trusted Guide.<br/>Building Financial Peace.
           </h2>
           <p className="mt-5 text-muted-foreground text-lg leading-relaxed">
-            For over 20 years, Land Marvel has delivered premium residential and commercial developments designed to enrich lives and create long-term value for families across Chennai.
+            Land Marvel is your trusted partner — 20+ years, 100+ projects, 1000+ happy families. We've walked this path with thousands of buyers across Chennai, and we'll walk it with you too. No confusion. No risk. Just clear answers and a property you'll be proud of.
           </p>
           <ul className="mt-8 grid sm:grid-cols-2 gap-4">
             {highlights.map((h) => (
