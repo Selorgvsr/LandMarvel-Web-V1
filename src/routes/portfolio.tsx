@@ -32,6 +32,7 @@ import solar from "@/assets/portfolio-solar.jpg";
 import sustainability from "@/assets/portfolio-sustainability.jpg";
 import innovation from "@/assets/portfolio-innovation.jpg";
 import futureCta from "@/assets/portfolio-future-cta.jpg";
+import portfolioVideo from "@/assets/portfolio-video.mp4.asset.json";
 
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
@@ -62,8 +63,7 @@ function PortfolioPage() {
       <Header />
       <Hero />
       <SplitSection
-        image={residential}
-        alt="Residential community"
+        video={portfolioVideo.url}
         imageLeft
         eyebrow="Residential Living"
         icon={<Home className="w-5 h-5" />}
@@ -290,8 +290,9 @@ function Hero() {
 }
 
 type SplitProps = {
-  image: string;
-  alt: string;
+  image?: string;
+  video?: string;
+  alt?: string;
   imageLeft: boolean;
   eyebrow: string;
   icon: React.ReactNode;
@@ -303,7 +304,7 @@ type SplitProps = {
   accent?: "navy" | "green";
 };
 
-function SplitSection({ image, alt, imageLeft, eyebrow, icon, title, desc, features, cta, bg = "bg-white", accent = "navy" }: SplitProps) {
+function SplitSection({ image, video, alt, imageLeft, eyebrow, icon, title, desc, features, cta, bg = "bg-white", accent = "navy" }: SplitProps) {
   const btnColor = accent === "green" ? GREEN : NAVY;
   return (
     <section id="portfolio" className={`${bg} py-20 lg:py-28`}>
@@ -315,14 +316,25 @@ function SplitSection({ image, alt, imageLeft, eyebrow, icon, title, desc, featu
               style={{ background: `linear-gradient(135deg, ${btnColor}33, transparent)` }}
             />
             <div className="relative overflow-hidden rounded-[24px] shadow-[0_30px_60px_-25px_rgba(10,29,99,0.35)]">
-              <img
-                src={image}
-                alt={alt}
-                width={1280}
-                height={960}
-                loading="lazy"
-                className="w-full h-[420px] lg:h-[560px] object-cover transition-transform duration-700 group-hover:scale-[1.04]"
-              />
+              {video ? (
+                <video
+                  src={video}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-[420px] lg:h-[560px] object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                />
+              ) : (
+                <img
+                  src={image}
+                  alt={alt}
+                  width={1280}
+                  height={960}
+                  loading="lazy"
+                  className="w-full h-[420px] lg:h-[560px] object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                />
+              )}
             </div>
           </div>
           <div>
