@@ -245,7 +245,6 @@ function WhoWeAreSection() {
           <FadeInSection delay={200}>
             <div>
               <span className="text-[var(--gold)] text-sm font-semibold tracking-widest uppercase">
-                About Land Marvel
               </span>
               <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mt-3 mb-6">
                 Who We Are

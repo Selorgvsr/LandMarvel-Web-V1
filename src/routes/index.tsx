@@ -157,7 +157,7 @@ function About() {
           </div>
         </div>
         <div>
-          <span className="text-xs font-semibold tracking-[0.2em] uppercase text-accent">About Land Marvel</span>
+          <span className="text-xs font-semibold tracking-[0.2em] uppercase text-accent"></span>
           <h2 className="mt-3 font-display text-4xl sm:text-5xl font-bold text-primary leading-tight">
             Building Trust. <br/>Creating Communities.
           </h2>
