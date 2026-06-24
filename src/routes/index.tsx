@@ -99,7 +99,7 @@ function Hero() {
 
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-white/90 max-w-2xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
-            Finding the right property shouldn't feel like a gamble. Premium locations. Verified projects. Zero confusion — we've helped 2000+ families invest with confidence.
+            Finding the right property shouldn't feel like a gamble. Premium locations. Verified projects. Zero confusion — we've helped 20,000+ families invest with confidence.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 shadow-[var(--shadow-elegant)] h-12 px-7">
@@ -112,7 +112,7 @@ function Hero() {
         </div>
         <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-3xl">
           {[
-            ["30+", "Years"], ["200+", "Projects"], ["2000+", "Families"], ["6+", "Locations"],
+            ["30+", "Years"], ["200+", "Projects"], ["20K+", "Families"], ["6+", "Locations"],
           ].map(([n, l]) => (
             <div key={l} className="border-l-2 border-[var(--gold)] pl-4">
               <div className="font-display text-3xl font-bold">{n}</div>
@@ -146,7 +146,7 @@ function SectionHeading({ eyebrow, title, desc, center = true }: { eyebrow: stri
 }
 
 function About() {
-  const highlights = ["30+ Years of Excellence", "200+ Completed Projects", "2000+ Happy Families", "Prime Chennai Locations"];
+  const highlights = ["30+ Years of Excellence", "200+ Completed Projects", "20K+ Happy Families", "Prime Chennai Locations"];
   return (
     <section id="about" className="py-20 sm:py-28 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -163,7 +163,7 @@ function About() {
             Your Trusted Guide.<br/>Building Financial Peace.
           </h2>
           <p className="mt-5 text-muted-foreground text-lg leading-relaxed">
-            Land Marvel is your trusted partner — 30+ years, 200+ projects, 2000+ happy families. We've walked this path with thousands of buyers across Chennai, and we'll walk it with you too. No confusion. No risk. Just clear answers and a property you'll be proud of.
+            Land Marvel is your trusted partner — 30+ years, 200+ projects, 20,000+ happy families. We've walked this path with thousands of buyers across Chennai, and we'll walk it with you too. No confusion. No risk. Just clear answers and a property you'll be proud of.
           </p>
           <ul className="mt-8 grid sm:grid-cols-2 gap-4">
             {highlights.map((h) => (
@@ -427,7 +427,7 @@ function Timeline() {
 }
 
 function Stats() {
-  const stats = [["30+", "Years of Excellence"], ["200+", "Completed Projects"], ["2000+", "Happy Families"], ["6+", "Prime Locations"]];
+  const stats = [["30+", "Years of Excellence"], ["200+", "Completed Projects"], ["20K+", "Happy Families"], ["6+", "Prime Locations"]];
   return (
     <section className="py-20 relative overflow-hidden" style={{ background: "var(--gradient-cta)" }}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 lg:grid-cols-4 gap-10 text-primary-foreground text-center">
