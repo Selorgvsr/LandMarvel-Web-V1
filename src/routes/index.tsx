@@ -22,6 +22,9 @@ import home1 from "@/assets/home-1.jpeg.asset.json";
 import home2 from "@/assets/home-2.jpeg.asset.json";
 import home3 from "@/assets/home-3.jpeg.asset.json";
 import home4 from "@/assets/home-4.jpeg.asset.json";
+import buySectionImg from "@/assets/buy-section.jpg";
+import sellSectionImg from "@/assets/sell-section.jpg";
+import exchangeSectionImg from "@/assets/exchange-section.jpg";
 
 const heroSlides = [home1.url, home2.url, home3.url, home4.url];
 
