@@ -31,7 +31,7 @@ export function SiteFooter() {
           <ul className="mt-4 space-y-2 text-sm text-white/70">
             <li><Link to="/portfolio" className="hover:text-[var(--gold)] transition-colors">Portfolio</Link></li>
             <li><Link to="/about" className="hover:text-[var(--gold)] transition-colors">About Us</Link></li>
-            <li><a href="#" className="hover:text-[var(--gold)] transition-colors">Terms & Conditions</a></li>
+            <li><Link to="/terms" className="hover:text-[var(--gold)] transition-colors">Terms & Conditions</Link></li>
             <li><a href="#" className="hover:text-[var(--gold)] transition-colors">Privacy & Policy</a></li>
           </ul>
         </div>
