@@ -80,7 +80,7 @@ function PortfolioPage() {
           "Secure Communities",
           "Future Appreciation Potential",
         ]}
-        cta="Explore Residential Projects"
+        cta="Explore Residential Project"
       />
       <SplitSection
         image={plots}
@@ -101,7 +101,7 @@ function PortfolioPage() {
           "Excellent Accessibility",
           "Future Development Opportunities",
         ]}
-        cta="View Plot Projects"
+        cta="View Plot Project"
       />
       <SplitSection
         image={commercial}
@@ -121,7 +121,7 @@ function PortfolioPage() {
           "Excellent Connectivity",
           "Strong Rental Potential",
         ]}
-        cta="Explore Commercial Projects"
+        cta="Explore Commercial Project"
       />
       <SplitSection
         image={interior}
