@@ -32,7 +32,7 @@ export function SiteFooter() {
             <li><Link to="/portfolio" className="hover:text-[var(--gold)] transition-colors">Portfolio</Link></li>
             <li><Link to="/about" className="hover:text-[var(--gold)] transition-colors">About Us</Link></li>
             <li><Link to="/terms" className="hover:text-[var(--gold)] transition-colors">Terms & Conditions</Link></li>
-            <li><a href="#" className="hover:text-[var(--gold)] transition-colors">Privacy & Policy</a></li>
+            <li><Link to="/privacy" className="hover:text-[var(--gold)] transition-colors">Privacy & Policy</Link></li>
           </ul>
         </div>
         <div>
