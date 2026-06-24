@@ -204,27 +204,123 @@ function About() {
   );
 }
 
-function Services() {
-  const items = [
-    { icon: Home, title: "Buy", desc: "Explore homes, apartments, plots, and office spaces with diverse investment opportunities in the property market." },
-    { icon: Handshake, title: "Sell", desc: "Market your home as-is with our expert team handling listings, buyers, and paperwork end to end." },
-    { icon: Building2, title: "Exchange", desc: "Trade up or downsize seamlessly with our property exchange program tailored to your needs." },
-  ];
+function BuySection() {
   return (
-    <section id="services" className="py-20 sm:py-28" style={{ background: "var(--gradient-soft)" }}>
+    <section id="services" className="py-20 sm:py-28 bg-background overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading eyebrow="Our Services" title="Buy. Sell. Exchange." desc="A complete real-estate platform built around your goals." />
-        <div className="mt-14 grid md:grid-cols-3 gap-6">
-          {items.map(({ icon: Icon, title, desc }) => (
-            <div key={title} className="group bg-card rounded-2xl p-8 border border-border shadow-[var(--shadow-card)] hover:-translate-y-1 hover:shadow-[var(--shadow-elegant)] transition-all">
-              <div className="w-14 h-14 grid place-items-center rounded-xl bg-[image:var(--gradient-primary)] text-primary-foreground group-hover:scale-110 transition-transform">
-                <Icon className="w-7 h-7" />
-              </div>
-              <h3 className="mt-6 font-display text-2xl font-bold text-primary">{title}</h3>
-              <p className="mt-3 text-muted-foreground">{desc}</p>
-              <a href="#contact" className="mt-5 inline-flex items-center gap-1 text-accent font-medium text-sm hover:gap-2 transition-all">Learn more <ChevronRight className="w-4 h-4" /></a>
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="relative group">
+            <img
+              src={buySectionImg}
+              alt="Luxury villa community and premium apartment towers"
+              width={1200}
+              height={800}
+              loading="lazy"
+              className="w-full h-[500px] lg:h-[600px] object-cover rounded-3xl shadow-[var(--shadow-elegant)] group-hover:scale-[1.02] transition-transform duration-700"
+            />
+          </div>
+          <div>
+            <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-accent">Find Your Perfect Property</span>
+            <h2 className="mt-4 font-display text-4xl sm:text-5xl lg:text-[56px] font-bold text-primary leading-tight">Buy Your Dream Property With Confidence</h2>
+            <p className="mt-6 text-muted-foreground text-lg lg:text-xl leading-relaxed">
+              Discover premium plots, residential apartments, villas, and commercial spaces in Chennai's most sought-after locations. Every property is carefully selected to offer excellent value, clear ownership, and long-term investment potential.
+            </p>
+            <p className="mt-4 text-muted-foreground text-lg lg:text-xl leading-relaxed">
+              Whether you are purchasing your first home, upgrading your lifestyle, or investing for the future, Land Marvel helps you find the right property with complete transparency and professional guidance.
+            </p>
+            <div className="mt-10 flex flex-wrap gap-4">
+              <Button asChild size="lg" className="bg-[image:var(--gradient-primary)] text-primary-foreground h-12 px-8 rounded-xl">
+                <Link to="/buy">Browse Properties</Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="border-2 border-[var(--gold)] text-[var(--gold)] hover:bg-[var(--gold)] hover:text-primary h-12 px-8 rounded-xl">
+                <Link to="/contact">Schedule Site Visit</Link>
+              </Button>
             </div>
-          ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function SellSection() {
+  return (
+    <section className="py-20 sm:py-28 bg-muted overflow-hidden">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="order-2 lg:order-1">
+            <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-accent">Direct Property Buyers</span>
+            <h2 className="mt-4 font-display text-4xl sm:text-5xl lg:text-[56px] font-bold text-primary leading-tight">Sell Your Property Directly to Land Marvel</h2>
+            <p className="mt-6 text-muted-foreground text-lg lg:text-xl leading-relaxed">
+              Own a land, building, apartment, villa, or commercial property? Land Marvel offers a simple and transparent way to sell your property directly to us.
+            </p>
+            <p className="mt-4 text-muted-foreground text-lg lg:text-xl leading-relaxed">
+              Avoid lengthy negotiations, multiple brokers, and uncertain buyers. We provide fair market pricing, direct transactions, and a hassle-free selling experience designed to help you close deals quickly and confidently.
+            </p>
+            <p className="mt-4 text-muted-foreground text-lg lg:text-xl leading-relaxed">
+              Whether it's a residential, commercial, or investment property, our team ensures a smooth evaluation and fast decision-making process.
+            </p>
+            <div className="mt-10 flex flex-wrap gap-4">
+              <Button asChild size="lg" className="bg-[image:var(--gradient-primary)] text-primary-foreground h-12 px-8 rounded-xl">
+                <Link to="/sell">Sell Your Property</Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="border-2 border-[var(--gold)] text-[var(--gold)] hover:bg-[var(--gold)] hover:text-primary h-12 px-8 rounded-xl">
+                <Link to="/contact">Get Property Evaluation</Link>
+              </Button>
+            </div>
+          </div>
+          <div className="relative group order-1 lg:order-2">
+            <img
+              src={sellSectionImg}
+              alt="Premium property ready for direct sale"
+              width={1200}
+              height={800}
+              loading="lazy"
+              className="w-full h-[500px] lg:h-[600px] object-cover rounded-3xl shadow-[var(--shadow-elegant)] group-hover:scale-[1.02] transition-transform duration-700"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ExchangeSection() {
+  return (
+    <section className="py-20 sm:py-28 bg-background overflow-hidden">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="relative group">
+            <img
+              src={exchangeSectionImg}
+              alt="Property exchange program"
+              width={1200}
+              height={800}
+              loading="lazy"
+              className="w-full h-[500px] lg:h-[600px] object-cover rounded-3xl shadow-[var(--shadow-elegant)] group-hover:scale-[1.02] transition-transform duration-700"
+            />
+          </div>
+          <div>
+            <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-accent">Smart Property Exchange</span>
+            <h2 className="mt-4 font-display text-4xl sm:text-5xl lg:text-[56px] font-bold text-primary leading-tight">Upgrade Your Property Through Direct Exchange</h2>
+            <p className="mt-6 text-muted-foreground text-lg lg:text-xl leading-relaxed">
+              Looking to move from your existing property into a better location, larger space, or a new investment opportunity? Land Marvel's Property Exchange Program makes it easier than ever.
+            </p>
+            <p className="mt-4 text-muted-foreground text-lg lg:text-xl leading-relaxed">
+              Exchange your land, apartment, villa, or commercial property directly with us and explore suitable alternatives within our portfolio. Benefit from transparent valuations, direct transactions, and a streamlined process without the complexity of managing separate buying and selling deals.
+            </p>
+            <p className="mt-4 text-muted-foreground text-lg lg:text-xl leading-relaxed">
+              Enjoy better value, faster decisions, and greater flexibility while upgrading your property investment.
+            </p>
+            <div className="mt-10 flex flex-wrap gap-4">
+              <Button asChild size="lg" className="bg-[image:var(--gradient-primary)] text-primary-foreground h-12 px-8 rounded-xl">
+                <Link to="/contact">Explore Exchange Options</Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="border-2 border-[var(--gold)] text-[var(--gold)] hover:bg-[var(--gold)] hover:text-primary h-12 px-8 rounded-xl">
+                <Link to="/contact">Talk To Expert</Link>
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
