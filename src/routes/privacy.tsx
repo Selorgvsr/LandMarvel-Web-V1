@@ -15,6 +15,8 @@ import {
   FileText,
   ChevronRight,
 } from "lucide-react";
+import { SiteHeader } from "@/components/landmarvel/SiteHeader";
+import { SiteFooter } from "@/components/landmarvel/SiteFooter";
 
 export const Route = createFileRoute("/privacy")({
   head: () => ({
