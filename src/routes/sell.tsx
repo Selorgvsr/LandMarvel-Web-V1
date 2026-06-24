@@ -276,8 +276,8 @@ function SellPage() {
               <h1 className="mt-4 font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-primary leading-[1.05]">
                 Sell Your Property With <span className="text-[var(--gold)]">Confidence</span>
               </h1>
-              <p className="mt-6 text-lg text-muted-foreground max-w-xl">
-                Connect with genuine buyers, receive expert property guidance, and maximize your property's value through Land Marvel's trusted real-estate network.
+              <p className="mt-6 text-lg text-muted-foreground max-w-xl whitespace-pre-line">
+                Own a land, building, apartment, villa, or commercial property? Land Marvel offers a simple and transparent way to sell your property directly to us.{"\n\n"}
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Button asChild size="lg" className="bg-[image:var(--gradient-primary)] hover:opacity-90 h-13 px-7 rounded-xl shadow-[var(--shadow-elegant)]">
