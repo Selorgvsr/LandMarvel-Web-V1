@@ -358,7 +358,7 @@ const comTypes = [
 ];
 
 const comStats = [
-  { value: "100+", label: "Projects Delivered" },
+  { value: "200+", label: "Projects Delivered" },
   { value: "Prime", label: "Commercial Locations" },
   { value: "Trusted", label: "Development Partner" },
   { value: "Strong", label: "Investment Potential" },
