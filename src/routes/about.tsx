@@ -408,7 +408,7 @@ function QualitySection() {
     "Planning & Design Excellence",
     "Premium Construction Materials",
     "Rigorous Quality Control",
-    "Safety & Earthquake Resistance",
+    "Safety & Earthquake\u00a0 Resistance",
     "Customer Customization Support",
   ];
 
