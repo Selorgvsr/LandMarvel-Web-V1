@@ -98,7 +98,7 @@ function Hero() {
             FIND YOUR DREAM HOME , APARTMENT , VILLA PLOT, COMMERCIAL SPACE With <span className="text-[var(--gold)]">Land Marvel</span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-white/90 max-w-2xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
-            Discover premium residential and commercial properties through our seamless buying, selling, and exchange services.
+            Discover premium residential and commercial properties through our seamless buying, selling, and exchange of Properties
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 shadow-[var(--shadow-elegant)] h-12 px-7">
