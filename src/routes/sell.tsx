@@ -100,7 +100,8 @@ function Footer() {
         <div>
           <h4 className="font-display text-lg font-semibold">Company</h4>
           <ul className="mt-4 space-y-2 text-sm text-white/70">
-            {["About Us", "Portfolio", "Terms & Conditions", "Privacy & Policy"].map((l) => (
+            <li><Link to="/portfolio" className="hover:text-[var(--gold)] transition-colors">Portfolio</Link></li>
+            {["About Us", "Terms & Conditions", "Privacy & Policy"].map((l) => (
               <li key={l}><a href="#" className="hover:text-[var(--gold)] transition-colors">{l}</a></li>
             ))}
           </ul>
