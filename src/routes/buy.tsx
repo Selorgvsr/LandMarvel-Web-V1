@@ -158,29 +158,10 @@ function CategorySection({ id, eyebrow, title, items, alt = false }: { id: strin
   );
 }
 
-const heroSlides = [
-  { img: palace1.url, title: "Timeless Neoclassical Estates", subtitle: "Architectural masterpieces crafted to last generations." },
-  { img: palace3.url, title: "Royal Sunset Residences", subtitle: "Where grandeur meets the golden hour." },
-  { img: palace2.url, title: "Modern Crystal Palaces", subtitle: "Visionary architecture for tomorrow's elite." },
-  { img: palace4.url, title: "Opulent Interiors", subtitle: "Step inside spaces that redefine luxury." },
-];
-
-function HeroCarousel() {
-  const [idx, setIdx] = useState(0);
-  useEffect(() => {
-    const t = setInterval(() => setIdx((i) => (i + 1) % heroSlides.length), 5000);
-    return () => clearInterval(t);
-  }, []);
+function HeroSection() {
   return (
     <section className="relative h-screen min-h-[640px] w-full overflow-hidden">
-      {heroSlides.map((s, i) => (
-        <div
-          key={s.img}
-          className={`absolute inset-0 transition-opacity duration-[1200ms] ease-in-out ${i === idx ? "opacity-100" : "opacity-0"}`}
-        >
-          <img src={s.img} alt={s.title} className="w-full h-full object-cover scale-105" />
-        </div>
-      ))}
+      <img src={buyHero} alt="Premium property" className="w-full h-full object-cover scale-105" />
       <div className="absolute inset-0 bg-gradient-to-r from-black/35 via-black/15 to-transparent" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
       <div className="relative z-10 h-full container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center text-primary-foreground">
@@ -188,13 +169,10 @@ function HeroCarousel() {
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-xs font-medium tracking-[0.2em] uppercase">
             <span className="w-1.5 h-1.5 rounded-full bg-[var(--gold)]" /> Buy Premium Property
           </span>
-          <h1 key={idx} className="mt-6 font-display text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)] animate-in fade-in slide-in-from-bottom-4 duration-700">
-            {heroSlides[idx].title.split(" ").slice(0, -2).join(" ")}{" "}
-            <span className="text-[var(--gold)]">{heroSlides[idx].title.split(" ").slice(-2).join(" ")}</span>
+          <h1 className="mt-6 font-display text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)] animate-in fade-in slide-in-from-bottom-4 duration-700">
+            Together, we create financial peace, complete transparency, and quality in{" "}
+            <span className="text-[var(--gold)]">property investments.</span>
           </h1>
-          <p className="mt-6 text-lg sm:text-xl text-white/90 max-w-2xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.6)]">
-            {heroSlides[idx].subtitle}
-          </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-13 px-7 rounded-xl shadow-[var(--shadow-elegant)]">
               <a href="#plots">Browse Properties <ArrowRight className="ml-2 w-4 h-4" /></a>
@@ -212,17 +190,6 @@ function HeroCarousel() {
             ))}
           </div>
         </div>
-        {/* Slide indicators */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3">
-          {heroSlides.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => setIdx(i)}
-              aria-label={`Slide ${i + 1}`}
-              className={`h-1.5 rounded-full transition-all duration-500 ${i === idx ? "w-10 bg-[var(--gold)]" : "w-6 bg-white/40 hover:bg-white/60"}`}
-            />
-          ))}
-        </div>
       </div>
     </section>
   );
@@ -234,7 +201,7 @@ function BuyPage() {
       <Header />
       <main>
         {/* Hero — Full-screen auto-scrolling carousel */}
-        <HeroCarousel />
+        <HeroSection />
 
         {/* Ongoing Projects intro */}
         <section className="pt-16 sm:pt-20 bg-background">
