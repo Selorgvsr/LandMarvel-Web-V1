@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { SiteFooter } from "@/components/landmarvel/SiteFooter";
 import { SiteHeader } from "@/components/landmarvel/SiteHeader";
+import { LandInvestmentSection, ResidentialLivingSection, CommercialSolutionsSection } from "@/components/landmarvel/BuySections";
 
 import buyHero from "@/assets/buy-hero.jpg";
 import buyCta from "@/assets/buy-cta.jpg";
@@ -247,8 +248,11 @@ function BuyPage() {
         </section>
 
         <CategorySection id="plots" eyebrow="" title="Premium Plots" items={plots} />
+        <LandInvestmentSection />
         <CategorySection id="residential" eyebrow="🏢" title="Residential Projects" items={residential} alt />
+        <ResidentialLivingSection />
         <CategorySection id="commercial" eyebrow="🏬" title="Commercial Projects" items={commercial} />
+        <CommercialSolutionsSection />
 
         {/* Final CTA */}
         <section className="relative overflow-hidden">
