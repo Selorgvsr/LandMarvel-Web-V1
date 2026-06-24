@@ -146,7 +146,7 @@ function SectionHeading({ eyebrow, title, desc, center = true }: { eyebrow: stri
 }
 
 function About() {
-  const highlights = ["30+ Years of Excellence", "200+ Completed Projects", "2000+ Happy Families", "Prime Chennai Locations"];
+  const highlights = ["30+ Years of Excellence", "200+ Completed Projects", "20K+ Happy Families", "Prime Chennai Locations"];
   return (
     <section id="about" className="py-20 sm:py-28 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
