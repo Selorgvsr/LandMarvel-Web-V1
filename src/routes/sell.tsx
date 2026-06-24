@@ -223,7 +223,7 @@ function PropertyTypes() {
               <div className="absolute inset-x-0 bottom-0 p-6 text-primary-foreground">
                 <Icon className="w-7 h-7 text-[var(--gold)]" />
                 <h3 className="mt-2 font-display text-xl lg:text-2xl font-bold leading-tight">{title}</h3>
-                <p className="mt-1 text-sm text-white/85">{desc}</p>
+                <p className="mt-1 text-sm text-white/85 whitespace-pre-line">{desc}</p>
               </div>
             </div>
           ))}
