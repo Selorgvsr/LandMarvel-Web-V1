@@ -22,21 +22,22 @@ export function SiteHeader() {
           <span className="grid place-items-center w-9 h-9 rounded-lg bg-[image:var(--gradient-primary)] text-primary-foreground font-bold">LM</span>
           <span className="font-display text-xl font-bold text-white">Land Marvel</span>
         </Link>
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
           {navLinks.map((l) => (
             <Link
               key={l.label}
               to={l.to}
-              className="text-white/80 hover:text-[var(--gold)] transition-colors font-bold text-2xl"
+              className="text-white/80 hover:text-[var(--gold)] transition-colors font-bold text-lg xl:text-2xl whitespace-nowrap"
             >
               {l.label}
             </Link>
           ))}
         </nav>
         <Sheet open={open} onOpenChange={setOpen}>
-          <SheetTrigger asChild className="md:hidden">
+          <SheetTrigger asChild className="lg:hidden">
             <Button variant="ghost" size="icon" aria-label="Open menu" className="text-white hover:bg-white/10"><Menu /></Button>
           </SheetTrigger>
+
           <SheetContent side="right" className="w-72">
             <div className="flex flex-col gap-6 mt-8">
               {navLinks.map((l) => (
