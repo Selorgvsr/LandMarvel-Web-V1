@@ -64,7 +64,7 @@ function PortfolioPage() {
       <Header />
       <Hero />
       <SplitSection
-        video={portfolioVideo.url}
+        video={residentialVideo.url}
         imageLeft
         eyebrow="Residential Living"
         icon={<Home className="w-5 h-5" />}
