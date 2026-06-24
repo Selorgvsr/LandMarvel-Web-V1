@@ -7,6 +7,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { SiteFooter } from "@/components/landmarvel/SiteFooter";
 
 import heroImg from "@/assets/hero-skyline.jpg";
 import aboutImg from "@/assets/about-building.jpg";
@@ -296,50 +297,7 @@ function ProjectsPage() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-14 grid md:grid-cols-4 gap-10">
-          <div className="space-y-3">
-            <div className="flex items-center gap-2">
-              <span className="grid place-items-center w-9 h-9 rounded-lg bg-white/10 font-bold">LM</span>
-              <span className="font-display text-xl font-bold">Land Marvel</span>
-            </div>
-            <p className="text-primary-foreground/80 text-sm">Building trust and creating communities across Chennai for 20+ years.</p>
-            <div className="flex gap-3 pt-1">
-              {[Facebook, Instagram, Twitter, Linkedin].map((I, i) => (
-                <a key={i} href="#" aria-label="social" className="grid place-items-center w-9 h-9 rounded-full bg-white/10 hover:bg-[var(--gold)] hover:text-primary transition"><I className="w-4 h-4" /></a>
-              ))}
-            </div>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-3">Explore</h4>
-            <ul className="space-y-2 text-sm text-primary-foreground/85">
-              <li><Link to="/buy" className="hover:text-[var(--gold)]">Buy</Link></li>
-              <li><Link to="/sell" className="hover:text-[var(--gold)]">Sell</Link></li>
-              <li><Link to="/projects" className="hover:text-[var(--gold)]">Projects</Link></li>
-              <li><Link to="/" hash="contact" className="hover:text-[var(--gold)]">Contact</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-3">Legal</h4>
-            <ul className="space-y-2 text-sm text-primary-foreground/85">
-              <li>Terms & Conditions</li>
-              <li>Privacy Policy</li>
-              <li>RERA Info</li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-3">Contact</h4>
-            <ul className="space-y-2 text-sm text-primary-foreground/85">
-              <li className="flex items-center gap-2"><MapPin className="w-4 h-4" /> Chennai, Tamil Nadu</li>
-              <li className="flex items-center gap-2"><Phone className="w-4 h-4" /> +91 98765 43210</li>
-              <li className="flex items-center gap-2"><Mail className="w-4 h-4" /> hello@landmarvel.in</li>
-            </ul>
-          </div>
-        </div>
-        <div className="border-t border-white/10 py-5 text-center text-sm text-primary-foreground/70">
-          © {new Date().getFullYear()} Land Marvel. All rights reserved.
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

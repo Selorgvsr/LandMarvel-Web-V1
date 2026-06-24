@@ -18,6 +18,7 @@ import {
   Twitter,
   Linkedin,
 } from "lucide-react";
+import { SiteFooter } from "@/components/landmarvel/SiteFooter";
 
 import hero from "@/assets/portfolio-hero.jpg";
 import residential from "@/assets/portfolio-residential.jpg";
@@ -493,68 +494,5 @@ function FutureCta() {
 }
 
 function Footer() {
-  return (
-    <footer className="text-white" style={{ background: NAVY }}>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-14 grid lg:grid-cols-4 gap-10">
-        <div>
-          <div className="flex items-center gap-2">
-            <span className="grid place-items-center w-9 h-9 rounded-lg font-bold" style={{ background: GREEN, color: "white" }}>
-              LM
-            </span>
-            <span className="font-display text-xl font-bold">Land Marvel</span>
-          </div>
-          <p className="mt-4 text-sm text-white/70 leading-relaxed">
-            Premium real estate developer building sustainable, future-ready communities for tomorrow's families.
-          </p>
-          <div className="mt-5 flex gap-3">
-            {[Facebook, Instagram, Twitter, Linkedin].map((Icon, i) => (
-              <a
-                key={i}
-                href="#"
-                aria-label="Social"
-                className="w-9 h-9 grid place-items-center rounded-full border border-white/20 hover:border-transparent transition-colors"
-                style={{ transition: "background 0.2s" }}
-                onMouseEnter={(e) => ((e.currentTarget.style.background = GREEN))}
-                onMouseLeave={(e) => ((e.currentTarget.style.background = "transparent"))}
-              >
-                <Icon className="w-4 h-4" />
-              </a>
-            ))}
-          </div>
-        </div>
-        <div>
-          <h4 className="font-display text-lg font-semibold">Services</h4>
-          <ul className="mt-4 space-y-2 text-sm text-white/70">
-            <li><Link to="/buy" className="hover:text-white transition-colors">Buy</Link></li>
-            <li><Link to="/sell" className="hover:text-white transition-colors">Sell</Link></li>
-            <li><a href="#" className="hover:text-white transition-colors">Exchange</a></li>
-            <li><Link to="/projects" className="hover:text-white transition-colors">Projects</Link></li>
-            <li><Link to="/portfolio" className="hover:text-white transition-colors">Portfolio</Link></li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="font-display text-lg font-semibold">Company</h4>
-          <ul className="mt-4 space-y-2 text-sm text-white/70">
-            <li><a href="#" className="hover:text-white transition-colors">Company Overview</a></li>
-            <li><Link to="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
-            <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
-            <li><a href="#" className="hover:text-white transition-colors">Terms & Conditions</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="font-display text-lg font-semibold">Get in Touch</h4>
-          <ul className="mt-4 space-y-3 text-sm text-white/70">
-            <li className="flex items-start gap-2"><MapPin className="w-4 h-4 mt-0.5" style={{ color: GREEN }} /><span>Anna Nagar, Chennai, Tamil Nadu</span></li>
-            <li className="flex items-center gap-2"><Phone className="w-4 h-4" style={{ color: GREEN }} /><span>+91 00000 00000</span></li>
-            <li className="flex items-center gap-2"><Mail className="w-4 h-4" style={{ color: GREEN }} /><span>hello@landmarvel.com</span></li>
-          </ul>
-        </div>
-      </div>
-      <div className="border-t border-white/10">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-5 text-xs text-white/60 text-center">
-          © {new Date().getFullYear()} Land Marvel. All rights reserved.
-        </div>
-      </div>
-    </footer>
-  );
+  return <SiteFooter />;
 }
