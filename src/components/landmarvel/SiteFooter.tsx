@@ -40,7 +40,7 @@ export function SiteFooter() {
           <ul className="mt-4 space-y-2 text-sm text-white/70">
             <li><Link to="/buy" className="hover:text-[var(--gold)] transition-colors">Buy</Link></li>
             <li><Link to="/sell" className="hover:text-[var(--gold)] transition-colors">Sell</Link></li>
-            <li><Link to="/projects" className="hover:text-[var(--gold)] transition-colors">Projects</Link></li>
+            <li><Link to="/projects" className="hover:text-[var(--gold)] transition-colors">Project</Link></li>
             <li><Link to="/contact" className="hover:text-[var(--gold)] transition-colors">Contact Us</Link></li>
           </ul>
         </div>

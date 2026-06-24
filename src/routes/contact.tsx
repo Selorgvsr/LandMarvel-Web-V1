@@ -35,7 +35,7 @@ export const Route = createFileRoute("/contact")({
 const navLinks = [
   { label: "Buy", to: "/buy" as const },
   { label: "Sell", to: "/sell" as const },
-  { label: "Projects", to: "/projects" as const },
+  { label: "Project", to: "/projects" as const },
   { label: "Contact Us", to: "/contact" as const },
 ];
 

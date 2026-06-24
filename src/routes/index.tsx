@@ -58,7 +58,7 @@ type NavLink = { label: string; href?: string; to?: "/buy" | "/sell" | "/project
 const navLinks: NavLink[] = [
   { label: "Buy", to: "/buy" },
   { label: "Sell", to: "/sell" },
-  { label: "Projects", to: "/projects" },
+  { label: "Project", to: "/projects" },
   { label: "Contact Us", to: "/contact" },
 ];
 
@@ -96,7 +96,7 @@ function Hero() {
           </span>
           <h1 className="mt-6 font-display text-[1.5rem] sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.05] break-words drop-shadow-[0_4px_20px_rgba(0,0,0,0.45)]">
             FIND YOUR DREAM HOME- APARTMENT- VILLA-<br />
-            PLOTTED LAYOUTS-<br />
+            PLOTTED LAYOUT-<br />
             COMMERCIAL SPACE -<br />
             With&nbsp;<span className="text-[var(--gold)]">Land Marvel</span>
           </h1>
@@ -105,7 +105,7 @@ function Hero() {
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 shadow-[var(--shadow-elegant)] h-12 px-7">
-              <a href="#projects">Explore Projects <ArrowRight className="ml-2 w-4 h-4" /></a>
+              <a href="#projects">Explore Project <ArrowRight className="ml-2 w-4 h-4" /></a>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-12 px-7">
               <a href="#contact">Contact Us</a>
