@@ -178,6 +178,7 @@ function BuildingIcon(props: React.SVGProps<SVGSVGElement>) {
 function TermsPage() {
   return (
     <div className="min-h-[100dvh]">
+      <SiteHeader />
       {/* Hero */}
       <section className="relative bg-primary overflow-hidden">
         <div className="absolute inset-0 opacity-10">
@@ -277,6 +278,7 @@ function TermsPage() {
           </FadeInSection>
         </div>
       </section>
+      <SiteFooter />
     </div>
   );
 }
