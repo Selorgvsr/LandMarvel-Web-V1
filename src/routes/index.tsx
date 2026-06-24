@@ -613,7 +613,9 @@ function Index() {
       <main>
         <Hero />
         <About />
-        <Services />
+        <BuySection />
+        <SellSection />
+        <ExchangeSection />
         <WhyChoose />
         <Categories />
         <Projects />
