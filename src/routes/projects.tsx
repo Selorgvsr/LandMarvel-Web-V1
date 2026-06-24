@@ -231,7 +231,7 @@ function ProjectsPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             {[
-              { icon: Award, value: "20+", label: "Years of Experience" },
+              { icon: Award, value: "30+", label: "Years of Experience" },
               { icon: TrendingUp, value: "200+", label: "Completed Projects" },
               { icon: Building2, value: "30+", label: "Ongoing Projects" },
               { icon: Users, value: "5000+", label: "Happy Customers" },
