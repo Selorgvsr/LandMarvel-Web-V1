@@ -24,6 +24,8 @@ import aboutWhoWeAre from "@/assets/about-who-we-are.jpg";
 import aboutQuality from "@/assets/about-quality.jpg";
 import aboutCustomer from "@/assets/about-customer.jpg";
 import aboutSkyline from "@/assets/about-skyline.jpg";
+import { SiteHeader } from "@/components/landmarvel/SiteHeader";
+import { SiteFooter } from "@/components/landmarvel/SiteFooter";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -137,6 +139,7 @@ function FadeInSection({
 function AboutPage() {
   return (
     <div className="min-h-[100dvh]">
+      <SiteHeader />
       <HeroSection />
       <WhoWeAreSection />
       <OurStorySection />
@@ -146,6 +149,7 @@ function AboutPage() {
       <StrengthSection />
       <VisionMissionSection />
       <FinalStatementSection />
+      <SiteFooter />
     </div>
   );
 }

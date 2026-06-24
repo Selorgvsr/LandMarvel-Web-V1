@@ -19,6 +19,7 @@ import {
   Linkedin,
 } from "lucide-react";
 import { SiteFooter } from "@/components/landmarvel/SiteFooter";
+import { SiteHeader } from "@/components/landmarvel/SiteHeader";
 
 import hero from "@/assets/portfolio-hero.jpg";
 import residential from "@/assets/portfolio-residential.jpg";
@@ -224,47 +225,7 @@ function PortfolioPage() {
 }
 
 function Header() {
-  const nav = [
-    { to: "/", label: "Home" },
-    { to: "/buy", label: "Buy" },
-    { to: "/sell", label: "Sell" },
-    { to: "/projects", label: "Projects" },
-    { to: "/portfolio", label: "Portfolio" },
-    { to: "/contact", label: "Contact" },
-  ] as const;
-  return (
-    <header className="sticky top-0 z-40 backdrop-blur-md bg-white/80 border-b border-border">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
-          <span className="grid place-items-center w-9 h-9 rounded-lg text-white font-bold" style={{ background: NAVY }}>
-            LM
-          </span>
-          <span className="font-display text-xl font-bold" style={{ color: NAVY }}>
-            Land Marvel
-          </span>
-        </Link>
-        <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
-          {nav.map((n) => (
-            <Link
-              key={n.to}
-              to={n.to}
-              className="text-foreground/70 hover:text-foreground transition-colors"
-              activeProps={{ className: "text-foreground font-semibold" }}
-            >
-              {n.label}
-            </Link>
-          ))}
-        </nav>
-        <Link
-          to="/contact"
-          className="hidden sm:inline-flex items-center gap-2 rounded-full px-5 py-2 text-sm font-semibold text-white shadow-md hover:opacity-90 transition"
-          style={{ background: NAVY }}
-        >
-          Talk To Expert <ArrowRight className="w-4 h-4" />
-        </Link>
-      </div>
-    </header>
-  );
+  return <SiteHeader />;
 }
 
 function Hero() {

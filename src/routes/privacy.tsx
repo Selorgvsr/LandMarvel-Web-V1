@@ -15,6 +15,8 @@ import {
   FileText,
   ChevronRight,
 } from "lucide-react";
+import { SiteHeader } from "@/components/landmarvel/SiteHeader";
+import { SiteFooter } from "@/components/landmarvel/SiteFooter";
 
 export const Route = createFileRoute("/privacy")({
   head: () => ({
@@ -239,6 +241,7 @@ const sections = [
 function PrivacyPage() {
   return (
     <div className="min-h-[100dvh]">
+      <SiteHeader />
       {/* Hero */}
       <section className="relative bg-primary overflow-hidden">
         <div className="absolute inset-0 opacity-10">
@@ -352,6 +355,7 @@ function PrivacyPage() {
           </FadeInSection>
         </div>
       </section>
+      <SiteFooter />
     </div>
   );
 }

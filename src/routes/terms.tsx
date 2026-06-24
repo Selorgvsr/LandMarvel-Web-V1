@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { Scale, FileText, Shield, AlertCircle, ChevronRight } from "lucide-react";
+import { SiteHeader } from "@/components/landmarvel/SiteHeader";
+import { SiteFooter } from "@/components/landmarvel/SiteFooter";
 
 export const Route = createFileRoute("/terms")({
   head: () => ({
@@ -176,6 +178,7 @@ function BuildingIcon(props: React.SVGProps<SVGSVGElement>) {
 function TermsPage() {
   return (
     <div className="min-h-[100dvh]">
+      <SiteHeader />
       {/* Hero */}
       <section className="relative bg-primary overflow-hidden">
         <div className="absolute inset-0 opacity-10">
@@ -275,6 +278,7 @@ function TermsPage() {
           </FadeInSection>
         </div>
       </section>
+      <SiteFooter />
     </div>
   );
 }
