@@ -305,7 +305,7 @@ type SplitProps = {
   accent?: "navy" | "green";
 };
 
-function SplitSection({ image, alt, imageLeft, eyebrow, icon, title, desc, features, cta, bg = "bg-white", accent = "navy" }: SplitProps) {
+function SplitSection({ image, video, alt, imageLeft, eyebrow, icon, title, desc, features, cta, bg = "bg-white", accent = "navy" }: SplitProps) {
   const btnColor = accent === "green" ? GREEN : NAVY;
   return (
     <section id="portfolio" className={`${bg} py-20 lg:py-28`}>
