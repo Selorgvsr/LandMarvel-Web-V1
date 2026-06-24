@@ -211,7 +211,7 @@ function HeroSection() {
               to="/projects"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-[var(--gold)] text-primary font-semibold hover:bg-[var(--gold)]/90 transition-colors"
             >
-              Explore Projects <ArrowRight className="w-4 h-4" />
+              Explore Project <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
               to="/about"
@@ -657,7 +657,7 @@ function FinalStatementSection() {
               to="/projects"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-[var(--gold)] text-primary font-semibold hover:bg-[var(--gold)]/90 transition-colors"
             >
-              View Projects <ArrowRight className="w-4 h-4" />
+              View Project <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
               to="/contact"

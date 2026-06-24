@@ -202,7 +202,7 @@ export function LandInvestmentSection() {
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-13 px-7 rounded-xl">
-                  <a href="#plots">Explore Plot Projects <ArrowRight className="ml-2 w-4 h-4" /></a>
+                  <a href="#plots">Explore Plot Project <ArrowRight className="ml-2 w-4 h-4" /></a>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-13 px-7 rounded-xl">
                   <Link to="/contact"><Phone className="mr-2 w-4 h-4" />Talk To Investment Expert</Link>
@@ -233,7 +233,7 @@ const livingCards: LivingCard[] = [
     title: "Residential Communities",
     desc: "Designed for comfortable family living, our residential communities provide a secure environment with open spaces, modern infrastructure, and easy access to schools, hospitals, shopping centers, and daily conveniences.",
     highlights: ["Secure Gated Communities", "Prime Locations", "Family-Friendly Environment", "Future Appreciation Potential"],
-    cta: "Explore Residential Projects",
+    cta: "Explore Residential Project",
     link: "#residential",
   },
   {
@@ -465,7 +465,7 @@ export function CommercialSolutionsSection() {
             />
             <div className="mt-7 flex flex-wrap gap-4">
               <Button asChild size="lg" className="bg-[image:var(--gradient-primary)] hover:opacity-90 h-13 px-7 rounded-xl">
-                <a href="#commercial"><Eye className="mr-2 w-4 h-4" />Explore Commercial Projects</a>
+                <a href="#commercial"><Eye className="mr-2 w-4 h-4" />Explore Commercial Project</a>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground h-13 px-7 rounded-xl">
                 <Link to="/contact"><Calendar className="mr-2 w-4 h-4" />Schedule Business Consultation</Link>
@@ -503,7 +503,7 @@ export function CommercialSolutionsSection() {
                   <Link to="/contact"><Phone className="mr-2 w-4 h-4" />Talk To Commercial Expert</Link>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-13 px-7 rounded-xl">
-                  <a href="#commercial">View Commercial Projects <ArrowRight className="ml-2 w-4 h-4" /></a>
+                  <a href="#commercial">View Commercial Project <ArrowRight className="ml-2 w-4 h-4" /></a>
                 </Button>
               </div>
             </div>
