@@ -34,7 +34,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Land Marvel — Premium Real Estate in Chennai" },
-      { name: "description", content: "Find premium villas, apartments, plots and commercial spaces with Land Marvel. 20+ years of trust, 150+ completed projects across Chennai." },
+      { name: "description", content: "Find premium villas, apartments, plots and commercial spaces with Land Marvel. 30+ years of trust, 200+ completed projects across Chennai." },
       { property: "og:title", content: "Land Marvel — Premium Real Estate in Chennai" },
       { property: "og:description", content: "Find premium villas, apartments, plots and commercial spaces with Land Marvel." },
       { property: "og:url", content: "/" },
@@ -47,7 +47,7 @@ export const Route = createFileRoute("/")({
         "@type": "RealEstateAgent",
         name: "Land Marvel",
         areaServed: "Chennai",
-        description: "Premium real estate developer in Chennai with 150+ completed projects.",
+        description: "Premium real estate developer in Chennai with 200+ completed projects.",
       }),
     }],
   }),
@@ -111,7 +111,7 @@ function Hero() {
         </div>
         <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-3xl">
           {[
-            ["20+", "Years"], ["150+", "Projects"], ["2000+", "Families"], ["6+", "Locations"],
+            ["30+", "Years"], ["200+", "Projects"], ["2000+", "Families"], ["6+", "Locations"],
           ].map(([n, l]) => (
             <div key={l} className="border-l-2 border-[var(--gold)] pl-4">
               <div className="font-display text-3xl font-bold">{n}</div>
@@ -145,14 +145,14 @@ function SectionHeading({ eyebrow, title, desc, center = true }: { eyebrow: stri
 }
 
 function About() {
-  const highlights = ["20+ Years of Excellence", "150+ Completed Projects", "2000+ Happy Families", "Prime Chennai Locations"];
+  const highlights = ["30+ Years of Excellence", "200+ Completed Projects", "2000+ Happy Families", "Prime Chennai Locations"];
   return (
     <section id="about" className="py-20 sm:py-28 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         <div className="relative">
           <img src={aboutImg} alt="Premium residential building" width={1200} height={900} loading="lazy" className="rounded-2xl shadow-[var(--shadow-elegant)] w-full h-auto" />
           <div className="absolute -bottom-6 -right-6 hidden sm:block bg-[image:var(--gradient-primary)] text-primary-foreground rounded-2xl p-6 shadow-[var(--shadow-elegant)]">
-            <div className="font-display text-4xl font-bold">20+</div>
+            <div className="font-display text-4xl font-bold">30+</div>
             <div className="text-sm text-white/80">Years of Trust</div>
           </div>
         </div>
@@ -162,7 +162,7 @@ function About() {
             Your Trusted Guide.<br/>Building Financial Peace.
           </h2>
           <p className="mt-5 text-muted-foreground text-lg leading-relaxed">
-            Land Marvel is your trusted partner — 20+ years, 100+ projects, 1000+ happy families. We've walked this path with thousands of buyers across Chennai, and we'll walk it with you too. No confusion. No risk. Just clear answers and a property you'll be proud of.
+            Land Marvel is your trusted partner — 30+ years, 200+ projects, 2000+ happy families. We've walked this path with thousands of buyers across Chennai, and we'll walk it with you too. No confusion. No risk. Just clear answers and a property you'll be proud of.
           </p>
           <ul className="mt-8 grid sm:grid-cols-2 gap-4">
             {highlights.map((h) => (
@@ -399,7 +399,7 @@ function Timeline() {
     { year: "2004", text: "Company Founded" },
     { year: "2010", text: "50 Projects Delivered" },
     { year: "2016", text: "Expansion Across Chennai" },
-    { year: "2022", text: "150+ Projects Completed" },
+    { year: "2022", text: "200+ Projects Completed" },
     { year: "2026", text: "Continuing to Build Tomorrow" },
   ];
   return (
@@ -426,7 +426,7 @@ function Timeline() {
 }
 
 function Stats() {
-  const stats = [["20+", "Years of Excellence"], ["150+", "Completed Projects"], ["2000+", "Happy Families"], ["6+", "Prime Locations"]];
+  const stats = [["30+", "Years of Excellence"], ["200+", "Completed Projects"], ["2000+", "Happy Families"], ["6+", "Prime Locations"]];
   return (
     <section className="py-20 relative overflow-hidden" style={{ background: "var(--gradient-cta)" }}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 lg:grid-cols-4 gap-10 text-primary-foreground text-center">
