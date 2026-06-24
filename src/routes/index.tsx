@@ -19,7 +19,7 @@ import catCommercial from "@/assets/cat-commercial.jpg";
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
-import loanImg from "@/assets/home-loan.jpg";
+
 import home1 from "@/assets/home-1.jpeg.asset.json";
 import home2 from "@/assets/home-2.jpeg.asset.json";
 import home3 from "@/assets/home-3.jpeg.asset.json";
@@ -492,26 +492,6 @@ function Awards() {
   );
 }
 
-function HomeLoan() {
-  return (
-    <section className="py-20 sm:py-28 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <span className="text-xs font-semibold tracking-[0.2em] uppercase text-accent">Home Loan Assistance</span>
-          <h2 className="mt-3 font-display text-4xl sm:text-5xl font-bold text-primary leading-tight">Easy Financing,<br/>Your Keys Faster.</h2>
-          <p className="mt-5 text-muted-foreground text-lg">We partner with India's leading banks to make your home loan process simple, fast, and transparent — from eligibility to disbursement.</p>
-          <ul className="mt-6 space-y-3">
-            {["Tie-ups with top banks & NBFCs", "Best-in-class interest rates", "Doorstep documentation support", "Quick eligibility check"].map((h) => (
-              <li key={h} className="flex items-center gap-3"><Check className="w-5 h-5 text-accent" />{h}</li>
-            ))}
-          </ul>
-          <Button className="mt-8 bg-[image:var(--gradient-primary)] h-12 px-7">Check Eligibility <ArrowRight className="ml-2 w-4 h-4" /></Button>
-        </div>
-        <img src={loanImg} alt="Family receiving keys to new home" width={1200} height={900} loading="lazy" className="rounded-2xl shadow-[var(--shadow-elegant)] w-full h-auto" />
-      </div>
-    </section>
-  );
-}
 
 function FinalCTA() {
   return (
@@ -550,7 +530,6 @@ function Index() {
         
         <Locations />
         <Awards />
-        <HomeLoan />
         <FinalCTA />
       </main>
       <Footer />
