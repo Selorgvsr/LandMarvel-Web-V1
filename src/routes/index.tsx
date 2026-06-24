@@ -590,6 +590,165 @@ function FinalCTA() {
   );
 }
 
+function PortfolioShowcase() {
+  const cards = [
+    {
+      emoji: "🏡",
+      title: "Residential Living",
+      desc: "Premium apartments, villas, and gated communities designed for modern families and long-term value.",
+      gradient: "from-[#1e3a8a] via-[#1e40af] to-[#0a1d63]",
+      glow: "rgba(59,130,246,0.45)",
+      img: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80",
+      hash: "residential",
+    },
+    {
+      emoji: "📍",
+      title: "Plotted Developments",
+      desc: "Strategically located plots in high-growth corridors with strong appreciation potential.",
+      gradient: "from-[#059669] via-[#047857] to-[#064e3b]",
+      glow: "rgba(16,185,129,0.45)",
+      img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80",
+      hash: "plots",
+    },
+    {
+      emoji: "🏢",
+      title: "Commercial Spaces",
+      desc: "Premium office spaces, retail destinations, and investment-focused commercial developments.",
+      gradient: "from-[#f59e0b] via-[#ea8a0c] to-[#b45309]",
+      glow: "rgba(245,158,11,0.45)",
+      img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+      hash: "commercial",
+    },
+    {
+      emoji: "✨",
+      title: "Interior Solutions",
+      desc: "Luxury interior transformations, smart home designs, and turnkey execution services.",
+      gradient: "from-[#7c3aed] via-[#6d28d9] to-[#4338ca]",
+      glow: "rgba(139,92,246,0.45)",
+      img: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80",
+      hash: "interior",
+    },
+    {
+      emoji: "🌿",
+      title: "Organic Homes",
+      desc: "Healthy, sustainable homes designed around nature, wellness, and environmental responsibility.",
+      gradient: "from-[#10b981] via-[#0d9488] to-[#0f766e]",
+      glow: "rgba(20,184,166,0.45)",
+      img: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
+      hash: "organic",
+    },
+    {
+      emoji: "🚀",
+      title: "Future Living Solutions",
+      desc: "3D printed homes, rooftop solar systems, sustainable communities, and future-ready innovations.",
+      gradient: "from-[#06b6d4] via-[#0891b2] to-[#0c2340]",
+      glow: "rgba(6,182,212,0.45)",
+      img: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1200&q=80",
+      hash: "future",
+    },
+  ];
+
+  return (
+    <section className="relative py-20 sm:py-28 bg-[#F8FAFC] overflow-hidden">
+      {/* decorative floating shapes */}
+      <div aria-hidden className="pointer-events-none absolute inset-0">
+        <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-[image:var(--gradient-primary)] opacity-10 blur-3xl" />
+        <div className="absolute top-1/3 -right-20 w-80 h-80 rounded-full bg-[var(--gold)]/15 blur-3xl" />
+        <div className="absolute bottom-0 left-1/3 w-72 h-72 rounded-full bg-emerald-400/10 blur-3xl" />
+        <svg className="absolute inset-x-0 bottom-0 w-full opacity-[0.06]" viewBox="0 0 1440 200" fill="none">
+          <path d="M0 180 L80 120 L160 150 L240 90 L320 130 L420 70 L520 110 L620 60 L720 100 L820 50 L920 90 L1040 40 L1160 80 L1280 30 L1440 80 L1440 200 L0 200 Z" fill="currentColor" />
+        </svg>
+      </div>
+
+      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto text-center">
+          <span className="inline-block text-xs font-semibold tracking-[0.25em] uppercase text-accent">Our Expertise</span>
+          <h2 className="mt-3 font-display text-4xl sm:text-5xl font-bold text-primary">
+            Explore Innovation, Design & Future Living
+          </h2>
+          <p className="mt-5 text-base sm:text-lg text-muted-foreground">
+            Discover Land Marvel's innovative solutions that combine real estate excellence, sustainable development, advanced technologies, and future-ready living concepts. Click any category to explore our complete portfolio.
+          </p>
+        </div>
+
+        <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
+          {cards.map((c) => (
+            <Link
+              key={c.title}
+              to="/portfolio"
+              hash={c.hash}
+              className="group relative block rounded-[30px] overflow-hidden min-h-[440px] shadow-[0_20px_50px_-20px_rgba(10,29,99,0.35)] hover:-translate-y-2 transition-all duration-500"
+              style={{ ["--glow" as any]: c.glow }}
+            >
+              {/* gradient background */}
+              <div className={`absolute inset-0 bg-gradient-to-br ${c.gradient}`} />
+              {/* image header */}
+              <div className="relative h-[220px] overflow-hidden rounded-b-[24px]">
+                <img
+                  src={c.img}
+                  alt={c.title}
+                  loading="lazy"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              </div>
+
+              {/* glow ring on hover */}
+              <div
+                aria-hidden
+                className="pointer-events-none absolute inset-0 rounded-[30px] opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                style={{ boxShadow: `0 0 0 1px rgba(255,255,255,0.15), 0 30px 80px -20px var(--glow)` }}
+              />
+
+              {/* content */}
+              <div className="relative p-7 text-white">
+                <div className="w-14 h-14 rounded-2xl bg-white/15 backdrop-blur-md border border-white/25 grid place-items-center text-3xl shadow-lg">
+                  <span>{c.emoji}</span>
+                </div>
+                <h3 className="mt-5 font-display text-2xl font-bold leading-tight">{c.title}</h3>
+                <p className="mt-3 text-sm text-white/85 leading-relaxed">{c.desc}</p>
+                <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-white">
+                  <span className="px-4 py-2 rounded-full bg-white/15 backdrop-blur-md border border-white/30 group-hover:bg-white group-hover:text-primary transition-colors">
+                    Explore <ArrowRight className="inline w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                </span>
+              </div>
+            </Link>
+          ))}
+        </div>
+
+        {/* Bottom CTA banner */}
+        <div className="mt-20 relative overflow-hidden rounded-[32px] shadow-[0_40px_80px_-30px_rgba(10,29,99,0.5)]">
+          <img
+            src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=1920&q=80"
+            alt="Premium futuristic city with sustainable architecture"
+            loading="lazy"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0a1d63]/95 via-[#0a1d63]/85 to-[#0a1d63]/60" />
+          <div className="relative px-6 sm:px-12 py-16 sm:py-20 text-primary-foreground max-w-3xl">
+            <span className="inline-block text-xs font-semibold tracking-[0.25em] uppercase text-[var(--gold)]">Land Marvel Portfolio</span>
+            <h3 className="mt-3 font-display text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+              Discover The Complete Land Marvel Portfolio
+            </h3>
+            <p className="mt-5 text-white/85 text-base sm:text-lg leading-relaxed">
+              Explore our residential developments, plotted communities, commercial spaces, interiors, sustainable homes, and future living innovations.
+            </p>
+            <div className="mt-9 flex flex-wrap gap-4">
+              <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-12 px-7 rounded-xl">
+                <Link to="/portfolio">View Full Portfolio <ArrowRight className="ml-2 w-4 h-4" /></Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-12 px-7 rounded-xl">
+                <Link to="/contact">Talk To Expert</Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Footer() {
   return <SiteFooter />;
 }
