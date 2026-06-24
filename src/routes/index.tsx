@@ -99,7 +99,7 @@ function Hero() {
 
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-white/90 max-w-2xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
-            Finding the right property shouldn't feel like a gamble. Premium locations. Verified projects. Zero confusion — we've helped 1000+ families invest with confidence.
+            Finding the right property shouldn't feel like a gamble. Premium locations. Verified projects. Zero confusion — we've helped 2000+ families invest with confidence.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 shadow-[var(--shadow-elegant)] h-12 px-7">
