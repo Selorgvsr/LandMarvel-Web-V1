@@ -206,10 +206,10 @@ function Process() {
 
 function PropertyTypes() {
   const items = [
-    { img: catPlot, icon: Trees, title: "Residential Plots", desc: "DTCP, RERA-approved and gated community plots across Chennai." },
-    { img: catApartment, icon: Building, title: "Apartments & Flats", desc: "2, 3 & 4 BHK apartments in prime residential locations." },
-    { img: catVilla, icon: Home, title: "Villas & Independent Houses", desc: "Premium villas, row houses and independent homes." },
-    { img: catCommercial, icon: Briefcase, title: "Commercial Properties", desc: "Offices, retail spaces and commercial buildings." },
+    { img: catPlot, icon: Trees, title: "Land", desc: "We buy land ranging from one ground to several acres." },
+    { img: catApartment, icon: Building, title: "Apartments\u00a0", desc: "We buy new and resale\n1, 2, 3, and 4 BHK apartments." },
+    { img: catVilla, icon: Home, title: "Villas & Independent Houses", desc: "We buy old and new villas, row houses, and independent homes." },
+    { img: catCommercial, icon: Briefcase, title: "Commercial Properties", desc: "Old & New Offices, Retail Spaces & Commercial Buildings" },
   ];
   return (
     <section className="py-20 sm:py-24 bg-background">
