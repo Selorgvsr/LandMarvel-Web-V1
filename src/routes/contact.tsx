@@ -14,6 +14,7 @@ import {
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { toast } from "sonner";
 import { SiteFooter } from "@/components/landmarvel/SiteFooter";
+import { SiteHeader } from "@/components/landmarvel/SiteHeader";
 
 import heroImg from "@/assets/about-building.jpg";
 
@@ -39,38 +40,7 @@ const navLinks = [
 ];
 
 function Header() {
-  const [open, setOpen] = useState(false);
-  return (
-    <header className="sticky top-0 z-50 w-full bg-[image:var(--gradient-header)] border-b border-white/10 shadow-[var(--shadow-elegant)] backdrop-blur-md">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex h-16 lg:h-20 items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
-          <span className="grid place-items-center w-9 h-9 rounded-lg bg-[image:var(--gradient-primary)] text-primary-foreground font-bold">LM</span>
-          <span className="font-display text-xl font-bold text-white">Land Marvel</span>
-        </Link>
-        <nav className="hidden md:flex items-center gap-8">
-          {navLinks.map((l) => (
-            <Link key={l.label} to={l.to} className="text-white/80 hover:text-[var(--gold)] transition-colors font-bold text-2xl" activeProps={{ className: "text-[var(--gold)]" }}>
-              {l.label}
-            </Link>
-          ))}
-        </nav>
-        <Sheet open={open} onOpenChange={setOpen}>
-          <SheetTrigger asChild className="md:hidden">
-            <Button variant="ghost" size="icon" aria-label="Open menu"><Menu /></Button>
-          </SheetTrigger>
-          <SheetContent side="right" className="w-72">
-            <div className="flex flex-col gap-6 mt-8">
-              {navLinks.map((l) => (
-                <Link key={l.label} to={l.to} onClick={() => setOpen(false)} className="text-lg font-medium text-foreground hover:text-accent">
-                  {l.label}
-                </Link>
-              ))}
-            </div>
-          </SheetContent>
-        </Sheet>
-      </div>
-    </header>
-  );
+  return <SiteHeader />;
 }
 
 const contactSchema = z.object({
