@@ -95,7 +95,9 @@ function Hero() {
             <Star className="w-3.5 h-3.5 text-[var(--gold)]" /> We together make financial peace in property investment
           </span>
           <h1 className="mt-6 font-display text-[1.5rem] sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.05] break-words drop-shadow-[0_4px_20px_rgba(0,0,0,0.45)]">
-            FIND YOUR DREAM HOME- APARTMENT- VILLA-PLOTTED LAYOUTS-<br />COMMERCIAL SPACE -With <span className="text-[var(--gold)]">Land Marvel</span>
+            FIND YOUR DREAM HOME- APARTMENT- VILLA-PLOTTED LAYOUTS-<br />
+            COMMERCIAL SPACE -<br />
+            With&nbsp;<span className="text-[var(--gold)]"><br />Land Marvel</span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-white/90 max-w-2xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
             Finding the right property shouldn't feel like a gamble. Premium locations. Verified projects. Zero confusion — we've helped 20,000+ families invest with confidence.
