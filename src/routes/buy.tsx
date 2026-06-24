@@ -170,7 +170,9 @@ function HeroSection() {
             <span className="w-1.5 h-1.5 rounded-full bg-[var(--gold)]" /> Buy Premium Property
           </span>
           <h1 className="mt-6 font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)] animate-in fade-in slide-in-from-bottom-4 duration-700">
-            Together, we create financial peace, complete transparency, and quality in{" "}
+            Together, we create<br />
+            {"\u00A0"}financial peace-<br />
+            complete transparency-quality in{"\u00A0"}<br />
             <span className="text-[var(--gold)]">property investments.</span>
           </h1>
           <div className="mt-10 flex flex-wrap gap-4">
