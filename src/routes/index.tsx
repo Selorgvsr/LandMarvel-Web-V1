@@ -604,11 +604,18 @@ function Index() {
         <BuySection />
         <SellSection />
         <ExchangeSection />
+        <ThreeStepPlan />
         <WhyChoose />
         <Categories />
         <Projects />
+        <ResultsQuote />
         <Timeline />
         <Stats />
+
+        <Locations />
+        <Awards />
+        <SuccessVision />
+        <FinalCTA />
         
         <Locations />
         <Awards />
