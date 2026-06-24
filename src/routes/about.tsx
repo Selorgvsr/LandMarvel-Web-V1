@@ -280,7 +280,7 @@ function OurStorySection() {
     { year: "2000+", title: "Foundation Built on Trust", desc: "Land Marvel Group was established with a vision to transform real estate development in South India." },
     { year: "2005", title: "Expansion into Real Estate", desc: "Launched our first premium residential projects, setting new benchmarks in quality and design." },
     { year: "2010", title: "50+ Landmark Projects", desc: "Achieved the milestone of 50 successfully delivered developments across Chennai and beyond." },
-    { year: "2015", title: "100+ Successful Developments", desc: "Crossed 100 completed projects, earning the trust of thousands of families." },
+    { year: "2015", title: "200+ Successful Developments", desc: "Crossed 200 completed projects, earning the trust of thousands of families." },
     { year: "2020", title: "2.5 Million+ Sq. Ft", desc: "Expanded our footprint with over 2.5 million square feet of developed premium spaces." },
     { year: "Today", title: "Building the Future", desc: "Pioneering sustainable and innovative real estate solutions for the next generation." },
   ];
