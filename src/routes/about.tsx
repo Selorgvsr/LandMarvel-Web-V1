@@ -185,7 +185,7 @@ function HeroSection() {
           </p>
           <div className="flex flex-wrap gap-4 mb-10">
             {[
-              { icon: Trophy, label: "100+", desc: "Projects Delivered" },
+              { icon: Trophy, label: "200+", desc: "Projects Delivered" },
               { icon: Building2, label: "2.5M+", desc: "Sq. Ft Developed" },
               { icon: Star, label: "Trusted", desc: "Developer" },
               {
