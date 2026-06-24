@@ -370,7 +370,7 @@ function Projects() {
   return (
     <section id="projects" className="py-20 sm:py-28 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading eyebrow="Portfolio" title="Completed Projects" desc="A glimpse of communities we've built across Chennai." />
+        <SectionHeading eyebrow="" title="Completed Projects" desc="A glimpse of communities we've built across Chennai." />
         <div className="mt-14 grid md:grid-cols-3 gap-7">
           {projects.map((p) => (
             <article key={p.title} className="group bg-card rounded-2xl overflow-hidden border border-border shadow-[var(--shadow-card)] hover:-translate-y-1 hover:shadow-[var(--shadow-elegant)] transition-all">
