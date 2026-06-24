@@ -162,8 +162,7 @@ function PortfolioPage() {
         accent="green"
       />
       <SplitSection
-        image={threeD}
-        alt="3D printed home"
+        video={portfolio3dVideo.url}
         imageLeft
         bg="bg-[#F8FAFC]"
         eyebrow="3D Printed Homes"
