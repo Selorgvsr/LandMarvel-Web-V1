@@ -69,9 +69,9 @@ type Project = {
 };
 
 const plotProjects: Project[] = [
-  { image: plot1, badge: "New Launch", name: "Land Marvel Green Valley", price: "₹25L – ₹75L", location: "OMR, Chennai", area: "12 Acres", units: "240 Plots", possession: "Ready To Register", type: "Residential Plots" },
-  { image: plot2, badge: "Hot Selling", name: "Land Marvel Garden City", price: "₹20L – ₹60L", location: "Tambaram", area: "8 Acres", units: "180 Plots", possession: "Ready To Register", type: "Residential Plots" },
-  { image: plot3, badge: "Limited Units", name: "Land Marvel Urban Greens", price: "₹18L – ₹55L", location: "Perungalathur", area: "15 Acres", units: "300 Plots", possession: "Under Approval", type: "Residential Plots" },
+  { image: plot1, badge: "New Launch", name: "Land Marvel Green Valley", price: "₹25L – ₹75L", location: "OMR, Chennai", area: "12 Acres", units: "240 Plots", possession: "Ready To Register", type: "Plotted Layouts" },
+  { image: plot2, badge: "Hot Selling", name: "Land Marvel Garden City", price: "₹20L – ₹60L", location: "Tambaram", area: "8 Acres", units: "180 Plots", possession: "Ready To Register", type: "Plotted Layouts" },
+  { image: plot3, badge: "Limited Units", name: "Land Marvel Urban Greens", price: "₹18L – ₹55L", location: "Perungalathur", area: "15 Acres", units: "300 Plots", possession: "Under Approval", type: "Plotted Layouts" },
   { image: plot4, badge: "Premium Plots", name: "Land Marvel Lake View", price: "₹30L – ₹85L", location: "Maraimalai Nagar", area: "10 Acres", units: "220 Plots", possession: "Ready To Register", type: "Lake-Front Plots" },
 ];
 

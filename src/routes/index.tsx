@@ -333,7 +333,7 @@ function Categories() {
   const items = [
     { img: catVilla, icon: Home, title: "Villas", desc: "Premium independent homes." },
     { img: catApartment, icon: Building, title: "Apartments", desc: "Modern urban living spaces." },
-    { img: catPlot, icon: Trees, title: "Residential Plots", desc: "Secure land investments." },
+    { img: catPlot, icon: Trees, title: "Plotted Layouts", desc: "Secure land investments." },
     { img: catCommercial, icon: Briefcase, title: "Commercial Spaces", desc: "Business-ready properties." },
   ];
   return (
