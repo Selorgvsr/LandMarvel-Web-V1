@@ -138,7 +138,7 @@ function ContactPage() {
               Whether you're looking to buy, sell, exchange properties, or learn more about our ongoing projects, our team is here to assist you every step of the way.
             </p>
             <ul className="grid sm:grid-cols-2 gap-3 pt-2">
-              {["Expert Property Advisors", "20+ Years of Trust", "Premium Locations", "End-to-End Support"].map((h) => (
+              {["Expert Property Advisors", "30+ Years of Trust", "Premium Locations", "End-to-End Support"].map((h) => (
                 <li key={h} className="flex items-center gap-2 text-sm text-foreground/85">
                   <span className="grid place-items-center w-6 h-6 rounded-full bg-primary/10 text-primary"><Check className="w-3.5 h-3.5" /></span>
                   {h}

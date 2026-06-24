@@ -79,7 +79,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Land Marvel — Premium Real Estate in Chennai" },
-      { name: "description", content: "Land Marvel is Chennai's trusted real estate developer with 150+ premium villa, apartment, plot and commercial projects across prime locations." },
+      { name: "description", content: "Land Marvel is Chennai's trusted real estate developer with 200+ premium villa, apartment, plot and commercial projects across prime locations." },
       { name: "author", content: "Land Marvel" },
       { property: "og:title", content: "Land Marvel — Premium Real Estate in Chennai" },
       { property: "og:description", content: "Discover premium homes, plots and commercial spaces with Land Marvel." },
