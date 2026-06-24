@@ -112,7 +112,7 @@ function Hero() {
         </div>
         <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-3xl">
           {[
-            ["30+", "Years"], ["200+", "Projects"], ["2000+", "Families"], ["6+", "Locations"],
+            ["30+", "Years"], ["200+", "Projects"], ["20K+", "Families"], ["6+", "Locations"],
           ].map(([n, l]) => (
             <div key={l} className="border-l-2 border-[var(--gold)] pl-4">
               <div className="font-display text-3xl font-bold">{n}</div>
