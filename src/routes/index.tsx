@@ -92,13 +92,13 @@ function Hero() {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-20 text-primary-foreground">
         <div className="max-w-3xl">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-xs font-medium tracking-wide uppercase">
-            <Star className="w-3.5 h-3.5 text-[var(--gold)]" /> Chennai's Trusted Developer
+            <Star className="w-3.5 h-3.5 text-[var(--gold)]" /> We together make financial peace in property investment
           </span>
           <h1 className="mt-6 font-display text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] drop-shadow-[0_4px_20px_rgba(0,0,0,0.45)]">
             FIND YOUR DREAM HOME , APARTMENT , VILLA PLOT, COMMERCIAL SPACE With <span className="text-[var(--gold)]">Land Marvel</span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-white/90 max-w-2xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
-            Discover premium residential and commercial properties through our seamless buying, selling, and exchange of Properties
+            Finding the right property shouldn't feel like a gamble. Premium locations. Verified projects. Zero confusion — we've helped 1000+ families invest with confidence.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 shadow-[var(--shadow-elegant)] h-12 px-7">
@@ -159,10 +159,10 @@ function About() {
         <div>
           <span className="text-xs font-semibold tracking-[0.2em] uppercase text-accent"></span>
           <h2 className="mt-3 font-display text-4xl sm:text-5xl font-bold text-primary leading-tight">
-            Building Trust. <br/>Creating Communities.
+            Your Trusted Guide.<br/>Building Financial Peace.
           </h2>
           <p className="mt-5 text-muted-foreground text-lg leading-relaxed">
-            For over 20 years, Land Marvel has delivered premium residential and commercial developments designed to enrich lives and create long-term value for families across Chennai.
+            Land Marvel is your trusted partner — 20+ years, 100+ projects, 1000+ happy families. We've walked this path with thousands of buyers across Chennai, and we'll walk it with you too. No confusion. No risk. Just clear answers and a property you'll be proud of.
           </p>
           <ul className="mt-8 grid sm:grid-cols-2 gap-4">
             {highlights.map((h) => (
@@ -493,15 +493,97 @@ function Awards() {
 }
 
 
+function ThreeStepPlan() {
+  const steps = [
+    { n: "01", title: "Book a Site Visit", desc: "Tell us what you're looking for. We'll schedule a free, no-obligation visit to properties that fit." },
+    { n: "02", title: "Get Matched to the Right Property", desc: "Our advisors guide you to the right plot, apartment, or commercial space — matched in under 48 hours." },
+    { n: "03", title: "Move In or Earn Returns", desc: "We handle documentation, registration, and end-to-end support so you invest with complete confidence." },
+  ];
+  return (
+    <section className="py-20 sm:py-28 bg-background">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionHeading eyebrow="Your Journey With Us" title="A Simple 3-Step Plan" desc="Property investment shouldn't feel overwhelming. Here's how Land Marvel makes it clear." />
+        <div className="mt-14 grid md:grid-cols-3 gap-7">
+          {steps.map((s) => (
+            <div key={s.n} className="relative bg-card rounded-2xl p-8 border border-border hover:border-accent hover:shadow-[var(--shadow-elegant)] transition-all">
+              <div className="font-display text-5xl font-bold text-[var(--gold)]/30">{s.n}</div>
+              <h3 className="mt-3 font-display text-2xl font-bold text-primary">{s.title}</h3>
+              <p className="mt-3 text-muted-foreground">{s.desc}</p>
+            </div>
+          ))}
+        </div>
+        <div className="mt-12 text-center">
+          <Button asChild size="lg" className="bg-[image:var(--gradient-primary)] h-12 px-8">
+            <Link to="/contact">Book a Free Site Visit <ArrowRight className="ml-2 w-4 h-4" /></Link>
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function SuccessVision() {
+  return (
+    <section className="py-20 sm:py-28" style={{ background: "var(--gradient-soft)" }}>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionHeading eyebrow="What's at Stake" title="Two Futures. One Decision." />
+        <div className="mt-14 grid md:grid-cols-2 gap-7 max-w-5xl mx-auto">
+          <div className="rounded-2xl p-8 border-2 border-accent bg-card shadow-[var(--shadow-card)]">
+            <div className="text-xs font-semibold tracking-[0.2em] uppercase text-accent">With Land Marvel</div>
+            <h3 className="mt-3 font-display text-2xl font-bold text-primary">Owning Premium Property. Sleeping Peacefully.</h3>
+            <p className="mt-4 text-muted-foreground leading-relaxed">
+              Imagine owning a premium property in a prime location — no stress, clear title, growing value — and finally feeling financially secure about your biggest investment.
+            </p>
+            <ul className="mt-5 space-y-2 text-sm">
+              {["Prime locations with rising value", "Verified, dispute-free titles", "End-to-end documentation handled"].map((t) => (
+                <li key={t} className="flex items-start gap-2"><Check className="w-4 h-4 mt-0.5 text-accent shrink-0" /><span>{t}</span></li>
+              ))}
+            </ul>
+          </div>
+          <div className="rounded-2xl p-8 border border-border bg-muted">
+            <div className="text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground">Without a Trusted Guide</div>
+            <h3 className="mt-3 font-display text-2xl font-bold text-primary">Every Month You Wait, Prices Rise.</h3>
+            <p className="mt-4 text-muted-foreground leading-relaxed">
+              Without the right guide, you risk a wrong location, a disputed title, or missing the project that could have changed your family's future. Prices go up. Availability goes down.
+            </p>
+            <ul className="mt-5 space-y-2 text-sm text-muted-foreground">
+              {["Wrong location, slow appreciation", "Unverified builders & unclear pricing", "No single partner end-to-end"].map((t) => (
+                <li key={t} className="flex items-start gap-2"><X className="w-4 h-4 mt-0.5 shrink-0" /><span>{t}</span></li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ResultsQuote() {
+  return (
+    <section className="py-16 bg-background">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
+        <Star className="mx-auto w-8 h-8 text-[var(--gold)]" />
+        <p className="mt-5 font-display text-2xl sm:text-3xl text-primary leading-snug">
+          "Land Marvel sold my apartment in 6 weeks at a price 8% above expectation."
+        </p>
+        <p className="mt-4 text-sm uppercase tracking-[0.2em] text-muted-foreground">Real buyers. Real results.</p>
+      </div>
+    </section>
+  );
+}
+
 function FinalCTA() {
   return (
     <section id="contact" className="py-20 sm:py-24 text-primary-foreground" style={{ background: "var(--gradient-cta)" }}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
-        <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold">Your Dream Property Awaits</h2>
-        <p className="mt-5 text-lg text-white/85">Explore premium apartments, villas, plots, and investment opportunities with Land Marvel.</p>
+        <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-[var(--gold)]">Stop Guessing. Start Owning.</span>
+        <h2 className="mt-4 font-display text-4xl sm:text-5xl lg:text-6xl font-bold">Your Dream Property Awaits</h2>
+        <p className="mt-5 text-lg text-white/85">
+          If property investment stress keeps you up at night, partnering with Land Marvel is the decision that changes that. Book a free site visit — no obligation, just clarity on your best property option.
+        </p>
         <div className="mt-10 flex flex-wrap gap-4 justify-center">
-          <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 h-12 px-7"><a href="#projects">Explore Projects</a></Button>
-          <Button asChild size="lg" variant="outline" className="border-white/40 bg-transparent text-white hover:bg-white/10 hover:text-white h-12 px-7"><a href="tel:+910000000000">Contact Us</a></Button>
+          <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 h-12 px-7"><Link to="/contact">Book a Free Site Visit</Link></Button>
+          <Button asChild size="lg" variant="outline" className="border-white/40 bg-transparent text-white hover:bg-white/10 hover:text-white h-12 px-7"><a href="tel:+910000000000">Talk To An Advisor</a></Button>
         </div>
       </div>
     </section>
@@ -522,11 +604,18 @@ function Index() {
         <BuySection />
         <SellSection />
         <ExchangeSection />
+        <ThreeStepPlan />
         <WhyChoose />
         <Categories />
         <Projects />
+        <ResultsQuote />
         <Timeline />
         <Stats />
+
+        <Locations />
+        <Awards />
+        <SuccessVision />
+        <FinalCTA />
         
         <Locations />
         <Awards />
