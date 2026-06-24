@@ -268,8 +268,8 @@ function Hero() {
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl">
           {[
             { k: "30+", v: "Years of Trust" },
-            { k: "50+", v: "Premium Projects" },
-            { k: "10K+", v: "Happy Families" },
+            { k: "100+", v: "Premium Projects" },
+            { k: "20K+", v: "Happy Families" },
             { k: "100%", v: "Sustainability Focus" },
           ].map((s) => (
             <div
