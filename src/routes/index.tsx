@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import {
   Menu, X, Phone, Mail, MapPin, ArrowRight, Check, Shield, Building2,
   HardHat, Handshake, Home, Building, Trees, Briefcase, Award,
-  Trophy, Star, Facebook, Instagram, Twitter, Linkedin, ChevronRight,
+  Trophy, Star, Facebook, Instagram, Twitter, Linkedin,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
