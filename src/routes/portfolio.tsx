@@ -84,8 +84,7 @@ function PortfolioPage() {
         cta="Explore Residential Project"
       />
       <SplitSection
-        image={plots}
-        alt="Plotted development aerial"
+        video={plotVideo.url}
         imageLeft={false}
         bg="bg-[#F8FAFC]"
         eyebrow="Plotted Developments"
