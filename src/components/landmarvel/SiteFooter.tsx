@@ -47,7 +47,7 @@ export function SiteFooter() {
         <div>
           <h4 className="font-display text-lg font-semibold">Get in Touch</h4>
           <ul className="mt-4 space-y-3 text-sm text-white/70">
-            <li className="flex items-start gap-2"><MapPin className="w-4 h-4 mt-0.5 text-[var(--gold)]" /><span><br /></span></li>
+            <li className="flex items-start gap-2"><MapPin className="w-4 h-4 mt-0.5 text-[var(--gold)]" /><span>{"\n"}</span></li>
             <li className="flex items-center gap-2"><Phone className="w-4 h-4 text-[var(--gold)]" /><span>+91 86677 69670</span></li>
             <li className="flex items-center gap-2"><Mail className="w-4 h-4 text-[var(--gold)]" /><span>sup@landmarvel.com</span></li>
           </ul>
