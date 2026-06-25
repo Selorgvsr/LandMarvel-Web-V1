@@ -125,8 +125,7 @@ function PortfolioPage() {
         cta="Explore Commercial Project"
       />
       <SplitSection
-        image={interior}
-        alt="Premium interiors"
+        video={interiorVideo.url}
         imageLeft
         bg="bg-[#F8FAFC]"
         eyebrow="Interior Solutions"
