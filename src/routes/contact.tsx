@@ -147,10 +147,10 @@ function ContactPage() {
             </ul>
             <div className="flex flex-wrap gap-3 pt-2">
               <Button asChild size="lg" className="h-12 rounded-xl bg-primary hover:bg-primary/90">
-                <a href="tel:+919444126240"><Phone className="w-4 h-4" /> Call Now</a>
+                <a href="tel:+918667769670"><Phone className="w-4 h-4" /> Call Now</a>
               </Button>
               <Button asChild size="lg" variant="outline" className="h-12 rounded-xl border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                <a href="mailto:vsr@landmarvel.com"><Mail className="w-4 h-4" /> Email Us</a>
+                <a href="mailto:support@landmarvel.com"><Mail className="w-4 h-4" /> Email Us</a>
               </Button>
             </div>
           </div>
