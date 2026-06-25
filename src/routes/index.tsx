@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import {
   Menu, X, Phone, Mail, MapPin, ArrowRight, Check, Shield, Building2,
   HardHat, Handshake, Home, Building, Trees, Briefcase, Award,
-  Trophy, Star, Facebook, Instagram, Twitter, Linkedin, ChevronRight,
+  Trophy, Star, Facebook, Instagram, Twitter, Linkedin,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -382,9 +382,9 @@ function Projects() {
                 <span className="absolute top-4 left-4 bg-white/95 text-primary text-xs font-semibold px-3 py-1 rounded-full">{p.units}</span>
               </div>
               <div className="p-6">
-                <div className="flex items-center gap-1.5 text-accent text-sm"><MapPin className="w-4 h-4" />{p.location}</div>
-                <h3 className="mt-2 font-display text-2xl font-bold text-primary">{p.title}</h3>
-                <a href="#" className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-foreground hover:text-accent">View Project <ChevronRight className="w-4 h-4" /></a>
+              <div className="text-accent text-sm">{p.location}</div>
+              <h3 className="mt-2 font-display text-2xl font-bold text-primary">{p.title}</h3>
+              <a href="#" className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-foreground hover:text-accent">View Project</a>
               </div>
             </article>
           ))}
