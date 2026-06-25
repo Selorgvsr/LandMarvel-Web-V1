@@ -147,10 +147,10 @@ function ContactPage() {
             </ul>
             <div className="flex flex-wrap gap-3 pt-2">
               <Button asChild size="lg" className="h-12 rounded-xl bg-primary hover:bg-primary/90">
-                <a href="tel:+919444126240"><Phone className="w-4 h-4" /> Call Now</a>
+                <a href="tel:+918667769670"><Phone className="w-4 h-4" /> Call Now</a>
               </Button>
               <Button asChild size="lg" variant="outline" className="h-12 rounded-xl border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                <a href="mailto:vsr@landmarvel.com"><Mail className="w-4 h-4" /> Email Us</a>
+                <a href="mailto:support@landmarvel.com"><Mail className="w-4 h-4" /> Email Us</a>
               </Button>
             </div>
           </div>
@@ -174,8 +174,8 @@ function ContactPage() {
             <div className="space-y-6">
               {[
                 { icon: MapPin, title: "Visit Our Office", lines: ["Land Marvel Group", "Chennai, Tamil Nadu"] },
-                { icon: Phone, title: "Call Us", lines: ["+91 94441 26240"] },
-                { icon: Mail, title: "Email Us", lines: ["vsr@landmarvel.com"] },
+                { icon: Phone, title: "Call Us", lines: ["+91 86677 69670"] },
+                { icon: Mail, title: "Email Us", lines: ["support@landmarvel.com"] },
                 { icon: Clock, title: "Business Hours", lines: ["Monday – Saturday", "9:00 AM – 6:00 PM"] },
               ].map((c) => (
                 <div key={c.title} className="flex gap-4 p-5 rounded-2xl bg-card border border-border hover:shadow-[var(--shadow-card)] transition-shadow">
@@ -209,10 +209,10 @@ function ContactPage() {
             <p className="text-primary-foreground/85 max-w-2xl mx-auto">Our property advisors are available to guide you through buying, selling, exchanging, and investing in premium real estate.</p>
             <div className="flex flex-wrap gap-3 justify-center pt-2">
               <Button asChild size="lg" className="h-12 rounded-xl bg-[var(--gold)] text-primary hover:opacity-90 font-semibold">
-                <a href="tel:+919444126240"><Phone className="w-4 h-4" /> Call Now</a>
+                <a href="tel:+918667769670"><Phone className="w-4 h-4" /> Call Now</a>
               </Button>
               <Button asChild size="lg" variant="outline" className="h-12 rounded-xl bg-transparent border-white text-white hover:bg-white hover:text-primary">
-                <a href="mailto:vsr@landmarvel.com"><Mail className="w-4 h-4" /> Email Us</a>
+                <a href="mailto:support@landmarvel.com"><Mail className="w-4 h-4" /> Email Us</a>
               </Button>
             </div>
           </div>
