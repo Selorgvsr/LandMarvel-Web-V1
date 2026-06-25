@@ -174,8 +174,8 @@ function ContactPage() {
             <div className="space-y-6">
               {[
                 { icon: MapPin, title: "Visit Our Office", lines: ["Land Marvel Group", "Chennai, Tamil Nadu"] },
-                { icon: Phone, title: "Call Us", lines: ["+91 94441 26240"] },
-                { icon: Mail, title: "Email Us", lines: ["vsr@landmarvel.com"] },
+                { icon: Phone, title: "Call Us", lines: ["+91 86677 69670"] },
+                { icon: Mail, title: "Email Us", lines: ["support@landmarvel.com"] },
                 { icon: Clock, title: "Business Hours", lines: ["Monday – Saturday", "9:00 AM – 6:00 PM"] },
               ].map((c) => (
                 <div key={c.title} className="flex gap-4 p-5 rounded-2xl bg-card border border-border hover:shadow-[var(--shadow-card)] transition-shadow">
