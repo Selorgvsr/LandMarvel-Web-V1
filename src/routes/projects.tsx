@@ -129,7 +129,7 @@ function CategorySection({ icon, title, description, projects }: { icon: string;
     <div className="mb-20">
       <div className="mb-10 text-center">
         <h3 className="font-display text-3xl md:text-4xl font-bold text-primary">
-          <span className="mr-2">{icon}</span>{title}
+          {title}
         </h3>
         <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">{description}</p>
       </div>

@@ -146,7 +146,6 @@ function CategorySection({ id, eyebrow, title, items, alt = false }: { id: strin
     <section id={id} className={`py-16 sm:py-20 ${alt ? "" : "bg-background"}`} style={alt ? { background: "var(--gradient-soft)" } : undefined}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-3">
-          {eyebrow && <span className="text-2xl">{eyebrow}</span>}
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-primary">{title}</h2>
           <div className="hidden sm:block flex-1 h-px bg-border ml-4" />
         </div>
