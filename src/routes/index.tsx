@@ -705,10 +705,7 @@ function PortfolioShowcase() {
 
               {/* content */}
               <div className="relative p-7 text-white">
-                <div className="w-14 h-14 rounded-2xl bg-white/15 backdrop-blur-md border border-white/25 grid place-items-center text-3xl shadow-lg">
-                  <span>{c.emoji}</span>
-                </div>
-                <h3 className="mt-5 font-display text-2xl font-bold leading-tight">{c.title}</h3>
+                <h3 className="font-display text-2xl font-bold leading-tight">{c.title}</h3>
                 <p className="mt-3 text-sm text-white/85 leading-relaxed">{c.desc}</p>
                 <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-white">
                   <span className="px-4 py-2 rounded-full bg-white/15 backdrop-blur-md border border-white/30 group-hover:bg-white group-hover:text-primary transition-colors">
