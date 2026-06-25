@@ -23,7 +23,7 @@ import { SiteHeader } from "@/components/landmarvel/SiteHeader";
 
 import hero from "@/assets/portfolio-hero.jpg";
 import residential from "@/assets/portfolio-residential.jpg";
-import plots from "@/assets/portfolio-plots.jpg";
+import plotVideo from "@/assets/plot-video.mp4.asset.json";
 import commercial from "@/assets/portfolio-commercial.jpg";
 import interior from "@/assets/portfolio-interior.jpg";
 import organic from "@/assets/portfolio-organic.jpg";
@@ -84,8 +84,7 @@ function PortfolioPage() {
         cta="Explore Residential Project"
       />
       <SplitSection
-        image={plots}
-        alt="Plotted development aerial"
+        video={plotVideo.url}
         imageLeft={false}
         bg="bg-[#F8FAFC]"
         eyebrow="Plotted Developments"
