@@ -23,7 +23,7 @@ import { SiteHeader } from "@/components/landmarvel/SiteHeader";
 
 import hero from "@/assets/portfolio-hero.jpg";
 import residential from "@/assets/portfolio-residential.jpg";
-import plots from "@/assets/portfolio-plots.jpg";
+import plotVideo from "@/assets/plot-video.mp4.asset.json";
 import commercial from "@/assets/portfolio-commercial.jpg";
 import interior from "@/assets/portfolio-interior.jpg";
 import organic from "@/assets/portfolio-organic.jpg";
