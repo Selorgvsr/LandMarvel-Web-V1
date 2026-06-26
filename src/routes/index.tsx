@@ -1,5 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState, useEffect } from "react";
 import {
   Menu, X, Phone, Mail, MapPin, ArrowRight, Check, Shield, Building2,
   HardHat, Handshake, Home, Building, Trees, Briefcase, Award,
@@ -10,7 +9,6 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { SiteFooter } from "@/components/landmarvel/SiteFooter";
 import { SiteHeader } from "@/components/landmarvel/SiteHeader";
 
-import heroImg from "@/assets/hero-skyline.jpg";
 import aboutImg from "@/assets/about-building.jpg";
 import catVilla from "@/assets/cat-villa.jpg";
 import catApartment from "@/assets/cat-apartment.jpg";
@@ -20,15 +18,10 @@ import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
 
-import home1 from "@/assets/home-1.jpeg.asset.json";
-import home2 from "@/assets/home-2.jpeg.asset.json";
-import home3 from "@/assets/home-3.jpeg.asset.json";
-import home4 from "@/assets/home-4.jpeg.asset.json";
+import homeHeroVideo from "@/assets/home-hero-video.mp4.asset.json";
 import buySectionImg from "@/assets/buy-section.jpg";
 import sellSectionImg from "@/assets/sell-section.jpg";
 import exchangeSectionImg from "@/assets/exchange-section.jpg";
-
-const heroSlides = [home1.url, home2.url, home3.url, home4.url];
 
 export const Route = createFileRoute("/")({
   head: () => ({
