@@ -10,8 +10,8 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { SiteFooter } from "@/components/landmarvel/SiteFooter";
 import { SiteHeader } from "@/components/landmarvel/SiteHeader";
 
-import heroImg from "@/assets/hero-skyline.jpg";
 import aboutImg from "@/assets/about-building.jpg";
+import projectHeroVideo from "@/assets/project-hero-video.mp4.asset.json";
 import ctaImg from "@/assets/buy-cta.jpg";
 import plot1 from "@/assets/plot-1.jpg";
 import plot2 from "@/assets/plot-2.jpg";
@@ -33,7 +33,7 @@ export const Route = createFileRoute("/projects")({
       { name: "description", content: "Explore Land Marvel's ongoing developments: premium plots, residential communities and commercial spaces across Chennai's fastest-growing locations." },
       { property: "og:title", content: "Our Projects | Land Marvel" },
       { property: "og:description", content: "Ongoing plot, residential and commercial projects by Land Marvel in Chennai." },
-      { property: "og:image", content: heroImg },
+      { property: "og:image", content: aboutImg },
     ],
     links: [{ rel: "canonical", href: "/projects" }],
   }),
@@ -146,35 +146,38 @@ function ProjectsPage() {
       <Header />
 
       {/* HERO */}
-      <section className="relative overflow-hidden bg-[image:var(--gradient-soft)]">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <span className="inline-block px-4 py-1.5 rounded-full bg-accent/10 text-accent text-sm font-semibold">Land Marvel Developments</span>
-              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">Our Projects</h1>
-              <p className="text-lg text-muted-foreground max-w-xl">
-                Discover Land Marvel's ongoing developments across premium plots, residential communities, and commercial spaces in Chennai's fastest-growing locations.
-              </p>
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {highlights.map((h) => (
-                  <li key={h} className="flex items-center gap-2 text-foreground">
-                    <span className="grid place-items-center w-6 h-6 rounded-full bg-accent/15 text-accent"><Check className="w-3.5 h-3.5" /></span>
-                    <span className="font-medium">{h}</span>
-                  </li>
-                ))}
-              </ul>
-              <div className="flex flex-wrap gap-3 pt-2">
-                <Button size="lg" className="h-[52px] rounded-xl bg-[image:var(--gradient-primary)] hover:opacity-90 px-7">
-                  Explore Projects <ArrowRight className="w-4 h-4" />
-                </Button>
-                <Button size="lg" variant="outline" className="h-[52px] rounded-xl border-primary text-primary hover:bg-primary hover:text-primary-foreground px-7">
-                  Book Site Visit
-                </Button>
-              </div>
+      <section className="relative h-screen min-h-[640px] w-full overflow-hidden">
+        <video src={projectHeroVideo.url} autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover scale-105" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+        <div className="relative z-10 h-full container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center text-primary-foreground">
+          <div className="max-w-3xl">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-xs font-medium tracking-[0.2em] uppercase">
+              <span className="w-1.5 h-1.5 rounded-full bg-[var(--gold)]" /> Land Marvel Developments
+            </span>
+            <h1 className="mt-6 font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)]">
+              Our <span className="text-[var(--gold)]">Projects</span>
+            </h1>
+            <p className="mt-6 text-lg sm:text-xl text-white/90 max-w-2xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
+              Discover Land Marvel's ongoing developments across premium plots, residential communities, and commercial spaces in Chennai's fastest-growing locations.
+            </p>
+            <div className="mt-10 flex flex-wrap gap-4">
+              <Button size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-13 px-7 rounded-xl shadow-[var(--shadow-elegant)]">
+                Explore Projects <ArrowRight className="ml-2 w-4 h-4" />
+              </Button>
+              <Button size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-13 px-7 rounded-xl backdrop-blur">
+                Book Site Visit
+              </Button>
             </div>
-            <div className="relative">
-              <div className="absolute -inset-4 bg-[image:var(--gradient-primary)] opacity-20 blur-3xl rounded-[2rem]" />
-              <img src={heroImg} alt="Land Marvel luxury township" className="relative rounded-[2rem] shadow-[var(--shadow-elegant)] w-full h-[420px] lg:h-[520px] object-cover" />
+            <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-3xl">
+              {[
+                ["30+", "Years"], ["200+", "Projects"], ["30+", "Ongoing"], ["2000+", "Happy Customers"],
+              ].map(([n, l]) => (
+                <div key={l} className="border-l-2 border-[var(--gold)] pl-4">
+                  <div className="font-display text-3xl font-bold">{n}</div>
+                  <div className="text-xs text-white/85 uppercase tracking-wider">{l}</div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
