@@ -33,7 +33,7 @@ export const Route = createFileRoute("/projects")({
       { name: "description", content: "Explore Land Marvel's ongoing developments: premium plots, residential communities and commercial spaces across Chennai's fastest-growing locations." },
       { property: "og:title", content: "Our Projects | Land Marvel" },
       { property: "og:description", content: "Ongoing plot, residential and commercial projects by Land Marvel in Chennai." },
-      { property: "og:image", content: heroImg },
+      { property: "og:image", content: aboutImg },
     ],
     links: [{ rel: "canonical", href: "/projects" }],
   }),
