@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { z } from "zod";
 import {
-  Menu, MapPin, Phone, Mail, Clock, Check, Facebook, Instagram, Twitter, Linkedin, Send,
+  MapPin, Phone, Mail, Clock, Check, Facebook, Instagram, Twitter, Linkedin, Send, Star,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -16,7 +16,7 @@ import { toast } from "sonner";
 import { SiteFooter } from "@/components/landmarvel/SiteFooter";
 import { SiteHeader } from "@/components/landmarvel/SiteHeader";
 
-import heroImg from "@/assets/about-building.jpg";
+import contactHeroVideo from "@/assets/contact-hero-video.mp4.asset.json";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
