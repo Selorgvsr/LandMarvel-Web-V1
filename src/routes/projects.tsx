@@ -10,8 +10,8 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { SiteFooter } from "@/components/landmarvel/SiteFooter";
 import { SiteHeader } from "@/components/landmarvel/SiteHeader";
 
-import heroImg from "@/assets/hero-skyline.jpg";
 import aboutImg from "@/assets/about-building.jpg";
+import projectHeroVideo from "@/assets/project-hero-video.mp4.asset.json";
 import ctaImg from "@/assets/buy-cta.jpg";
 import plot1 from "@/assets/plot-1.jpg";
 import plot2 from "@/assets/plot-2.jpg";
