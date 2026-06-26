@@ -1,3 +1,4 @@
+import buyHeroVideoAsset from "@/assets/buy-hero-video.mp4.asset.json";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
 import {
