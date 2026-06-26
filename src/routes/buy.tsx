@@ -161,7 +161,7 @@ function CategorySection({ id, eyebrow, title, items, alt = false }: { id: strin
 function HeroSection() {
   return (
     <section className="relative h-screen min-h-[640px] w-full overflow-hidden">
-      <video src={buyHeroVideoAsset.url} autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover scale-105" />
+      <video src={buyHeroVideoAsset.url} autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover scale-105" style={{ filter: 'brightness(1.2) contrast(1.15) saturate(1.1)' }} />
       <div className="absolute inset-0 bg-gradient-to-r from-black/35 via-black/15 to-transparent" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
       <div className="relative z-10 h-full container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center text-primary-foreground">
