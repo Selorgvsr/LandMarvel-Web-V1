@@ -20,10 +20,12 @@ import { SiteHeader } from "@/components/landmarvel/SiteHeader";
 
 import sellHero from "@/assets/sell-hero.jpg";
 import sellCta from "@/assets/sell-cta.jpg";
+import sellHeroVideo from "@/assets/sell-hero-video.mp4.asset.json";
 import catVilla from "@/assets/cat-villa.jpg";
 import catApartment from "@/assets/cat-apartment.jpg";
 import catPlot from "@/assets/cat-plot.jpg";
 import catCommercial from "@/assets/cat-commercial.jpg";
+
 
 export const Route = createFileRoute("/sell")({
   head: () => ({
