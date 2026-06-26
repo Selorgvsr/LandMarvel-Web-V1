@@ -127,36 +127,39 @@ function ContactPage() {
       <Header />
 
       {/* HERO */}
-      <section className="relative bg-gradient-to-b from-primary/5 to-background py-16 lg:py-24">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-[var(--gold)]/15 text-[var(--gold)] uppercase tracking-wider">Contact Us</span>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
-              Get In Touch With Land Marvel
+      <section className="relative h-screen min-h-[640px] w-full overflow-hidden">
+        <video src={contactHeroVideo.url} autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover scale-105" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+        <div className="relative z-10 h-full container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center text-primary-foreground">
+          <div className="max-w-3xl">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-xs font-medium tracking-[0.2em] uppercase">
+              <Star className="w-3.5 h-3.5 text-[var(--gold)]" /> Get in Touch
+            </span>
+            <h1 className="mt-6 font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)]">
+              Contact <span className="text-[var(--gold)]">Land Marvel</span>
             </h1>
-            <p className="text-lg text-muted-foreground max-w-xl">
+            <p className="mt-6 text-lg sm:text-xl text-white/90 max-w-2xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
               Whether you're looking to buy, sell, exchange properties, or learn more about our ongoing projects, our team is here to assist you every step of the way.
             </p>
-            <ul className="grid sm:grid-cols-2 gap-3 pt-2">
-              {["Expert Property Advisors", "30+ Years of Trust", "Premium Locations", "End-to-End Support"].map((h) => (
-                <li key={h} className="flex items-center gap-2 text-sm text-foreground/85">
-                  <span className="grid place-items-center w-6 h-6 rounded-full bg-primary/10 text-primary"><Check className="w-3.5 h-3.5" /></span>
-                  {h}
-                </li>
-              ))}
-            </ul>
-            <div className="flex flex-wrap gap-3 pt-2">
-              <Button asChild size="lg" className="h-12 rounded-xl bg-primary hover:bg-primary/90">
+            <div className="mt-10 flex flex-wrap gap-4">
+              <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-13 px-7 rounded-xl shadow-[var(--shadow-elegant)]">
                 <a href="tel:+918667769670"><Phone className="w-4 h-4" /> Call Now</a>
               </Button>
-              <Button asChild size="lg" variant="outline" className="h-12 rounded-xl border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+              <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-13 px-7 rounded-xl backdrop-blur">
                 <a href="mailto:support@landmarvel.com"><Mail className="w-4 h-4" /> Email Us</a>
               </Button>
             </div>
-          </div>
-          <div className="relative">
-            <div className="absolute -inset-3 rounded-3xl bg-[image:var(--gradient-primary)] opacity-20 blur-2xl" />
-            <img src={heroImg} alt="Land Marvel office and property advisors" className="relative w-full h-[420px] lg:h-[520px] object-cover rounded-3xl shadow-[var(--shadow-elegant)]" />
+            <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-3xl">
+              {[
+                ["30+", "Years"], ["200+", "Projects"], ["2K+", "Happy Families"], ["24/7", "Support"],
+              ].map(([n, l]) => (
+                <div key={l} className="border-l-2 border-[var(--gold)] pl-4">
+                  <div className="font-display text-3xl font-bold">{n}</div>
+                  <div className="text-xs text-white/85 uppercase tracking-wider">{l}</div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
