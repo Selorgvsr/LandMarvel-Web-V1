@@ -25,7 +25,7 @@ export const Route = createFileRoute("/contact")({
       { name: "description", content: "Get in touch with Land Marvel for buying, selling, exchanging properties, or to learn more about our projects in Chennai." },
       { property: "og:title", content: "Contact Land Marvel" },
       { property: "og:description", content: "Talk to our property advisors about plots, residential and commercial real estate in Chennai." },
-      { property: "og:image", content: heroImg },
+      { property: "og:image", content: contactHeroVideo.url },
     ],
     links: [{ rel: "canonical", href: "/contact" }],
   }),
