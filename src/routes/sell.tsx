@@ -270,46 +270,42 @@ function SellPage() {
     <div className="min-h-screen bg-background text-foreground">
       <Header />
       <main>
-        {/* Hero */}
-        <section className="relative overflow-hidden" style={{ background: "var(--gradient-soft)" }}>
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-accent">Sell Property</span>
-              <h1 className="mt-4 font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-primary leading-[1.05]">
+        {/* Hero — Full-screen video */}
+        <section className="relative h-screen min-h-[640px] w-full overflow-hidden">
+          <video src={sellHeroVideo.url} autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover scale-105" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+          <div className="relative z-10 h-full container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center text-primary-foreground">
+            <div className="max-w-3xl">
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-xs font-medium tracking-[0.2em] uppercase">
+                <span className="w-1.5 h-1.5 rounded-full bg-[var(--gold)]" /> Sell Property
+              </span>
+              <h1 className="mt-6 font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)] animate-in fade-in slide-in-from-bottom-4 duration-700">
                 Sell Your Property With <span className="text-[var(--gold)]">Confidence</span>
               </h1>
-              <p className="mt-6 text-lg text-muted-foreground max-w-xl whitespace-pre-line">
-                Own a land, building, apartment, villa, or commercial property? Land Marvel offers a simple and transparent way to sell your property directly to us.{"\n\n"}
+              <p className="mt-6 text-lg sm:text-xl text-white/90 max-w-2xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] whitespace-pre-line">
+                Own a land, building, apartment, villa, or commercial property? Land Marvel offers a simple and transparent way to sell your property directly to us.
               </p>
-              <div className="mt-8 flex flex-wrap gap-4">
-                <Button asChild size="lg" className="bg-[image:var(--gradient-primary)] hover:opacity-90 h-13 px-7 rounded-xl shadow-[var(--shadow-elegant)]">
+              <div className="mt-10 flex flex-wrap gap-4">
+                <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-13 px-7 rounded-xl shadow-[var(--shadow-elegant)]">
                   <a href="#form">Sell Property Now <ArrowRight className="ml-2 w-4 h-4" /></a>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground h-13 px-7 rounded-xl">
-                  <a href="tel:+910000000000"><Phone className="mr-2 w-4 h-4" />Talk To Expert</a>
+                <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-13 px-7 rounded-xl backdrop-blur">
+                  <a href="tel:+918667769670"><Phone className="mr-2 w-4 h-4" />Talk To Expert</a>
                 </Button>
               </div>
-              <div className="mt-10 grid grid-cols-3 gap-6 max-w-md">
+              <div className="mt-12 grid grid-cols-3 gap-6 max-w-md">
                 {[["2000+", "Listings"], ["2000+", "Sold"], ["30+", "Years"]].map(([n, l]) => (
-                  <div key={l}>
-                    <div className="font-display text-3xl font-bold text-primary">{n}</div>
-                    <div className="text-xs text-muted-foreground uppercase tracking-wider">{l}</div>
+                  <div key={l} className="border-l-2 border-[var(--gold)] pl-4">
+                    <div className="font-display text-3xl font-bold">{n}</div>
+                    <div className="text-xs text-white/85 uppercase tracking-wider">{l}</div>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="relative">
-              <img src={sellHero} alt="Premium luxury villa" width={1536} height={1024} className="rounded-3xl shadow-[var(--shadow-elegant)] w-full h-[420px] lg:h-[540px] object-cover" />
-              <div className="absolute -bottom-6 -left-6 hidden sm:block bg-[image:var(--gradient-primary)] text-primary-foreground rounded-2xl px-6 py-5 shadow-[var(--shadow-elegant)]">
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-[var(--gold)]" />
-                  <div className="font-display text-xl font-bold">Verified Buyers</div>
-                </div>
-                <div className="text-xs text-white/80 uppercase tracking-wider mt-1">Faster, secure closures</div>
-              </div>
-            </div>
           </div>
         </section>
+
 
         <SellForm />
         <Process />
