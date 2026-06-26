@@ -1,5 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState, useEffect } from "react";
 import {
   Menu, X, Phone, Mail, MapPin, ArrowRight, Check, Shield, Building2,
   HardHat, Handshake, Home, Building, Trees, Briefcase, Award,
@@ -10,7 +9,6 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { SiteFooter } from "@/components/landmarvel/SiteFooter";
 import { SiteHeader } from "@/components/landmarvel/SiteHeader";
 
-import heroImg from "@/assets/hero-skyline.jpg";
 import aboutImg from "@/assets/about-building.jpg";
 import catVilla from "@/assets/cat-villa.jpg";
 import catApartment from "@/assets/cat-apartment.jpg";
@@ -20,15 +18,10 @@ import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
 
-import home1 from "@/assets/home-1.jpeg.asset.json";
-import home2 from "@/assets/home-2.jpeg.asset.json";
-import home3 from "@/assets/home-3.jpeg.asset.json";
-import home4 from "@/assets/home-4.jpeg.asset.json";
+import homeHeroVideo from "@/assets/home-hero-video.mp4.asset.json";
 import buySectionImg from "@/assets/buy-section.jpg";
 import sellSectionImg from "@/assets/sell-section.jpg";
 import exchangeSectionImg from "@/assets/exchange-section.jpg";
-
-const heroSlides = [home1.url, home2.url, home3.url, home4.url];
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -73,37 +66,26 @@ function Header() {
 }
 
 function Hero() {
-  const [idx, setIdx] = useState(0);
-  useEffect(() => {
-    const id = setInterval(() => setIdx((i) => (i + 1) % heroSlides.length), 5000);
-    return () => clearInterval(id);
-  }, []);
   return (
-    <section id="top" className="relative h-screen min-h-[640px] w-full flex items-center overflow-hidden">
-      {heroSlides.map((src, i) => (
-        <img
-          key={src}
-          src={src}
-          alt=""
-          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${i === idx ? "opacity-100" : "opacity-0"}`}
-        />
-      ))}
+    <section id="top" className="relative h-screen min-h-[640px] w-full overflow-hidden">
+      <video src={homeHeroVideo.url} autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover scale-105" />
       <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/15 to-transparent" />
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-20 text-primary-foreground">
+      <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+      <div className="relative z-10 h-full container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center text-primary-foreground">
         <div className="max-w-3xl">
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-xs font-medium tracking-wide uppercase">
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-xs font-medium tracking-wide uppercase animate-in fade-in slide-in-from-bottom-4 duration-700">
             <Star className="w-3.5 h-3.5 text-[var(--gold)]" /> We together make financial peace in property investment
           </span>
-          <h1 className="mt-6 font-display text-[1.5rem] sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.05] break-words drop-shadow-[0_4px_20px_rgba(0,0,0,0.45)]">
+          <h1 className="mt-6 font-display text-[1.5rem] sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.05] break-words drop-shadow-[0_4px_20px_rgba(0,0,0,0.45)] animate-in fade-in slide-in-from-bottom-4 duration-700">
             FIND YOUR DREAM HOME- APARTMENT- VILLA-<br />
             PLOTTED LAYOUT-<br />
             COMMERCIAL SPACE -<br />
             With&nbsp;<span className="text-[var(--gold)]">Land Marvel</span>
           </h1>
-          <p className="mt-6 text-lg sm:text-xl text-white/90 max-w-2xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
+          <p className="mt-6 text-lg sm:text-xl text-white/90 max-w-2xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] animate-in fade-in slide-in-from-bottom-4 duration-700">
             Finding the right property shouldn't feel like a gamble. Premium locations. Verified projects. Zero confusion — we've helped 20,000+ families invest with confidence.
           </p>
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-10 flex flex-wrap gap-4 animate-in fade-in slide-in-from-bottom-4 duration-700">
             <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 shadow-[var(--shadow-elegant)] h-12 px-7">
               <a href="#projects">Explore Project <ArrowRight className="ml-2 w-4 h-4" /></a>
             </Button>
@@ -111,27 +93,17 @@ function Hero() {
               <a href="#contact">Contact Us</a>
             </Button>
           </div>
+          <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-3xl animate-in fade-in slide-in-from-bottom-4 duration-700">
+            {[
+              ["30+", "Years"], ["200+", "Projects"], ["20K+", "Families"], ["6+", "Locations"],
+            ].map(([n, l]) => (
+              <div key={l} className="border-l-2 border-[var(--gold)] pl-4">
+                <div className="font-display text-3xl font-bold">{n}</div>
+                <div className="text-sm text-white/85">{l}</div>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-3xl">
-          {[
-            ["30+", "Years"], ["200+", "Projects"], ["20K+", "Families"], ["6+", "Locations"],
-          ].map(([n, l]) => (
-            <div key={l} className="border-l-2 border-[var(--gold)] pl-4">
-              <div className="font-display text-3xl font-bold">{n}</div>
-              <div className="text-sm text-white/85">{l}</div>
-            </div>
-          ))}
-        </div>
-      </div>
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2">
-        {heroSlides.map((_, i) => (
-          <button
-            key={i}
-            onClick={() => setIdx(i)}
-            aria-label={`Slide ${i + 1}`}
-            className={`h-2 rounded-full transition-all ${i === idx ? "w-8 bg-[var(--gold)]" : "w-2 bg-white/50"}`}
-          />
-        ))}
       </div>
     </section>
   );
