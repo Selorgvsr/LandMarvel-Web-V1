@@ -171,7 +171,7 @@ const residential: Property[] = [
 
 const commercial: Property[] = [
   { badge: "Investment Hotspot", img: com1, title: "Land Marvel Business Park", price: "₹50L – ₹5 Cr", location: "Guindy", area: "7 Acres", units: "120 Units", type: "Office Spaces" },
-  { badge: "Premium", img: com2, title: "Land Marvel Trade Centre", price: "₹60L – ₹4 Cr", location: "OMR", area: "5 Acres", units: "150 Units", type: "Retail + Office" },
+  { badge: "Premium", img: com2, title: "Land Marvel Trade Centre", price: "₹60L – ₹4 Cr", location: "Urapakkam", area: "5 Acres", units: "150 Units", type: "Retail + Office" },
   { badge: "New Launch", img: com3, title: "Land Marvel Corporate Hub", price: "₹70L – ₹6 Cr", location: "Porur", area: "6 Acres", units: "200 Units", type: "Business Suites" },
   { badge: "Limited Units", img: com4, title: "Land Marvel Commercial Square", price: "₹40L – ₹2 Cr", location: "Velachery", area: "3 Acres", units: "100 Units", type: "Retail Shops" },
 ];

@@ -84,7 +84,7 @@ const residentialProjects: Project[] = [
 
 const commercialProjects: Project[] = [
   { image: com1, badge: "New Launch", name: "Land Marvel Business Park", price: "₹50L – ₹5 Cr", location: "Guindy", area: "7 Acres", units: "120 Units", possession: "Dec 2026", type: "Office Spaces" },
-  { image: com2, badge: "Hot Selling", name: "Land Marvel Trade Centre", price: "₹60L – ₹4 Cr", location: "OMR", area: "8 Acres", units: "150 Units", possession: "Mar 2027", type: "Retail + Office" },
+  { image: com2, badge: "Hot Selling", name: "Land Marvel Trade Centre", price: "₹60L – ₹4 Cr", location: "Urapakkam", area: "8 Acres", units: "150 Units", possession: "Mar 2027", type: "Retail + Office" },
   { image: com3, badge: "Premium", name: "Land Marvel Corporate Hub", price: "₹80L – ₹6 Cr", location: "Porur", area: "10 Acres", units: "200 Units", possession: "Jun 2027", type: "Business Suites" },
   { image: com4, badge: "Limited Units", name: "Land Marvel Commercial Square", price: "₹40L – ₹3 Cr", location: "Velachery", area: "4 Acres", units: "100 Units", possession: "Sep 2026", type: "Retail Shops" },
 ];
