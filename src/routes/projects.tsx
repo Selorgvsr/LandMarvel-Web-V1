@@ -171,7 +171,7 @@ function ProjectsPage() {
             </div>
             <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-3xl">
               {[
-                ["30+", "Years"], ["200+", "Projects"], ["30+", "Ongoing"], ["2000+", "Happy Customers"],
+                ["30+", "Years"], ["200+", "Projects"], ["30+", "Ongoing"], ["20K+", "Happy Customers"],
               ].map(([n, l]) => (
                 <div key={l} className="border-l-2 border-[var(--gold)] pl-4">
                   <div className="font-display text-3xl font-bold">{n}</div>
@@ -237,7 +237,7 @@ function ProjectsPage() {
               { icon: Award, value: "30+", label: "Years of Experience" },
               { icon: TrendingUp, value: "200+", label: "Completed Projects" },
               { icon: Building2, value: "30+", label: "Ongoing Projects" },
-              { icon: Users, value: "2000+", label: "Happy Customers" },
+              { icon: Users, value: "20K+", label: "Happy Customers" },
             ].map((s) => (
               <div key={s.label} className="space-y-2">
                 <s.icon className="w-8 h-8 mx-auto text-[var(--gold)]" />
