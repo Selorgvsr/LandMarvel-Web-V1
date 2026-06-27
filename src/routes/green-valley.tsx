@@ -13,6 +13,9 @@ import plot1 from "@/assets/plot-1.jpg";
 import plot2 from "@/assets/plot-2.jpg";
 import plot3 from "@/assets/plot-3.jpg";
 import plot4 from "@/assets/plot-4.jpg";
+import greenValleyLayoutAsset from "@/assets/green-valley-layout.png.asset.json";
+
+const greenValleyLayout = greenValleyLayoutAsset.url;
 
 export const Route = createFileRoute("/green-valley")({
   head: () => ({
@@ -122,7 +125,7 @@ function GreenValleyPage() {
           {/* Hero image card */}
           <div className="bg-card rounded-3xl overflow-hidden shadow-[var(--shadow-elegant)] border border-border">
             <div className="relative">
-              <img src={activeItem.img} alt={activeItem.badge} className="w-full h-[320px] sm:h-[460px] object-cover" />
+              <img src={greenValleyLayout} alt="Green Valley Township master layout plan" className="w-full h-[320px] sm:h-[460px] object-cover" />
               <div className="absolute top-5 left-5 px-4 py-2 rounded-lg bg-black/40 backdrop-blur text-[var(--gold)] font-bold text-lg sm:text-2xl drop-shadow">
                 {activeItem.badge}
               </div>
