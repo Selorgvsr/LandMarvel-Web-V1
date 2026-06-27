@@ -76,10 +76,10 @@ const plotProjects: Project[] = [
 ];
 
 const residentialProjects: Project[] = [
-  { image: res1, badge: "Ready To Move", name: "Land Marvel Heights", price: "₹65L – ₹1.5 Cr", location: "Velachery", area: "5 Acres", units: "350 Units", possession: "Ready To Move", type: "2, 3 & 4 BHK" },
-  { image: res2, badge: "New Launch", name: "Land Marvel Signature", price: "₹75L – ₹2 Cr", location: "Adyar", area: "6 Acres", units: "420 Units", possession: "Dec 2026", type: "2 & 3 BHK" },
-  { image: res3, badge: "Premium", name: "Land Marvel Elite", price: "₹90L – ₹2.5 Cr", location: "Anna Nagar", area: "7 Acres", units: "500 Units", possession: "Mar 2027", type: "Luxury Apartments" },
-  { image: res4, badge: "Investment Hotspot", name: "Land Marvel Sky Villas", price: "₹1.2 Cr – ₹3 Cr", location: "OMR", area: "9 Acres", units: "250 Units", possession: "Jun 2027", type: "Villa Community" },
+  { image: res1, badge: "Ready To Move", name: "Land Marvel Heights", price: "\n", location: "Velachery", area: "5 Acres", units: "350 Units", possession: "Ready To Move", type: "2, 3 & 4 BHK" },
+  { image: res2, badge: "New Launch", name: "Land Marvel Signature", price: "\n", location: "LB Road", area: "6 Acres", units: "420 Units", possession: "Dec 2026", type: "2 & 3 BHK" },
+  { image: res3, badge: "Premium", name: "Land Marvel Elite", price: "\n", location: "Perumbakkam", area: "7 Acres", units: "500 Units", possession: "Mar 2027", type: "Luxury Apartments" },
+  { image: res4, badge: "Investment Hotspot", name: "Land Marvel Sky Villas", price: "\n", location: "Urapakkam", area: "9 Acres", units: "250 Units", possession: "Jun 2027", type: "Villa Community" },
 ];
 
 const commercialProjects: Project[] = [
