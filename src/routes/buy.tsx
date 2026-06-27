@@ -69,16 +69,29 @@ type Property = {
   area: string;
   units: string;
   type: string;
+  comingSoon?: boolean;
+  detailsLink?: string;
 };
 
 function PropertyCard({ p }: { p: Property }) {
+  const isComingSoon = p.comingSoon;
   return (
-    <article className="group bg-card rounded-[20px] overflow-hidden shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elegant)] hover:-translate-y-1 transition-all duration-300 border border-border flex flex-col">
+    <article className={`group bg-card rounded-[20px] overflow-hidden shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elegant)] hover:-translate-y-1 transition-all duration-300 border border-border flex flex-col ${isComingSoon ? "opacity-95" : ""}`}>
       <div className="relative overflow-hidden">
-        <img src={p.img} alt={p.title} width={1024} height={768} loading="lazy" className="w-full h-[280px] object-cover group-hover:scale-105 transition-transform duration-500" />
-        <span className="absolute top-5 left-0 bg-[var(--gold)] text-primary text-xs font-semibold uppercase tracking-wide px-4 py-2 rounded-r-[20px] shadow-md">
-          {p.badge}
+        <img src={p.img} alt={p.title} width={1024} height={768} loading="lazy" className={`w-full h-[280px] object-cover group-hover:scale-105 transition-transform duration-500 ${isComingSoon ? "grayscale" : ""}`} />
+        <span className={`absolute top-5 left-0 ${isComingSoon ? "bg-muted text-muted-foreground" : "bg-[var(--gold)] text-primary"} text-xs font-semibold uppercase tracking-wide px-4 py-2 rounded-r-[20px] shadow-md`}>
+          {isComingSoon ? "Coming Soon" : p.badge}
         </span>
+        {isComingSoon && (
+          <div className="absolute inset-0 grid place-items-center bg-primary/55 backdrop-blur-[2px]">
+            <div className="text-center px-6">
+              <div className="inline-block px-5 py-2 rounded-full bg-[var(--gold)] text-primary text-xs font-bold uppercase tracking-[0.2em]">
+                Coming Soon
+              </div>
+              <p className="mt-3 text-white font-display text-2xl font-bold drop-shadow">Launching Soon</p>
+            </div>
+          </div>
+        )}
       </div>
       <div className="p-6 flex flex-col flex-1">
         <h3 className="font-display text-2xl lg:text-[28px] font-bold text-primary leading-tight">{p.title}</h3>
@@ -115,17 +128,31 @@ function PropertyCard({ p }: { p: Property }) {
           </div>
         </div>
         <div className="mt-6 grid grid-cols-2 gap-3">
-          <Button className="bg-[image:var(--gradient-primary)] hover:opacity-90 h-12 rounded-xl text-sm">
-            <Calendar className="w-4 h-4 mr-1.5" /> Book Visit
-          </Button>
-          <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground h-12 rounded-xl text-sm">
-            <Eye className="w-4 h-4 mr-1.5" /> Details
-          </Button>
+          {isComingSoon ? (
+            <>
+              <Button disabled className="bg-muted text-muted-foreground h-12 rounded-xl text-sm cursor-not-allowed">
+                <Calendar className="w-4 h-4 mr-1.5" /> Book Visit
+              </Button>
+              <Button disabled variant="outline" className="h-12 rounded-xl text-sm cursor-not-allowed">
+                <Eye className="w-4 h-4 mr-1.5" /> Details
+              </Button>
+            </>
+          ) : (
+            <>
+              <Button asChild className="bg-[image:var(--gradient-primary)] hover:opacity-90 h-12 rounded-xl text-sm">
+                <Link to="/contact"><Calendar className="w-4 h-4 mr-1.5" /> Book Visit</Link>
+              </Button>
+              <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground h-12 rounded-xl text-sm">
+                <Link to={(p.detailsLink ?? "/contact") as "/green-valley" | "/contact"}><Eye className="w-4 h-4 mr-1.5" /> Details</Link>
+              </Button>
+            </>
+          )}
         </div>
       </div>
     </article>
   );
 }
+
 
 const plots: Property[] = [
   { badge: "New Launch", img: plot1, title: "Land Marvel Green Valley", price: "\n", location: "kilambakkam, Chennai", serving: "Sale Starts", area: "12 Acres", units: "240 Plots", type: "Plotted Layouts" },
