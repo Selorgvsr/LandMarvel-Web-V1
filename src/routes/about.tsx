@@ -157,68 +157,61 @@ function AboutPage() {
 /* ─── SECTION 1: HERO ─── */
 function HeroSection() {
   return (
-    <section className="relative min-h-[100dvh] flex items-center overflow-hidden">
-      <div className="absolute inset-0">
-        <img
-          src={aboutHero}
-          alt="Premium Land Marvel township aerial view"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/75 to-primary/50" />
-      </div>
-      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-24">
+    <section className="relative h-screen min-h-[640px] w-full overflow-hidden">
+      <video
+        src={aboutHeroVideo.url}
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover scale-105"
+        style={{ filter: 'brightness(1.2) contrast(1.15) saturate(1.1)' }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/15 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+      <div className="relative z-10 h-full container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center text-white">
         <div className="max-w-3xl">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-[var(--gold)]/15 text-[var(--gold)] text-xs font-semibold tracking-widest uppercase mb-6">
-            Since Trust Began
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-xs font-medium tracking-wide uppercase">
+            <Star className="w-3.5 h-3.5 text-[var(--gold)]" /> Since Trust Began
           </span>
-          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+          <h1 className="mt-6 font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight drop-shadow-[0_4px_20px_rgba(0,0,0,0.45)]">
             Building Landmarks.
             <br />
             Creating Communities.
             <br />
             Delivering Trust.
           </h1>
-          <p className="text-lg text-white/80 leading-relaxed mb-8 max-w-2xl">
+          <p className="mt-6 text-lg text-white/90 leading-relaxed max-w-2xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
             Land Marvel Group is one of South India's leading real estate
             developers with a strong legacy of delivering premium residential and
             commercial developments built on trust, quality, and innovation.
           </p>
-          <div className="flex flex-wrap gap-4 mb-10">
-            {[
-              { icon: Trophy, label: "200+", desc: "Projects Delivered" },
-              { icon: Building2, label: "2.5M+", desc: "Sq. Ft Developed" },
-              { icon: Star, label: "Trusted", desc: "Developer" },
-              {
-                icon: Sparkles,
-                label: "Customer-Centric",
-                desc: "Approach",
-              },
-            ].map(({ icon: Icon, label, desc }) => (
-              <div
-                key={label}
-                className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-xl px-5 py-3 border border-white/10"
-              >
-                <Icon className="w-5 h-5 text-[var(--gold)]" />
-                <div>
-                  <div className="text-white font-bold text-sm">{label}</div>
-                  <div className="text-white/60 text-xs">{desc}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="flex flex-wrap gap-4">
+          <div className="mt-10 flex flex-wrap gap-4">
             <Link
               to="/projects"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-[var(--gold)] text-primary font-semibold hover:bg-[var(--gold)]/90 transition-colors"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-[var(--gold)] text-primary font-semibold hover:bg-[var(--gold)]/90 transition-colors shadow-lg"
             >
               Explore Project <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
               to="/about"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl border-2 border-white/30 text-white font-semibold hover:bg-white/10 transition-colors"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl border-2 border-white/40 bg-white/10 text-white font-semibold hover:bg-white/20 transition-colors"
             >
               Our Journey
             </Link>
+          </div>
+          <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-3xl">
+            {[
+              ["200+", "Projects Delivered"],
+              ["2.5M+", "Sq. Ft Developed"],
+              ["30+", "Years of Trust"],
+              ["20K+", "Happy Families"],
+            ].map(([n, l]) => (
+              <div key={l} className="border-l-2 border-[var(--gold)] pl-4">
+                <div className="font-display text-3xl font-bold">{n}</div>
+                <div className="text-sm text-white/85">{l}</div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
