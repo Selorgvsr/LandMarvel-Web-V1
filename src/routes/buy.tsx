@@ -163,7 +163,7 @@ const plots: Property[] = [
 ];
 
 const residential: Property[] = [
-  { badge: "Ready To Move", img: res1, title: "Land Marvel Heights", price: "\n", location: "Adyar", area: "5 Acres", units: "350 Apts", type: "2, 3 & 4 BHK" },
+  { badge: "Ready To Move", img: res1, title: "Land Marvel Heights", price: "\n", location: "Thiruvanmiyur,LB Road", area: "5 Acres", units: "350 Apts", type: "2, 3 & 4 BHK" },
   { badge: "Premium", img: res2, title: "Land Marvel Signature", price: "\n", location: "LB Road", area: "4 Acres", units: "420 Units", type: "2, 3 & 4 BHK" },
   { badge: "New Launch", img: res3, title: "Land Marvel Elite", price: "\n", location: "Perumbakkam", area: "6 Acres", units: "500 Units", type: "Luxury Apts" },
   { badge: "Limited Units", img: res4, title: "Land Marvel Sky Villas", price: "\n", location: "LB Road 1", area: "8 Acres", units: "250 Villas", type: "Villa Community" },
@@ -173,7 +173,7 @@ const commercial: Property[] = [
   { badge: "Investment Hotspot", img: com1, title: "Land Marvel Business Park", price: "\n", location: "Indira Nagar", area: "7 Acres", units: "120 Units", type: "Office Spaces" },
   { badge: "Premium", img: com2, title: "Land Marvel Trade Centre", price: "\n", location: "LB Road 1", area: "5 Acres", units: "150 Units", type: "Retail + Office" },
   { badge: "New Launch", img: com3, title: "Land Marvel Corporate Hub", price: "\n", location: "LB Road 2", area: "6 Acres", units: "200 Units", type: "Business Suites" },
-  { badge: "Limited Units", img: com4, title: "Land Marvel Commercial Square", price: "\n", location: "Adyar", area: "3 Acres", units: "100 Units", type: "Retail Shops" },
+  { badge: "Limited Units", img: com4, title: "Land Marvel Commercial Square", price: "\n", location: "Thiruvanmiyur,LB Road", area: "3 Acres", units: "100 Units", type: "Retail Shops" },
 ];
 
 function CategorySection({ id, eyebrow, title, items, alt = false }: { id: string; eyebrow: string; title: string; items: Property[]; alt?: boolean }) {

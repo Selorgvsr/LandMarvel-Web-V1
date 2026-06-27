@@ -340,7 +340,7 @@ function Projects() {
   const projects = [
     { img: project1, title: "Marvel Heights", location: "Perumbakkam", units: "120 Units" },
     { img: project2, title: "Coastal Residences", location: "LB Road 1", units: "84 Units" },
-    { img: project3, title: "Palm Grove Villas", location: "Adyar", units: "32 Villas" },
+    { img: project3, title: "Palm Grove Villas", location: "Thiruvanmiyur,LB Road", units: "32 Villas" },
   ];
   return (
     <section id="projects" className="py-20 sm:py-28 bg-background">
@@ -418,7 +418,7 @@ function Stats() {
 
 
 function Locations() {
-  const locs = ["Perumbakkam", "LB Road", "LB Road 1", "Adyar", "Tambaram", "LB Road 2"];
+  const locs = ["Perumbakkam", "LB Road", "LB Road 1", "Thiruvanmiyur,LB Road", "Tambaram", "LB Road 2"];
   return (
     <section className="py-20 sm:py-28" style={{ background: "var(--gradient-soft)" }}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
