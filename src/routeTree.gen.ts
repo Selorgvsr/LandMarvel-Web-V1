@@ -14,6 +14,7 @@ import { Route as SellRouteImport } from './routes/sell'
 import { Route as ProjectsRouteImport } from './routes/projects'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as PortfolioRouteImport } from './routes/portfolio'
+import { Route as GreenValleyRouteImport } from './routes/green-valley'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as BuyRouteImport } from './routes/buy'
 import { Route as AboutRouteImport } from './routes/about'
@@ -44,6 +45,11 @@ const PortfolioRoute = PortfolioRouteImport.update({
   path: '/portfolio',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GreenValleyRoute = GreenValleyRouteImport.update({
+  id: '/green-valley',
+  path: '/green-valley',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
@@ -70,6 +76,7 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/buy': typeof BuyRoute
   '/contact': typeof ContactRoute
+  '/green-valley': typeof GreenValleyRoute
   '/portfolio': typeof PortfolioRoute
   '/privacy': typeof PrivacyRoute
   '/projects': typeof ProjectsRoute
@@ -81,6 +88,7 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/buy': typeof BuyRoute
   '/contact': typeof ContactRoute
+  '/green-valley': typeof GreenValleyRoute
   '/portfolio': typeof PortfolioRoute
   '/privacy': typeof PrivacyRoute
   '/projects': typeof ProjectsRoute
@@ -93,6 +101,7 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/buy': typeof BuyRoute
   '/contact': typeof ContactRoute
+  '/green-valley': typeof GreenValleyRoute
   '/portfolio': typeof PortfolioRoute
   '/privacy': typeof PrivacyRoute
   '/projects': typeof ProjectsRoute
@@ -106,6 +115,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/buy'
     | '/contact'
+    | '/green-valley'
     | '/portfolio'
     | '/privacy'
     | '/projects'
@@ -117,6 +127,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/buy'
     | '/contact'
+    | '/green-valley'
     | '/portfolio'
     | '/privacy'
     | '/projects'
@@ -128,6 +139,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/buy'
     | '/contact'
+    | '/green-valley'
     | '/portfolio'
     | '/privacy'
     | '/projects'
@@ -140,6 +152,7 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   BuyRoute: typeof BuyRoute
   ContactRoute: typeof ContactRoute
+  GreenValleyRoute: typeof GreenValleyRoute
   PortfolioRoute: typeof PortfolioRoute
   PrivacyRoute: typeof PrivacyRoute
   ProjectsRoute: typeof ProjectsRoute
@@ -184,6 +197,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PortfolioRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/green-valley': {
+      id: '/green-valley'
+      path: '/green-valley'
+      fullPath: '/green-valley'
+      preLoaderRoute: typeof GreenValleyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/contact': {
       id: '/contact'
       path: '/contact'
@@ -220,6 +240,7 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   BuyRoute: BuyRoute,
   ContactRoute: ContactRoute,
+  GreenValleyRoute: GreenValleyRoute,
   PortfolioRoute: PortfolioRoute,
   PrivacyRoute: PrivacyRoute,
   ProjectsRoute: ProjectsRoute,
