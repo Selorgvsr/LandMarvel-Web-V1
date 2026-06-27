@@ -18,6 +18,7 @@ import palace2 from "@/assets/palace-2.png.asset.json";
 import palace3 from "@/assets/palace-3.png.asset.json";
 import palace4 from "@/assets/palace-4.png.asset.json";
 import plot1 from "@/assets/plot-1.jpg";
+import greenValleyAerial from "@/assets/green-valley-aerial.png.asset.json";
 import plot2 from "@/assets/plot-2.jpg";
 import plot3 from "@/assets/plot-3.jpg";
 import plot4 from "@/assets/plot-4.jpg";
