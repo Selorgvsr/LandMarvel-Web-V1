@@ -23,7 +23,7 @@ export function SiteHeader() {
           <img
             src={logoAsset.url}
             alt="Land Marvel"
-            className="h-14 lg:h-16 w-auto object-contain"
+            className="h-20 lg:h-24 w-auto object-contain"
           />
         </Link>
         <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
