@@ -418,7 +418,7 @@ function Stats() {
 
 
 function Locations() {
-  const locs = ["Perumbakkam", "LB Road", "Urapakkam", "Velachery", "Tambaram", "Porur"];
+  const locs = ["Perumbakkam", "LB Road", "LB Road 1", "Saidapet", "Tambaram", "LB Road 2"];
   return (
     <section className="py-20 sm:py-28" style={{ background: "var(--gradient-soft)" }}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
