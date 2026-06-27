@@ -513,9 +513,9 @@ function CustomerSection() {
 /* ─── SECTION 7: OUR STRENGTH ─── */
 function StrengthSection() {
   const stats = [
-    { icon: Home, value: 100, suffix: "+", label: "Projects Delivered" },
+    { icon: Home, value: 200, suffix: "+", label: "Projects Delivered" },
     { icon: Building2, value: 2500000, suffix: "+", label: "Sq. Ft Developed", display: "2.5M+" },
-    { icon: Users, value: 1000, suffix: "+", label: "Happy Families" },
+    { icon: Users, value: 20000, suffix: "+", label: "Happy Families" },
     { icon: TrendingUp, value: 30, suffix: "+", label: "Years of Excellence" },
   ];
 
