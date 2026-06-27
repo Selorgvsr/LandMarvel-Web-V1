@@ -237,7 +237,7 @@ function ProjectsPage() {
               { icon: Award, value: "30+", label: "Years of Experience" },
               { icon: TrendingUp, value: "200+", label: "Completed Projects" },
               { icon: Building2, value: "30+", label: "Ongoing Projects" },
-              { icon: Users, value: "2000+", label: "Happy Customers" },
+              { icon: Users, value: "20K+", label: "Happy Customers" },
             ].map((s) => (
               <div key={s.label} className="space-y-2">
                 <s.icon className="w-8 h-8 mx-auto text-[var(--gold)]" />
