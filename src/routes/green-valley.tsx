@@ -18,7 +18,7 @@ import amGarden from "@/assets/amenities/landscaped-garden.jpg.asset.json";
 import amKids from "@/assets/amenities/kids-play.jpg.asset.json";
 import amSolar from "@/assets/amenities/solar-roads.jpeg.asset.json";
 import amWalkways from "@/assets/amenities/walkways.jpg.asset.json";
-import plot4 from "@/assets/plot-4.jpg";
+
 import greenValleyLayoutAsset from "@/assets/green-valley-layout.png.asset.json";
 
 const greenValleyLayout = greenValleyLayoutAsset.url;
