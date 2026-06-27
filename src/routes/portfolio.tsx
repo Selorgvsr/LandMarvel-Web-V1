@@ -231,7 +231,15 @@ function Header() {
 function Hero() {
   return (
     <section className="relative overflow-hidden">
-      <img src={hero} alt="Land Marvel future living" width={1920} height={1080} className="absolute inset-0 w-full h-full object-cover" />
+      <video
+        src={portfolioHeroVideo.url}
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+        style={{ filter: 'brightness(1.2) contrast(1.15) saturate(1.1)' }}
+      />
       <div
         className="absolute inset-0"
         style={{ background: `linear-gradient(120deg, ${NAVY}EE 0%, ${NAVY}AA 45%, transparent 100%)` }}
