@@ -155,10 +155,10 @@ function PropertyCard({ p }: { p: Property }) {
 
 
 const plots: Property[] = [
-  { badge: "New Launch", img: plot1, title: "Land Marvel Green Valley", price: "\n", location: "kilambakkam, Chennai", serving: "Sale Starts", area: "12 Acres", units: "240 Plots", type: "Plotted Layouts" },
-  { badge: "Premium", img: plot2, title: "Land Marvel Garden City", price: "\n", location: "Tambaram, Chennai", serving: "Tambaram, Chromepet, Pallavaram", area: "8 Acres", units: "180 Plots", type: "Plotted Layouts" },
-  { badge: "Limited Units", img: plot3, title: "Land Marvel Urban Greens", price: "\n", location: "Perungalathur", serving: "Perungalathur, Vandalur, Tambaram", area: "15 Acres", units: "300 Plots", type: "Plotted Layouts" },
-  { badge: "Lake View", img: plot4, title: "Land Marvel Lake View Plots", price: "\n", location: "Maraimalai Nagar", serving: "Maraimalai Nagar, Singaperumal Koil", area: "10 Acres", units: "220 Plots", type: "Premium Plots" },
+  { badge: "New Launch", img: plot1, title: "Land Marvel Green Valley", price: "\n", location: "kilambakkam, Chennai", serving: "Sale Starts", area: "12 Acres", units: "240 Plots", type: "Plotted Layouts", detailsLink: "/green-valley" },
+  { badge: "Premium", img: plot2, title: "Land Marvel Garden City", price: "\n", location: "Tambaram, Chennai", serving: "Tambaram, Chromepet, Pallavaram", area: "8 Acres", units: "180 Plots", type: "Plotted Layouts", comingSoon: true },
+  { badge: "Limited Units", img: plot3, title: "Land Marvel Urban Greens", price: "\n", location: "Perungalathur", serving: "Perungalathur, Vandalur, Tambaram", area: "15 Acres", units: "300 Plots", type: "Plotted Layouts", comingSoon: true },
+  { badge: "Lake View", img: plot4, title: "Land Marvel Lake View Plots", price: "\n", location: "Maraimalai Nagar", serving: "Maraimalai Nagar, Singaperumal Koil", area: "10 Acres", units: "220 Plots", type: "Premium Plots", comingSoon: true },
 ];
 
 const residential: Property[] = [
