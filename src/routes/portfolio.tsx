@@ -22,6 +22,7 @@ import { SiteFooter } from "@/components/landmarvel/SiteFooter";
 import { SiteHeader } from "@/components/landmarvel/SiteHeader";
 
 import hero from "@/assets/portfolio-hero.jpg";
+import portfolioHeroVideo from "@/assets/portfolio-hero-video.mp4.asset.json";
 import residential from "@/assets/portfolio-residential.jpg";
 import plotVideo from "@/assets/plot-video.mp4.asset.json";
 import commercial from "@/assets/portfolio-commercial.jpg";
