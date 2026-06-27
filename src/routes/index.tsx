@@ -339,8 +339,8 @@ function Categories() {
 function Projects() {
   const projects = [
     { img: project1, title: "Marvel Heights", location: "Perumbakkam", units: "120 Units" },
-    { img: project2, title: "Coastal Residences", location: "Urapakkam", units: "84 Units" },
-    { img: project3, title: "Palm Grove Villas", location: "Velachery", units: "32 Villas" },
+    { img: project2, title: "Coastal Residences", location: "LB Road 1", units: "84 Units" },
+    { img: project3, title: "Palm Grove Villas", location: "Saidapet", units: "32 Villas" },
   ];
   return (
     <section id="projects" className="py-20 sm:py-28 bg-background">
