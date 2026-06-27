@@ -88,7 +88,13 @@ function PropertyCard({ p }: { p: Property }) {
         </div>
         {p.serving && (
           <p className="mt-3 text-xs text-muted-foreground leading-relaxed">
-            <span className="font-semibold text-foreground">Serving Areas:</span> {p.serving}
+            {p.serving === "Sale Starts" ? (
+              <b className="text-foreground">Sale Starts In September</b>
+            ) : (
+              <>
+                <span className="font-semibold text-foreground">Serving Areas:</span> {p.serving}
+              </>
+            )}
           </p>
         )}
         <div className="mt-5 grid grid-cols-3 gap-2 pt-4 border-t border-border text-center">
