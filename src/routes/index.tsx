@@ -338,8 +338,8 @@ function Categories() {
 
 function Projects() {
   const projects = [
-    { img: project1, title: "Marvel Heights", location: "Anna Nagar", units: "120 Units" },
-    { img: project2, title: "Coastal Residences", location: "OMR", units: "84 Units" },
+    { img: project1, title: "Marvel Heights", location: "Perumbakkam", units: "120 Units" },
+    { img: project2, title: "Coastal Residences", location: "Urapakkam", units: "84 Units" },
     { img: project3, title: "Palm Grove Villas", location: "Velachery", units: "32 Villas" },
   ];
   return (
@@ -418,7 +418,7 @@ function Stats() {
 
 
 function Locations() {
-  const locs = ["Anna Nagar", "Adyar", "OMR", "Velachery", "Tambaram", "Porur"];
+  const locs = ["Perumbakkam", "LB Road", "Urapakkam", "Velachery", "Tambaram", "Porur"];
   return (
     <section className="py-20 sm:py-28" style={{ background: "var(--gradient-soft)" }}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
