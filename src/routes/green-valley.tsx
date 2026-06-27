@@ -13,6 +13,9 @@ import plot1 from "@/assets/plot-1.jpg";
 import plot2 from "@/assets/plot-2.jpg";
 import plot3 from "@/assets/plot-3.jpg";
 import plot4 from "@/assets/plot-4.jpg";
+import greenValleyLayoutAsset from "@/assets/green-valley-layout.png.asset.json";
+
+const greenValleyLayout = greenValleyLayoutAsset.url;
 
 export const Route = createFileRoute("/green-valley")({
   head: () => ({
