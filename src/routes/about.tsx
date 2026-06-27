@@ -19,7 +19,7 @@ import {
   Eye,
   Target,
 } from "lucide-react";
-import aboutHero from "@/assets/about-hero.jpg";
+import aboutHeroVideo from "@/assets/about-hero-video.mp4.asset.json";
 import aboutWhoWeAre from "@/assets/about-who-we-are.jpg";
 import aboutQuality from "@/assets/about-quality.jpg";
 import aboutCustomer from "@/assets/about-customer.jpg";
