@@ -125,7 +125,7 @@ function GreenValleyPage() {
           {/* Hero image card */}
           <div className="bg-card rounded-3xl overflow-hidden shadow-[var(--shadow-elegant)] border border-border">
             <div className="relative">
-              <img src={activeItem.img} alt={activeItem.badge} className="w-full h-[320px] sm:h-[460px] object-cover" />
+              <img src={greenValleyLayout} alt="Green Valley Township master layout plan" className="w-full h-[320px] sm:h-[460px] object-cover" />
               <div className="absolute top-5 left-5 px-4 py-2 rounded-lg bg-black/40 backdrop-blur text-[var(--gold)] font-bold text-lg sm:text-2xl drop-shadow">
                 {activeItem.badge}
               </div>
