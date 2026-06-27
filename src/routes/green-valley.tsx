@@ -12,7 +12,13 @@ import { SiteFooter } from "@/components/landmarvel/SiteFooter";
 import plot1 from "@/assets/plot-1.jpg";
 import plot2 from "@/assets/plot-2.jpg";
 import plot3 from "@/assets/plot-3.jpg";
-import plot4 from "@/assets/plot-4.jpg";
+import amMultiSports from "@/assets/amenities/multi-sports.jpg.asset.json";
+import amCricket from "@/assets/amenities/cricket-nets.jpeg.asset.json";
+import amGarden from "@/assets/amenities/landscaped-garden.jpg.asset.json";
+import amKids from "@/assets/amenities/kids-play.jpg.asset.json";
+import amSolar from "@/assets/amenities/solar-roads.jpeg.asset.json";
+import amWalkways from "@/assets/amenities/walkways.jpg.asset.json";
+
 import greenValleyLayoutAsset from "@/assets/green-valley-layout.png.asset.json";
 
 const greenValleyLayout = greenValleyLayoutAsset.url;
@@ -38,12 +44,12 @@ const distances = [
 ];
 
 const amenities = [
-  { icon: Trophy, label: "Multi-Sports Play Area", img: plot2 },
-  { icon: Building2, label: "Cricket Nets", img: plot3 },
-  { icon: TreePine, label: "Landscaped Garden", img: plot4 },
-  { icon: Baby, label: "Kids Play Area", img: plot1 },
-  { icon: Sun, label: "Concrete Roads with Solar Lights", img: plot2 },
-  { icon: Footprints, label: "Paved Walkways & Jogging Track", img: plot3 },
+  { icon: Trophy, label: "Multi-Sports Play Area", img: amMultiSports.url },
+  { icon: Building2, label: "Cricket Nets", img: amCricket.url },
+  { icon: TreePine, label: "Landscaped Garden", img: amGarden.url },
+  { icon: Baby, label: "Kids Play Area", img: amKids.url },
+  { icon: Sun, label: "Concrete Roads with Solar Lights", img: amSolar.url },
+  { icon: Footprints, label: "Paved Walkways & Jogging Track", img: amWalkways.url },
 ];
 
 const kilamLocAdv = [
