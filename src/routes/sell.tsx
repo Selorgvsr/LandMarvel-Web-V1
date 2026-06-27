@@ -237,7 +237,7 @@ function PropertyTypes() {
 
 function Testimonials() {
   const items = [
-    { name: "Ramesh Kumar", role: "Sold a 2BHK in Adyar", quote: "Land Marvel sold my apartment in under 6 weeks at a price 8% above my expectation. Truly professional team." },
+    { name: "Ramesh Kumar", role: "Sold a 2BHK in Thiruvanmiyur,LB Road", quote: "Land Marvel sold my apartment in under 6 weeks at a price 8% above my expectation. Truly professional team." },
     { name: "Priya Sundaram", role: "Sold a plot in LB Road 1", quote: "From valuation to registration, every step was handled with utmost transparency. Highly recommended." },
     { name: "Arun Mehta", role: "Sold a commercial unit", quote: "The buyer network they have is incredible. Got 3 serious offers within 10 days of listing." },
   ];
