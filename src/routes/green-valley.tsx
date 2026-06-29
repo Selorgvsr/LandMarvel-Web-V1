@@ -39,7 +39,7 @@ export const Route = createFileRoute("/green-valley")({
 
 const distances = [
   { id: "bus", label: "Walkable Distance from Kilambakkam Bus Terminus", img: plot1, badge: "Kilambakkam Bus Terminus" },
-  { id: "rail", label: "Walkable Distance from Urappakkam Railway Station", img: plot2, badge: "Urappakkam Railway Station" },
+  { id: "rail", label: "Walkable Distance from Urapakkam Railway Station", img: plot2, badge: "Urapakkam Railway Station" },
   { id: "metro", label: "Walkable Distance from the Upcoming Metro Station", img: plot3, badge: "Upcoming Metro Station" },
 ];
 
