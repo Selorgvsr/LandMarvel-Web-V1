@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 
 import landAerial from "@/assets/buy-land-aerial.jpg";
 import landSiteVisit from "@/assets/buy-land-sitevisit.jpg";
-import resFamily from "@/assets/buy-res-family.jpg";
+import resFamily from "@/assets/buy-res-family.jpg.asset.json";
 import comHero from "@/assets/buy-com-hero.jpg";
 import comSuccess from "@/assets/buy-com-success.jpg";
 import buyCta from "@/assets/buy-cta.jpg";
@@ -305,7 +305,7 @@ export function ResidentialLivingSection() {
         {/* Why choose Land Marvel homes */}
         <div className="mt-20 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div className="relative overflow-hidden rounded-[24px] shadow-[var(--shadow-elegant)] group">
-            <img src={resFamily} alt="Happy family in front of a modern home" width={1024} height={1024} loading="lazy"
+            <img src={resFamily.url} alt="Happy family in front of a modern home" width={1024} height={1024} loading="lazy"
               className="w-full h-[480px] object-cover group-hover:scale-105 transition-transform duration-700" />
             <div className="absolute bottom-5 left-5 bg-white/90 backdrop-blur rounded-2xl px-5 py-3 shadow-md flex items-center gap-3">
               <Users className="w-5 h-5 text-[var(--gold)]" />
