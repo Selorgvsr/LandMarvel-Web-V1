@@ -18,6 +18,7 @@ import { Route as HeightsRouteImport } from './routes/heights'
 import { Route as GreenValleyRouteImport } from './routes/green-valley'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as BuyRouteImport } from './routes/buy'
+import { Route as BusinessParkRouteImport } from './routes/business-park'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
@@ -66,6 +67,11 @@ const BuyRoute = BuyRouteImport.update({
   path: '/buy',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BusinessParkRoute = BusinessParkRouteImport.update({
+  id: '/business-park',
+  path: '/business-park',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
@@ -80,6 +86,7 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/business-park': typeof BusinessParkRoute
   '/buy': typeof BuyRoute
   '/contact': typeof ContactRoute
   '/green-valley': typeof GreenValleyRoute
@@ -93,6 +100,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/business-park': typeof BusinessParkRoute
   '/buy': typeof BuyRoute
   '/contact': typeof ContactRoute
   '/green-valley': typeof GreenValleyRoute
@@ -107,6 +115,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/business-park': typeof BusinessParkRoute
   '/buy': typeof BuyRoute
   '/contact': typeof ContactRoute
   '/green-valley': typeof GreenValleyRoute
@@ -122,6 +131,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
+    | '/business-park'
     | '/buy'
     | '/contact'
     | '/green-valley'
@@ -135,6 +145,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/about'
+    | '/business-park'
     | '/buy'
     | '/contact'
     | '/green-valley'
@@ -148,6 +159,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/about'
+    | '/business-park'
     | '/buy'
     | '/contact'
     | '/green-valley'
@@ -162,6 +174,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  BusinessParkRoute: typeof BusinessParkRoute
   BuyRoute: typeof BuyRoute
   ContactRoute: typeof ContactRoute
   GreenValleyRoute: typeof GreenValleyRoute
@@ -238,6 +251,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BuyRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/business-park': {
+      id: '/business-park'
+      path: '/business-park'
+      fullPath: '/business-park'
+      preLoaderRoute: typeof BusinessParkRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/about': {
       id: '/about'
       path: '/about'
@@ -258,6 +278,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  BusinessParkRoute: BusinessParkRoute,
   BuyRoute: BuyRoute,
   ContactRoute: ContactRoute,
   GreenValleyRoute: GreenValleyRoute,

@@ -144,7 +144,7 @@ function PropertyCard({ p }: { p: Property }) {
                 <Link to="/contact"><Calendar className="w-4 h-4 mr-1.5" /> Book Visit</Link>
               </Button>
               <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground h-12 rounded-xl text-sm">
-                <Link to={(p.detailsLink ?? "/contact") as "/green-valley" | "/heights" | "/contact"}><Eye className="w-4 h-4 mr-1.5" /> Details</Link>
+                <Link to={(p.detailsLink ?? "/contact") as "/green-valley" | "/heights" | "/business-park" | "/contact"}><Eye className="w-4 h-4 mr-1.5" /> Details</Link>
               </Button>
             </>
           )}
