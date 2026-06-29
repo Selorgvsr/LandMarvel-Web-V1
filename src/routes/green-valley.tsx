@@ -243,7 +243,7 @@ function GreenValleyPage() {
             </div>
             <div className="mt-5 flex flex-wrap justify-center gap-4 text-xs text-muted-foreground">
               <span className="inline-flex items-center gap-2"><span className="w-2.5 h-2.5 rounded-full bg-slate-600" /> GST Road</span>
-              <span className="inline-flex items-center gap-2"><span className="w-2.5 h-2.5 rounded-full bg-blue-500" /> Urappakkam Railway Station</span>
+              <span className="inline-flex items-center gap-2"><span className="w-2.5 h-2.5 rounded-full bg-blue-500" /> Urapakkam Railway Station</span>
               <span className="inline-flex items-center gap-2"><span className="w-2.5 h-2.5 rounded-full bg-emerald-500" /> Kilambakkam Bus Terminus</span>
               <span className="inline-flex items-center gap-2"><span className="w-2.5 h-2.5 rounded-full bg-[var(--gold)]" /> Our Project Site</span>
             </div>
