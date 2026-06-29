@@ -63,7 +63,7 @@ const kilamLocAdv = [
 ];
 
 const projectLocAdv = [
-  { icon: Train, label: "2 Minutes from LB Road 1 Railway Station" },
+  { icon: Train, label: "2 Minutes from Urappakkam Railway Station" },
   { icon: TrainFront, label: "3 Minutes from Kilambakkam Bus Terminus & Upcoming Metro Rail Station" },
   { icon: MapPin, label: "2 Minutes from GST Road" },
   { icon: Clock, label: "10 Minutes from Tambaram" },
