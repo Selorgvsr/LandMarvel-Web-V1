@@ -39,7 +39,7 @@ export const Route = createFileRoute("/green-valley")({
 
 const distances = [
   { id: "bus", label: "Walkable Distance from Kilambakkam Bus Terminus", img: plot1, badge: "Kilambakkam Bus Terminus" },
-  { id: "rail", label: "Walkable Distance from LB Road 1 Railway Station", img: plot2, badge: "LB Road 1 Railway Station" },
+  { id: "rail", label: "Walkable Distance from Urappakkam Railway Station", img: plot2, badge: "Urappakkam Railway Station" },
   { id: "metro", label: "Walkable Distance from the Upcoming Metro Station", img: plot3, badge: "Upcoming Metro Station" },
 ];
 
@@ -63,7 +63,7 @@ const kilamLocAdv = [
 ];
 
 const projectLocAdv = [
-  { icon: Train, label: "2 Minutes from LB Road 1 Railway Station" },
+  { icon: Train, label: "2 Minutes from Urappakkam Railway Station" },
   { icon: TrainFront, label: "3 Minutes from Kilambakkam Bus Terminus & Upcoming Metro Rail Station" },
   { icon: MapPin, label: "2 Minutes from GST Road" },
   { icon: Clock, label: "10 Minutes from Tambaram" },
@@ -243,7 +243,7 @@ function GreenValleyPage() {
             </div>
             <div className="mt-5 flex flex-wrap justify-center gap-4 text-xs text-muted-foreground">
               <span className="inline-flex items-center gap-2"><span className="w-2.5 h-2.5 rounded-full bg-slate-600" /> GST Road</span>
-              <span className="inline-flex items-center gap-2"><span className="w-2.5 h-2.5 rounded-full bg-blue-500" /> LB Road 1 Railway Station</span>
+              <span className="inline-flex items-center gap-2"><span className="w-2.5 h-2.5 rounded-full bg-blue-500" /> Urappakkam Railway Station</span>
               <span className="inline-flex items-center gap-2"><span className="w-2.5 h-2.5 rounded-full bg-emerald-500" /> Kilambakkam Bus Terminus</span>
               <span className="inline-flex items-center gap-2"><span className="w-2.5 h-2.5 rounded-full bg-[var(--gold)]" /> Our Project Site</span>
             </div>
