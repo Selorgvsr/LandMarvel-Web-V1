@@ -3,7 +3,7 @@ import { useState } from "react";
 import {
   Menu, MapPin, ArrowRight, Phone, Mail, Upload, Facebook, Instagram,
   Twitter, Linkedin, ShieldCheck, Users, TrendingUp, Handshake, FileText,
-  Home, Building, Trees, Briefcase, Quote, Star, ClipboardList, Search,
+  Home, Building, Trees, Briefcase, ClipboardList, Search,
   IndianRupee, CheckCircle2,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -235,35 +235,6 @@ function PropertyTypes() {
   );
 }
 
-function Testimonials() {
-  const items = [
-    { name: "Ramesh Kumar", role: "Sold a 2BHK in Thiruvanmiyur,LB Road", quote: "Land Marvel sold my apartment in under 6 weeks at a price 8% above my expectation. Truly professional team." },
-    { name: "Priya Sundaram", role: "Sold a plot in Urapakkam", quote: "From valuation to registration, every step was handled with utmost transparency. Highly recommended." },
-    { name: "Arun Mehta", role: "Sold a commercial unit", quote: "The buyer network they have is incredible. Got 3 serious offers within 10 days of listing." },
-  ];
-  return (
-    <section className="py-20 sm:py-24" style={{ background: "var(--gradient-soft)" }}>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading eyebrow="Testimonials" title="What Our Sellers Say" />
-        <div className="mt-14 grid md:grid-cols-3 gap-6">
-          {items.map((t) => (
-            <div key={t.name} className="bg-card rounded-2xl p-7 border border-border shadow-[var(--shadow-card)] flex flex-col">
-              <Quote className="w-8 h-8 text-[var(--gold)]" />
-              <p className="mt-4 text-foreground/85 leading-relaxed">"{t.quote}"</p>
-              <div className="mt-6 flex items-center gap-1 text-[var(--gold)]">
-                {Array.from({ length: 5 }).map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
-              </div>
-              <div className="mt-4 pt-4 border-t border-border">
-                <div className="font-display font-bold text-primary">{t.name}</div>
-                <div className="text-xs text-muted-foreground">{t.role}</div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 function SellPage() {
   return (
@@ -310,7 +281,7 @@ function SellPage() {
         <SellForm />
         <Process />
         <PropertyTypes />
-        <Testimonials />
+        
 
         {/* Final CTA */}
         <section className="relative overflow-hidden">
