@@ -62,48 +62,72 @@ type Project = {
   name: string;
   price: string;
   location: string;
+  serving?: string;
   area: string;
   units: string;
   possession: string;
   type: string;
+  comingSoon?: boolean;
+  detailsLink?: string;
 };
 
 const plotProjects: Project[] = [
-  { image: plot1, badge: "New Launch", name: "Land Marvel Green Valley", price: "\n", location: "kilambakkam, Chennai", area: "12 Acres", units: "240 Plots", possession: "Ready To Register", type: "Plotted Layouts" },
-  { image: plot2, badge: "Hot Selling", name: "Land Marvel Garden City", price: "₹20L – ₹60L", location: "Tambaram", area: "8 Acres", units: "180 Plots", possession: "Ready To Register", type: "Plotted Layouts" },
-  { image: plot3, badge: "Limited Units", name: "Land Marvel Urban Greens", price: "\n", location: "Perungalathur", area: "15 Acres", units: "300 Plots", possession: "Under Approval", type: "Plotted Layouts" },
-  { image: plot4, badge: "Premium Plots", name: "Land Marvel Lake View", price: "₹30L – ₹85L", location: "Maraimalai Nagar", area: "10 Acres", units: "220 Plots", possession: "Ready To Register", type: "Lake-Front Plots" },
+  { image: greenValleyAerial.url, badge: "New Launch", name: "Land Marvel Green Valley", price: "\n", location: "kilambakkam, Chennai", serving: "Sale Starts", area: "12 Acres", units: "240 Plots", possession: "Ready To Register", type: "Plotted Layouts", detailsLink: "/green-valley" },
+  { image: plot2, badge: "Premium", name: "Land Marvel Garden City", price: "\n", location: "Tambaram, Chennai", serving: "Tambaram, Chromepet, Pallavaram", area: "8 Acres", units: "180 Plots", possession: "Ready To Register", type: "Plotted Layouts", comingSoon: true },
+  { image: plot3, badge: "Limited Units", name: "Land Marvel Urban Greens", price: "\n", location: "Perungalathur", serving: "Perungalathur, Vandalur, Tambaram", area: "15 Acres", units: "300 Plots", possession: "Under Approval", type: "Plotted Layouts", comingSoon: true },
+  { image: plot4, badge: "Lake View", name: "Land Marvel Lake View Plots", price: "\n", location: "Maraimalai Nagar", serving: "Maraimalai Nagar, Singaperumal Koil", area: "10 Acres", units: "220 Plots", possession: "Ready To Register", type: "Premium Plots", comingSoon: true },
 ];
 
 const residentialProjects: Project[] = [
-  { image: res1, badge: "Ready To Move", name: "Land Marvel Heights", price: "\n", location: "Thiruvanmiyur,LB Road", area: "5 Acres", units: "350 Units", possession: "Ready To Move", type: "2, 3 & 4 BHK" },
-  { image: res2, badge: "New Launch", name: "Land Marvel Signature", price: "\n", location: "LB Road", area: "6 Acres", units: "420 Units", possession: "Dec 2026", type: "2 & 3 BHK" },
-  { image: res3, badge: "Premium", name: "Land Marvel Elite", price: "\n", location: "Perumbakkam", area: "7 Acres", units: "500 Units", possession: "Mar 2027", type: "Luxury Apartments" },
-  { image: res4, badge: "Investment Hotspot", name: "Land Marvel Sky Villas", price: "\n", location: "LB Road 1", area: "9 Acres", units: "250 Units", possession: "Jun 2027", type: "Villa Community" },
+  { image: res1, badge: "Ready To Move", name: "Land Marvel Heights", price: "\n", location: "Thiruvanmiyur,LB Road", area: "5 Acres", units: "350 Apts", possession: "Ready To Move", type: "2, 3 & 4 BHK", detailsLink: "/heights" },
+  { image: res2, badge: "Premium", name: "Land Marvel Signature", price: "\n", location: "LB Road", area: "4 Acres", units: "420 Units", possession: "Dec 2026", type: "2, 3 & 4 BHK", comingSoon: true },
+  { image: res3, badge: "New Launch", name: "Land Marvel Elite", price: "\n", location: "Perumbakkam", area: "6 Acres", units: "500 Units", possession: "Mar 2027", type: "Luxury Apts", comingSoon: true },
+  { image: res4, badge: "Limited Units", name: "Land Marvel Sky Villas", price: "\n", location: "LB Road 1", area: "8 Acres", units: "250 Villas", possession: "Jun 2027", type: "Villa Community", comingSoon: true },
 ];
 
 const commercialProjects: Project[] = [
-  { image: com1, badge: "New Launch", name: "Land Marvel Business Park", price: "\n", location: "Indira Nagar", area: "7 Acres", units: "120 Units", possession: "Dec 2026", type: "Office Spaces" },
-  { image: com2, badge: "Hot Selling", name: "Land Marvel Trade Centre", price: "\n", location: "LB Road 1", area: "8 Acres", units: "150 Units", possession: "Mar 2027", type: "Retail + Office" },
-  { image: com3, badge: "Premium", name: "Land Marvel Corporate Hub", price: "\n", location: "LB Road 2", area: "10 Acres", units: "200 Units", possession: "Jun 2027", type: "Business Suites" },
-  { image: com4, badge: "Limited Units", name: "Land Marvel Commercial Square", price: "\n", location: "Thiruvanmiyur,LB Road", area: "4 Acres", units: "100 Units", possession: "Sep 2026", type: "Retail Shops" },
+  { image: com1, badge: "Investment Hotspot", name: "Land Marvel Business Park", price: "\n", location: "Indira Nagar", area: "7 Acres", units: "120 Units", possession: "Dec 2026", type: "Office Spaces", detailsLink: "/business-park" },
+  { image: com2, badge: "Premium", name: "Land Marvel Trade Centre", price: "\n", location: "LB Road 1", area: "5 Acres", units: "150 Units", possession: "Mar 2027", type: "Retail + Office", comingSoon: true },
+  { image: com3, badge: "New Launch", name: "Land Marvel Corporate Hub", price: "\n", location: "LB Road 2", area: "6 Acres", units: "200 Units", possession: "Jun 2027", type: "Business Suites", comingSoon: true },
+  { image: com4, badge: "Limited Units", name: "Land Marvel Commercial Square", price: "\n", location: "Thiruvanmiyur,LB Road", area: "3 Acres", units: "100 Units", possession: "Sep 2026", type: "Retail Shops", comingSoon: true },
 ];
 
 function ProjectCard({ p }: { p: Project }) {
+  const isComingSoon = p.comingSoon;
   return (
-    <article className="group relative bg-card rounded-[20px] overflow-hidden shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elegant)] transition-all duration-300 hover:-translate-y-2 border border-border">
+    <article className={`group relative bg-card rounded-[20px] overflow-hidden shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elegant)] transition-all duration-300 hover:-translate-y-2 border border-border ${isComingSoon ? "opacity-95" : ""}`}>
       <div className="relative h-[280px] overflow-hidden">
-        <img src={p.image} alt={p.name} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-        <span className="absolute top-4 left-0 px-4 py-1.5 text-xs font-bold text-white bg-[var(--gold)] rounded-r-2xl shadow-md">
-          {p.badge}
+        <img src={p.image} alt={p.name} loading="lazy" className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ${isComingSoon ? "grayscale" : ""}`} />
+        <span className={`absolute top-4 left-0 px-4 py-1.5 text-xs font-bold rounded-r-2xl shadow-md ${isComingSoon ? "bg-muted text-muted-foreground" : "text-white bg-[var(--gold)]"}`}>
+          {isComingSoon ? "Coming Soon" : p.badge}
         </span>
-        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+        {isComingSoon && (
+          <div className="absolute inset-0 grid place-items-center bg-primary/55 backdrop-blur-[2px]">
+            <div className="text-center px-6">
+              <div className="inline-block px-5 py-2 rounded-full bg-[var(--gold)] text-primary text-xs font-bold uppercase tracking-[0.2em]">
+                Coming Soon
+              </div>
+              <p className="mt-3 text-white font-display text-2xl font-bold drop-shadow">Launching Soon</p>
+            </div>
+          </div>
+        )}
       </div>
       <div className="p-6 space-y-4">
         <div>
           <h3 className="font-display text-xl font-bold text-primary leading-tight">{p.name}</h3>
           <p className="text-accent font-semibold mt-1">{p.price}</p>
         </div>
+        {p.serving && (
+          <p className="text-xs text-muted-foreground leading-relaxed">
+            {p.serving === "Sale Starts" ? (
+              <b className="text-foreground">Sale Starts In September</b>
+            ) : (
+              <>
+                <span className="font-semibold text-foreground">Serving Areas:</span> {p.serving}
+              </>
+            )}
+          </p>
+        )}
         <div className="grid grid-cols-2 gap-3 text-sm text-muted-foreground">
           <div className="flex items-center gap-2"><MapPin className="w-4 h-4 text-accent shrink-0" /><span className="truncate">{p.location}</span></div>
           <div className="flex items-center gap-2"><Ruler className="w-4 h-4 text-accent shrink-0" /><span className="truncate">{p.area}</span></div>
@@ -112,12 +136,25 @@ function ProjectCard({ p }: { p: Project }) {
           <div className="flex items-center gap-2 col-span-2"><Calendar className="w-4 h-4 text-accent shrink-0" /><span>{p.possession}</span></div>
         </div>
         <div className="flex gap-2 pt-2">
-          <Button className="flex-1 h-[52px] rounded-xl bg-primary text-primary-foreground hover:bg-primary/90">
-            <Calendar className="w-4 h-4" /> Book Visit
-          </Button>
-          <Button variant="outline" className="flex-1 h-[52px] rounded-xl border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-            <Eye className="w-4 h-4" /> Details
-          </Button>
+          {isComingSoon ? (
+            <>
+              <Button disabled className="flex-1 h-[52px] rounded-xl bg-muted text-muted-foreground cursor-not-allowed">
+                <Calendar className="w-4 h-4" /> Book Visit
+              </Button>
+              <Button disabled variant="outline" className="flex-1 h-[52px] rounded-xl cursor-not-allowed">
+                <Eye className="w-4 h-4" /> Details
+              </Button>
+            </>
+          ) : (
+            <>
+              <Button asChild className="flex-1 h-[52px] rounded-xl bg-primary text-primary-foreground hover:bg-primary/90">
+                <Link to="/contact"><Calendar className="w-4 h-4" /> Book Visit</Link>
+              </Button>
+              <Button asChild variant="outline" className="flex-1 h-[52px] rounded-xl border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                <Link to={(p.detailsLink ?? "/contact") as "/green-valley" | "/heights" | "/business-park" | "/contact"}><Eye className="w-4 h-4" /> Details</Link>
+              </Button>
+            </>
+          )}
         </div>
       </div>
     </article>
