@@ -1,11 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import {
-  MapPin, Building2, Car, Shield, Camera, TreePine, Zap, Bath,
+  MapPin, Building2, Car, Shield, Camera, TreePine,
   ArrowUp, Wifi, UtensilsCrossed, ShoppingBag, Accessibility, Droplets,
   Flame, Package, Train, Plane, Briefcase, Hotel, Heart, GraduationCap,
   ShoppingCart, CheckCircle2, ArrowRight, Phone, Download, Calendar,
-  ChevronDown,
+  ChevronDown, Dumbbell, Activity,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SiteHeader } from "@/components/landmarvel/SiteHeader";
