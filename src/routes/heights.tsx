@@ -20,7 +20,7 @@ export const Route = createFileRoute("/heights")({
   head: () => ({
     meta: [
       { title: "Land Marvel Heights — Premium Residential Development | Land Marvel" },
-      { name: "description", content: "Premium residential project at Thiruvanmiyur, LB Road — 2, 3 & 4 BHK luxury apartments with world-class amenities." },
+      { name: "description", content: "Premium residential project at Thiruvanmiyur, LB Road — 1,2, 3 & 4 BHK luxury apartments with world-class amenities." },
       { property: "og:title", content: "Land Marvel Heights | Land Marvel" },
       { property: "og:description", content: "Premium residences at Thiruvanmiyur, LB Road." },
       { property: "og:image", content: res1 },
@@ -35,7 +35,7 @@ const gallery = [res1, res2, res3, res4, buyCta, res1];
 const highlights = [
   "Prime Residential Location",
   "Contemporary Architecture",
-  "Premium 2, 3 & 4 BHK Residences",
+  "Premium 1,2, 3 & 4 BHK Residences",
   "Spacious Balconies & Sky Decks",
   "High Visibility Road Frontage",
   "Excellent Accessibility",

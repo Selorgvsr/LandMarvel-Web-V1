@@ -240,7 +240,7 @@ const livingCards: LivingCard[] = [
     img: res2,
     title: "Modern Apartments",
     desc: "Experience contemporary urban living with thoughtfully designed apartments that offer convenience, comfort, and community living. Ideal for professionals, families, and investors seeking quality homes in strategic locations.",
-    highlights: ["2, 3 & 4 BHK Options", "Premium Amenities", "Smart Layouts", "Excellent Connectivity"],
+    highlights: ["1,2, 3 & 4 BHK Options", "Premium Amenities", "Smart Layouts", "Excellent Connectivity"],
     cta: "View Apartments",
     link: "#residential",
   },
