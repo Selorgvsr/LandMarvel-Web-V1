@@ -10,10 +10,11 @@ import {
 import { Button } from "@/components/ui/button";
 import { SiteHeader } from "@/components/landmarvel/SiteHeader";
 import { SiteFooter } from "@/components/landmarvel/SiteFooter";
-import com1 from "@/assets/com-1.jpg";
+import bp1 from "@/assets/business-park/bp-1.jpeg.asset.json";
+import bp2 from "@/assets/business-park/bp-2.jpeg.asset.json";
+import bp3 from "@/assets/business-park/bp-3.jpeg.asset.json";
+import bp4 from "@/assets/business-park/bp-4.jpeg.asset.json";
 import com2 from "@/assets/com-2.jpg";
-import com3 from "@/assets/com-3.jpg";
-import com4 from "@/assets/com-4.jpg";
 import buyCta from "@/assets/buy-cta.jpg";
 
 export const Route = createFileRoute("/business-park")({
