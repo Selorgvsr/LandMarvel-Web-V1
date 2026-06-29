@@ -21,7 +21,7 @@ import res1 from "@/assets/res-1.jpg";
 import res2 from "@/assets/res-2.jpg";
 import res3 from "@/assets/res-3.jpg";
 import res4 from "@/assets/res-4.jpg";
-import com1 from "@/assets/com-1.jpg";
+import businessParkBuilding from "@/assets/business-park-building.jpeg.asset.json";
 import com2 from "@/assets/com-2.jpg";
 import com3 from "@/assets/com-3.jpg";
 import com4 from "@/assets/com-4.jpg";
@@ -86,7 +86,7 @@ const residentialProjects: Project[] = [
 ];
 
 const commercialProjects: Project[] = [
-  { image: com1, badge: "Investment Hotspot", name: "Land Marvel Business Park", price: "\n", location: "Indira Nagar", area: "7 Acres", units: "120 Units", possession: "Dec 2026", type: "Office Spaces", detailsLink: "/business-park" },
+  { image: businessParkBuilding.url, badge: "Investment Hotspot", name: "Land Marvel Business Park", price: "\n", location: "Indira Nagar", area: "7 Acres", units: "120 Units", possession: "Dec 2026", type: "Office Spaces", detailsLink: "/business-park" },
   { image: com2, badge: "Premium", name: "Land Marvel Trade Centre", price: "\n", location: "LB Road 1", area: "5 Acres", units: "150 Units", possession: "Mar 2027", type: "Retail + Office", comingSoon: true },
   { image: com3, badge: "New Launch", name: "Land Marvel Corporate Hub", price: "\n", location: "LB Road 2", area: "6 Acres", units: "200 Units", possession: "Jun 2027", type: "Business Suites", comingSoon: true },
   { image: com4, badge: "Limited Units", name: "Land Marvel Commercial Square", price: "\n", location: "Thiruvanmiyur,LB Road", area: "3 Acres", units: "100 Units", possession: "Sep 2026", type: "Retail Shops", comingSoon: true },
