@@ -10,10 +10,11 @@ import {
 import { Button } from "@/components/ui/button";
 import { SiteHeader } from "@/components/landmarvel/SiteHeader";
 import { SiteFooter } from "@/components/landmarvel/SiteFooter";
-import com1 from "@/assets/com-1.jpg";
+import bp1 from "@/assets/business-park/bp-1.jpeg.asset.json";
+import bp2 from "@/assets/business-park/bp-2.jpeg.asset.json";
+import bp3 from "@/assets/business-park/bp-3.jpeg.asset.json";
+import bp4 from "@/assets/business-park/bp-4.jpeg.asset.json";
 import com2 from "@/assets/com-2.jpg";
-import com3 from "@/assets/com-3.jpg";
-import com4 from "@/assets/com-4.jpg";
 import buyCta from "@/assets/buy-cta.jpg";
 
 export const Route = createFileRoute("/business-park")({
@@ -23,14 +24,14 @@ export const Route = createFileRoute("/business-park")({
       { name: "description", content: "Premium commercial project at Indira Nagar — office spaces, retail and business suites with world-class infrastructure." },
       { property: "og:title", content: "Land Marvel Business Park | Land Marvel" },
       { property: "og:description", content: "Premium commercial spaces at Indira Nagar, Chennai." },
-      { property: "og:image", content: com1 },
+      { property: "og:image", content: bp1.url },
     ],
     links: [{ rel: "canonical", href: "/business-park" }],
   }),
   component: BusinessParkPage,
 });
 
-const gallery = [com1, com2, com3, com4, buyCta, com1];
+const gallery = [bp1.url, bp2.url, bp3.url, bp4.url];
 
 const highlights = [
   "Prime Commercial Location",
@@ -158,7 +159,7 @@ function BusinessParkPage() {
                 <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-elegant)] group">
                   <img src={gallery[activeImg]} alt="Land Marvel Business Park" className="w-full h-[460px] object-cover group-hover:scale-105 transition-transform duration-700" />
                 </div>
-                <div className="mt-4 grid grid-cols-6 gap-2">
+                <div className="mt-4 grid grid-cols-4 gap-2">
                   {gallery.map((g, i) => (
                     <button key={i} onClick={() => setActiveImg(i)} className={`rounded-xl overflow-hidden border-2 transition-all ${activeImg === i ? "border-[var(--gold)]" : "border-transparent opacity-70 hover:opacity-100"}`}>
                       <img src={g} alt="" className="w-full h-16 object-cover" />
