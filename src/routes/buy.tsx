@@ -102,8 +102,8 @@ function PropertyCard({ p }: { p: Property }) {
         </div>
         {p.serving && (
           <p className="mt-3 text-xs text-muted-foreground leading-relaxed">
-            {p.serving === "Sale Starts" ? (
-              <b className="text-foreground">Sale Starts In September 2026</b>
+            {p.serving.startsWith("Sale Starts") ? (
+              <b className="text-foreground">{p.serving}</b>
             ) : (
               <>
                 <span className="font-semibold text-foreground">Serving Areas:</span> {p.serving}
@@ -156,14 +156,14 @@ function PropertyCard({ p }: { p: Property }) {
 
 
 const plots: Property[] = [
-  { badge: "New Launch", img: greenValleyAerial.url, title: "Land Marvel Green Valley", price: "\n", location: "kilambakkam, Chennai", serving: "Sale Starts", area: "12 Acres", units: "240 Plots", type: "Plotted Layouts", detailsLink: "/green-valley" },
+  { badge: "New Launch", img: greenValleyAerial.url, title: "Land Marvel Green Valley", price: "\n", location: "kilambakkam, Chennai", serving: "Sale Starts In September 2026", area: "12 Acres", units: "240 Plots", type: "Plotted Layouts", detailsLink: "/green-valley" },
   { badge: "Premium", img: plot2, title: "Land Marvel Garden City", price: "\n", location: "Tambaram, Chennai", serving: "Tambaram, Chromepet, Pallavaram", area: "8 Acres", units: "180 Plots", type: "Plotted Layouts", comingSoon: true },
   { badge: "Limited Units", img: plot3, title: "Land Marvel Urban Greens", price: "\n", location: "Perungalathur", serving: "Perungalathur, Vandalur, Tambaram", area: "15 Acres", units: "300 Plots", type: "Plotted Layouts", comingSoon: true },
   { badge: "Lake View", img: plot4, title: "Land Marvel Lake View Plots", price: "\n", location: "Maraimalai Nagar", serving: "Maraimalai Nagar, Singaperumal Koil", area: "10 Acres", units: "220 Plots", type: "Premium Plots", comingSoon: true },
 ];
 
 const residential: Property[] = [
-  { badge: "Ready To Move", img: res1, title: "Land Marvel Heights", price: "\n", location: "Thiruvanmiyur,LB Road", area: "5 Acres", units: "350 Apts", type: "2, 3 & 4 BHK", detailsLink: "/heights" },
+  { badge: "Ready To Move", img: res1, title: "Land Marvel Heights", price: "\n", location: "Thiruvanmiyur,LB Road", serving: "Sale Starts in October 2026", area: "5 Acres", units: "350 Apts", type: "2, 3 & 4 BHK", detailsLink: "/heights" },
   { badge: "Premium", img: res2, title: "Land Marvel Signature", price: "\n", location: "LB Road", area: "4 Acres", units: "420 Units", type: "2, 3 & 4 BHK", comingSoon: true },
   { badge: "New Launch", img: res3, title: "Land Marvel Elite", price: "\n", location: "Perumbakkam", area: "6 Acres", units: "500 Units", type: "Luxury Apts", comingSoon: true },
   { badge: "Limited Units", img: res4, title: "Land Marvel Sky Villas", price: "\n", location: "LB Road 1", area: "8 Acres", units: "250 Villas", type: "Villa Community", comingSoon: true },
