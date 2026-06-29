@@ -289,8 +289,9 @@ function SellPage() {
           <div className="absolute inset-0 bg-primary/85" />
           <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center text-primary-foreground max-w-3xl">
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold">Ready To Sell Your Property?</h2>
-            <p className="mt-5 text-lg text-white/85">
-              Submit your property details today and connect with serious buyers through Land Marvel.
+            <p className="mt-5 text-lg text-white/85 whitespace-pre-line">
+              Submit your property details today and connect with serious buyers through{"\u00a0"}<br />
+              Land Marvel.
             </p>
             <div className="mt-10 flex flex-wrap gap-4 justify-center">
               <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-13 px-7 rounded-xl">
