@@ -27,7 +27,7 @@ export const Route = createFileRoute("/green-valley")({
   head: () => ({
     meta: [
       { title: "Green Valley Township — Premium Villa Plots at Kilambakkam | Land Marvel" },
-      { name: "description", content: "Premium villa plots at Kilambakkam/LB Road 1 (GST Road), Chennai — opposite Asia's largest bus terminus. Plot sizes 560 – 3602 sq.ft." },
+      { name: "description", content: "Premium villa plots at Kilambakkam/Urapakkam (GST Road), Chennai — opposite Asia's largest bus terminus. Plot sizes 560 – 3602 sq.ft." },
       { property: "og:title", content: "Green Valley Township | Land Marvel" },
       { property: "og:description", content: "Premium villa plots opposite Kilambakkam Bus Terminus." },
       { property: "og:image", content: plot1 },
@@ -39,7 +39,7 @@ export const Route = createFileRoute("/green-valley")({
 
 const distances = [
   { id: "bus", label: "Walkable Distance from Kilambakkam Bus Terminus", img: plot1, badge: "Kilambakkam Bus Terminus" },
-  { id: "rail", label: "Walkable Distance from Urappakkam Railway Station", img: plot2, badge: "Urappakkam Railway Station" },
+  { id: "rail", label: "Walkable Distance from Urapakkam Railway Station", img: plot2, badge: "Urapakkam Railway Station" },
   { id: "metro", label: "Walkable Distance from the Upcoming Metro Station", img: plot3, badge: "Upcoming Metro Station" },
 ];
 
@@ -63,7 +63,7 @@ const kilamLocAdv = [
 ];
 
 const projectLocAdv = [
-  { icon: Train, label: "2 Minutes from Urappakkam Railway Station" },
+  { icon: Train, label: "2 Minutes from Urapakkam Railway Station" },
   { icon: TrainFront, label: "3 Minutes from Kilambakkam Bus Terminus & Upcoming Metro Rail Station" },
   { icon: MapPin, label: "2 Minutes from GST Road" },
   { icon: Clock, label: "10 Minutes from Tambaram" },
@@ -154,7 +154,7 @@ function GreenValleyPage() {
             <div aria-hidden className="absolute bottom-0 right-10 w-40 h-40 rounded-full bg-[var(--gold)]/20 blur-3xl" />
             <h3 className="font-display text-2xl sm:text-4xl font-bold leading-tight">
               Premium Villa Plots at<br />
-              <span className="text-[var(--gold)]">Kilambakkam / LB Road 1</span><br />
+              <span className="text-[var(--gold)]">Kilambakkam / Urapakkam</span><br />
               (GST Road), Chennai
             </h3>
             <div className="mt-6 inline-block px-6 py-3 rounded-full bg-white/15 backdrop-blur border border-white/30 font-semibold">
@@ -243,7 +243,7 @@ function GreenValleyPage() {
             </div>
             <div className="mt-5 flex flex-wrap justify-center gap-4 text-xs text-muted-foreground">
               <span className="inline-flex items-center gap-2"><span className="w-2.5 h-2.5 rounded-full bg-slate-600" /> GST Road</span>
-              <span className="inline-flex items-center gap-2"><span className="w-2.5 h-2.5 rounded-full bg-blue-500" /> Urappakkam Railway Station</span>
+              <span className="inline-flex items-center gap-2"><span className="w-2.5 h-2.5 rounded-full bg-blue-500" /> Urapakkam Railway Station</span>
               <span className="inline-flex items-center gap-2"><span className="w-2.5 h-2.5 rounded-full bg-emerald-500" /> Kilambakkam Bus Terminus</span>
               <span className="inline-flex items-center gap-2"><span className="w-2.5 h-2.5 rounded-full bg-[var(--gold)]" /> Our Project Site</span>
             </div>
