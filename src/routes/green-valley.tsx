@@ -154,7 +154,7 @@ function GreenValleyPage() {
             <div aria-hidden className="absolute bottom-0 right-10 w-40 h-40 rounded-full bg-[var(--gold)]/20 blur-3xl" />
             <h3 className="font-display text-2xl sm:text-4xl font-bold leading-tight">
               Premium Villa Plots at<br />
-              <span className="text-[var(--gold)]">Kilambakkam / LB Road 1</span><br />
+              <span className="text-[var(--gold)]">Kilambakkam / Urapakkam</span><br />
               (GST Road), Chennai
             </h3>
             <div className="mt-6 inline-block px-6 py-3 rounded-full bg-white/15 backdrop-blur border border-white/30 font-semibold">
