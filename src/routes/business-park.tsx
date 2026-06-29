@@ -159,7 +159,7 @@ function BusinessParkPage() {
                 <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-elegant)] group">
                   <img src={gallery[activeImg]} alt="Land Marvel Business Park" className="w-full h-[460px] object-cover group-hover:scale-105 transition-transform duration-700" />
                 </div>
-                <div className="mt-4 grid grid-cols-6 gap-2">
+                <div className="mt-4 grid grid-cols-4 gap-2">
                   {gallery.map((g, i) => (
                     <button key={i} onClick={() => setActiveImg(i)} className={`rounded-xl overflow-hidden border-2 transition-all ${activeImg === i ? "border-[var(--gold)]" : "border-transparent opacity-70 hover:opacity-100"}`}>
                       <img src={g} alt="" className="w-full h-16 object-cover" />
