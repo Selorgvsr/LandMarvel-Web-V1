@@ -1,11 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import {
-  MapPin, Building2, Car, Shield, Camera, TreePine, Zap, Bath,
+  MapPin, Building2, Car, Shield, Camera, TreePine,
   ArrowUp, Wifi, UtensilsCrossed, ShoppingBag, Accessibility, Droplets,
   Flame, Package, Train, Plane, Briefcase, Hotel, Heart, GraduationCap,
   ShoppingCart, CheckCircle2, ArrowRight, Phone, Calendar,
-  ChevronDown,
+  ChevronDown, Dumbbell, Activity,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SiteHeader } from "@/components/landmarvel/SiteHeader";
@@ -45,19 +45,19 @@ const highlights = [
 ];
 
 const amenities = [
-  { icon: Building2, label: "Grand Reception Lobby" },
+  { icon: Activity, label: "Jogging & Walking Track" },
   { icon: Car, label: "Multi-Level Parking" },
   { icon: Shield, label: "24×7 Security" },
   { icon: Camera, label: "CCTV Surveillance" },
   { icon: TreePine, label: "Landscaped Open Spaces" },
-  { icon: Zap, label: "Power Backup" },
-  { icon: Bath, label: "Modern Common Areas" },
+  { icon: TreePine, label: "Landscaped Gardens" },
+  { icon: Dumbbell, label: "Fully Equipped Gym" },
   { icon: ArrowUp, label: "High-Speed Elevators" },
   { icon: Wifi, label: "High-Speed Internet Ready" },
   { icon: UtensilsCrossed, label: "Food Court & Cafeteria" },
   { icon: ShoppingBag, label: "Retail Convenience Stores" },
   { icon: Accessibility, label: "Universal Accessibility" },
-  { icon: Droplets, label: "Water Management System" },
+  { icon: Droplets, label: "Rainwater Harvesting" },
   { icon: Flame, label: "Fire Safety Systems" },
   { icon: Package, label: "Loading & Service Areas" },
 ];
