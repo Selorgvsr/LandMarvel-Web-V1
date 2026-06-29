@@ -5,7 +5,7 @@ import {
   ArrowUp, Wifi, UtensilsCrossed, ShoppingBag, Accessibility, Droplets,
   Flame, Package, Train, Plane, Briefcase, Hotel, Heart, GraduationCap,
   ShoppingCart, CheckCircle2, ArrowRight, Phone, Calendar,
-  ChevronDown, Dumbbell, Activity,
+  ChevronDown, Dumbbell, Activity, Baby,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SiteHeader } from "@/components/landmarvel/SiteHeader";
@@ -55,7 +55,7 @@ const amenities = [
   { icon: ArrowUp, label: "High-Speed Elevators" },
   { icon: Wifi, label: "High-Speed Internet Ready" },
   { icon: UtensilsCrossed, label: "Food Court & Cafeteria" },
-  { icon: ShoppingBag, label: "Retail Convenience Stores" },
+  { icon: Baby, label: "Children's Play Area" },
   { icon: Accessibility, label: "Universal Accessibility" },
   { icon: Droplets, label: "Rainwater Harvesting" },
   { icon: Flame, label: "Fire Safety Systems" },
