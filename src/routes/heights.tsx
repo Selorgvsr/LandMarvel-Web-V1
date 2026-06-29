@@ -5,7 +5,7 @@ import {
   ArrowUp, Wifi, UtensilsCrossed, ShoppingBag, Accessibility, Droplets,
   Flame, Package, Train, Plane, Briefcase, Hotel, Heart, GraduationCap,
   ShoppingCart, CheckCircle2, ArrowRight, Phone, Download, Calendar,
-  ChevronDown, Dumbbell, Activity, Baby,
+  ChevronDown, Dumbbell, Activity, Baby, Trophy,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SiteHeader } from "@/components/landmarvel/SiteHeader";
@@ -59,7 +59,7 @@ const amenities = [
   { icon: Accessibility, label: "Universal Accessibility" },
   { icon: Droplets, label: "Rainwater Harvesting" },
   { icon: Flame, label: "Fire Safety Systems" },
-  { icon: Package, label: "Loading & Service Areas" },
+  { icon: Trophy, label: "Outdoor Sports Court" },
 ];
 
 const specsLeft = [
