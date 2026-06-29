@@ -24,14 +24,14 @@ export const Route = createFileRoute("/business-park")({
       { name: "description", content: "Premium commercial project at Indira Nagar — office spaces, retail and business suites with world-class infrastructure." },
       { property: "og:title", content: "Land Marvel Business Park | Land Marvel" },
       { property: "og:description", content: "Premium commercial spaces at Indira Nagar, Chennai." },
-      { property: "og:image", content: com1 },
+      { property: "og:image", content: bp1.url },
     ],
     links: [{ rel: "canonical", href: "/business-park" }],
   }),
   component: BusinessParkPage,
 });
 
-const gallery = [com1, com2, com3, com4, buyCta, com1];
+const gallery = [bp1.url, bp2.url, bp3.url, bp4.url];
 
 const highlights = [
   "Prime Commercial Location",
