@@ -27,7 +27,7 @@ export const Route = createFileRoute("/green-valley")({
   head: () => ({
     meta: [
       { title: "Green Valley Township — Premium Villa Plots at Kilambakkam | Land Marvel" },
-      { name: "description", content: "Premium villa plots at Kilambakkam/LB Road 1 (GST Road), Chennai — opposite Asia's largest bus terminus. Plot sizes 560 – 3602 sq.ft." },
+      { name: "description", content: "Premium villa plots at Kilambakkam/Urapakkam (GST Road), Chennai — opposite Asia's largest bus terminus. Plot sizes 560 – 3602 sq.ft." },
       { property: "og:title", content: "Green Valley Township | Land Marvel" },
       { property: "og:description", content: "Premium villa plots opposite Kilambakkam Bus Terminus." },
       { property: "og:image", content: plot1 },
