@@ -436,8 +436,9 @@ export function CommercialSolutionsSection() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
           <div className="text-center max-w-3xl mx-auto">
             <Eyebrow>Investment Benefits</Eyebrow>
-            <h3 className="mt-3 font-display text-3xl sm:text-4xl lg:text-5xl font-bold">
-              Why Businesses Choose <span className="text-[var(--gold)]">Land Marvel</span>
+            <h3 className="mt-3 font-display text-3xl sm:text-4xl lg:text-5xl font-bold whitespace-pre-line">
+              Why Businesses Choose{"\u00a0"}<br />
+              <span className="text-[var(--gold)]">Land Marvel</span>
             </h3>
             <p className="mt-5 text-white/80 text-lg">
               We combine location intelligence, market expertise, quality development, and customer-focused solutions to create commercial assets that generate value for businesses and investors alike.
