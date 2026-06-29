@@ -120,7 +120,7 @@ function ProjectCard({ p }: { p: Project }) {
         {p.serving && (
           <p className="text-xs text-muted-foreground leading-relaxed">
             {p.serving === "Sale Starts" ? (
-              <b className="text-foreground">Sale Starts In September</b>
+              <b className="text-foreground">Sale Starts In September 2026</b>
             ) : (
               <>
                 <span className="font-semibold text-foreground">Serving Areas:</span> {p.serving}
