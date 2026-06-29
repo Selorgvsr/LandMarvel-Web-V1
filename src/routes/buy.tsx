@@ -163,10 +163,10 @@ const plots: Property[] = [
 ];
 
 const residential: Property[] = [
-  { badge: "Ready To Move", img: res1, title: "Land Marvel Heights", price: "\n", location: "Thiruvanmiyur,LB Road", area: "5 Acres", units: "350 Apts", type: "2, 3 & 4 BHK" },
-  { badge: "Premium", img: res2, title: "Land Marvel Signature", price: "\n", location: "LB Road", area: "4 Acres", units: "420 Units", type: "2, 3 & 4 BHK" },
-  { badge: "New Launch", img: res3, title: "Land Marvel Elite", price: "\n", location: "Perumbakkam", area: "6 Acres", units: "500 Units", type: "Luxury Apts" },
-  { badge: "Limited Units", img: res4, title: "Land Marvel Sky Villas", price: "\n", location: "LB Road 1", area: "8 Acres", units: "250 Villas", type: "Villa Community" },
+  { badge: "Ready To Move", img: res1, title: "Land Marvel Heights", price: "\n", location: "Thiruvanmiyur,LB Road", area: "5 Acres", units: "350 Apts", type: "2, 3 & 4 BHK", detailsLink: "/heights" },
+  { badge: "Premium", img: res2, title: "Land Marvel Signature", price: "\n", location: "LB Road", area: "4 Acres", units: "420 Units", type: "2, 3 & 4 BHK", comingSoon: true },
+  { badge: "New Launch", img: res3, title: "Land Marvel Elite", price: "\n", location: "Perumbakkam", area: "6 Acres", units: "500 Units", type: "Luxury Apts", comingSoon: true },
+  { badge: "Limited Units", img: res4, title: "Land Marvel Sky Villas", price: "\n", location: "LB Road 1", area: "8 Acres", units: "250 Villas", type: "Villa Community", comingSoon: true },
 ];
 
 const commercial: Property[] = [
