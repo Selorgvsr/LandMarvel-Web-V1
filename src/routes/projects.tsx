@@ -13,7 +13,7 @@ import { SiteHeader } from "@/components/landmarvel/SiteHeader";
 import aboutImg from "@/assets/about-building.jpg";
 import projectHeroVideo from "@/assets/project-hero-video.mp4.asset.json";
 import ctaImg from "@/assets/buy-cta.jpg";
-import plot1 from "@/assets/plot-1.jpg";
+import greenValleyAerial from "@/assets/green-valley-aerial.png.asset.json";
 import plot2 from "@/assets/plot-2.jpg";
 import plot3 from "@/assets/plot-3.jpg";
 import plot4 from "@/assets/plot-4.jpg";
