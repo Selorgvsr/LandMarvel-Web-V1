@@ -72,7 +72,7 @@ type Project = {
 };
 
 const plotProjects: Project[] = [
-  { image: greenValleyAerial.url, badge: "New Launch", name: "Land Marvel Green Valley", price: "\n", location: "kilambakkam, Chennai", serving: "Sale Starts", area: "12 Acres", units: "240 Plots", possession: "Ready To Register", type: "Plotted Layouts", detailsLink: "/green-valley" },
+  { image: greenValleyAerial.url, badge: "New Launch", name: "Land Marvel Green Valley", price: "\n", location: "kilambakkam, Chennai", serving: "Sale Starts In September 2026", area: "12 Acres", units: "240 Plots", possession: "Ready To Register", type: "Plotted Layouts", detailsLink: "/green-valley" },
   { image: plot2, badge: "Premium", name: "Land Marvel Garden City", price: "\n", location: "Tambaram, Chennai", serving: "Tambaram, Chromepet, Pallavaram", area: "8 Acres", units: "180 Plots", possession: "Ready To Register", type: "Plotted Layouts", comingSoon: true },
   { image: plot3, badge: "Limited Units", name: "Land Marvel Urban Greens", price: "\n", location: "Perungalathur", serving: "Perungalathur, Vandalur, Tambaram", area: "15 Acres", units: "300 Plots", possession: "Under Approval", type: "Plotted Layouts", comingSoon: true },
   { image: plot4, badge: "Lake View", name: "Land Marvel Lake View Plots", price: "\n", location: "Maraimalai Nagar", serving: "Maraimalai Nagar, Singaperumal Koil", area: "10 Acres", units: "220 Plots", possession: "Ready To Register", type: "Premium Plots", comingSoon: true },
@@ -86,7 +86,7 @@ const residentialProjects: Project[] = [
 ];
 
 const commercialProjects: Project[] = [
-  { image: businessParkBuilding.url, badge: "Investment Hotspot", name: "Land Marvel Business Park", price: "\n", location: "Indira Nagar", area: "7 Acres", units: "120 Units", possession: "Dec 2026", type: "Office Spaces", detailsLink: "/business-park" },
+  { image: businessParkBuilding.url, badge: "Investment Hotspot", name: "Land Marvel Business Park", price: "\n", location: "Indira Nagar", serving: "Sale Starts in November 2026", area: "7 Acres", units: "120 Units", possession: "Dec 2026", type: "Office Spaces", detailsLink: "/business-park" },
   { image: com2, badge: "Premium", name: "Land Marvel Trade Centre", price: "\n", location: "LB Road 1", area: "5 Acres", units: "150 Units", possession: "Mar 2027", type: "Retail + Office", comingSoon: true },
   { image: com3, badge: "New Launch", name: "Land Marvel Corporate Hub", price: "\n", location: "LB Road 2", area: "6 Acres", units: "200 Units", possession: "Jun 2027", type: "Business Suites", comingSoon: true },
   { image: com4, badge: "Limited Units", name: "Land Marvel Commercial Square", price: "\n", location: "Thiruvanmiyur,LB Road", area: "3 Acres", units: "100 Units", possession: "Sep 2026", type: "Retail Shops", comingSoon: true },
@@ -119,8 +119,8 @@ function ProjectCard({ p }: { p: Project }) {
         </div>
         {p.serving && (
           <p className="text-xs text-muted-foreground leading-relaxed">
-            {p.serving === "Sale Starts" ? (
-              <b className="text-foreground">Sale Starts In September 2026</b>
+            {p.serving.startsWith("Sale Starts") ? (
+              <b className="text-foreground">{p.serving}</b>
             ) : (
               <>
                 <span className="font-semibold text-foreground">Serving Areas:</span> {p.serving}
