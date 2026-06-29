@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 
 import landAerial from "@/assets/buy-land-aerial.jpg";
 import landSiteVisit from "@/assets/buy-land-sitevisit.jpg";
-import resFamily from "@/assets/buy-res-family.jpg";
+import resFamily from "@/assets/buy-res-family.jpg.asset.json";
 import comHero from "@/assets/buy-com-hero.jpg";
 import comSuccess from "@/assets/buy-com-success.jpg";
 import buyCta from "@/assets/buy-cta.jpg";
