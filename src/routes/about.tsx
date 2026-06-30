@@ -174,7 +174,7 @@ function HeroSection() {
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-xs font-medium tracking-wide uppercase">
             <Star className="w-3.5 h-3.5 text-[var(--gold)]" /> Since Trust Began
           </span>
-          <h1 className="mt-6 font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight drop-shadow-[0_4px_20px_rgba(0,0,0,0.45)]">
+          <h1 className="mt-6 font-display text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight drop-shadow-[0_4px_20px_rgba(0,0,0,0.45)]">
             Building Landmarks.
             <br />
             Creating Communities.
