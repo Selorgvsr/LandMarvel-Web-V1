@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 import landAerial from "@/assets/buy-land-aerial.jpg";
 import landSiteVisit from "@/assets/buy-land-sitevisit.jpg";
 import resFamily from "@/assets/buy-res-family.jpg.asset.json";
-import comHero from "@/assets/buy-com-hero.jpg";
+import comHero from "@/assets/buy-com-hero.jpg.asset.json";
 import comSuccess from "@/assets/buy-com-success.jpg";
 import buyCta from "@/assets/buy-cta.jpg";
 
@@ -371,7 +371,7 @@ export function CommercialSolutionsSection() {
         {/* Intro: image left, content right */}
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div className="relative overflow-hidden rounded-[24px] shadow-[var(--shadow-elegant)] group">
-            <img src={comHero} alt="Modern commercial business district" width={1024} height={1024} loading="lazy"
+            <img src={comHero.url} alt="Modern commercial business district" width={1024} height={1024} loading="lazy"
               className="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-700" />
             <div className="absolute top-5 right-5 bg-[var(--gold)] text-primary px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wide shadow-md">
               Commercial Real Estate
