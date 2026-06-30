@@ -244,6 +244,23 @@ function ProjectsPage() {
         </div>
       </section>
 
+      {/* COMPLETED PROJECTS GALLERY */}
+      <section className="py-20 sm:py-28 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-primary">Completed Projects</h2>
+            <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">A glimpse of communities we've built across Chennai.</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+            {[c1.url, c2.url, c3.url, c4.url, c5.url, c6.url, c7.url, c8.url].map((src, i) => (
+              <div key={i} className="group relative overflow-hidden rounded-2xl shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elegant)] transition-all aspect-[4/5] bg-muted">
+                <img src={src} alt={`Completed project ${i + 1}`} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* WHY INVEST */}
       <section className="py-20 bg-[image:var(--gradient-soft)]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
