@@ -14,9 +14,15 @@ import catVilla from "@/assets/cat-villa.jpg";
 import catApartment from "@/assets/cat-apartment.jpg";
 import catPlot from "@/assets/cat-plot.jpg";
 import catCommercial from "@/assets/cat-commercial.jpg";
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
+import c1 from "@/assets/completed/c1.jpeg.asset.json";
+import c2 from "@/assets/completed/c2.jpeg.asset.json";
+import c3 from "@/assets/completed/c3.jpeg.asset.json";
+import c4 from "@/assets/completed/c4.jpeg.asset.json";
+import c5 from "@/assets/completed/c5.jpeg.asset.json";
+import c6 from "@/assets/completed/c6.jpeg.asset.json";
+import c7 from "@/assets/completed/c7.jpeg.asset.json";
+import c8 from "@/assets/completed/c8.jpeg.asset.json";
+
 
 import homeHeroVideo from "@/assets/home-hero-video.mp4.asset.json";
 import buySectionImg from "@/assets/buy-section.jpg";
@@ -337,37 +343,25 @@ function Categories() {
 }
 
 function Projects() {
-  const projects = [
-    { img: project1, title: "Marvel Heights", location: "Perumbakkam", units: "120 Units" },
-    { img: project2, title: "Coastal Residences", location: "Urapakkam", units: "84 Units" },
-    { img: project3, title: "Palm Grove Villas", location: "Thiruvanmiyur,LB Road", units: "32 Villas" },
+  const images = [
+    c1.url, c2.url, c3.url, c4.url, c5.url, c6.url, c7.url, c8.url,
   ];
   return (
     <section id="projects" className="py-20 sm:py-28 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading eyebrow="" title="Completed Projects" desc="A glimpse of communities we've built across Chennai." />
-        <div className="mt-14 grid md:grid-cols-3 gap-7">
-          {projects.map((p) => (
-            <article key={p.title} className="group bg-card rounded-2xl overflow-hidden border border-border shadow-[var(--shadow-card)] hover:-translate-y-1 hover:shadow-[var(--shadow-elegant)] transition-all">
-              <div className="relative overflow-hidden">
-                <img src={p.img} alt={p.title} width={1024} height={768} loading="lazy" className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" />
-                <span className="absolute top-4 left-4 bg-white/95 text-primary text-xs font-semibold px-3 py-1 rounded-full">{p.units}</span>
-              </div>
-              <div className="p-6">
-              <div className="text-accent text-sm">{p.location}</div>
-              <h3 className="mt-2 font-display text-2xl font-bold text-primary">{p.title}</h3>
-              <a href="#" className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-foreground hover:text-accent">View Project</a>
-              </div>
-            </article>
+        <div className="mt-14 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+          {images.map((src, i) => (
+            <div key={i} className="group relative overflow-hidden rounded-2xl shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elegant)] transition-all aspect-[4/5] bg-muted">
+              <img src={src} alt={`Completed project ${i + 1}`} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            </div>
           ))}
-        </div>
-        <div className="mt-12 text-center">
-          <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground h-12 px-7">View All Projects</Button>
         </div>
       </div>
     </section>
   );
 }
+
 
 function Timeline() {
   const steps = [
