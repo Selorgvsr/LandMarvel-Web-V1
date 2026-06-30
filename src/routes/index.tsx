@@ -14,9 +14,15 @@ import catVilla from "@/assets/cat-villa.jpg";
 import catApartment from "@/assets/cat-apartment.jpg";
 import catPlot from "@/assets/cat-plot.jpg";
 import catCommercial from "@/assets/cat-commercial.jpg";
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
+import c1 from "@/assets/completed/c1.jpeg.asset.json";
+import c2 from "@/assets/completed/c2.jpeg.asset.json";
+import c3 from "@/assets/completed/c3.jpeg.asset.json";
+import c4 from "@/assets/completed/c4.jpeg.asset.json";
+import c5 from "@/assets/completed/c5.jpeg.asset.json";
+import c6 from "@/assets/completed/c6.jpeg.asset.json";
+import c7 from "@/assets/completed/c7.jpeg.asset.json";
+import c8 from "@/assets/completed/c8.jpeg.asset.json";
+
 
 import homeHeroVideo from "@/assets/home-hero-video.mp4.asset.json";
 import buySectionImg from "@/assets/buy-section.jpg";
