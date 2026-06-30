@@ -25,6 +25,14 @@ import businessParkBuilding from "@/assets/business-park-building.jpeg.asset.jso
 import com2 from "@/assets/com-2.jpg";
 import com3 from "@/assets/com-3.jpg";
 import com4 from "@/assets/com-4.jpg";
+import c1 from "@/assets/completed/c1.jpeg.asset.json";
+import c2 from "@/assets/completed/c2.jpeg.asset.json";
+import c3 from "@/assets/completed/c3.jpeg.asset.json";
+import c4 from "@/assets/completed/c4.jpeg.asset.json";
+import c5 from "@/assets/completed/c5.jpeg.asset.json";
+import c6 from "@/assets/completed/c6.jpeg.asset.json";
+import c7 from "@/assets/completed/c7.jpeg.asset.json";
+import c8 from "@/assets/completed/c8.jpeg.asset.json";
 
 export const Route = createFileRoute("/projects")({
   head: () => ({
