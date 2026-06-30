@@ -17,7 +17,7 @@ import greenValleyAerial from "@/assets/green-valley-aerial.png.asset.json";
 import plot2 from "@/assets/plot-2.jpg";
 import plot3 from "@/assets/plot-3.jpg";
 import plot4 from "@/assets/plot-4.jpg";
-import res1 from "@/assets/res-1.jpg";
+import res1 from "@/assets/land-marvel-heights-building.jpg.asset.json";
 import res2 from "@/assets/res-2.jpg";
 import res3 from "@/assets/res-3.jpg";
 import res4 from "@/assets/res-4.jpg";
@@ -95,7 +95,7 @@ const plotProjects: Project[] = [
 ];
 
 const residentialProjects: Project[] = [
-  { image: res1, badge: "Ready To Move", name: "Land Marvel Heights", price: "\n", location: "Thiruvanmiyur,LB Road", area: "5 Acres", units: "350 Apts", possession: "Ready To Move", type: "1,2, 3 & 4 BHK", detailsLink: "/heights" },
+  { image: res1.url, badge: "Ready To Move", name: "Land Marvel Heights", price: "\n", location: "Thiruvanmiyur,LB Road", area: "5 Acres", units: "350 Apts", possession: "Ready To Move", type: "1,2, 3 & 4 BHK", detailsLink: "/heights" },
   { image: res2, badge: "Premium", name: "Land Marvel Signature", price: "\n", location: "LB Road", area: "4 Acres", units: "420 Units", possession: "Dec 2026", type: "1,2, 3 & 4 BHK", comingSoon: true },
   { image: res3, badge: "New Launch", name: "Land Marvel Elite", price: "\n", location: "Perumbakkam", area: "6 Acres", units: "500 Units", possession: "Mar 2027", type: "Luxury Apts", comingSoon: true },
   { image: res4, badge: "Limited Units", name: "Land Marvel Sky Villas", price: "\n", location: "Urapakkam", area: "8 Acres", units: "250 Villas", possession: "Jun 2027", type: "Villa Community", comingSoon: true },
