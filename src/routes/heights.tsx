@@ -31,7 +31,7 @@ export const Route = createFileRoute("/heights")({
   component: HeightsPage,
 });
 
-const gallery = [res1, res2, res3, res4, buyCta, res1];
+const gallery = [heights1.url, heights2.url, heights3.url];
 
 const highlights = [
   "Prime Residential Location",
