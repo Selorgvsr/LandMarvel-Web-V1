@@ -33,6 +33,14 @@ import c5 from "@/assets/completed/c5.jpeg.asset.json";
 import c6 from "@/assets/completed/c6.jpeg.asset.json";
 import c7 from "@/assets/completed/c7.jpeg.asset.json";
 import c8 from "@/assets/completed/c8.jpeg.asset.json";
+import c9 from "@/assets/completed/c9.jpeg.asset.json";
+import c10 from "@/assets/completed/c10.jpeg.asset.json";
+import c11 from "@/assets/completed/c11.jpeg.asset.json";
+import c12 from "@/assets/completed/c12.jpeg.asset.json";
+import c13 from "@/assets/completed/c13.jpeg.asset.json";
+import c14 from "@/assets/completed/c14.jpeg.asset.json";
+import c15 from "@/assets/completed/c15.jpeg.asset.json";
+import c16 from "@/assets/completed/c16.jpeg.asset.json";
 
 export const Route = createFileRoute("/projects")({
   head: () => ({
@@ -252,7 +260,7 @@ function ProjectsPage() {
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">A glimpse of communities we've built across Chennai.</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-            {[c1.url, c2.url, c3.url, c4.url, c5.url, c6.url, c7.url, c8.url].map((src, i) => (
+            {[c1.url, c2.url, c3.url, c4.url, c5.url, c6.url, c7.url, c8.url, c9.url, c10.url, c11.url, c12.url, c13.url, c14.url, c15.url, c16.url].map((src, i) => (
               <div key={i} className="group relative overflow-hidden rounded-2xl shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elegant)] transition-all aspect-[4/5] bg-muted">
                 <img src={src} alt={`Completed project ${i + 1}`} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
