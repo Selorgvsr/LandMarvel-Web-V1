@@ -12,9 +12,10 @@ import { SiteHeader } from "@/components/landmarvel/SiteHeader";
 import { SiteFooter } from "@/components/landmarvel/SiteFooter";
 import res1 from "@/assets/res-1.jpg";
 import res2 from "@/assets/res-2.jpg";
-import res3 from "@/assets/res-3.jpg";
-import res4 from "@/assets/res-4.jpg";
 import buyCta from "@/assets/buy-cta.jpg";
+import heights1 from "@/assets/heights/heights-1.jpeg.asset.json";
+import heights2 from "@/assets/heights/heights-2.jpeg.asset.json";
+import heights3 from "@/assets/heights/heights-3.jpeg.asset.json";
 
 export const Route = createFileRoute("/heights")({
   head: () => ({
@@ -30,7 +31,7 @@ export const Route = createFileRoute("/heights")({
   component: HeightsPage,
 });
 
-const gallery = [res1, res2, res3, res4, buyCta, res1];
+const gallery = [heights1.url, heights2.url, heights3.url];
 
 const highlights = [
   "Prime Residential Location",
@@ -158,7 +159,7 @@ function HeightsPage() {
                 <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-elegant)] group">
                   <img src={gallery[activeImg]} alt="Land Marvel Heights" className="w-full h-[460px] object-cover group-hover:scale-105 transition-transform duration-700" />
                 </div>
-                <div className="mt-4 grid grid-cols-6 gap-2">
+                <div className="mt-4 grid grid-cols-3 gap-2">
                   {gallery.map((g, i) => (
                     <button key={i} onClick={() => setActiveImg(i)} className={`rounded-xl overflow-hidden border-2 transition-all ${activeImg === i ? "border-[var(--gold)]" : "border-transparent opacity-70 hover:opacity-100"}`}>
                       <img src={g} alt="" className="w-full h-16 object-cover" />
