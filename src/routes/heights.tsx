@@ -12,9 +12,10 @@ import { SiteHeader } from "@/components/landmarvel/SiteHeader";
 import { SiteFooter } from "@/components/landmarvel/SiteFooter";
 import res1 from "@/assets/res-1.jpg";
 import res2 from "@/assets/res-2.jpg";
-import res3 from "@/assets/res-3.jpg";
-import res4 from "@/assets/res-4.jpg";
 import buyCta from "@/assets/buy-cta.jpg";
+import heights1 from "@/assets/heights/heights-1.jpeg.asset.json";
+import heights2 from "@/assets/heights/heights-2.jpeg.asset.json";
+import heights3 from "@/assets/heights/heights-3.jpeg.asset.json";
 
 export const Route = createFileRoute("/heights")({
   head: () => ({
