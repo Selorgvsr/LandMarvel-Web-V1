@@ -25,6 +25,14 @@ import businessParkBuilding from "@/assets/business-park-building.jpeg.asset.jso
 import com2 from "@/assets/com-2.jpg";
 import com3 from "@/assets/com-3.jpg";
 import com4 from "@/assets/com-4.jpg";
+import c1 from "@/assets/completed/c1.jpeg.asset.json";
+import c2 from "@/assets/completed/c2.jpeg.asset.json";
+import c3 from "@/assets/completed/c3.jpeg.asset.json";
+import c4 from "@/assets/completed/c4.jpeg.asset.json";
+import c5 from "@/assets/completed/c5.jpeg.asset.json";
+import c6 from "@/assets/completed/c6.jpeg.asset.json";
+import c7 from "@/assets/completed/c7.jpeg.asset.json";
+import c8 from "@/assets/completed/c8.jpeg.asset.json";
 
 export const Route = createFileRoute("/projects")({
   head: () => ({
@@ -233,6 +241,23 @@ function ProjectsPage() {
           <CategorySection icon="🏞" title="Plot Projects" description="Premium plotted developments in rapidly growing locations with excellent future appreciation potential." projects={plotProjects} />
           <CategorySection icon="🏢" title="Residential Projects" description="Premium apartments, gated communities, and luxury villas designed for modern families." projects={residentialProjects} />
           <CategorySection icon="🏬" title="Commercial Projects" description="Modern office spaces, retail developments, and commercial hubs in strategic business districts." projects={commercialProjects} />
+        </div>
+      </section>
+
+      {/* COMPLETED PROJECTS GALLERY */}
+      <section className="py-20 sm:py-28 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-primary">Completed Projects</h2>
+            <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">A glimpse of communities we've built across Chennai.</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+            {[c1.url, c2.url, c3.url, c4.url, c5.url, c6.url, c7.url, c8.url].map((src, i) => (
+              <div key={i} className="group relative overflow-hidden rounded-2xl shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elegant)] transition-all aspect-[4/5] bg-muted">
+                <img src={src} alt={`Completed project ${i + 1}`} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
