@@ -157,7 +157,7 @@ function AboutPage() {
 /* ─── SECTION 1: HERO ─── */
 function HeroSection() {
   return (
-    <section className="relative h-screen min-h-[640px] w-full overflow-hidden">
+    <section className="relative min-h-[560px] h-[100svh] sm:min-h-[640px] w-full overflow-hidden">
       <video
         src={aboutHeroVideo.url}
         autoPlay
@@ -167,49 +167,45 @@ function HeroSection() {
         className="absolute inset-0 w-full h-full object-cover scale-105"
         style={{ filter: 'brightness(1.2) contrast(1.15) saturate(1.1)' }}
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/15 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-black/10" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
       <div className="relative z-10 h-full container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center text-white">
         <div className="max-w-3xl">
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-xs font-medium tracking-wide uppercase">
-            <Star className="w-3.5 h-3.5 text-[var(--gold)]" /> Since Trust Began
+          <span className="inline-flex items-center gap-2 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-[10px] sm:text-xs font-medium tracking-wide uppercase">
+            <Star className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[var(--gold)]" /> Since Trust Began
           </span>
-          <h1 className="mt-6 font-display text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight drop-shadow-[0_4px_20px_rgba(0,0,0,0.45)]">
-            Building Landmarks.
-            <br />
-            Creating Communities.
-            <br />
-            Delivering Trust.
+          <h1 className="mt-4 sm:mt-6 font-display text-2xl sm:text-4xl lg:text-5xl font-bold leading-[1.15] sm:leading-tight drop-shadow-[0_4px_20px_rgba(0,0,0,0.55)]">
+            Building Landmarks. Creating Communities. Delivering Trust.
           </h1>
-          <p className="mt-6 text-lg text-white/90 leading-relaxed max-w-2xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
+          <p className="mt-4 sm:mt-6 text-sm sm:text-lg text-white/90 leading-relaxed max-w-2xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
             Land Marvel Group is one of South India's leading real estate
             developers with a strong legacy of delivering premium residential and
             commercial developments built on trust, quality, and innovation.
           </p>
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-6 sm:mt-10 flex flex-wrap gap-3 sm:gap-4">
             <Link
               to="/projects"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-[var(--gold)] text-primary font-semibold hover:bg-[var(--gold)]/90 transition-colors shadow-lg"
+              className="inline-flex items-center gap-2 px-5 sm:px-8 py-2.5 sm:py-3.5 rounded-xl bg-[var(--gold)] text-primary text-sm sm:text-base font-semibold hover:bg-[var(--gold)]/90 transition-colors shadow-lg"
             >
               Explore Project <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
               to="/about"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl border-2 border-white/40 bg-white/10 text-white font-semibold hover:bg-white/20 transition-colors"
+              className="inline-flex items-center gap-2 px-5 sm:px-8 py-2.5 sm:py-3.5 rounded-xl border-2 border-white/40 bg-white/10 text-white text-sm sm:text-base font-semibold hover:bg-white/20 transition-colors"
             >
               Our Journey
             </Link>
           </div>
-          <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-3xl">
+          <div className="mt-8 sm:mt-12 grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-3xl">
             {[
               ["200+", "Projects Delivered"],
               ["2.5M+", "Sq. Ft Developed"],
               ["30+", "Years of Trust"],
               ["20K+", "Happy Families"],
             ].map(([n, l]) => (
-              <div key={l} className="border-l-2 border-[var(--gold)] pl-4">
-                <div className="font-display text-3xl font-bold">{n}</div>
-                <div className="text-sm text-white/85">{l}</div>
+              <div key={l} className="border-l-2 border-[var(--gold)] pl-3 sm:pl-4">
+                <div className="font-display text-2xl sm:text-3xl font-bold">{n}</div>
+                <div className="text-[11px] sm:text-sm text-white/85">{l}</div>
               </div>
             ))}
           </div>
