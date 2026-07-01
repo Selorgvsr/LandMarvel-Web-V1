@@ -81,39 +81,37 @@ function Header() {
 
 function Hero() {
   return (
-    <section id="top" className="relative h-screen min-h-[640px] w-full overflow-hidden">
+    <section id="top" className="relative min-h-[560px] h-[100svh] sm:min-h-[640px] w-full overflow-hidden">
       <video src={homeHeroVideo.url} autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover scale-105" style={{ filter: 'brightness(1.2) contrast(1.15) saturate(1.1)' }} />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/15 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-black/10" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
       <div className="relative z-10 h-full container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center text-primary-foreground">
         <div className="max-w-3xl">
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-xs font-medium tracking-wide uppercase animate-in fade-in slide-in-from-bottom-4 duration-700">
-            <Star className="w-3.5 h-3.5 text-[var(--gold)]" /> We together make financial peace in property investment
+          <span className="inline-flex items-center gap-2 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-[10px] sm:text-xs font-medium tracking-wide uppercase animate-in fade-in slide-in-from-bottom-4 duration-700">
+            <Star className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[var(--gold)]" /> Financial peace in property investment
           </span>
-          <h1 className="mt-6 font-display text-[1.5rem] sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.05] break-words drop-shadow-[0_4px_20px_rgba(0,0,0,0.45)] animate-in fade-in slide-in-from-bottom-4 duration-700">
-            FIND YOUR DREAM HOME- APARTMENT- VILLA-<br />
-            PLOTTED LAYOUT-<br />
-            COMMERCIAL SPACE -<br />
-            With&nbsp;<span className="text-[var(--gold)]">Land Marvel</span>
+          <h1 className="mt-4 sm:mt-6 font-display text-[1.5rem] leading-[1.1] sm:text-4xl md:text-5xl lg:text-6xl sm:leading-[1.05] font-bold break-words drop-shadow-[0_4px_20px_rgba(0,0,0,0.55)] animate-in fade-in slide-in-from-bottom-4 duration-700">
+            Find Your Dream Home, Apartment, Villa, Plotted Layout &amp; Commercial Space With{" "}
+            <span className="text-[var(--gold)] whitespace-nowrap">Land Marvel</span>
           </h1>
-          <p className="mt-6 text-lg sm:text-xl text-white/90 max-w-2xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <p className="mt-4 sm:mt-6 text-sm sm:text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] animate-in fade-in slide-in-from-bottom-4 duration-700">
             Finding the right property shouldn't feel like a gamble. Premium locations. Verified projects. Zero confusion — we've helped 20,000+ families invest with confidence.
           </p>
-          <div className="mt-10 flex flex-wrap gap-4 animate-in fade-in slide-in-from-bottom-4 duration-700">
-            <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 shadow-[var(--shadow-elegant)] h-12 px-7">
+          <div className="mt-6 sm:mt-10 flex flex-wrap gap-3 sm:gap-4 animate-in fade-in slide-in-from-bottom-4 duration-700">
+            <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 shadow-[var(--shadow-elegant)] h-11 sm:h-12 px-5 sm:px-7 text-sm sm:text-base">
               <a href="#projects">Explore Project <ArrowRight className="ml-2 w-4 h-4" /></a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-12 px-7">
+            <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-11 sm:h-12 px-5 sm:px-7 text-sm sm:text-base">
               <a href="#contact">Contact Us</a>
             </Button>
           </div>
-          <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-3xl animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <div className="mt-8 sm:mt-12 grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-3xl animate-in fade-in slide-in-from-bottom-4 duration-700">
             {[
               ["30+", "Years"], ["200+", "Projects"], ["20K+", "Families"], ["6+", "Locations"],
             ].map(([n, l]) => (
-              <div key={l} className="border-l-2 border-[var(--gold)] pl-4">
-                <div className="font-display text-3xl font-bold">{n}</div>
-                <div className="text-sm text-white/85">{l}</div>
+              <div key={l} className="border-l-2 border-[var(--gold)] pl-3 sm:pl-4">
+                <div className="font-display text-2xl sm:text-3xl font-bold">{n}</div>
+                <div className="text-xs sm:text-sm text-white/85">{l}</div>
               </div>
             ))}
           </div>

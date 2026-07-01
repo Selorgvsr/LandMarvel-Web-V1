@@ -244,36 +244,36 @@ function Hero() {
         className="absolute inset-0"
         style={{ background: `linear-gradient(120deg, ${NAVY}EE 0%, ${NAVY}AA 45%, transparent 100%)` }}
       />
-      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-28 md:py-40 lg:py-48 text-white">
+      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 md:py-40 lg:py-48 text-white">
         <span
-          className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold tracking-[0.2em] uppercase backdrop-blur-md border border-white/30"
+          className="inline-flex items-center gap-2 rounded-full px-3 py-1 sm:px-4 sm:py-1.5 text-[10px] sm:text-xs font-semibold tracking-wide sm:tracking-[0.2em] uppercase backdrop-blur-md border border-white/30"
           style={{ background: "rgba(255,255,255,0.08)" }}
         >
           <span className="w-1.5 h-1.5 rounded-full" style={{ background: GREEN }} /> Land Marvel
         </span>
-        <h1 className="mt-6 font-display text-4xl sm:text-5xl lg:text-[64px] leading-[1.05] font-bold max-w-3xl">
+        <h1 className="mt-4 sm:mt-6 font-display text-2xl sm:text-5xl lg:text-[64px] leading-[1.15] sm:leading-[1.05] font-bold max-w-3xl">
           Building Tomorrow's <span style={{ color: GREEN }}>Living Spaces</span> Today
         </h1>
-        <p className="mt-6 text-lg lg:text-xl text-white/85 max-w-2xl leading-relaxed">
+        <p className="mt-4 sm:mt-6 text-sm sm:text-lg lg:text-xl text-white/85 max-w-2xl leading-relaxed">
           From plotted developments and residential communities to sustainable homes, rooftop solar integration, and future-ready construction
           technologies, Land Marvel creates spaces that inspire better living and long-term value.
         </p>
-        <div className="mt-10 flex flex-wrap gap-4">
+        <div className="mt-6 sm:mt-10 flex flex-wrap gap-3 sm:gap-4">
           <a
             href="#portfolio"
-            className="inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold text-white shadow-xl hover:translate-y-[-2px] transition"
+            className="inline-flex items-center gap-2 rounded-full px-5 sm:px-7 py-2.5 sm:py-3.5 text-sm font-semibold text-white shadow-xl hover:translate-y-[-2px] transition"
             style={{ background: GREEN }}
           >
             Explore Our Portfolio <ArrowRight className="w-4 h-4" />
           </a>
           <Link
             to="/contact"
-            className="inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold border-2 border-white/60 text-white hover:bg-white hover:text-[color:var(--navy-deep)] transition"
+            className="inline-flex items-center gap-2 rounded-full px-5 sm:px-7 py-2.5 sm:py-3.5 text-sm font-semibold border-2 border-white/60 text-white hover:bg-white hover:text-[color:var(--navy-deep)] transition"
           >
             Talk To Expert
           </Link>
         </div>
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl">
+        <div className="mt-10 sm:mt-16 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 max-w-3xl">
           {[
             { k: "30+", v: "Years of Trust" },
             { k: "200+", v: "Premium Projects" },
@@ -282,13 +282,13 @@ function Hero() {
           ].map((s) => (
             <div
               key={s.v}
-              className="rounded-2xl border border-white/20 backdrop-blur-md px-5 py-4"
+              className="rounded-2xl border border-white/20 backdrop-blur-md px-4 sm:px-5 py-3 sm:py-4"
               style={{ background: "rgba(255,255,255,0.08)" }}
             >
-              <div className="font-display text-2xl lg:text-3xl font-bold" style={{ color: GREEN }}>
+              <div className="font-display text-xl sm:text-2xl lg:text-3xl font-bold" style={{ color: GREEN }}>
                 {s.k}
               </div>
-              <div className="text-xs lg:text-sm text-white/80 mt-1">{s.v}</div>
+              <div className="text-[11px] sm:text-xs lg:text-sm text-white/80 mt-1">{s.v}</div>
             </div>
           ))}
         </div>

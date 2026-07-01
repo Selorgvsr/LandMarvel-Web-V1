@@ -194,34 +194,32 @@ function CategorySection({ id, eyebrow, title, items, alt = false }: { id: strin
 
 function HeroSection() {
   return (
-    <section className="relative h-screen min-h-[640px] w-full overflow-hidden">
+    <section className="relative min-h-[560px] h-[100svh] sm:min-h-[640px] w-full overflow-hidden">
       <video src={buyHeroVideoAsset.url} autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover scale-105" style={{ filter: 'brightness(1.2) contrast(1.15) saturate(1.1)' }} />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/35 via-black/15 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-black/10" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
       <div className="relative z-10 h-full container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center text-primary-foreground">
         <div className="max-w-3xl">
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-xs font-medium tracking-[0.2em] uppercase">
+          <span className="inline-flex items-center gap-2 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-[10px] sm:text-xs font-medium tracking-wide sm:tracking-[0.2em] uppercase">
             <span className="w-1.5 h-1.5 rounded-full bg-[var(--gold)]" /> Buy Premium Property
           </span>
-          <h1 className="mt-6 font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)] animate-in fade-in slide-in-from-bottom-4 duration-700">
-            Together, we create<br />
-            {"\u00A0"}financial peace-<br />
-            complete transparency-quality in{"\u00A0"}<br />
+          <h1 className="mt-4 sm:mt-6 font-display text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.15] sm:leading-[1.05] drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)] animate-in fade-in slide-in-from-bottom-4 duration-700">
+            Together, we create financial peace, complete transparency &amp; quality in{" "}
             <span className="text-[var(--gold)]">property investments.</span>
           </h1>
-          <div className="mt-10 flex flex-wrap gap-4">
-            <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-13 px-7 rounded-xl shadow-[var(--shadow-elegant)]">
+          <div className="mt-6 sm:mt-10 flex flex-wrap gap-3 sm:gap-4">
+            <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-11 sm:h-13 px-5 sm:px-7 text-sm sm:text-base rounded-xl shadow-[var(--shadow-elegant)]">
               <a href="#plots">Browse Properties <ArrowRight className="ml-2 w-4 h-4" /></a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-13 px-7 rounded-xl backdrop-blur">
+            <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-11 sm:h-13 px-5 sm:px-7 text-sm sm:text-base rounded-xl backdrop-blur">
               <Link to="/" hash="contact"><Calendar className="mr-2 w-4 h-4" />Book Site Visit</Link>
             </Button>
           </div>
-          <div className="mt-12 grid grid-cols-3 gap-6 max-w-md">
+          <div className="mt-8 sm:mt-12 grid grid-cols-3 gap-4 sm:gap-6 max-w-md">
             {[["30+", "Years"], ["200+", "Projects"], ["6+", "Locations"]].map(([n, l]) => (
-              <div key={l} className="border-l-2 border-[var(--gold)] pl-4">
-                <div className="font-display text-3xl font-bold">{n}</div>
-                <div className="text-xs text-white/85 uppercase tracking-wider">{l}</div>
+              <div key={l} className="border-l-2 border-[var(--gold)] pl-3 sm:pl-4">
+                <div className="font-display text-2xl sm:text-3xl font-bold">{n}</div>
+                <div className="text-[10px] sm:text-xs text-white/85 uppercase tracking-wider">{l}</div>
               </div>
             ))}
           </div>
