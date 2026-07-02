@@ -170,7 +170,7 @@ export function LandInvestmentSection() {
         {/* Site visit experience */}
         <div className="mt-20 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div className="relative overflow-hidden rounded-[24px] shadow-[var(--shadow-elegant)] group">
-            <img src={landSiteVisit} alt="Property consultant on site visit" width={1024} height={1024} loading="lazy"
+            <img src={landSiteVisitAsset.url} alt="Property consultant on site visit" width={1024} height={1024} loading="lazy"
               className="w-full h-[440px] object-cover group-hover:scale-105 transition-transform duration-700" />
           </div>
           <div>
