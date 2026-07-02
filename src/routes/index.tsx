@@ -612,7 +612,7 @@ function PortfolioShowcase() {
       desc: "Healthy, sustainable homes designed around nature, wellness, and environmental responsibility.",
       gradient: "from-[#10b981] via-[#0d9488] to-[#0f766e]",
       glow: "rgba(20,184,166,0.45)",
-      img: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
+      img: organicHomeImg.url,
       hash: "organic",
     },
     {
@@ -621,7 +621,7 @@ function PortfolioShowcase() {
       desc: "3D printed homes, rooftop solar systems, sustainable communities, and future-ready innovations.",
       gradient: "from-[#06b6d4] via-[#0891b2] to-[#0c2340]",
       glow: "rgba(6,182,212,0.45)",
-      img: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1200&q=80",
+      img: futureLivingImg.url,
       hash: "future",
     },
   ];
