@@ -216,7 +216,7 @@ function PropertyTypes() {
   return (
     <section className="py-20 sm:py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading eyebrow="Categories" title="Property Types We Accept" desc={"We help you sell every type of property — Residential, Commercial,\u00a0\nPlots\u00a0and more."} />
+        <SectionHeading eyebrow="Categories" title="Property Types We Accept" desc={"We help you sell every type of property — Residential, Commercial,\u00a0\n\u00a0Plots\u00a0and more."} />
         <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {items.map(({ img, icon: Icon, title, desc }) => (
             <div key={title} className="group relative rounded-2xl overflow-hidden shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elegant)] transition-all">
