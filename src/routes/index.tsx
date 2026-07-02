@@ -372,8 +372,8 @@ function Projects() {
 
 function Timeline() {
   const steps = [
-    { year: "2004", text: "Company Founded" },
-    { year: "2010", text: "50 Projects Delivered" },
+    { year: "1995", text: "Company Founded" },
+    { year: "2010", text: "100+ Projects Delivered" },
     { year: "2016", text: "Expansion Across Chennai" },
     { year: "2022", text: "200+ Projects Completed" },
     { year: "2026", text: "Continuing to Build Tomorrow" },
@@ -402,7 +402,7 @@ function Timeline() {
 }
 
 function Stats() {
-  const stats = [["30+", "Years of Excellence"], ["200+", "Completed Projects"], ["20K+", "Happy Families"], ["6+", "Prime Locations"]];
+  const stats = [["30+", "Years of Excellence"], ["200+", "Completed Projects"], ["2K+", "Happy Families"], ["6+", "Prime Locations"]];
   return (
     <section className="py-20 relative overflow-hidden" style={{ background: "var(--gradient-cta)" }}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 lg:grid-cols-4 gap-10 text-primary-foreground text-center">
@@ -419,7 +419,7 @@ function Stats() {
 
 
 function Locations() {
-  const locs = ["Perumbakkam", "LB Road", "Urapakkam", "Thiruvanmiyur,LB Road", "Tambaram", "LB Road 2"];
+  const locs = ["Besant Nagar", "LB Road", "Urapakkam", "Thiruvanmiyur,LB Road", "Tambaram", "LB Road 2"];
   return (
     <section className="py-20 sm:py-28" style={{ background: "var(--gradient-soft)" }}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
