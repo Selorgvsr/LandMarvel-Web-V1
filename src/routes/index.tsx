@@ -95,7 +95,7 @@ function Hero() {
             <span className="text-[var(--gold)] whitespace-nowrap">Land Marvel</span>
           </h1>
           <p className="mt-4 sm:mt-6 text-sm sm:text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] animate-in fade-in slide-in-from-bottom-4 duration-700">
-            Finding the right property shouldn't feel like a gamble. Premium locations. Verified projects. Zero confusion — we've helped 20,000+ families invest with confidence.
+            Finding the right property shouldn't feel like a gamble. Premium locations. Verified projects. Zero confusion — we've helped 2,000+ families invest with confidence.
           </p>
           <div className="mt-6 sm:mt-10 flex flex-wrap gap-3 sm:gap-4 animate-in fade-in slide-in-from-bottom-4 duration-700">
             <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 shadow-[var(--shadow-elegant)] h-11 sm:h-12 px-5 sm:px-7 text-sm sm:text-base">
@@ -107,7 +107,7 @@ function Hero() {
           </div>
           <div className="mt-8 sm:mt-12 grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-3xl animate-in fade-in slide-in-from-bottom-4 duration-700">
             {[
-              ["30+", "Years"], ["200+", "Projects"], ["20K+", "Families"], ["6+", "Locations"],
+              ["30+", "Years"], ["200+", "Projects"], ["2K+", "Families"], ["6+", "Locations"],
             ].map(([n, l]) => (
               <div key={l} className="border-l-2 border-[var(--gold)] pl-3 sm:pl-4">
                 <div className="font-display text-2xl sm:text-3xl font-bold">{n}</div>
@@ -132,7 +132,7 @@ function SectionHeading({ eyebrow, title, desc, center = true }: { eyebrow: stri
 }
 
 function About() {
-  const highlights = ["30+ Years of Excellence", "200+ Completed Projects", "20K+ Happy Families", "Prime Chennai Locations"];
+  const highlights = ["30+ Years of Excellence", "200+ Completed Projects", "2K+ Happy Families", "Prime Chennai Locations"];
   return (
     <section id="about" className="py-20 sm:py-28 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -149,7 +149,7 @@ function About() {
             Your Trusted Guide.<br/>Building Financial Peace.
           </h2>
           <p className="mt-5 text-muted-foreground text-lg leading-relaxed">
-            Land Marvel is your trusted partner — 30+ years, 200+ projects, 20,000+ happy families. We've walked this path with thousands of buyers across Chennai, and we'll walk it with you too. No confusion. No risk. Just clear answers and a property you'll be proud of.
+            Land Marvel is your trusted partner — 30+ years, 200+ projects, 2,000+ happy families. We've walked this path with thousands of buyers across Chennai, and we'll walk it with you too. No confusion. No risk. Just clear answers and a property you'll be proud of.
           </p>
           <ul className="mt-8 grid sm:grid-cols-2 gap-4">
             {highlights.map((h) => (

@@ -152,7 +152,7 @@ function ContactPage() {
             </div>
             <div className="mt-8 sm:mt-12 grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-3xl">
               {[
-                ["30+", "Years"], ["200+", "Project"], ["20K+", "Happy Families"], ["24/7", "Support"],
+                ["30+", "Years"], ["200+", "Project"], ["2K+", "Happy Families"], ["24/7", "Support"],
               ].map(([n, l]) => (
                 <div key={l} className="border-l-2 border-[var(--gold)] pl-3 sm:pl-4">
                   <div className="font-display text-2xl sm:text-3xl font-bold">{n}</div>

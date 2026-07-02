@@ -97,8 +97,8 @@ const plotProjects: Project[] = [
 const residentialProjects: Project[] = [
   { image: res1.url, badge: "Ready To Move", name: "Land Marvel Heights", price: "\n", location: "Thiruvanmiyur,LB Road", area: "5 Acres", units: "350 Apts", possession: "Ready To Move", type: "1,2, 3 & 4 BHK", detailsLink: "/heights" },
   { image: res2, badge: "Premium", name: "Land Marvel Signature", price: "\n", location: "LB Road", area: "4 Acres", units: "420 Units", possession: "Dec 2026", type: "1,2, 3 & 4 BHK", comingSoon: true },
-  { image: res3, badge: "New Launch", name: "Land Marvel Elite", price: "\n", location: "Perumbakkam", area: "6 Acres", units: "500 Units", possession: "Mar 2027", type: "Luxury Apts", comingSoon: true },
-  { image: res4, badge: "Limited Units", name: "Land Marvel Sky Villas", price: "\n", location: "Urapakkam", area: "8 Acres", units: "250 Villas", possession: "Jun 2027", type: "Villa Community", comingSoon: true },
+  { image: res3, badge: "New Launch", name: "Land Marvel Elite", price: "\n", location: "Besant Nagar", area: "6 Acres", units: "500 Units", possession: "Mar 2027", type: "Luxury Apts", comingSoon: true },
+  { image: res4, badge: "Limited Units", name: "Land Marvel Sky Villas", price: "\n", location: "Besant Nagar", area: "8 Acres", units: "250 Villas", possession: "Jun 2027", type: "Villa Community", comingSoon: true },
 ];
 
 const commercialProjects: Project[] = [
@@ -224,7 +224,7 @@ function ProjectsPage() {
             </div>
             <div className="mt-8 sm:mt-12 grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-3xl">
               {[
-                ["30+", "Years"], ["200+", "Project"], ["30+", "Ongoing"], ["20K+", "Happy Customers"],
+                ["30+", "Years"], ["200+", "Project"], ["30+", "Ongoing"], ["2K+", "Happy Customers"],
               ].map(([n, l]) => (
                 <div key={l} className="border-l-2 border-[var(--gold)] pl-3 sm:pl-4">
                   <div className="font-display text-2xl sm:text-3xl font-bold">{n}</div>
@@ -273,7 +273,18 @@ function ProjectsPage() {
       <section className="py-20 bg-[image:var(--gradient-soft)]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <img src={aboutImg} alt="Why invest with Land Marvel" className="rounded-[2rem] shadow-[var(--shadow-elegant)] w-full h-[480px] object-cover" />
+            <div className="relative group rounded-[2rem] overflow-hidden shadow-[var(--shadow-elegant)]">
+              <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-500 z-10" />
+              <div className="absolute top-6 left-6 z-20 bg-white/90 backdrop-blur px-5 py-3 rounded-2xl shadow-lg border border-primary/10">
+                <div className="text-primary font-display text-3xl font-bold">1995</div>
+                <div className="text-xs text-muted-foreground uppercase tracking-wider font-semibold">Legacy Since</div>
+              </div>
+              <div className="absolute bottom-6 right-6 z-20 bg-primary text-primary-foreground px-6 py-4 rounded-2xl shadow-xl border border-white/10">
+                <div className="font-display text-2xl font-bold">100+</div>
+                <p className="text-xs text-primary-foreground/80 font-medium">Projects Delivered</p>
+              </div>
+              <img src={aboutImg} alt="Why invest with Land Marvel" className="w-full h-[480px] object-cover group-hover:scale-105 transition-transform duration-700" />
+            </div>
             <div className="space-y-6">
               <h2 className="font-display text-3xl md:text-4xl font-bold text-primary">Why Choose Our Projects</h2>
               <ul className="space-y-4">

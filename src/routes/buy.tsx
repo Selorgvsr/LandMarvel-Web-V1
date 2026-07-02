@@ -165,8 +165,8 @@ const plots: Property[] = [
 const residential: Property[] = [
   { badge: "Ready To Move", img: res1.url, title: "Land Marvel Heights", price: "\n", location: "Thiruvanmiyur,LB Road", serving: "Sale Starts in October 2026", area: "5 Acres", units: "350 Apts", type: "1,2, 3 & 4 BHK", detailsLink: "/heights" },
   { badge: "Premium", img: res2, title: "Land Marvel Signature", price: "\n", location: "LB Road", area: "4 Acres", units: "420 Units", type: "1,2, 3 & 4 BHK", comingSoon: true },
-  { badge: "New Launch", img: res3, title: "Land Marvel Elite", price: "\n", location: "Perumbakkam", area: "6 Acres", units: "500 Units", type: "Luxury Apts", comingSoon: true },
-  { badge: "Limited Units", img: res4, title: "Land Marvel Sky Villas", price: "\n", location: "Urapakkam", area: "8 Acres", units: "250 Villas", type: "Villa Community", comingSoon: true },
+  { badge: "New Launch", img: res3, title: "Land Marvel Elite", price: "\n", location: "Besant Nagar", area: "6 Acres", units: "500 Units", type: "Luxury Apts", comingSoon: true },
+  { badge: "Limited Units", img: res4, title: "Land Marvel Sky Villas", price: "\n", location: "Besant Nagar", area: "8 Acres", units: "250 Villas", type: "Villa Community", comingSoon: true },
 ];
 
 const commercial: Property[] = [

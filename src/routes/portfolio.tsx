@@ -277,7 +277,7 @@ function Hero() {
           {[
             { k: "30+", v: "Years of Trust" },
             { k: "200+", v: "Premium Projects" },
-            { k: "20K+", v: "Happy Families" },
+            { k: "2K+", v: "Happy Families" },
             { k: "100%", v: "Sustainability Focus" },
           ].map((s) => (
             <div
