@@ -8,7 +8,7 @@ import {
 import { Button } from "@/components/ui/button";
 
 import landAerial from "@/assets/buy-land-aerial.jpg";
-import landSiteVisit from "@/assets/buy-land-sitevisit.jpg";
+import landSiteVisitAsset from "@/assets/land-site-visit.jpg.asset.json";
 import resFamily from "@/assets/buy-res-family.jpg.asset.json";
 import comHero from "@/assets/buy-com-hero.jpg.asset.json";
 import comSuccess from "@/assets/buy-com-success.jpg";
