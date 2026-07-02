@@ -201,7 +201,7 @@ function HeroSection() {
               ["200+", "Projects Delivered"],
               ["2.5M+", "Sq. Ft Developed"],
               ["30+", "Years of Trust"],
-              ["20K+", "Happy Families"],
+              ["2K+", "Happy Families"],
             ].map(([n, l]) => (
               <div key={l} className="border-l-2 border-[var(--gold)] pl-3 sm:pl-4">
                 <div className="font-display text-2xl sm:text-3xl font-bold">{n}</div>
@@ -266,7 +266,7 @@ function WhoWeAreSection() {
 /* ─── SECTION 3: OUR STORY ─── */
 function OurStorySection() {
   const timeline = [
-    { year: "2000+", title: "Foundation Built on Trust", desc: "Land Marvel Group was established with a vision to transform real estate development in South India." },
+    { year: "1995", title: "Foundation Built on Trust", desc: "Land Marvel Group was established with a vision to transform real estate development in South India." },
     { year: "2005", title: "Expansion into Real Estate", desc: "Launched our first premium residential projects, setting new benchmarks in quality and design." },
     { year: "2010", title: "100+ Landmark Projects", desc: "Achieved the milestone of 100 successfully delivered developments across Chennai and beyond." },
     { year: "2015", title: "200+ Successful Developments", desc: "Crossed 200 completed projects, earning the trust of thousands of families." },
