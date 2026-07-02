@@ -8,6 +8,8 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { SiteFooter } from "@/components/landmarvel/SiteFooter";
 import { SiteHeader } from "@/components/landmarvel/SiteHeader";
+import organicHomeImg from "@/assets/portfolio/organic-home.jpeg.asset.json";
+import futureLivingImg from "@/assets/portfolio/future-living.jpeg.asset.json";
 
 import aboutImg from "@/assets/about-building.jpg";
 import catVilla from "@/assets/cat-villa.jpg";
