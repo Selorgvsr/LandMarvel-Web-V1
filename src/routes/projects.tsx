@@ -273,7 +273,18 @@ function ProjectsPage() {
       <section className="py-20 bg-[image:var(--gradient-soft)]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <img src={aboutImg} alt="Why invest with Land Marvel" className="rounded-[2rem] shadow-[var(--shadow-elegant)] w-full h-[480px] object-cover" />
+            <div className="relative group rounded-[2rem] overflow-hidden shadow-[var(--shadow-elegant)]">
+              <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-500 z-10" />
+              <div className="absolute top-6 left-6 z-20 bg-white/90 backdrop-blur px-5 py-3 rounded-2xl shadow-lg border border-primary/10">
+                <div className="text-primary font-display text-3xl font-bold">1995</div>
+                <div className="text-xs text-muted-foreground uppercase tracking-wider font-semibold">Legacy Since</div>
+              </div>
+              <div className="absolute bottom-6 right-6 z-20 bg-primary text-primary-foreground px-6 py-4 rounded-2xl shadow-xl border border-white/10">
+                <div className="font-display text-2xl font-bold">100+</div>
+                <p className="text-xs text-primary-foreground/80 font-medium">Projects Delivered</p>
+              </div>
+              <img src={aboutImg} alt="Why invest with Land Marvel" className="w-full h-[480px] object-cover group-hover:scale-105 transition-transform duration-700" />
+            </div>
             <div className="space-y-6">
               <h2 className="font-display text-3xl md:text-4xl font-bold text-primary">Why Choose Our Projects</h2>
               <ul className="space-y-4">
