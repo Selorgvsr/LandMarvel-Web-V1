@@ -208,7 +208,7 @@ function Process() {
 
 function PropertyTypes() {
   const items = [
-    { img: catPlot, icon: Trees, title: "Plotted Layouts", desc: "We buy land ranging from one ground to several acres." },
+    { img: catPlot, icon: Trees, title: "Lands", desc: "We buy land ranging from one ground to several acres." },
     { img: catApartment, icon: Building, title: "Apartments\u00a0", desc: "We buy new and resale\n1, 2, 3, and 4 BHK apartments." },
     { img: catVilla, icon: Home, title: "Villas & Independent Houses", desc: "We buy old and new villas, row houses, and independent homes." },
     { img: catCommercial, icon: Briefcase, title: "Commercial Properties", desc: "Old & New Offices, Retail Spaces & Commercial Buildings" },
