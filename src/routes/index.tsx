@@ -702,7 +702,9 @@ function PortfolioShowcase() {
           <div className="relative px-6 sm:px-12 py-16 sm:py-20 text-primary-foreground max-w-3xl">
             <span className="inline-block text-xs font-semibold tracking-[0.25em] uppercase text-[var(--gold)]">Land Marvel Portfolio</span>
             <h3 className="mt-3 font-display text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
-              Discover The Complete Land Marvel Portfolio
+              Discover The Complete&nbsp;
+              <br className="hidden sm:block" />
+              Land Marvel Portfolio
             </h3>
             <p className="mt-5 text-white/85 text-base sm:text-lg leading-relaxed">
               Explore our residential developments, plotted communities, commercial spaces, interiors, sustainable homes, and future living innovations.
