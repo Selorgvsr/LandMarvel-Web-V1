@@ -177,7 +177,7 @@ function Process() {
   const steps = [
     { icon: ClipboardList, title: "Submit Details", desc: "Share your property information through our simple online form." },
     { icon: Search, title: "Property Evaluation", desc: "Our experts visit and evaluate your property for accurate pricing." },
-    { icon: Users, title: "Buyer Matching", desc: "We connect your listing with our network of genuine, verified buyers." },
+    { icon: Users, title: "Direct Property Purchase", desc: "We review your property, finalize a fair offer, and purchase it directly from you—without involving third-party buyers." },
     { icon: IndianRupee, title: "Close The Deal", desc: "Smooth documentation, registration and payment — handled end-to-end." },
   ];
   return (
