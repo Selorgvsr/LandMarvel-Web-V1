@@ -101,7 +101,7 @@ function Hero() {
             <span className="text-[var(--gold)] whitespace-nowrap">Land Marvel</span>
           </h1>
           <p className="mt-4 sm:mt-6 text-sm sm:text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] animate-in fade-in slide-in-from-bottom-4 duration-700">
-            Finding the right property shouldn't feel like a gamble.&nbsp;{"\n"}
+            Finding the right property shouldn't feel like a gamble.&nbsp;&nbsp;{"\n"}
             Premium locations. Verified projects. Zero confusion — we've helped 2,000+ families invest with confidence.
           </p>
           <div className="mt-6 sm:mt-10 flex flex-wrap gap-3 sm:gap-4 animate-in fade-in slide-in-from-bottom-4 duration-700">
