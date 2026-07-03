@@ -745,7 +745,7 @@ function Index() {
         <Categories />
         <Projects />
         <PortfolioShowcase />
-        <ResultsQuote />
+        
         <Timeline />
         <Stats />
 
