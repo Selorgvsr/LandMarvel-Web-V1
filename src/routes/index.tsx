@@ -32,6 +32,10 @@ import c13 from "@/assets/completed/c13.jpeg.asset.json";
 import c14 from "@/assets/completed/c14.jpeg.asset.json";
 import c15 from "@/assets/completed/c15.jpeg.asset.json";
 import c16 from "@/assets/completed/c16.jpeg.asset.json";
+import lmNew1 from "@/assets/completed/lm-new-1.jpeg.asset.json";
+import lmNew2 from "@/assets/completed/lm-new-2.jpeg.asset.json";
+import lmNew3 from "@/assets/completed/lm-new-3.jpeg.asset.json";
+import lmNew4 from "@/assets/completed/lm-new-4.jpeg.asset.json";
 
 
 import homeHeroVideo from "@/assets/home-hero-video-2.mp4.asset.json";
@@ -353,6 +357,7 @@ function Categories() {
 
 function Projects() {
   const images = [
+    lmNew1.url, lmNew2.url, lmNew3.url, lmNew4.url,
     c1.url, c2.url, c3.url, c4.url, c5.url, c6.url, c7.url, c8.url,
     c9.url, c10.url, c11.url, c12.url, c13.url, c14.url, c15.url, c16.url,
   ];
