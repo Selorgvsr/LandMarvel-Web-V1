@@ -701,7 +701,6 @@ function Index() {
 
         <Locations />
         <Awards />
-        <SuccessVision />
         <FinalCTA />
         
       </main>
