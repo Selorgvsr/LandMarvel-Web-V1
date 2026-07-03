@@ -34,7 +34,7 @@ import c15 from "@/assets/completed/c15.jpeg.asset.json";
 import c16 from "@/assets/completed/c16.jpeg.asset.json";
 
 
-import homeHeroVideo from "@/assets/home-hero-video.mp4.asset.json";
+import homeHeroVideo from "@/assets/home-hero-video-2.mp4.asset.json";
 import buySectionImg from "@/assets/buy-section.jpg";
 import sellSectionImg from "@/assets/sell-section.jpg";
 import exchangeSectionImg from "@/assets/exchange-section.jpg";
