@@ -536,19 +536,6 @@ function SuccessVision() {
   );
 }
 
-function ResultsQuote() {
-  return (
-    <section className="py-16 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
-        <Star className="mx-auto w-8 h-8 text-[var(--gold)]" />
-        <p className="mt-5 font-display text-2xl sm:text-3xl text-primary leading-snug">
-          "Land Marvel sold my apartment in 6 weeks at a price 8% above expectation."
-        </p>
-        <p className="mt-4 text-sm uppercase tracking-[0.2em] text-muted-foreground">Real buyers. Real results.</p>
-      </div>
-    </section>
-  );
-}
 
 function FinalCTA() {
   return (
@@ -745,7 +732,7 @@ function Index() {
         <Categories />
         <Projects />
         <PortfolioShowcase />
-        <ResultsQuote />
+        
         <Timeline />
         <Stats />
 
