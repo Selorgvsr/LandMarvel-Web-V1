@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
-  Menu, X, Phone, Mail, MapPin, ArrowRight, Check, Shield, Building2,
+  Menu, Phone, Mail, MapPin, ArrowRight, Check, Shield, Building2,
   HardHat, Handshake, Home, Building, Trees, Briefcase, Award,
   Trophy, Star, Facebook, Instagram, Twitter, Linkedin,
 } from "lucide-react";
@@ -500,43 +500,6 @@ function ThreeStepPlan() {
   );
 }
 
-function SuccessVision() {
-  return (
-    <section className="py-20 sm:py-28" style={{ background: "var(--gradient-soft)" }}>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading eyebrow="What's at Stake" title="Two Futures. One Decision." />
-        <div className="mt-14 grid md:grid-cols-2 gap-7 max-w-5xl mx-auto">
-          <div className="rounded-2xl p-8 border-2 border-accent bg-card shadow-[var(--shadow-card)]">
-            <div className="text-xs font-semibold tracking-[0.2em] uppercase text-accent">With Land Marvel</div>
-            <h3 className="mt-3 font-display text-2xl font-bold text-primary">Owning Premium Property. Sleeping Peacefully.</h3>
-            <p className="mt-4 text-muted-foreground leading-relaxed">
-              Imagine owning a premium property in a prime location — no stress, clear title, growing value — and finally feeling financially secure about your biggest investment.
-            </p>
-            <ul className="mt-5 space-y-2 text-sm">
-              {["Prime locations with rising value", "Verified, dispute-free titles", "End-to-end documentation handled"].map((t) => (
-                <li key={t} className="flex items-start gap-2"><Check className="w-4 h-4 mt-0.5 text-accent shrink-0" /><span>{t}</span></li>
-              ))}
-            </ul>
-          </div>
-          <div className="rounded-2xl p-8 border border-border bg-muted">
-            <div className="text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground">Without a Trusted Guide</div>
-            <h3 className="mt-3 font-display text-2xl font-bold text-primary">Every Month You Wait, Prices Rise.</h3>
-            <p className="mt-4 text-muted-foreground leading-relaxed">
-              Without the right guide, you risk a wrong location, a disputed title, or missing the project that could have changed your family's future. Prices go up. Availability goes down.
-            </p>
-            <ul className="mt-5 space-y-2 text-sm text-muted-foreground">
-              {["Wrong location, slow appreciation", "Unverified builders & unclear pricing", "No single partner end-to-end"].map((t) => (
-                <li key={t} className="flex items-start gap-2"><X className="w-4 h-4 mt-0.5 shrink-0" /><span>{t}</span></li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-
 function FinalCTA() {
   return (
     <section id="contact" className="py-20 sm:py-24 text-primary-foreground" style={{ background: "var(--gradient-cta)" }}>
@@ -738,7 +701,6 @@ function Index() {
 
         <Locations />
         <Awards />
-        <SuccessVision />
         <FinalCTA />
         
       </main>
