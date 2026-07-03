@@ -266,7 +266,7 @@ function SellPage() {
                 </Button>
               </div>
               <div className="mt-8 sm:mt-12 grid grid-cols-3 gap-4 sm:gap-6 max-w-md">
-                {[["2000+", "Listings"], ["2000+", "Sold"], ["30+", "Years"]].map(([n, l]) => (
+                {[["100+", "Listings"], ["200+", "Sold"], ["30+", "Years"]].map(([n, l]) => (
                   <div key={l} className="border-l-2 border-[var(--gold)] pl-3 sm:pl-4">
                     <div className="font-display text-2xl sm:text-3xl font-bold">{n}</div>
                     <div className="text-[10px] sm:text-xs text-white/85 uppercase tracking-wider">{l}</div>
