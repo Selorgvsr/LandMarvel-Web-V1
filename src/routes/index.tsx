@@ -357,6 +357,7 @@ function Categories() {
 
 function Projects() {
   const images = [
+    lmNew1.url, lmNew2.url, lmNew3.url, lmNew4.url,
     c1.url, c2.url, c3.url, c4.url, c5.url, c6.url, c7.url, c8.url,
     c9.url, c10.url, c11.url, c12.url, c13.url, c14.url, c15.url, c16.url,
   ];
