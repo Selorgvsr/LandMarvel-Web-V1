@@ -280,7 +280,7 @@ function ProjectsPage() {
                 <div className="text-xs text-muted-foreground uppercase tracking-wider font-semibold">Legacy Since</div>
               </div>
               <div className="absolute bottom-6 right-6 z-20 bg-primary text-primary-foreground px-6 py-4 rounded-2xl shadow-xl border border-white/10">
-                <div className="font-display text-2xl font-bold">100+</div>
+                <div className="font-display text-2xl font-bold">200+</div>
                 <p className="text-xs text-primary-foreground/80 font-medium">Projects Delivered</p>
               </div>
               <img src={aboutImg} alt="Why invest with Land Marvel" className="w-full h-[480px] object-cover group-hover:scale-105 transition-transform duration-700" />
@@ -318,7 +318,7 @@ function ProjectsPage() {
               { icon: Award, value: "30+", label: "Years of Experience" },
               { icon: TrendingUp, value: "200+", label: "Completed Projects" },
               { icon: Building2, value: "30+", label: "Ongoing Projects" },
-              { icon: Users, value: "20K+", label: "Happy Customers" },
+              { icon: Users, value: "2K+", label: "Happy Customers" },
             ].map((s) => (
               <div key={s.label} className="space-y-2">
                 <s.icon className="w-8 h-8 mx-auto text-[var(--gold)]" />
