@@ -90,7 +90,7 @@ const amenities = [
 
 export function LandInvestmentSection() {
   return (
-    <section className="py-20 sm:py-24 bg-background">
+    <section className="py-20 sm:py-24 section-navy">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Intro: image left, content right */}
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
@@ -265,7 +265,7 @@ const homeFeatures: Feature[] = [
 
 export function ResidentialLivingSection() {
   return (
-    <section className="py-20 sm:py-24" style={{ background: "var(--gradient-soft)" }}>
+    <section className="py-20 sm:py-24 section-gold">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Premium Residential Living"
@@ -366,7 +366,7 @@ const comStats = [
 
 export function CommercialSolutionsSection() {
   return (
-    <section className="py-20 sm:py-24 bg-background">
+    <section className="py-20 sm:py-24 section-navy">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Intro: image left, content right */}
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">

@@ -587,7 +587,7 @@ function PortfolioShowcase() {
   ];
 
   return (
-    <section className="relative py-20 sm:py-28 bg-[#F8FAFC] overflow-hidden">
+    <section className="relative py-20 sm:py-28 section-navy overflow-hidden">
       {/* decorative floating shapes */}
       <div aria-hidden className="pointer-events-none absolute inset-0">
         <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-[image:var(--gradient-primary)] opacity-10 blur-3xl" />
