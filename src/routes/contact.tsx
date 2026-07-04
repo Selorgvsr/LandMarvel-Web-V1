@@ -165,7 +165,7 @@ function ContactPage() {
       </section>
 
       {/* CONTACT INFO + FORM */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 section-navy">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto space-y-3 mb-12">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-primary">Let's Start a Conversation</h2>

@@ -218,7 +218,7 @@ function HeroSection() {
 /* ─── SECTION 2: WHO WE ARE ─── */
 function WhoWeAreSection() {
   return (
-    <section className="py-24 lg:py-32 bg-background">
+    <section className="py-24 lg:py-32 section-navy">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <FadeInSection>
@@ -275,7 +275,7 @@ function OurStorySection() {
   ];
 
   return (
-    <section className="py-24 lg:py-32 bg-muted/30">
+    <section className="py-24 lg:py-32 section-gold">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <FadeInSection className="text-center mb-16">
           <span className="text-[var(--gold)] text-sm font-semibold tracking-widest uppercase">
@@ -358,7 +358,7 @@ function DifferenceSection() {
   ];
 
   return (
-    <section className="py-24 lg:py-32 bg-background">
+    <section className="py-24 lg:py-32 section-navy">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <FadeInSection className="text-center mb-16">
           <span className="text-[var(--gold)] text-sm font-semibold tracking-widest uppercase">
@@ -402,7 +402,7 @@ function QualitySection() {
   ];
 
   return (
-    <section className="py-24 lg:py-32 bg-muted/30">
+    <section className="py-24 lg:py-32 section-gold">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <FadeInSection>
@@ -516,7 +516,7 @@ function StrengthSection() {
   ];
 
   return (
-    <section className="py-24 lg:py-32 bg-background">
+    <section className="py-24 lg:py-32 section-navy">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <FadeInSection className="text-center mb-16">
           <span className="text-[var(--gold)] text-sm font-semibold tracking-widest uppercase">
@@ -579,7 +579,7 @@ function StatCard({
 /* ─── SECTION 8: VISION & MISSION ─── */
 function VisionMissionSection() {
   return (
-    <section className="py-24 lg:py-32 bg-muted/30">
+    <section className="py-24 lg:py-32 section-gold">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
           <FadeInSection>
