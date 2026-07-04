@@ -366,7 +366,7 @@ function Projects() {
     lmLast1.url, lmLast2.url, lmLast3.url, lmLast4.url,
   ];
   return (
-    <section id="projects" className="py-20 sm:py-28 bg-background">
+    <section id="projects" className="py-20 sm:py-28 section-gold">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading eyebrow="" title="Completed Projects" desc="A glimpse of communities we've built across Chennai." />
         <div className="mt-14 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
