@@ -144,7 +144,7 @@ function SectionHeading({ eyebrow, title, desc, center = true }: { eyebrow: stri
 function About() {
   const highlights = ["30+ Years of Excellence", "200+ Completed Projects", "2K+ Happy Families", "Prime Chennai Locations"];
   return (
-    <section id="about" className="py-20 sm:py-28 bg-background">
+    <section id="about" className="py-20 sm:py-28 section-navy">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         <div className="relative">
           <img src={aboutImg} alt="Premium residential building" width={1200} height={900} loading="lazy" className="rounded-2xl shadow-[var(--shadow-elegant)] w-full h-auto" />
@@ -178,7 +178,7 @@ function About() {
 
 function BuySection() {
   return (
-    <section id="services" className="py-20 sm:py-28 bg-background overflow-hidden">
+    <section id="services" className="py-20 sm:py-28 section-gold overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="relative group">
@@ -217,7 +217,7 @@ function BuySection() {
 
 function SellSection() {
   return (
-    <section className="py-20 sm:py-28 bg-muted overflow-hidden">
+    <section className="py-20 sm:py-28 section-navy overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="order-2 lg:order-1">
@@ -259,7 +259,7 @@ function SellSection() {
 
 function ExchangeSection() {
   return (
-    <section className="py-20 sm:py-28 bg-background overflow-hidden">
+    <section className="py-20 sm:py-28 section-gold overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="relative group">
@@ -307,7 +307,7 @@ function WhyChoose() {
     { icon: Handshake, title: "End-to-End Support", desc: "Guidance from selection to registration." },
   ];
   return (
-    <section className="py-20 sm:py-28 bg-background">
+    <section className="py-20 sm:py-28 section-gold">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading eyebrow="Why Choose Us" title="Why Homebuyers Trust Us" />
         <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -488,7 +488,7 @@ function ThreeStepPlan() {
     { n: "03", title: "Move In or Earn Returns", desc: "We handle documentation, registration, and end-to-end support so you invest with complete confidence." },
   ];
   return (
-    <section className="py-20 sm:py-28 bg-background">
+    <section className="py-20 sm:py-28 section-navy">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading eyebrow="Your Journey With Us" title="A Simple 3-Step Plan" desc="Property investment shouldn't feel overwhelming. Here's how Land Marvel makes it clear." />
         <div className="mt-14 grid md:grid-cols-3 gap-7">
