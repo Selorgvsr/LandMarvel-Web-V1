@@ -144,7 +144,7 @@ function SectionHeading({ eyebrow, title, desc, center = true }: { eyebrow: stri
 function About() {
   const highlights = ["30+ Years of Excellence", "200+ Completed Projects", "2K+ Happy Families", "Prime Chennai Locations"];
   return (
-    <section id="about" className="py-20 sm:py-28 bg-background">
+    <section id="about" className="py-20 sm:py-28 section-navy">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         <div className="relative">
           <img src={aboutImg} alt="Premium residential building" width={1200} height={900} loading="lazy" className="rounded-2xl shadow-[var(--shadow-elegant)] w-full h-auto" />
@@ -178,7 +178,7 @@ function About() {
 
 function BuySection() {
   return (
-    <section id="services" className="py-20 sm:py-28 bg-background overflow-hidden">
+    <section id="services" className="py-20 sm:py-28 section-gold overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="relative group">
@@ -217,7 +217,7 @@ function BuySection() {
 
 function SellSection() {
   return (
-    <section className="py-20 sm:py-28 bg-muted overflow-hidden">
+    <section className="py-20 sm:py-28 section-navy overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="order-2 lg:order-1">
@@ -259,7 +259,7 @@ function SellSection() {
 
 function ExchangeSection() {
   return (
-    <section className="py-20 sm:py-28 bg-background overflow-hidden">
+    <section className="py-20 sm:py-28 section-gold overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="relative group">
@@ -307,7 +307,7 @@ function WhyChoose() {
     { icon: Handshake, title: "End-to-End Support", desc: "Guidance from selection to registration." },
   ];
   return (
-    <section className="py-20 sm:py-28 bg-background">
+    <section className="py-20 sm:py-28 section-gold">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading eyebrow="Why Choose Us" title="Why Homebuyers Trust Us" />
         <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -334,7 +334,7 @@ function Categories() {
     { img: catCommercial, icon: Briefcase, title: "Commercial Spaces", desc: "Business-ready properties." },
   ];
   return (
-    <section className="py-20 sm:py-28" style={{ background: "var(--gradient-soft)" }}>
+    <section className="py-20 sm:py-28 section-navy">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading eyebrow="Categories" title="Explore Properties By Category" />
         <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -366,7 +366,7 @@ function Projects() {
     lmLast1.url, lmLast2.url, lmLast3.url, lmLast4.url,
   ];
   return (
-    <section id="projects" className="py-20 sm:py-28 bg-background">
+    <section id="projects" className="py-20 sm:py-28 section-gold">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading eyebrow="" title="Completed Projects" desc="A glimpse of communities we've built across Chennai." />
         <div className="mt-14 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
@@ -391,7 +391,7 @@ function Timeline() {
     { year: "2026", text: "Continuing to Build Tomorrow" },
   ];
   return (
-    <section className="py-20 sm:py-28" style={{ background: "var(--gradient-soft)" }}>
+    <section className="py-20 sm:py-28 section-gold">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading eyebrow="Our Journey" title="Our Journey of Excellence" />
         <div className="mt-16 relative">
@@ -416,7 +416,7 @@ function Timeline() {
 function Stats() {
   const stats = [["30+", "Years of Excellence"], ["200+", "Completed Projects"], ["2K+", "Happy Families"], ["6+", "Prime Locations"]];
   return (
-    <section className="py-20 relative overflow-hidden" style={{ background: "var(--gradient-cta)" }}>
+    <section className="py-20 relative overflow-hidden section-navy">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 lg:grid-cols-4 gap-10 text-primary-foreground text-center">
         {stats.map(([n, l]) => (
           <div key={l}>
@@ -433,7 +433,7 @@ function Stats() {
 function Locations() {
   const locs = ["Besant Nagar", "LB Road 1", "Urapakkam", "Thiruvanmiyur,LB Road", "Tambaram", "LB Road 2"];
   return (
-    <section className="py-20 sm:py-28" style={{ background: "var(--gradient-soft)" }}>
+    <section className="py-20 sm:py-28 section-gold">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading eyebrow="Locations" title="Prime Locations We Serve" />
         <div className="mt-14 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -460,7 +460,7 @@ function Awards() {
     { icon: Trophy, label: "Industry Recognition" },
   ];
   return (
-    <section className="py-20 sm:py-24 relative overflow-hidden bg-primary text-primary-foreground">
+    <section className="py-20 sm:py-24 relative overflow-hidden section-navy text-primary-foreground">
       <div className="absolute inset-0 opacity-20" style={{ background: "radial-gradient(circle at 20% 20%, oklch(0.58 0.18 250 / 0.6), transparent 50%), radial-gradient(circle at 80% 80%, oklch(0.78 0.13 85 / 0.4), transparent 50%)" }} />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="max-w-2xl mx-auto text-center">
@@ -488,7 +488,7 @@ function ThreeStepPlan() {
     { n: "03", title: "Move In or Earn Returns", desc: "We handle documentation, registration, and end-to-end support so you invest with complete confidence." },
   ];
   return (
-    <section className="py-20 sm:py-28 bg-background">
+    <section className="py-20 sm:py-28 section-navy">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading eyebrow="Your Journey With Us" title="A Simple 3-Step Plan" desc="Property investment shouldn't feel overwhelming. Here's how Land Marvel makes it clear." />
         <div className="mt-14 grid md:grid-cols-3 gap-7">
@@ -512,7 +512,7 @@ function ThreeStepPlan() {
 
 function FinalCTA() {
   return (
-    <section id="contact" className="py-20 sm:py-24 text-primary-foreground" style={{ background: "var(--gradient-cta)" }}>
+    <section id="contact" className="py-20 sm:py-24 text-primary-foreground section-gold">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
         <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-[var(--gold)]">Stop Guessing. Start Owning.</span>
         <h2 className="mt-4 font-display text-4xl sm:text-5xl lg:text-6xl font-bold">Your Dream Property Awaits</h2>
@@ -587,7 +587,7 @@ function PortfolioShowcase() {
   ];
 
   return (
-    <section className="relative py-20 sm:py-28 bg-[#F8FAFC] overflow-hidden">
+    <section className="relative py-20 sm:py-28 section-navy overflow-hidden">
       {/* decorative floating shapes */}
       <div aria-hidden className="pointer-events-none absolute inset-0">
         <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-[image:var(--gradient-primary)] opacity-10 blur-3xl" />

@@ -238,7 +238,7 @@ function BuyPage() {
         <HeroSection />
 
         {/* Ongoing Projects intro */}
-        <section className="pt-16 sm:pt-20 bg-background">
+        <section className="pt-16 sm:pt-20 section-navy">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-2xl text-center">
             <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-accent">Ongoing Projects</span>
             <h2 className="mt-3 font-display text-4xl sm:text-5xl font-bold text-primary">Our Ongoing Projects</h2>

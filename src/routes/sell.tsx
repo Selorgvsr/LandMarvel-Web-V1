@@ -79,7 +79,7 @@ function SellForm() {
   };
 
   return (
-    <section id="form" className="py-16 sm:py-24" style={{ background: "var(--gradient-soft)" }}>
+    <section id="form" className="py-16 sm:py-24 section-navy">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Sell With Us"
@@ -181,7 +181,7 @@ function Process() {
     { icon: IndianRupee, title: "Close The Deal", desc: "Smooth documentation, registration and payment — handled end-to-end." },
   ];
   return (
-    <section className="py-20 sm:py-24" style={{ background: "var(--gradient-soft)" }}>
+    <section className="py-20 sm:py-24 section-gold">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading eyebrow="Our Process" title="Our Simple Selling Process" desc="From submission to sale — a transparent, hassle-free four-step journey." />
         <div className="mt-16 relative">
@@ -214,7 +214,7 @@ function PropertyTypes() {
     { img: catCommercial, icon: Briefcase, title: "Commercial Properties", desc: "Old & New Offices, Retail Spaces & Commercial Buildings" },
   ];
   return (
-    <section className="py-20 sm:py-24 bg-background">
+    <section className="py-20 sm:py-24 section-navy">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading eyebrow="Categories" title="Property Types We Accept" desc="We help you sell every type of property — Residential- Commercial-            Plots & more." />
         <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
