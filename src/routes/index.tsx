@@ -334,7 +334,7 @@ function Categories() {
     { img: catCommercial, icon: Briefcase, title: "Commercial Spaces", desc: "Business-ready properties." },
   ];
   return (
-    <section className="py-20 sm:py-28" style={{ background: "var(--gradient-soft)" }}>
+    <section className="py-20 sm:py-28 section-navy">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading eyebrow="Categories" title="Explore Properties By Category" />
         <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -391,7 +391,7 @@ function Timeline() {
     { year: "2026", text: "Continuing to Build Tomorrow" },
   ];
   return (
-    <section className="py-20 sm:py-28" style={{ background: "var(--gradient-soft)" }}>
+    <section className="py-20 sm:py-28 section-gold">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading eyebrow="Our Journey" title="Our Journey of Excellence" />
         <div className="mt-16 relative">
@@ -416,7 +416,7 @@ function Timeline() {
 function Stats() {
   const stats = [["30+", "Years of Excellence"], ["200+", "Completed Projects"], ["2K+", "Happy Families"], ["6+", "Prime Locations"]];
   return (
-    <section className="py-20 relative overflow-hidden" style={{ background: "var(--gradient-cta)" }}>
+    <section className="py-20 relative overflow-hidden section-navy">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 lg:grid-cols-4 gap-10 text-primary-foreground text-center">
         {stats.map(([n, l]) => (
           <div key={l}>
@@ -433,7 +433,7 @@ function Stats() {
 function Locations() {
   const locs = ["Besant Nagar", "LB Road 1", "Urapakkam", "Thiruvanmiyur,LB Road", "Tambaram", "LB Road 2"];
   return (
-    <section className="py-20 sm:py-28" style={{ background: "var(--gradient-soft)" }}>
+    <section className="py-20 sm:py-28 section-gold">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading eyebrow="Locations" title="Prime Locations We Serve" />
         <div className="mt-14 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -460,7 +460,7 @@ function Awards() {
     { icon: Trophy, label: "Industry Recognition" },
   ];
   return (
-    <section className="py-20 sm:py-24 relative overflow-hidden bg-primary text-primary-foreground">
+    <section className="py-20 sm:py-24 relative overflow-hidden section-navy text-primary-foreground">
       <div className="absolute inset-0 opacity-20" style={{ background: "radial-gradient(circle at 20% 20%, oklch(0.58 0.18 250 / 0.6), transparent 50%), radial-gradient(circle at 80% 80%, oklch(0.78 0.13 85 / 0.4), transparent 50%)" }} />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="max-w-2xl mx-auto text-center">
@@ -512,7 +512,7 @@ function ThreeStepPlan() {
 
 function FinalCTA() {
   return (
-    <section id="contact" className="py-20 sm:py-24 text-primary-foreground" style={{ background: "var(--gradient-cta)" }}>
+    <section id="contact" className="py-20 sm:py-24 text-primary-foreground section-gold">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
         <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-[var(--gold)]">Stop Guessing. Start Owning.</span>
         <h2 className="mt-4 font-display text-4xl sm:text-5xl lg:text-6xl font-bold">Your Dream Property Awaits</h2>
