@@ -36,6 +36,10 @@ import lmNew1 from "@/assets/completed/lm-new-1.jpeg.asset.json";
 import lmNew2 from "@/assets/completed/lm-new-2.jpeg.asset.json";
 import lmNew3 from "@/assets/completed/lm-new-3.jpeg.asset.json";
 import lmNew4 from "@/assets/completed/lm-new-4.jpeg.asset.json";
+import lmLast1 from "@/assets/completed/lm-last-1.jpeg.asset.json";
+import lmLast2 from "@/assets/completed/lm-last-2.jpeg.asset.json";
+import lmLast3 from "@/assets/completed/lm-last-3.jpeg.asset.json";
+import lmLast4 from "@/assets/completed/lm-last-4.jpeg.asset.json";
 
 
 import homeHeroVideo from "@/assets/home-hero-video-2.mp4.asset.json";
@@ -359,6 +363,7 @@ function Projects() {
     lmNew1.url, lmNew2.url, lmNew3.url, lmNew4.url,
     c1.url, c2.url, c3.url, c4.url, c5.url, c6.url, c7.url, c8.url,
     c9.url, c10.url, c11.url, c12.url, c13.url, c14.url, c15.url, c16.url,
+    lmLast1.url, lmLast2.url, lmLast3.url, lmLast4.url,
   ];
   return (
     <section id="projects" className="py-20 sm:py-28 bg-background">
