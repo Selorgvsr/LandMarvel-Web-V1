@@ -206,7 +206,7 @@ function TermsPage() {
       </section>
 
       {/* Breadcrumb */}
-      <div className="bg-muted/30 border-b border-border">
+      <div className="section-gold border-b border-border">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <nav className="flex items-center gap-2 text-sm text-muted-foreground">
             <Link to="/" className="hover:text-foreground transition-colors">Home</Link>
@@ -217,7 +217,7 @@ function TermsPage() {
       </div>
 
       {/* Content */}
-      <section className="py-16 lg:py-24 bg-background">
+      <section className="py-16 lg:py-24 section-navy">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto space-y-8">
             {sections.map((section, i) => (
