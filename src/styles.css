@@ -84,7 +84,8 @@
   color: white;
 }
 .section-navy p,
-.section-navy .text-muted-foreground {
+.section-navy .text-muted-foreground,
+.section-navy .text-foreground {
   color: rgba(255, 255, 255, 0.85);
 }
 .section-navy .bg-card,
@@ -112,7 +113,8 @@
   color: var(--navy-deep);
 }
 .section-gold p,
-.section-gold .text-muted-foreground {
+.section-gold .text-muted-foreground,
+.section-gold .text-foreground {
   color: rgba(10, 29, 99, 0.85);
 }
 .section-gold .bg-card,
