@@ -73,6 +73,56 @@
   --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* ── Alternating section backgrounds ── */
+.section-navy {
+  background: var(--navy-deep) !important;
+}
+.section-navy .text-primary,
+.section-navy h2,
+.section-navy h3,
+.section-navy .font-display {
+  color: white;
+}
+.section-navy p,
+.section-navy .text-muted-foreground {
+  color: rgba(255, 255, 255, 0.85);
+}
+.section-navy .bg-card,
+.section-navy .bg-background {
+  background-color: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+}
+.section-navy .border-border {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+.section-navy .bg-muted {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.section-gold {
+  background: var(--gold) !important;
+}
+.section-gold .text-primary,
+.section-gold h2,
+.section-gold h3,
+.section-gold .font-display {
+  color: var(--navy-deep);
+}
+.section-gold p,
+.section-gold .text-muted-foreground {
+  color: rgba(10, 29, 99, 0.85);
+}
+.section-gold .bg-card,
+.section-gold .bg-background {
+  background-color: rgba(255, 255, 255, 0.92);
+}
+.section-gold .border-border {
+  border-color: rgba(10, 29, 99, 0.12);
+}
+.section-gold .bg-muted {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
 .dark {
   --background: oklch(0.15 0.04 255);
   --foreground: oklch(0.98 0 0);
