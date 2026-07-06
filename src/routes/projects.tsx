@@ -88,7 +88,7 @@ type Project = {
 };
 
 const plotProjects: Project[] = [
-  { image: greenValleyAerial.url, badge: "New Launch", name: "Land Marvel Green Valley", price: "\n", location: "kilambakkam, Chennai", serving: "Sale Starts In September 2026", area: "12 Acres", units: "240 Plots", possession: "Ready To Register", type: "Plotted Layouts", detailsLink: "/green-valley" },
+  { image: greenValleyAerial.url, badge: "New Launch", name: "Land Marvel Green Valley", price: "\n", location: "kilambakkam, Chennai", serving: "Sale Starts In September 2026", area: "12 Acres", units: "240 Plots", possession: "September 2026", type: "Plotted Layouts", detailsLink: "/green-valley" },
   { image: plot2, badge: "Premium", name: "Land Marvel Garden City", price: "\n", location: "Tambaram, Chennai", serving: "Tambaram, Chromepet, Pallavaram", area: "8 Acres", units: "180 Plots", possession: "Ready To Register", type: "Plotted Layouts", comingSoon: true },
   { image: plot3, badge: "Limited Units", name: "Land Marvel Urban Greens", price: "\n", location: "Perungalathur", serving: "Perungalathur, Vandalur, Tambaram", area: "15 Acres", units: "300 Plots", possession: "Under Approval", type: "Plotted Layouts", comingSoon: true },
   { image: plot4, badge: "Lake View", name: "Land Marvel Lake View Plots", price: "\n", location: "Maraimalai Nagar", serving: "Maraimalai Nagar, Singaperumal Koil", area: "10 Acres", units: "220 Plots", possession: "Ready To Register", type: "Premium Plots", comingSoon: true },
