@@ -95,14 +95,14 @@ const plotProjects: Project[] = [
 ];
 
 const residentialProjects: Project[] = [
-  { image: res1.url, badge: "Ready To Move", name: "Land Marvel Heights", price: "\n", location: "Thiruvanmiyur,LB Road", area: "5 Acres", units: "350 Apts", possession: "Ready To Move", type: "1,2, 3 & 4 BHK", detailsLink: "/heights" },
+  { image: res1.url, badge: "Ready To Move", name: "Land Marvel Heights", price: "\n", location: "Thiruvanmiyur,LB Road", area: "5 Acres", units: "350 Apts", possession: "October 2026", type: "1,2, 3 & 4 BHK", detailsLink: "/heights" },
   { image: res2, badge: "Premium", name: "Land Marvel Signature", price: "\n", location: "LB Road", area: "4 Acres", units: "420 Units", possession: "Dec 2026", type: "1,2, 3 & 4 BHK", comingSoon: true },
   { image: res3, badge: "New Launch", name: "Land Marvel Elite", price: "\n", location: "Besant Nagar", area: "6 Acres", units: "500 Units", possession: "Mar 2027", type: "Luxury Apts", comingSoon: true },
   { image: res4, badge: "Limited Units", name: "Land Marvel Sky Villas", price: "\n", location: "Besant Nagar", area: "8 Acres", units: "250 Villas", possession: "Jun 2027", type: "Villa Community", comingSoon: true },
 ];
 
 const commercialProjects: Project[] = [
-  { image: businessParkBuilding.url, badge: "Investment Hotspot", name: "Land Marvel Business Park", price: "\n", location: "Indira Nagar", serving: "Sale Starts in November 2026", area: "7 Acres", units: "120 Units", possession: "Dec 2026", type: "Office Spaces", detailsLink: "/business-park" },
+  { image: businessParkBuilding.url, badge: "Investment Hotspot", name: "Land Marvel Business Park", price: "\n", location: "Indira Nagar", serving: "Sale Starts in November 2026", area: "7 Acres", units: "120 Units", possession: "October 2026", type: "Office Spaces", detailsLink: "/business-park" },
   { image: com2, badge: "Premium", name: "Land Marvel Business Centre", price: "\n", location: "Urapakkam", area: "5 Acres", units: "150 Units", possession: "Mar 2027", type: "Retail + Office", comingSoon: true },
   { image: com3, badge: "New Launch", name: "Land Marvel Corporate Hub", price: "\n", location: "LB Road 2", area: "6 Acres", units: "200 Units", possession: "Jun 2027", type: "Business Suites", comingSoon: true },
   { image: com4, badge: "Limited Units", name: "Land Marvel Commercial Square", price: "\n", location: "Thiruvanmiyur,LB Road", area: "3 Acres", units: "100 Units", possession: "Sep 2026", type: "Retail Shops", comingSoon: true },
