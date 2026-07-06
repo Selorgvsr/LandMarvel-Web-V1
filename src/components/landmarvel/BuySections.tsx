@@ -98,8 +98,8 @@ export function LandInvestmentSection() {
             <img src={landAerial} alt="Aerial view of plotted township" width={1024} height={1024} loading="lazy"
               className="w-full h-[480px] object-cover group-hover:scale-105 transition-transform duration-700" />
             <div className="absolute bottom-5 left-5 bg-white/90 backdrop-blur rounded-2xl px-5 py-3 shadow-md">
-              <div className="text-xs uppercase tracking-wider !text-[var(--navy-deep)]">Land Marvel</div>
-              <div className="font-display font-bold !text-[var(--navy-deep)]">Strategic Land Investments</div>
+              <div className="text-xs uppercase tracking-wider text-blue-600">Land Marvel</div>
+              <div className="font-display font-bold text-blue-600">Strategic Land Investments</div>
             </div>
           </div>
           <div>
