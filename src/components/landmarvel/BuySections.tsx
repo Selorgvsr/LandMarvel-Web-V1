@@ -269,7 +269,7 @@ export function ResidentialLivingSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Premium Residential Living"
-          title={<>Find The Perfect Home <span className="text-[var(--gold)]">For Every Lifestyle</span></>}
+          title={<>Find The Perfect Home <span className="text-primary/80">For Every Lifestyle</span></>}
           desc="Whether you're searching for a modern apartment, an independent villa, or a family-friendly residential community, Land Marvel offers thoughtfully designed living spaces that combine comfort, convenience, and long-term value."
           center
         />
