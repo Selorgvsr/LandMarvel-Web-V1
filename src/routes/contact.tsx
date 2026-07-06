@@ -83,7 +83,7 @@ function ContactForm() {
     <form onSubmit={handleSubmit} className="bg-card rounded-2xl shadow-[var(--shadow-elegant)] p-6 md:p-8 space-y-5 border border-border">
       <div className="grid sm:grid-cols-2 gap-5">
         <div className="space-y-2">
-          <Label htmlFor="name">Full Name</Label>
+          <Label htmlFor="name" className="text-white">Full Name</Label>
           <Input id="name" name="name" placeholder="Enter Your Full Name" maxLength={100} required />
         </div>
         <div className="space-y-2">
