@@ -83,21 +83,21 @@ function ContactForm() {
     <form onSubmit={handleSubmit} className="bg-card rounded-2xl shadow-[var(--shadow-elegant)] p-6 md:p-8 space-y-5 border border-border">
       <div className="grid sm:grid-cols-2 gap-5">
         <div className="space-y-2">
-          <Label htmlFor="name">Full Name</Label>
+          <Label htmlFor="name" className="text-white">Full Name</Label>
           <Input id="name" name="name" placeholder="Enter Your Full Name" maxLength={100} required />
         </div>
         <div className="space-y-2">
-          <Label htmlFor="email">Email Address</Label>
+          <Label htmlFor="email" className="text-white">Email Address</Label>
           <Input id="email" name="email" type="email" placeholder="Enter Your Email Address" maxLength={255} required />
         </div>
       </div>
       <div className="grid sm:grid-cols-2 gap-5">
         <div className="space-y-2">
-          <Label htmlFor="phone">Phone Number</Label>
+          <Label htmlFor="phone" className="text-white">Phone Number</Label>
           <Input id="phone" name="phone" type="tel" placeholder="Enter Your Phone Number" maxLength={20} required />
         </div>
         <div className="space-y-2">
-          <Label htmlFor="subject">Subject</Label>
+          <Label htmlFor="subject" className="text-white">Subject</Label>
           <Select value={subject} onValueChange={setSubject}>
             <SelectTrigger id="subject"><SelectValue placeholder="Select a subject" /></SelectTrigger>
             <SelectContent>
@@ -111,7 +111,7 @@ function ContactForm() {
         </div>
       </div>
       <div className="space-y-2">
-        <Label htmlFor="message">Message</Label>
+        <Label htmlFor="message" className="text-white">Message</Label>
         <Textarea id="message" name="message" placeholder="Tell us how we can help you." rows={5} maxLength={1000} required />
       </div>
       <Button type="submit" disabled={submitting} className="w-full h-12 rounded-xl bg-primary text-primary-foreground hover:bg-primary/90 text-base font-semibold shadow-[var(--shadow-card)]">
