@@ -351,9 +351,6 @@ function Categories() {
             </div>
           ))}
         </div>
-        <div className="mt-12 text-center">
-          <Button size="lg" className="bg-[image:var(--gradient-primary)] h-12 px-7">View All Properties <ArrowRight className="ml-2 w-4 h-4" /></Button>
-        </div>
       </div>
     </section>
   );
