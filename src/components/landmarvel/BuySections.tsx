@@ -311,7 +311,7 @@ export function ResidentialLivingSection() {
               <Users className="w-5 h-5 text-[var(--gold)]" />
               <div>
                 <div className="text-xs uppercase tracking-wider text-muted-foreground">Trusted by</div>
-                <div className="font-display font-bold text-primary">20,000+ Happy Families</div>
+                <div className="font-display font-bold text-primary">2000+ Happy Families</div>
               </div>
             </div>
           </div>
