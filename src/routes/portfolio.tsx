@@ -200,7 +200,7 @@ function PortfolioPage() {
       />
       <Sustainability />
       <SplitSection
-        image={innovation}
+        image={innovation.url}
         alt="Smart city innovation"
         imageLeft
         bg="bg-[#F8FAFC]"
