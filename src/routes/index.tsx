@@ -656,8 +656,8 @@ function PortfolioShowcase() {
         {/* Bottom CTA banner */}
         <div className="mt-20 relative overflow-hidden rounded-[32px] shadow-[0_40px_80px_-30px_rgba(10,29,99,0.5)]">
           <img
-            src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=1920&q=80"
-            alt="Premium futuristic city with sustainable architecture"
+            src={portfolioCtaBuildings.url}
+            alt="Premium modern commercial buildings with glass architecture"
             loading="lazy"
             className="absolute inset-0 w-full h-full object-cover"
           />
