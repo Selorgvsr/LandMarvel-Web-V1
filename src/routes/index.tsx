@@ -615,7 +615,6 @@ function PortfolioShowcase() {
             <Link
               key={c.title}
               to="/portfolio"
-              hash={c.hash}
               className="group relative block rounded-[30px] overflow-hidden min-h-[440px] shadow-[0_20px_50px_-20px_rgba(10,29,99,0.35)] hover:-translate-y-2 transition-all duration-500"
               style={{ ["--glow" as any]: c.glow }}
             >
