@@ -31,7 +31,7 @@ import organic from "@/assets/portfolio-organic.jpg";
 import threeD from "@/assets/portfolio-3d.jpg";
 import solar from "@/assets/portfolio-solar.jpg";
 import sustainability from "@/assets/portfolio-sustainability.jpg";
-import innovation from "@/assets/portfolio-innovation.jpg";
+import innovation from "@/assets/innovation-new.jpg.asset.json";
 import interiorVideo from "@/assets/interior-video.mp4.asset.json";
 import futureCta from "@/assets/portfolio-future-cta.jpg";
 import residentialVideo from "@/assets/residential-video.mp4.asset.json";
