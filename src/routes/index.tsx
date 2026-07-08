@@ -44,6 +44,7 @@ import lmLast4 from "@/assets/completed/lm-last-4.jpeg.asset.json";
 
 
 import homeHeroVideo from "@/assets/home-hero-video-2.mp4.asset.json";
+import residentialOgVideo from "@/assets/residential-video-og.mp4.asset.json";
 import buySectionImg from "@/assets/buy-section.jpg";
 import sellSectionImg from "@/assets/sell-section.jpg";
 import exchangeSectionImg from "@/assets/exchange-section.jpg";
@@ -693,6 +694,16 @@ function Index() {
       <Header />
       <main>
         <Hero />
+        <section className="w-full bg-background">
+          <video
+            src={residentialOgVideo.url}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-auto block"
+          />
+        </section>
         <About />
         <BuySection />
         <SellSection />
