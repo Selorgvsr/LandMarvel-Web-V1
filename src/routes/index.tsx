@@ -697,9 +697,9 @@ function Index() {
         <section className="w-full bg-background">
           <video
             src={residentialOgVideo.url}
-            autoPlay
-            loop
+            controls
             playsInline
+            preload="metadata"
             className="w-full h-auto block"
           />
         </section>
