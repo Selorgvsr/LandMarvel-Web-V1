@@ -11,7 +11,7 @@ import landAerial from "@/assets/buy-land-aerial.jpg";
 import landSiteVisitAsset from "@/assets/land-site-visit.jpg.asset.json";
 import resFamily from "@/assets/buy-res-family.jpg.asset.json";
 import comHero from "@/assets/buy-com-hero.jpg.asset.json";
-import comSuccess from "@/assets/buy-com-success.jpg";
+import comSuccess from "@/assets/buy-com-success.jpg.asset.json";
 import buyCta from "@/assets/buy-cta.jpg";
 
 import plot2 from "@/assets/plot-2.jpg";
@@ -474,7 +474,7 @@ export function CommercialSolutionsSection() {
             </div>
           </div>
           <div className="order-first lg:order-last relative overflow-hidden rounded-[24px] shadow-[var(--shadow-elegant)] group">
-            <img src={comSuccess} alt="Commercial business district" width={1024} height={1024} loading="lazy"
+            <img src={comSuccess.url} alt="Commercial business district" width={1024} height={1024} loading="lazy"
               className="w-full h-[460px] object-cover group-hover:scale-105 transition-transform duration-700" />
             <div className="absolute bottom-5 right-5 bg-white/90 backdrop-blur rounded-2xl px-5 py-3 shadow-md flex items-center gap-3">
               <Award className="w-5 h-5 text-[var(--gold)]" />
