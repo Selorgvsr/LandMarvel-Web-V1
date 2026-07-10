@@ -103,6 +103,17 @@ function GreenValleyPage() {
         </div>
       </section>
 
+      {/* Plot Video */}
+      <section className="w-full bg-background">
+        <video
+          src={plotVideoOg.url}
+          controls
+          playsInline
+          preload="metadata"
+          className="w-full h-auto block"
+        />
+      </section>
+
       {/* CONTENT WRAPPER */}
       <section className="bg-[image:var(--gradient-soft)] py-10 sm:py-14">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl space-y-8">
