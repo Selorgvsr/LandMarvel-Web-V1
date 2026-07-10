@@ -479,7 +479,7 @@ export function CommercialSolutionsSection() {
             <div className="absolute bottom-5 right-5 bg-white/90 backdrop-blur rounded-2xl px-5 py-3 shadow-md flex items-center gap-3">
               <Award className="w-5 h-5 text-[var(--gold)]" />
               <div>
-                <div className="text-xs uppercase tracking-wider text-muted-foreground">Award Winning</div>
+                <div className="text-xs uppercase tracking-wider text-blue-600">Award Winning</div>
                 <div className="font-display font-bold text-blue-600">Commercial Developer</div>
               </div>
             </div>
