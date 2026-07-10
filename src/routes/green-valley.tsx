@@ -20,6 +20,7 @@ import amSolar from "@/assets/amenities/solar-roads.jpeg.asset.json";
 import amWalkways from "@/assets/amenities/walkways.jpg.asset.json";
 
 import greenValleyLayoutAsset from "@/assets/green-valley-layout.png.asset.json";
+import plotVideoOg from "@/assets/plot-video-og.mp4.asset.json";
 
 const greenValleyLayout = greenValleyLayoutAsset.url;
 
