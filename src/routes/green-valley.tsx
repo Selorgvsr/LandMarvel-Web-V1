@@ -20,6 +20,7 @@ import amSolar from "@/assets/amenities/solar-roads.jpeg.asset.json";
 import amWalkways from "@/assets/amenities/walkways.jpg.asset.json";
 
 import greenValleyLayoutAsset from "@/assets/green-valley-layout.png.asset.json";
+import plotVideoOg from "@/assets/plot-video-og.mp4.asset.json";
 
 const greenValleyLayout = greenValleyLayoutAsset.url;
 
@@ -100,6 +101,17 @@ function GreenValleyPage() {
             Highway Land = 25% Faster Gains than your Flat. Data Proven.
           </p>
         </div>
+      </section>
+
+      {/* Plot Video */}
+      <section className="w-full bg-background">
+        <video
+          src={plotVideoOg.url}
+          controls
+          playsInline
+          preload="metadata"
+          className="w-full h-auto block"
+        />
       </section>
 
       {/* CONTENT WRAPPER */}
