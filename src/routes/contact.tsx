@@ -15,6 +15,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { toast } from "sonner";
 import { SiteFooter } from "@/components/landmarvel/SiteFooter";
 import { SiteHeader } from "@/components/landmarvel/SiteHeader";
+import { LogoName } from "@/components/landmarvel/LogoName";
 
 import contactHeroVideo from "@/assets/contact-hero-video.mp4.asset.json";
 
