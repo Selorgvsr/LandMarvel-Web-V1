@@ -119,7 +119,7 @@ function HeightsPage() {
               <span className="w-1.5 h-1.5 rounded-full bg-[var(--gold)]" /> Premium Residential Development
             </span>
             <h1 className="mt-5 font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-              <LogoText height={1.2}><LogoText height=1.0>Land Marvel </LogoText></LogoText><span className="text-[var(--gold)]">Heights</span>
+              <LogoText height={1.2}>Land Marvel </LogoText><span className="text-[var(--gold)]">Heights</span>
             </h1>
             <p className="mt-3 text-lg text-white/85 flex items-center justify-center gap-2">
               <MapPin className="w-5 h-5 text-[var(--gold)]" /> Thiruvanmiyur, LB Road, Chennai
@@ -153,7 +153,7 @@ function HeightsPage() {
           <section className="py-16 sm:py-20">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-2xl text-center mb-12">
               <span className="text-xs font-semibold tracking-[0.2em] uppercase text-accent">Project Overview</span>
-              <h2 className="mt-2 font-display text-3xl sm:text-4xl font-bold text-primary"><LogoText height=1.2>Land Marvel Residential Project Overview</LogoText></h2>
+              <h2 className="mt-2 font-display text-3xl sm:text-4xl font-bold text-primary"><LogoText height={1.2}>Land Marvel Residential Project Overview</LogoText></h2>
             </div>
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-start">
               <div>
@@ -171,7 +171,7 @@ function HeightsPage() {
               <div>
                 <span className="text-xs font-semibold tracking-[0.2em] uppercase text-accent">Premium Residential Development</span>
                 <h3 className="mt-2 font-display text-3xl sm:text-4xl font-bold text-primary">Designed For Modern Living</h3>
-                <p className="mt-5 text-base text-muted-foreground leading-relaxed"><LogoText height=1.0>
+                <p className="mt-5 text-base text-muted-foreground leading-relaxed"><LogoText height={1.0}>
                   Land Marvel develops premium residences that combine modern architecture, strategic locations, and future-ready infrastructure to create elegant living environments.
                 </LogoText></p>
                 <p className="mt-3 text-base text-muted-foreground leading-relaxed">
@@ -207,7 +207,7 @@ function HeightsPage() {
               </div>
               <div>
                 <h2 className="font-display text-3xl sm:text-4xl font-bold text-primary">Lifestyle Amenities & Modern Facilities</h2>
-                <p className="mt-4 text-muted-foreground leading-relaxed"><LogoText height=1.0>
+                <p className="mt-4 text-muted-foreground leading-relaxed"><LogoText height={1.0}>
                   Every Land Marvel residential project is equipped with thoughtfully planned amenities that enhance convenience, wellbeing, safety, and community experience.
                 </LogoText></p>
                 <div className="mt-7 grid sm:grid-cols-2 gap-3">
@@ -281,7 +281,7 @@ function HeightsPage() {
               </div>
               <div>
                 <h2 className="font-display text-3xl sm:text-4xl font-bold text-primary">Strategically Connected Destination</h2>
-                <p className="mt-4 text-muted-foreground leading-relaxed"><LogoText height=1.0>
+                <p className="mt-4 text-muted-foreground leading-relaxed"><LogoText height={1.0}>
                   Land Marvel Heights is strategically located near major transportation corridors, business districts, and essential urban infrastructure — ensuring excellent connectivity and long-term investment value.
                 </LogoText></p>
                 <div className="mt-7 grid sm:grid-cols-2 gap-3">
@@ -307,7 +307,7 @@ function HeightsPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
             <span className="text-xs font-semibold tracking-[0.2em] uppercase text-accent">About This Project</span>
             <h2 className="mt-2 font-display text-3xl sm:text-4xl font-bold text-primary">Building Spaces That Inspire Modern Living</h2>
-            <p className="mt-5 text-muted-foreground leading-relaxed"><LogoText height=1.0>
+            <p className="mt-5 text-muted-foreground leading-relaxed"><LogoText height={1.0}>
               Land Marvel creates residential environments that combine innovative design, quality construction, and strategic planning to support family wellbeing and long-term investment growth.
             </LogoText></p>
             <p className="mt-3 text-muted-foreground leading-relaxed">
@@ -330,7 +330,7 @@ function HeightsPage() {
           <div className="absolute inset-0 bg-primary/85" />
           <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center text-primary-foreground max-w-3xl">
             <h2 className="font-display text-3xl sm:text-5xl font-bold">Start Your Investment Journey</h2>
-            <p className="mt-4 text-lg text-white/85"><LogoText height=1.0>
+            <p className="mt-4 text-lg text-white/85"><LogoText height={1.0}>
               Explore premium residential opportunities designed for modern living, sustainable growth, and long-term value with Land Marvel.
             </LogoText></p>
             <div className="mt-8 flex flex-wrap gap-4 justify-center">

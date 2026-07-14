@@ -255,7 +255,7 @@ function SellPage() {
               <h1 className="mt-4 sm:mt-6 font-display text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.15] sm:leading-[1.05] drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)] animate-in fade-in slide-in-from-bottom-4 duration-700">
                 Sell Your Property With <span className="text-[var(--gold)]">Confidence</span>
               </h1>
-              <p className="mt-4 sm:mt-6 text-sm sm:text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]"><LogoText height=1.0>
+              <p className="mt-4 sm:mt-6 text-sm sm:text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]"><LogoText height={1.0}>
                 Own a land, building, apartment, villa, or commercial property? Land Marvel offers a simple and transparent way to sell your property directly to us.
               </LogoText></p>
               <div className="mt-6 sm:mt-10 flex flex-wrap gap-3 sm:gap-4">
@@ -291,7 +291,7 @@ function SellPage() {
           <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center text-primary-foreground max-w-3xl">
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold">Ready To Sell Your Property?</h2>
             <p className="mt-5 text-lg text-white/85 whitespace-pre-line">
-              Submit your property details today and connect with serious buyers through{"\u00a0"}<br /><LogoText height=1.0>
+              Submit your property details today and connect with serious buyers through{"\u00a0"}<br /><LogoText height={1.0}>
               Land Marvel.
             </LogoText></p>
             <div className="mt-10 flex flex-wrap gap-4 justify-center">

@@ -178,7 +178,7 @@ function HeroSection() {
           <h1 className="mt-4 sm:mt-6 font-display text-2xl sm:text-4xl lg:text-5xl font-bold leading-[1.15] sm:leading-tight drop-shadow-[0_4px_20px_rgba(0,0,0,0.55)]">
             Building Landmarks. Creating Communities. Delivering Trust.
           </h1>
-          <p className="mt-4 sm:mt-6 text-sm sm:text-lg text-white/90 leading-relaxed max-w-2xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]"><LogoText height=1.0>
+          <p className="mt-4 sm:mt-6 text-sm sm:text-lg text-white/90 leading-relaxed max-w-2xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]"><LogoText height={1.0}>
             Land Marvel Group is one of South India's leading real estate
             developers with a strong legacy of delivering premium residential and
             commercial developments built on trust, quality, and innovation.
@@ -240,13 +240,13 @@ function WhoWeAreSection() {
                 Who We Are
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
-                <p><LogoText height=1.0>
+                <p><LogoText height={1.0}>
                   Land Marvel Group is one of South India's respected business
                   conglomerates with interests spanning Real Estate, Plotted
                   Layout, Commercial Space, Interior, 3D Printing Home, Organic
                   Home, Roof Top Solar.
                 </LogoText></p>
-                <p><LogoText height=1.0>
+                <p><LogoText height={1.0}>
                   Built upon trust, sincerity, and excellence, Land Marvel has
                   established a reputation for creating exceptional developments
                   that enhance lifestyles and deliver long-term value.
@@ -365,7 +365,7 @@ function DifferenceSection() {
           <span className="text-[var(--gold)] text-sm font-semibold tracking-widest uppercase">
             What Sets Us Apart
           </span>
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mt-3"><LogoText height=1.2>
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mt-3"><LogoText height={1.2}>
             Why Land Marvel Stands Apart
           </LogoText></h2>
         </FadeInSection>
@@ -424,7 +424,7 @@ function QualitySection() {
               <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mt-3 mb-6">
                 Committed To Excellence At Every Step
               </h2>
-              <p className="text-muted-foreground leading-relaxed mb-8"><LogoText height=1.0>
+              <p className="text-muted-foreground leading-relaxed mb-8"><LogoText height={1.0}>
                 Quality is at the heart of every Land Marvel development. From
                 land selection and soil testing to architectural planning,
                 construction, finishing, and handover, every stage follows strict
@@ -637,7 +637,7 @@ function FinalStatementSection() {
             <br />
             We Create Lasting Value.
           </h2>
-          <p className="text-white/80 leading-relaxed max-w-2xl mx-auto mb-10"><LogoText height=1.0>
+          <p className="text-white/80 leading-relaxed max-w-2xl mx-auto mb-10"><LogoText height={1.0}>
             At Land Marvel, every project is a reflection of our values, our
             expertise, and our promise to deliver spaces that enrich lives and
             build stronger communities.

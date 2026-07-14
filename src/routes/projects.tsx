@@ -207,12 +207,12 @@ function ProjectsPage() {
         <div className="relative z-10 h-full container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center text-primary-foreground">
           <div className="max-w-3xl">
             <span className="inline-flex items-center gap-2 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-[10px] sm:text-xs font-medium tracking-wide sm:tracking-[0.2em] uppercase">
-              <span className="w-1.5 h-1.5 rounded-full bg-[var(--gold)]" /><LogoText height=0.9> Land Marvel Developments
+              <span className="w-1.5 h-1.5 rounded-full bg-[var(--gold)]" /><LogoText height={0.9}> Land Marvel Developments
             </LogoText></span>
             <h1 className="mt-4 sm:mt-6 font-display text-3xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] sm:leading-[1.05] drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)]">
               Our <span className="text-[var(--gold)]">Project</span>
             </h1>
-            <p className="mt-4 sm:mt-6 text-sm sm:text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]"><LogoText height=1.0>
+            <p className="mt-4 sm:mt-6 text-sm sm:text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]"><LogoText height={1.0}>
               Discover Land Marvel's ongoing developments across premium plots, residential communities, and commercial spaces in Chennai's fastest-growing locations.
             </LogoText></p>
             <div className="mt-6 sm:mt-10 flex flex-wrap gap-3 sm:gap-4">

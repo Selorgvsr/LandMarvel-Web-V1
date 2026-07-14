@@ -251,12 +251,12 @@ function Hero() {
           style={{ background: "rgba(255,255,255,0.08)" }}
         >
           <span className="w-1.5 h-1.5 rounded-full" style={{ background: GREEN }} />
-          <LogoText height={0.9}><LogoText height=1.0>Land Marvel</LogoText></LogoText>
+          <LogoText height={0.9}>Land Marvel</LogoText>
         </span>
         <h1 className="mt-4 sm:mt-6 font-display text-2xl sm:text-5xl lg:text-[64px] leading-[1.15] sm:leading-[1.05] font-bold max-w-3xl">
           Building Tomorrow's <span style={{ color: GREEN }}>Living Spaces</span> Today
         </h1>
-        <p className="mt-4 sm:mt-6 text-sm sm:text-lg lg:text-xl text-white/85 max-w-2xl leading-relaxed"><LogoText height=1.0>
+        <p className="mt-4 sm:mt-6 text-sm sm:text-lg lg:text-xl text-white/85 max-w-2xl leading-relaxed"><LogoText height={1.0}>
           From plotted developments and residential communities to sustainable homes, rooftop solar integration, and future-ready construction
           technologies, Land Marvel creates spaces that inspire better living and long-term value.
         </LogoText></p>
@@ -452,7 +452,7 @@ function FutureCta() {
         <h2 className="mt-5 font-display text-4xl sm:text-5xl lg:text-[60px] font-bold leading-[1.05]">
           Creating The Future Of Sustainable Living
         </h2>
-        <p className="mt-6 text-lg lg:text-xl text-white/85 leading-relaxed"><LogoText height=1.0>
+        <p className="mt-6 text-lg lg:text-xl text-white/85 leading-relaxed"><LogoText height={1.0}>
           From premium real estate developments to innovative living solutions, Land Marvel is shaping communities that are smarter, greener, and
           designed for future generations.
         </LogoText></p>

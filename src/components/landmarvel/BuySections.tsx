@@ -199,7 +199,7 @@ export function LandInvestmentSection() {
               <h3 className="mt-3 font-display text-3xl sm:text-4xl lg:text-5xl font-bold">
                 Secure Your Place In <span className="text-[var(--gold)]">Tomorrow's Growth Story</span>
               </h3>
-              <p className="mt-4 text-white/85 text-lg"><LogoText height=1.0>
+              <p className="mt-4 text-white/85 text-lg"><LogoText height={1.0}>
                 Explore premium plots in strategic locations and build long-term wealth through smart land investments with Land Marvel.
               </LogoText></p>
               <div className="mt-8 flex flex-wrap gap-4">
@@ -390,7 +390,7 @@ export function CommercialSolutionsSection() {
             </p>
             <div className="mt-6 p-6 bg-primary/5 border-l-4 border-primary rounded-r-xl">
               <h3 className="font-display text-lg font-bold text-primary">Why Invest In Commercial Real Estate?</h3>
-              <p className="mt-2 text-sm text-muted-foreground leading-relaxed"><LogoText height=1.0>
+              <p className="mt-2 text-sm text-muted-foreground leading-relaxed"><LogoText height={1.0}>
                 Commercial properties offer stronger rental yields, long-term appreciation, and stable business demand compared to traditional investments.
                 Land Marvel helps businesses and investors identify high-growth commercial opportunities in strategic locations with excellent connectivity.
               </LogoText></p>
