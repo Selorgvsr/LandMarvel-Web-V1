@@ -8,6 +8,8 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { SiteFooter } from "@/components/landmarvel/SiteFooter";
 import { SiteHeader } from "@/components/landmarvel/SiteHeader";
+import { LogoName } from "@/components/landmarvel/LogoName";
+import { LogoText } from "@/components/landmarvel/LogoText";
 import organicHomeImg from "@/assets/portfolio/organic-home.jpeg.asset.json";
 import futureLivingImg from "@/assets/portfolio/future-living.jpeg.asset.json";
 import portfolioCtaBuildings from "@/assets/portfolio-cta-buildings.jpg.asset.json";
@@ -104,7 +106,7 @@ function Hero() {
           </span>
           <h1 className="mt-4 sm:mt-6 font-display text-[1.5rem] leading-[1.1] sm:text-4xl md:text-5xl lg:text-6xl sm:leading-[1.05] font-bold break-words drop-shadow-[0_4px_20px_rgba(0,0,0,0.55)] animate-in fade-in slide-in-from-bottom-4 duration-700">
             Find Your Dream Home, Apartment, Villa, Plotted Layout &amp; Commercial Space With{" "}
-            <span className="text-[var(--gold)] whitespace-nowrap">Land Marvel</span>
+            <span className="text-[var(--gold)] whitespace-nowrap"><LogoName height={0.9} /></span>
           </h1>
           <p className="mt-4 sm:mt-6 text-sm sm:text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] animate-in fade-in slide-in-from-bottom-4 duration-700">
             Finding the right property shouldn't feel like a gamble. Premium locations. Verified projects. Zero confusion — we've helped 2,000+ families invest with confidence.
@@ -136,9 +138,9 @@ function Hero() {
 function SectionHeading({ eyebrow, title, desc, center = true }: { eyebrow: string; title: string; desc?: string; center?: boolean }) {
   return (
     <div className={`max-w-2xl ${center ? "mx-auto text-center" : ""}`}>
-      <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-accent">{eyebrow}</span>
-      <h2 className="mt-3 font-display text-4xl sm:text-5xl font-bold text-primary">{title}</h2>
-      {desc && <p className="mt-4 text-base sm:text-lg text-muted-foreground">{desc}</p>}
+      <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-accent"><LogoText height={0.85}>{eyebrow}</LogoText></span>
+      <h2 className="mt-3 font-display text-4xl sm:text-5xl font-bold text-primary"><LogoText height={1.2}>{title}</LogoText></h2>
+      {desc && <p className="mt-4 text-base sm:text-lg text-muted-foreground"><LogoText height={1}>{desc}</LogoText></p>}
     </div>
   );
 }
@@ -161,7 +163,7 @@ function About() {
             Your Trusted Guide.<br/>Building Financial Peace.
           </h2>
           <p className="mt-5 text-muted-foreground text-lg leading-relaxed">
-            Land Marvel is your trusted partner — 30+ years, 200+ projects, 2,000+ happy families. We've walked this path with thousands of buyers across Chennai, and we'll walk it with you too. No confusion. No risk. Just clear answers and a property you'll be proud of.
+            <LogoText height={1}>Land Marvel is your trusted partner — 30+ years, 200+ projects, 2,000+ happy families. We've walked this path with thousands of buyers across Chennai, and we'll walk it with you too. No confusion. No risk. Just clear answers and a property you'll be proud of.</LogoText>
           </p>
           <ul className="mt-8 grid sm:grid-cols-2 gap-4">
             {highlights.map((h) => (
@@ -200,7 +202,7 @@ function BuySection() {
               Discover premium plots, residential apartments, villas, and commercial spaces in Chennai's most sought-after locations. Every property is carefully selected to offer excellent value, clear ownership, and long-term investment potential.
             </p>
             <p className="mt-4 text-muted-foreground text-lg lg:text-xl leading-relaxed">
-              Whether you are purchasing your first home, upgrading your lifestyle, or investing for the future, Land Marvel helps you find the right property with complete transparency and professional guidance.
+              <LogoText height={1}>Whether you are purchasing your first home, upgrading your lifestyle, or investing for the future, Land Marvel helps you find the right property with complete transparency and professional guidance.</LogoText>
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <Button asChild size="lg" className="bg-[image:var(--gradient-primary)] text-primary-foreground h-12 px-8 rounded-xl">
@@ -224,9 +226,9 @@ function SellSection() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="order-2 lg:order-1">
             <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-accent">Direct Property Buyers</span>
-            <h2 className="mt-4 font-display text-4xl sm:text-5xl lg:text-[56px] font-bold text-primary leading-tight">Sell Your Property Directly to Land Marvel</h2>
+            <h2 className="mt-4 font-display text-4xl sm:text-5xl lg:text-[56px] font-bold text-primary leading-tight"><LogoText height={1.2}>Sell Your Property Directly to Land Marvel</LogoText></h2>
             <p className="mt-6 text-muted-foreground text-lg lg:text-xl leading-relaxed">
-              Own a land, building, apartment, villa, or commercial property? Land Marvel offers a simple and transparent way to sell your property directly to us.
+              <LogoText height={1}>Own a land, building, apartment, villa, or commercial property? Land Marvel offers a simple and transparent way to sell your property directly to us.</LogoText>
             </p>
             <p className="mt-4 text-muted-foreground text-lg lg:text-xl leading-relaxed">
               Avoid lengthy negotiations, multiple brokers, and uncertain buyers. We provide fair market pricing, direct transactions, and a hassle-free selling experience designed to help you close deals quickly and confidently.
@@ -277,9 +279,9 @@ function ExchangeSection() {
           <div>
             <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-accent">Smart Property Exchange</span>
             <h2 className="mt-4 font-display text-4xl sm:text-5xl lg:text-[56px] font-bold text-primary leading-tight">Upgrade Your Property Through Direct Exchange</h2>
-            <p className="mt-6 text-muted-foreground text-lg lg:text-xl leading-relaxed">
+            <p className="mt-6 text-muted-foreground text-lg lg:text-xl leading-relaxed"><LogoText height={1.0}>
               Looking to move from your existing property into a better location, larger space, or a new investment opportunity? Land Marvel's Property Exchange Program makes it easier than ever.
-            </p>
+            </LogoText></p>
             <p className="mt-4 text-muted-foreground text-lg lg:text-xl leading-relaxed">
               Exchange your land, apartment, villa, or commercial property directly with us and explore suitable alternatives within our portfolio. Benefit from transparent valuations, direct transactions, and a streamlined process without the complexity of managing separate buying and selling deals.
             </p>
@@ -516,7 +518,7 @@ function FinalCTA() {
         <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-[var(--gold)]">Stop Guessing. Start Owning.</span>
         <h2 className="mt-4 font-display text-4xl sm:text-5xl lg:text-6xl font-bold">Your Dream Property Awaits</h2>
         <p className="mt-5 text-lg text-white/85">
-          If property investment stress keeps you up at night, partnering with Land Marvel is the decision that changes that. Book a free site visit — no obligation, just clarity on your best property option.
+          <LogoText height={1}>If property investment stress keeps you up at night, partnering with Land Marvel is the decision that changes that. Book a free site visit — no obligation, just clarity on your best property option.</LogoText>
         </p>
         <div className="mt-10 flex flex-wrap gap-4 justify-center">
           <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 h-12 px-7"><Link to="/contact">Book a Free Site Visit</Link></Button>
@@ -604,7 +606,7 @@ function PortfolioShowcase() {
             Explore Innovation, Design & Future Living
           </h2>
           <p className="mt-5 text-base sm:text-lg text-muted-foreground">
-            Discover Land Marvel's innovative solutions that combine real estate excellence, sustainable development, advanced technologies, and future-ready living concepts. Click any category to explore our complete portfolio.
+            <LogoText height={1}>Discover Land Marvel's innovative solutions that combine real estate excellence, sustainable development, advanced technologies, and future-ready living concepts. Click any category to explore our complete portfolio.</LogoText>
           </p>
         </div>
 
@@ -660,11 +662,11 @@ function PortfolioShowcase() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0a1d63]/95 via-[#0a1d63]/85 to-[#0a1d63]/60" />
           <div className="relative px-6 sm:px-12 py-16 sm:py-20 text-primary-foreground max-w-3xl">
-            <span className="inline-block text-xs font-semibold tracking-[0.25em] uppercase text-[var(--gold)]">Land Marvel Portfolio</span>
+            <span className="inline-block text-xs font-semibold tracking-[0.25em] uppercase text-[var(--gold)]"><LogoText height={0.9}>Land Marvel Portfolio</LogoText></span>
             <h3 className="mt-3 font-display text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
               Discover The Complete&nbsp;
               <br className="hidden sm:block" />
-              Land Marvel Portfolio
+              <LogoText height={1.2}>Land Marvel Portfolio</LogoText>
             </h3>
             <p className="mt-5 text-white/85 text-base sm:text-lg leading-relaxed">
               Explore our residential developments, plotted communities, commercial spaces, interiors, sustainable homes, and future living innovations.

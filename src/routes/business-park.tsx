@@ -16,6 +16,7 @@ import bp3 from "@/assets/business-park/bp-3.jpeg.asset.json";
 import bp4 from "@/assets/business-park/bp-4.jpeg.asset.json";
 import com2 from "@/assets/com-2.jpg";
 import buyCta from "@/assets/buy-cta.jpg";
+import { LogoText } from "@/components/landmarvel/LogoText";
 
 export const Route = createFileRoute("/business-park")({
   head: () => ({
@@ -118,7 +119,7 @@ function BusinessParkPage() {
               <span className="w-1.5 h-1.5 rounded-full bg-[var(--gold)]" /> Premium Commercial Development
             </span>
             <h1 className="mt-5 font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-              Land Marvel <span className="text-[var(--gold)]">Business Park</span>
+              <LogoText height={1.2}>Land Marvel </LogoText><span className="text-[var(--gold)]">Business Park</span>
             </h1>
             <p className="mt-3 text-lg text-white/85 flex items-center justify-center gap-2">
               <MapPin className="w-5 h-5 text-[var(--gold)]" /> Indira Nagar, Chennai
@@ -152,7 +153,7 @@ function BusinessParkPage() {
           <section className="py-16 sm:py-20">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-2xl text-center mb-12">
               <span className="text-xs font-semibold tracking-[0.2em] uppercase text-accent">Project Overview</span>
-              <h2 className="mt-2 font-display text-3xl sm:text-4xl font-bold text-primary">Land Marvel Commercial Project Overview</h2>
+              <h2 className="mt-2 font-display text-3xl sm:text-4xl font-bold text-primary"><LogoText height={1.2}>Land Marvel Commercial Project Overview</LogoText></h2>
             </div>
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-start">
               <div>
@@ -170,9 +171,9 @@ function BusinessParkPage() {
               <div>
                 <span className="text-xs font-semibold tracking-[0.2em] uppercase text-accent">Premium Commercial Development</span>
                 <h3 className="mt-2 font-display text-3xl sm:text-4xl font-bold text-primary">Designed For Business Success</h3>
-                <p className="mt-5 text-base text-muted-foreground leading-relaxed">
+                <p className="mt-5 text-base text-muted-foreground leading-relaxed"><LogoText height={1.0}>
                   Land Marvel develops premium commercial spaces that combine modern architecture, strategic locations, and future-ready infrastructure to create productive business environments.
-                </p>
+                </LogoText></p>
                 <p className="mt-3 text-base text-muted-foreground leading-relaxed">
                   Every commercial development is thoughtfully planned to support offices, retail spaces, showrooms, and mixed-use business destinations while delivering excellent investment potential and long-term value.
                 </p>
@@ -206,9 +207,9 @@ function BusinessParkPage() {
               </div>
               <div>
                 <h2 className="font-display text-3xl sm:text-4xl font-bold text-primary">Business Amenities & Modern Facilities</h2>
-                <p className="mt-4 text-muted-foreground leading-relaxed">
+                <p className="mt-4 text-muted-foreground leading-relaxed"><LogoText height={1.0}>
                   Every Land Marvel commercial project is equipped with thoughtfully planned amenities that enhance convenience, productivity, safety, and customer experience.
-                </p>
+                </LogoText></p>
                 <div className="mt-7 grid sm:grid-cols-2 gap-3">
                   {amenities.map(({ icon: Icon, label }) => (
                     <div key={label} className="flex items-center gap-3 p-3.5 rounded-xl bg-card border border-border hover:shadow-[var(--shadow-card)] hover:-translate-y-0.5 transition-all">
@@ -280,9 +281,9 @@ function BusinessParkPage() {
               </div>
               <div>
                 <h2 className="font-display text-3xl sm:text-4xl font-bold text-primary">Strategically Connected Business Destination</h2>
-                <p className="mt-4 text-muted-foreground leading-relaxed">
+                <p className="mt-4 text-muted-foreground leading-relaxed"><LogoText height={1.0}>
                   Land Marvel commercial developments are strategically located near major transportation corridors, business districts, and essential urban infrastructure — ensuring excellent connectivity and long-term investment value.
-                </p>
+                </LogoText></p>
                 <div className="mt-7 grid sm:grid-cols-2 gap-3">
                   {connectivity.map(({ icon: Icon, label, time }) => (
                     <div key={label} className="flex items-center justify-between gap-3 p-4 rounded-xl bg-card border border-border">
@@ -306,9 +307,9 @@ function BusinessParkPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
             <span className="text-xs font-semibold tracking-[0.2em] uppercase text-accent">About This Project</span>
             <h2 className="mt-2 font-display text-3xl sm:text-4xl font-bold text-primary">Building Spaces That Drive Business Growth</h2>
-            <p className="mt-5 text-muted-foreground leading-relaxed">
+            <p className="mt-5 text-muted-foreground leading-relaxed"><LogoText height={1.0}>
               Land Marvel creates commercial environments that combine innovative design, quality construction, and strategic planning to support business success and long-term investment growth.
-            </p>
+            </LogoText></p>
             <p className="mt-3 text-muted-foreground leading-relaxed">
               Every project reflects our commitment to superior craftsmanship, sustainable development, and customer-focused solutions.
             </p>
@@ -329,9 +330,9 @@ function BusinessParkPage() {
           <div className="absolute inset-0 bg-primary/85" />
           <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center text-primary-foreground max-w-3xl">
             <h2 className="font-display text-3xl sm:text-5xl font-bold">Start Your Commercial Investment Journey</h2>
-            <p className="mt-4 text-lg text-white/85">
+            <p className="mt-4 text-lg text-white/85"><LogoText height={1.0}>
               Explore premium commercial opportunities designed for business success, sustainable growth, and long-term value with Land Marvel.
-            </p>
+            </LogoText></p>
             <div className="mt-8 flex flex-wrap gap-4 justify-center">
               <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-13 px-7 rounded-xl">
                 <Link to="/contact"><Calendar className="mr-2 w-4 h-4" /> Schedule a Site Visit</Link>
