@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import { SiteFooter } from "@/components/landmarvel/SiteFooter";
 import { SiteHeader } from "@/components/landmarvel/SiteHeader";
+import { LogoText } from "@/components/landmarvel/LogoText";
 
 import hero from "@/assets/portfolio-hero.jpg";
 import portfolioHeroVideo from "@/assets/portfolio-hero-video.mp4.asset.json";

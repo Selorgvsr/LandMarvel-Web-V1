@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { SiteFooter } from "@/components/landmarvel/SiteFooter";
 import { SiteHeader } from "@/components/landmarvel/SiteHeader";
+import { LogoText } from "@/components/landmarvel/LogoText";
 import { LandInvestmentSection, ResidentialLivingSection, CommercialSolutionsSection } from "@/components/landmarvel/BuySections";
 
 import buyHero from "@/assets/buy-hero.jpg";
