@@ -350,12 +350,12 @@ function SplitSection({ image, video, alt, imageLeft, eyebrow, icon, title, desc
               className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-bold tracking-[0.18em] uppercase"
               style={{ background: `${btnColor}14`, color: btnColor }}
             >
-              {icon} {eyebrow}
+              {icon} <LogoText height={0.9}>{eyebrow}</LogoText>
             </div>
             <h2 className="mt-5 font-display text-4xl sm:text-5xl lg:text-[52px] leading-[1.08] font-bold" style={{ color: NAVY }}>
-              {title}
+              <LogoText height={1.2}>{title}</LogoText>
             </h2>
-            <p className="mt-6 text-lg lg:text-xl text-muted-foreground leading-relaxed whitespace-pre-line">{desc}</p>
+            <p className="mt-6 text-lg lg:text-xl text-muted-foreground leading-relaxed whitespace-pre-line"><LogoText height={1}>{desc}</LogoText></p>
             <ul className="mt-8 grid sm:grid-cols-2 gap-x-6 gap-y-3">
               {features.map((f) => (
                 <li key={f} className="flex items-start gap-3 text-[15px] text-foreground/85">

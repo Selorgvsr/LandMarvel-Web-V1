@@ -130,7 +130,7 @@ function ProjectCard({ p }: { p: Project }) {
       </div>
       <div className="p-6 space-y-4">
         <div>
-          <h3 className="font-display text-xl font-bold text-primary leading-tight">{p.name}</h3>
+          <h3 className="font-display text-xl font-bold text-primary leading-tight"><LogoText height={1.2}>{p.name}</LogoText></h3>
           <p className="text-accent font-semibold mt-1">{p.price}</p>
         </div>
         {p.serving && (
@@ -182,9 +182,9 @@ function CategorySection({ icon, title, description, projects }: { icon: string;
     <div className="mb-20">
       <div className="mb-10 text-center">
         <h3 className="font-display text-3xl md:text-4xl font-bold text-primary">
-          {title}
+          <LogoText height={1.2}>{title}</LogoText>
         </h3>
-        <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">{description}</p>
+        <p className="mt-3 text-muted-foreground max-w-2xl mx-auto"><LogoText height={1}>{description}</LogoText></p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {projects.map((p) => <ProjectCard key={p.name} p={p} />)}
