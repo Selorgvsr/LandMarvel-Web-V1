@@ -104,7 +104,7 @@ function Hero() {
           </span>
           <h1 className="mt-4 sm:mt-6 font-display text-[1.5rem] leading-[1.1] sm:text-4xl md:text-5xl lg:text-6xl sm:leading-[1.05] font-bold break-words drop-shadow-[0_4px_20px_rgba(0,0,0,0.55)] animate-in fade-in slide-in-from-bottom-4 duration-700">
             Find Your Dream Home, Apartment, Villa, Plotted Layout &amp; Commercial Space With{" "}
-            <span className="text-[var(--gold)] whitespace-nowrap">Land Marvel</span>
+            <span className="text-[var(--gold)] whitespace-nowrap"><LogoName height=0.9 /></span>
           </h1>
           <p className="mt-4 sm:mt-6 text-sm sm:text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] animate-in fade-in slide-in-from-bottom-4 duration-700">
             Finding the right property shouldn't feel like a gamble. Premium locations. Verified projects. Zero confusion — we've helped 2,000+ families invest with confidence.
