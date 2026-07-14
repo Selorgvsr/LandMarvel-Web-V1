@@ -98,7 +98,7 @@ export function LandInvestmentSection() {
             <img src={landAerial} alt="Aerial view of plotted township" width={1024} height={1024} loading="lazy"
               className="w-full h-[480px] object-cover group-hover:scale-105 transition-transform duration-700" />
             <div className="absolute bottom-5 left-5 bg-white/90 backdrop-blur rounded-2xl px-5 py-3 shadow-md">
-              <div className="text-xs uppercase tracking-wider !text-blue-600"><LogoName height=1.0 /></div>
+              <div className="text-xs uppercase tracking-wider !text-blue-600"><LogoName height={1} /></div>
               <div className="font-display font-bold !text-blue-600">Strategic Land Investments</div>
             </div>
           </div>
@@ -438,7 +438,7 @@ export function CommercialSolutionsSection() {
             <Eyebrow>Investment Benefits</Eyebrow>
             <h3 className="mt-3 font-display text-3xl sm:text-4xl lg:text-5xl font-bold whitespace-pre-line">
               Why Businesses Choose{"\u00a0"}<br />
-              <span className="text-[var(--gold)]"><LogoName height=0.9 /></span>
+              <span className="text-[var(--gold)]"><LogoName height={0.9} /></span>
             </h3>
             <p className="mt-5 text-white/80 text-lg">
               We combine location intelligence, market expertise, quality development, and customer-focused solutions to create commercial assets that generate value for businesses and investors alike.

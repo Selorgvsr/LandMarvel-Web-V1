@@ -137,7 +137,7 @@ function ContactPage() {
               <Star className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[var(--gold)]" /> Get in Touch
             </span>
             <h1 className="mt-4 sm:mt-6 font-display text-3xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] sm:leading-[1.05] drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)]">
-              Contact <span className="text-[var(--gold)]"><LogoName height=0.9 /></span>
+              Contact <span className="text-[var(--gold)]"><LogoName height={0.9} /></span>
             </h1>
             <p className="mt-4 sm:mt-6 text-sm sm:text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
               Whether you're looking to buy, sell, exchange properties, or learn more about our ongoing projects, our team is here to assist you every step of the way.
