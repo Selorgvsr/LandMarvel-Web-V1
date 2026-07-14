@@ -9,7 +9,6 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { SiteFooter } from "@/components/landmarvel/SiteFooter";
 import { SiteHeader } from "@/components/landmarvel/SiteHeader";
-import { LogoText } from "@/components/landmarvel/LogoText";
 import { LandInvestmentSection, ResidentialLivingSection, CommercialSolutionsSection } from "@/components/landmarvel/BuySections";
 
 import buyHero from "@/assets/buy-hero.jpg";
@@ -96,7 +95,7 @@ function PropertyCard({ p }: { p: Property }) {
         )}
       </div>
       <div className="p-6 flex flex-col flex-1">
-        <h3 className="font-display text-2xl lg:text-[28px] font-bold text-primary leading-tight"><LogoText height={1.2}>{p.title}</LogoText></h3>
+        <h3 className="font-display text-2xl lg:text-[28px] font-bold text-primary leading-tight">{p.title}</h3>
         <div className="mt-2 text-2xl font-bold text-[var(--gold)]">{p.price}</div>
         <div className="mt-3 flex items-center gap-1.5 text-sm text-muted-foreground">
           <MapPin className="w-4 h-4 text-accent" /> {p.location}
@@ -182,7 +181,7 @@ function CategorySection({ id, eyebrow, title, items, alt = false }: { id: strin
     <section id={id} className={`py-16 sm:py-20 ${alt ? "" : "bg-background"}`} style={alt ? { background: "var(--gradient-soft)" } : undefined}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-3">
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-primary"><LogoText height={1.2}>{title}</LogoText></h2>
+          <h2 className="font-display text-3xl sm:text-4xl font-bold text-primary">{title}</h2>
           <div className="hidden sm:block flex-1 h-px bg-border ml-4" />
         </div>
         <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">

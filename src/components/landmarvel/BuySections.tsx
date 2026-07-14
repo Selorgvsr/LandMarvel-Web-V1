@@ -6,8 +6,6 @@ import {
   Factory, ShoppingBag, Hotel, Award, Eye,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { LogoName } from "./LogoName";
-import { LogoText } from "./LogoText";
 
 import landAerial from "@/assets/buy-land-aerial.jpg";
 import landSiteVisitAsset from "@/assets/land-site-visit.jpg.asset.json";
@@ -38,9 +36,9 @@ function Eyebrow({ children }: { children: React.ReactNode }) {
 function SectionHeading({ eyebrow, title, desc, center = false }: { eyebrow: string; title: React.ReactNode; desc?: string; center?: boolean }) {
   return (
     <div className={`max-w-3xl ${center ? "mx-auto text-center" : ""}`}>
-      <Eyebrow><LogoText height={0.85}>{eyebrow}</LogoText></Eyebrow>
-      <h2 className="mt-3 font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-primary leading-tight"><LogoText height={1.2}>{title}</LogoText></h2>
-      {desc && <p className="mt-5 text-base sm:text-lg text-muted-foreground leading-relaxed"><LogoText height={1}>{desc}</LogoText></p>}
+      <Eyebrow>{eyebrow}</Eyebrow>
+      <h2 className="mt-3 font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-primary leading-tight">{title}</h2>
+      {desc && <p className="mt-5 text-base sm:text-lg text-muted-foreground leading-relaxed">{desc}</p>}
     </div>
   );
 }
@@ -100,7 +98,7 @@ export function LandInvestmentSection() {
             <img src={landAerial} alt="Aerial view of plotted township" width={1024} height={1024} loading="lazy"
               className="w-full h-[480px] object-cover group-hover:scale-105 transition-transform duration-700" />
             <div className="absolute bottom-5 left-5 bg-white/90 backdrop-blur rounded-2xl px-5 py-3 shadow-md">
-              <div className="text-xs uppercase tracking-wider !text-blue-600"><LogoName height={1} /></div>
+              <div className="text-xs uppercase tracking-wider !text-blue-600">Land Marvel</div>
               <div className="font-display font-bold !text-blue-600">Strategic Land Investments</div>
             </div>
           </div>
@@ -199,9 +197,9 @@ export function LandInvestmentSection() {
               <h3 className="mt-3 font-display text-3xl sm:text-4xl lg:text-5xl font-bold">
                 Secure Your Place In <span className="text-[var(--gold)]">Tomorrow's Growth Story</span>
               </h3>
-              <p className="mt-4 text-white/85 text-lg"><LogoText height={1.0}>
+              <p className="mt-4 text-white/85 text-lg">
                 Explore premium plots in strategic locations and build long-term wealth through smart land investments with Land Marvel.
-              </LogoText></p>
+              </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-13 px-7 rounded-xl">
                   <a href="#plots">Explore Plot Project <ArrowRight className="ml-2 w-4 h-4" /></a>
@@ -390,10 +388,10 @@ export function CommercialSolutionsSection() {
             </p>
             <div className="mt-6 p-6 bg-primary/5 border-l-4 border-primary rounded-r-xl">
               <h3 className="font-display text-lg font-bold text-primary">Why Invest In Commercial Real Estate?</h3>
-              <p className="mt-2 text-sm text-muted-foreground leading-relaxed"><LogoText height={1.0}>
+              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
                 Commercial properties offer stronger rental yields, long-term appreciation, and stable business demand compared to traditional investments.
                 Land Marvel helps businesses and investors identify high-growth commercial opportunities in strategic locations with excellent connectivity.
-              </LogoText></p>
+              </p>
             </div>
           </div>
         </div>
@@ -440,7 +438,7 @@ export function CommercialSolutionsSection() {
             <Eyebrow>Investment Benefits</Eyebrow>
             <h3 className="mt-3 font-display text-3xl sm:text-4xl lg:text-5xl font-bold whitespace-pre-line">
               Why Businesses Choose{"\u00a0"}<br />
-              <span className="text-[var(--gold)]"><LogoName height={0.9} /></span>
+              <span className="text-[var(--gold)]">Land Marvel</span>
             </h3>
             <p className="mt-5 text-white/80 text-lg">
               We combine location intelligence, market expertise, quality development, and customer-focused solutions to create commercial assets that generate value for businesses and investors alike.

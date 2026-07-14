@@ -20,7 +20,6 @@ import {
 } from "lucide-react";
 import { SiteFooter } from "@/components/landmarvel/SiteFooter";
 import { SiteHeader } from "@/components/landmarvel/SiteHeader";
-import { LogoText } from "@/components/landmarvel/LogoText";
 
 import hero from "@/assets/portfolio-hero.jpg";
 import portfolioHeroVideo from "@/assets/portfolio-hero-video.mp4.asset.json";
@@ -250,16 +249,15 @@ function Hero() {
           className="inline-flex items-center gap-2 rounded-full px-3 py-1 sm:px-4 sm:py-1.5 text-[10px] sm:text-xs font-semibold tracking-wide sm:tracking-[0.2em] uppercase backdrop-blur-md border border-white/30"
           style={{ background: "rgba(255,255,255,0.08)" }}
         >
-          <span className="w-1.5 h-1.5 rounded-full" style={{ background: GREEN }} />
-          <LogoText height={0.9}>Land Marvel</LogoText>
+          <span className="w-1.5 h-1.5 rounded-full" style={{ background: GREEN }} /> Land Marvel
         </span>
         <h1 className="mt-4 sm:mt-6 font-display text-2xl sm:text-5xl lg:text-[64px] leading-[1.15] sm:leading-[1.05] font-bold max-w-3xl">
           Building Tomorrow's <span style={{ color: GREEN }}>Living Spaces</span> Today
         </h1>
-        <p className="mt-4 sm:mt-6 text-sm sm:text-lg lg:text-xl text-white/85 max-w-2xl leading-relaxed"><LogoText height={1.0}>
+        <p className="mt-4 sm:mt-6 text-sm sm:text-lg lg:text-xl text-white/85 max-w-2xl leading-relaxed">
           From plotted developments and residential communities to sustainable homes, rooftop solar integration, and future-ready construction
           technologies, Land Marvel creates spaces that inspire better living and long-term value.
-        </LogoText></p>
+        </p>
         <div className="mt-6 sm:mt-10 flex flex-wrap gap-3 sm:gap-4">
           <a
             href="#portfolio"
@@ -352,12 +350,12 @@ function SplitSection({ image, video, alt, imageLeft, eyebrow, icon, title, desc
               className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-bold tracking-[0.18em] uppercase"
               style={{ background: `${btnColor}14`, color: btnColor }}
             >
-              {icon} <LogoText height={0.9}>{eyebrow}</LogoText>
+              {icon} {eyebrow}
             </div>
             <h2 className="mt-5 font-display text-4xl sm:text-5xl lg:text-[52px] leading-[1.08] font-bold" style={{ color: NAVY }}>
-              <LogoText height={1.2}>{title}</LogoText>
+              {title}
             </h2>
-            <p className="mt-6 text-lg lg:text-xl text-muted-foreground leading-relaxed whitespace-pre-line"><LogoText height={1}>{desc}</LogoText></p>
+            <p className="mt-6 text-lg lg:text-xl text-muted-foreground leading-relaxed whitespace-pre-line">{desc}</p>
             <ul className="mt-8 grid sm:grid-cols-2 gap-x-6 gap-y-3">
               {features.map((f) => (
                 <li key={f} className="flex items-start gap-3 text-[15px] text-foreground/85">
@@ -452,10 +450,10 @@ function FutureCta() {
         <h2 className="mt-5 font-display text-4xl sm:text-5xl lg:text-[60px] font-bold leading-[1.05]">
           Creating The Future Of Sustainable Living
         </h2>
-        <p className="mt-6 text-lg lg:text-xl text-white/85 leading-relaxed"><LogoText height={1.0}>
+        <p className="mt-6 text-lg lg:text-xl text-white/85 leading-relaxed">
           From premium real estate developments to innovative living solutions, Land Marvel is shaping communities that are smarter, greener, and
           designed for future generations.
-        </LogoText></p>
+        </p>
         <div className="mt-10 flex flex-wrap gap-4">
           <Link
             to="/contact"

@@ -9,7 +9,6 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { SiteFooter } from "@/components/landmarvel/SiteFooter";
 import { SiteHeader } from "@/components/landmarvel/SiteHeader";
-import { LogoText } from "@/components/landmarvel/LogoText";
 
 import aboutImg from "@/assets/about-building.jpg";
 import projectHeroVideo from "@/assets/project-hero-video.mp4.asset.json";
@@ -131,7 +130,7 @@ function ProjectCard({ p }: { p: Project }) {
       </div>
       <div className="p-6 space-y-4">
         <div>
-          <h3 className="font-display text-xl font-bold text-primary leading-tight"><LogoText height={1.2}>{p.name}</LogoText></h3>
+          <h3 className="font-display text-xl font-bold text-primary leading-tight">{p.name}</h3>
           <p className="text-accent font-semibold mt-1">{p.price}</p>
         </div>
         {p.serving && (
@@ -183,9 +182,9 @@ function CategorySection({ icon, title, description, projects }: { icon: string;
     <div className="mb-20">
       <div className="mb-10 text-center">
         <h3 className="font-display text-3xl md:text-4xl font-bold text-primary">
-          <LogoText height={1.2}>{title}</LogoText>
+          {title}
         </h3>
-        <p className="mt-3 text-muted-foreground max-w-2xl mx-auto"><LogoText height={1}>{description}</LogoText></p>
+        <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">{description}</p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {projects.map((p) => <ProjectCard key={p.name} p={p} />)}
@@ -207,14 +206,14 @@ function ProjectsPage() {
         <div className="relative z-10 h-full container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center text-primary-foreground">
           <div className="max-w-3xl">
             <span className="inline-flex items-center gap-2 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-[10px] sm:text-xs font-medium tracking-wide sm:tracking-[0.2em] uppercase">
-              <span className="w-1.5 h-1.5 rounded-full bg-[var(--gold)]" /><LogoText height={0.9}> Land Marvel Developments
-            </LogoText></span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[var(--gold)]" /> Land Marvel Developments
+            </span>
             <h1 className="mt-4 sm:mt-6 font-display text-3xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] sm:leading-[1.05] drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)]">
               Our <span className="text-[var(--gold)]">Project</span>
             </h1>
-            <p className="mt-4 sm:mt-6 text-sm sm:text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]"><LogoText height={1.0}>
+            <p className="mt-4 sm:mt-6 text-sm sm:text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
               Discover Land Marvel's ongoing developments across premium plots, residential communities, and commercial spaces in Chennai's fastest-growing locations.
-            </LogoText></p>
+            </p>
             <div className="mt-6 sm:mt-10 flex flex-wrap gap-3 sm:gap-4">
               <Button size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-11 sm:h-13 px-5 sm:px-7 text-sm sm:text-base rounded-xl shadow-[var(--shadow-elegant)]">
                 Explore Project <ArrowRight className="ml-2 w-4 h-4" />
