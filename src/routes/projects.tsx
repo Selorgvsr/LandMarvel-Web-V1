@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { SiteFooter } from "@/components/landmarvel/SiteFooter";
 import { SiteHeader } from "@/components/landmarvel/SiteHeader";
+import { LogoText } from "@/components/landmarvel/LogoText";
 
 import aboutImg from "@/assets/about-building.jpg";
 import projectHeroVideo from "@/assets/project-hero-video.mp4.asset.json";
