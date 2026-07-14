@@ -17,6 +17,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { toast } from "sonner";
 import { SiteFooter } from "@/components/landmarvel/SiteFooter";
 import { SiteHeader } from "@/components/landmarvel/SiteHeader";
+import { LogoText } from "@/components/landmarvel/LogoText";
 
 import sellHero from "@/assets/sell-hero.jpg";
 import sellCta from "@/assets/sell-cta.jpg";

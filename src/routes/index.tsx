@@ -9,6 +9,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { SiteFooter } from "@/components/landmarvel/SiteFooter";
 import { SiteHeader } from "@/components/landmarvel/SiteHeader";
 import { LogoName } from "@/components/landmarvel/LogoName";
+import { LogoText } from "@/components/landmarvel/LogoText";
 import organicHomeImg from "@/assets/portfolio/organic-home.jpeg.asset.json";
 import futureLivingImg from "@/assets/portfolio/future-living.jpeg.asset.json";
 import portfolioCtaBuildings from "@/assets/portfolio-cta-buildings.jpg.asset.json";
