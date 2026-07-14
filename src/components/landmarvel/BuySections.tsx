@@ -6,6 +6,7 @@ import {
   Factory, ShoppingBag, Hotel, Award, Eye,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { LogoName } from "./LogoName";
 
 import landAerial from "@/assets/buy-land-aerial.jpg";
 import landSiteVisitAsset from "@/assets/land-site-visit.jpg.asset.json";
