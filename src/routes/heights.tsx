@@ -16,6 +16,7 @@ import buyCta from "@/assets/buy-cta.jpg";
 import heights1 from "@/assets/heights/heights-1.jpeg.asset.json";
 import heights2 from "@/assets/heights/heights-2.jpeg.asset.json";
 import heights3 from "@/assets/heights/heights-3.jpeg.asset.json";
+import { LogoText } from "@/components/landmarvel/LogoText";
 
 export const Route = createFileRoute("/heights")({
   head: () => ({
@@ -117,8 +118,8 @@ function HeightsPage() {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-xs font-semibold tracking-[0.2em] uppercase">
               <span className="w-1.5 h-1.5 rounded-full bg-[var(--gold)]" /> Premium Residential Development
             </span>
-            <h1 className="mt-5 font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-              Land Marvel <span className="text-[var(--gold)]">Heights</span>
+            <h1 className="mt-5 font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight"><LogoText height=1.2>
+              Land Marvel </LogoText><span className="text-[var(--gold)]">Heights</span>
             </h1>
             <p className="mt-3 text-lg text-white/85 flex items-center justify-center gap-2">
               <MapPin className="w-5 h-5 text-[var(--gold)]" /> Thiruvanmiyur, LB Road, Chennai
