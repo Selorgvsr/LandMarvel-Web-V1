@@ -137,9 +137,9 @@ function Hero() {
 function SectionHeading({ eyebrow, title, desc, center = true }: { eyebrow: string; title: string; desc?: string; center?: boolean }) {
   return (
     <div className={`max-w-2xl ${center ? "mx-auto text-center" : ""}`}>
-      <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-accent">{eyebrow}</span>
-      <h2 className="mt-3 font-display text-4xl sm:text-5xl font-bold text-primary">{title}</h2>
-      {desc && <p className="mt-4 text-base sm:text-lg text-muted-foreground">{desc}</p>}
+      <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-accent"><LogoText height={0.85}>{eyebrow}</LogoText></span>
+      <h2 className="mt-3 font-display text-4xl sm:text-5xl font-bold text-primary"><LogoText height={1.2}>{title}</LogoText></h2>
+      {desc && <p className="mt-4 text-base sm:text-lg text-muted-foreground"><LogoText height={1}>{desc}</LogoText></p>}
     </div>
   );
 }

@@ -37,9 +37,9 @@ function Eyebrow({ children }: { children: React.ReactNode }) {
 function SectionHeading({ eyebrow, title, desc, center = false }: { eyebrow: string; title: React.ReactNode; desc?: string; center?: boolean }) {
   return (
     <div className={`max-w-3xl ${center ? "mx-auto text-center" : ""}`}>
-      <Eyebrow>{eyebrow}</Eyebrow>
-      <h2 className="mt-3 font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-primary leading-tight">{title}</h2>
-      {desc && <p className="mt-5 text-base sm:text-lg text-muted-foreground leading-relaxed">{desc}</p>}
+      <Eyebrow><LogoText height={0.85}>{eyebrow}</LogoText></Eyebrow>
+      <h2 className="mt-3 font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-primary leading-tight"><LogoText height={1.2}>{title}</LogoText></h2>
+      {desc && <p className="mt-5 text-base sm:text-lg text-muted-foreground leading-relaxed"><LogoText height={1}>{desc}</LogoText></p>}
     </div>
   );
 }
