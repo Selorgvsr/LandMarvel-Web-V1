@@ -250,8 +250,9 @@ function Hero() {
           className="inline-flex items-center gap-2 rounded-full px-3 py-1 sm:px-4 sm:py-1.5 text-[10px] sm:text-xs font-semibold tracking-wide sm:tracking-[0.2em] uppercase backdrop-blur-md border border-white/30"
           style={{ background: "rgba(255,255,255,0.08)" }}
         >
-          <span className="w-1.5 h-1.5 rounded-full" style={{ background: GREEN }} /><LogoText height=0.9> Land Marvel
-        </LogoText></span>
+          <span className="w-1.5 h-1.5 rounded-full" style={{ background: GREEN }} />
+          <LogoText height={0.9}>Land Marvel</LogoText>
+        </span>
         <h1 className="mt-4 sm:mt-6 font-display text-2xl sm:text-5xl lg:text-[64px] leading-[1.15] sm:leading-[1.05] font-bold max-w-3xl">
           Building Tomorrow's <span style={{ color: GREEN }}>Living Spaces</span> Today
         </h1>
