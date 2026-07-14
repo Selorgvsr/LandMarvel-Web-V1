@@ -102,7 +102,7 @@ function SellForm() {
                   <SelectValue placeholder="Select Property Type" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="plot">Plot</SelectItem>
+                  <SelectItem value="land">Land</SelectItem>
                   <SelectItem value="residential">Residential</SelectItem>
                   <SelectItem value="commercial">Commercial</SelectItem>
                   <SelectItem value="others">Others</SelectItem>
