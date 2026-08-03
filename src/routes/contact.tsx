@@ -147,7 +147,7 @@ function ContactPage() {
                 <a href="tel:+918667769670"><Phone className="w-4 h-4" /> Call Now</a>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-11 sm:h-13 px-5 sm:px-7 text-sm sm:text-base rounded-xl backdrop-blur">
-                <a href="mailto:enquiry@landmarvel.com"><Mail className="w-4 h-4" /> Email Us</a>
+                <a href="mailto:suresh@landmarvel.com"><Mail className="w-4 h-4" /> Email Us</a>
               </Button>
             </div>
             <div className="mt-8 sm:mt-12 grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-3xl">
@@ -178,7 +178,7 @@ function ContactPage() {
               {[
                 { icon: MapPin, title: "Visit Our Office", lines: ["Land Marvel Group", "Chennai, Tamil Nadu"] },
                 { icon: Phone, title: "Call Us", lines: ["+91 86677 69670"] },
-                { icon: Mail, title: "Email Us", lines: ["enquiry@landmarvel.com"] },
+                { icon: Mail, title: "Email Us", lines: ["suresh@landmarvel.com"] },
                 { icon: Clock, title: "Business Hours", lines: ["Monday – Saturday", "9:00 AM – 6:00 PM"] },
               ].map((c) => (
                 <div key={c.title} className="flex gap-4 p-5 rounded-2xl bg-card border border-border hover:shadow-[var(--shadow-card)] transition-shadow">
@@ -215,7 +215,7 @@ function ContactPage() {
                 <a href="tel:+918667769670"><Phone className="w-4 h-4" /> Call Now</a>
               </Button>
               <Button asChild size="lg" variant="outline" className="h-12 rounded-xl bg-transparent border-white text-white hover:bg-white hover:text-primary">
-                <a href="mailto:enquiry@landmarvel.com"><Mail className="w-4 h-4" /> Email Us</a>
+                <a href="mailto:suresh@landmarvel.com"><Mail className="w-4 h-4" /> Email Us</a>
               </Button>
             </div>
           </div>
