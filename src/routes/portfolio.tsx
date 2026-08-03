@@ -27,7 +27,7 @@ import residential from "@/assets/portfolio-residential.jpg";
 import plotVideo from "@/assets/plot-video.mp4.asset.json";
 import commercial from "@/assets/portfolio-commercial.jpg";
 import interior from "@/assets/portfolio-interior.jpg";
-import organic from "@/assets/portfolio-organic.jpg";
+import organic from "@/assets/organic-homes-new.jpg.asset.json";
 import threeD from "@/assets/portfolio-3d.jpg";
 import solar from "@/assets/portfolio-solar.jpg";
 import sustainability from "@/assets/portfolio-sustainability.jpg";
