@@ -171,7 +171,7 @@ function HeightsPage() {
                 <span className="text-xs font-semibold tracking-[0.2em] uppercase text-accent">Premium Residential Development</span>
                 <h3 className="mt-2 font-display text-3xl sm:text-4xl font-bold text-primary">Designed For Modern Living</h3>
                 <p className="mt-5 text-base text-muted-foreground leading-relaxed">
-                  Land Marvel develops premium residences that combine modern architecture, strategic locations, and future-ready infrastructure to create elegant living environments.
+                  At Land Marvel,We develop premium residences that combine modern architecture, strategic locations, and future-ready infrastructure to create elegant living environments.
                 </p>
                 <p className="mt-3 text-base text-muted-foreground leading-relaxed">
                   Every development is thoughtfully planned to support comfort, community, and quality of life — while delivering excellent investment potential and long-term value.
