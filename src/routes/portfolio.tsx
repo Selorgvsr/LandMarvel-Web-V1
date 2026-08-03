@@ -71,7 +71,7 @@ function PortfolioPage() {
         eyebrow="Residential Living"
         icon={<Home className="w-5 h-5" />}
         title="Modern Residential Living For Every Lifestyle"
-        desc="Land Marvel develops thoughtfully planned residential communities designed around comfort, convenience, security, and long-term value. Every project combines modern architecture, premium amenities, and strategic locations to create exceptional living experiences."
+        desc="At Land Marvel,We develop thoughtfully planned residential communities designed around comfort, convenience, security, and long-term value. Every project combines modern architecture, premium amenities, and strategic locations to create exceptional living experiences."
         features={[
           "Premium Residential Communities",
           "Luxury Apartments",
@@ -111,7 +111,7 @@ function PortfolioPage() {
         eyebrow="Commercial Spaces"
         icon={<Building2 className="w-5 h-5" />}
         title="Commercial Spaces Designed For Growth"
-        desc="Land Marvel develops premium commercial environments that support business growth, visibility, and long-term investment returns. Located in strategic business corridors, our commercial developments create opportunities for entrepreneurs, investors, and enterprises."
+        desc="At Land Marvel,We develop premium commercial environments that support business growth, visibility, and long-term investment returns. Located in strategic business corridors, our commercial developments create opportunities for entrepreneurs, investors, and enterprises."
         features={[
           "Premium Office Spaces",
           "Retail & Shopping Destinations",
