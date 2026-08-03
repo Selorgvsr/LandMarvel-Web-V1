@@ -243,7 +243,7 @@ function WhoWeAreSection() {
                   Land Marvel Group is one of South India's respected business
                   conglomerates with interests spanning Real Estate, Plotted
                   Layout, Commercial Space, Interior, 3D Printing Home, Organic
-                  Home, Roof Top Solar.
+                  Home & Villa with Roof Top Solar.
                 </p>
                 <p>
                   Built upon trust, sincerity, and excellence, Land Marvel has
