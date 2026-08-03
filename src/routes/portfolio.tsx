@@ -143,7 +143,7 @@ function PortfolioPage() {
         cta="View Interior Portfolio"
       />
       <SplitSection
-        image={organic}
+        image={organic.url}
         alt="Organic homes"
         imageLeft={false}
         eyebrow="Organic Homes"
