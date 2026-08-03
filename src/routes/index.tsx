@@ -245,7 +245,7 @@ function SellSection() {
           </div>
           <div className="relative group order-1 lg:order-2">
             <img
-              src={sellSectionImg}
+              src={sellSectionImg.url}
               alt="Premium property ready for direct sale"
               width={1200}
               height={800}
