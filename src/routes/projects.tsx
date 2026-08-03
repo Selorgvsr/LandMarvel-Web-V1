@@ -151,23 +151,23 @@ function ProjectCard({ p }: { p: Project }) {
           <div className="flex items-center gap-2"><Building2 className="w-4 h-4 text-accent shrink-0" /><span className="truncate">{p.type}</span></div>
           <div className="flex items-center gap-2 col-span-2"><Calendar className="w-4 h-4 text-accent shrink-0" /><span>{p.possession}</span></div>
         </div>
-        <div className="flex gap-2 pt-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2">
           {isComingSoon ? (
             <>
-              <Button disabled className="flex-1 h-[52px] rounded-xl bg-muted text-muted-foreground cursor-not-allowed">
-                <Calendar className="w-4 h-4" /> Book Visit
+              <Button disabled className="w-full h-[52px] rounded-xl bg-muted text-muted-foreground cursor-not-allowed">
+                <Calendar className="w-4 h-4 mr-1.5 shrink-0" /> Book Visit
               </Button>
-              <Button disabled variant="outline" className="flex-1 h-[52px] rounded-xl cursor-not-allowed">
-                <Eye className="w-4 h-4" /> Details
+              <Button disabled variant="outline" className="w-full h-[52px] rounded-xl cursor-not-allowed">
+                <Eye className="w-4 h-4 mr-1.5 shrink-0" /> Details
               </Button>
             </>
           ) : (
             <>
-              <Button asChild className="flex-1 h-[52px] rounded-xl bg-primary text-primary-foreground hover:bg-primary/90">
-                <Link to="/contact"><Calendar className="w-4 h-4" /> Book Visit</Link>
+              <Button asChild className="w-full h-[52px] rounded-xl bg-primary text-primary-foreground hover:bg-primary/90">
+                <Link to="/contact"><Calendar className="w-4 h-4 mr-1.5 shrink-0" /> Book Visit</Link>
               </Button>
-              <Button asChild variant="outline" className="flex-1 h-[52px] rounded-xl border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                <Link to={(p.detailsLink ?? "/contact") as "/green-valley" | "/heights" | "/business-park" | "/contact"}><Eye className="w-4 h-4" /> Details</Link>
+              <Button asChild variant="outline" className="w-full h-[52px] rounded-xl border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                <Link to={(p.detailsLink ?? "/contact") as "/green-valley" | "/heights" | "/business-park" | "/contact"}><Eye className="w-4 h-4 mr-1.5 shrink-0" /> Details</Link>
               </Button>
             </>
           )}
