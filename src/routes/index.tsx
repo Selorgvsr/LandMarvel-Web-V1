@@ -696,7 +696,7 @@ function Index() {
         <Hero />
         <section className="w-full bg-background">
           <video
-            src={residentialOgVideo.url}
+            src={videoProject34.url}
             controls
             playsInline
             preload="metadata"
