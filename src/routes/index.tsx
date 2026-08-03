@@ -46,7 +46,7 @@ import lmLast4 from "@/assets/completed/lm-last-4.jpeg.asset.json";
 import homeHeroVideo from "@/assets/home-hero-video-2.mp4.asset.json";
 import videoProject34 from "@/assets/video-project-34.mp4.asset.json";
 import buySectionImg from "@/assets/buy-section.jpg";
-import sellSectionImg from "@/assets/sell-section.jpg";
+import sellSectionImg from "@/assets/sell-section.jpg.asset.json";
 import exchangeSectionImg from "@/assets/exchange-section.jpg";
 
 export const Route = createFileRoute("/")({
@@ -245,7 +245,7 @@ function SellSection() {
           </div>
           <div className="relative group order-1 lg:order-2">
             <img
-              src={sellSectionImg}
+              src={sellSectionImg.url}
               alt="Premium property ready for direct sale"
               width={1200}
               height={800}
