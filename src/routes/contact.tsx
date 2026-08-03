@@ -144,7 +144,7 @@ function ContactPage() {
             </p>
             <div className="mt-6 sm:mt-10 flex flex-wrap gap-3 sm:gap-4">
               <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-11 sm:h-13 px-5 sm:px-7 text-sm sm:text-base rounded-xl shadow-[var(--shadow-elegant)]">
-                <a href="tel:+918667769670"><Phone className="w-4 h-4" /> Call Now</a>
+                <a href="tel:+919498050649"><Phone className="w-4 h-4" /> Call Now</a>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-11 sm:h-13 px-5 sm:px-7 text-sm sm:text-base rounded-xl backdrop-blur">
                 <a href="mailto:suresh@landmarvel.com"><Mail className="w-4 h-4" /> Email Us</a>
@@ -177,7 +177,7 @@ function ContactPage() {
             <div className="space-y-6">
               {[
                 { icon: MapPin, title: "Visit Our Office", lines: ["Land Marvel Group", "Chennai, Tamil Nadu"] },
-                { icon: Phone, title: "Call Us", lines: ["+91 86677 69670"] },
+                { icon: Phone, title: "Call Us", lines: ["+91 94980 50649"] },
                 { icon: Mail, title: "Email Us", lines: ["suresh@landmarvel.com"] },
                 { icon: Clock, title: "Business Hours", lines: ["Monday – Saturday", "9:00 AM – 6:00 PM"] },
               ].map((c) => (
@@ -212,7 +212,7 @@ function ContactPage() {
             <p className="text-primary-foreground/85 max-w-2xl mx-auto">Our property advisors are available to guide you through buying, selling, exchanging, and investing in premium real estate.</p>
             <div className="flex flex-wrap gap-3 justify-center pt-2">
               <Button asChild size="lg" className="h-12 rounded-xl bg-[var(--gold)] text-primary hover:opacity-90 font-semibold">
-                <a href="tel:+918667769670"><Phone className="w-4 h-4" /> Call Now</a>
+                <a href="tel:+919498050649"><Phone className="w-4 h-4" /> Call Now</a>
               </Button>
               <Button asChild size="lg" variant="outline" className="h-12 rounded-xl bg-transparent border-white text-white hover:bg-white hover:text-primary">
                 <a href="mailto:suresh@landmarvel.com"><Mail className="w-4 h-4" /> Email Us</a>
