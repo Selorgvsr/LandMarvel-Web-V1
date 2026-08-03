@@ -171,7 +171,7 @@ function BusinessParkPage() {
                 <span className="text-xs font-semibold tracking-[0.2em] uppercase text-accent">Premium Commercial Development</span>
                 <h3 className="mt-2 font-display text-3xl sm:text-4xl font-bold text-primary">Designed For Business Success</h3>
                 <p className="mt-5 text-base text-muted-foreground leading-relaxed">
-                  At Land Marvel develop premium commercial spaces that combine modern architecture, strategic locations, and future-ready infrastructure to create productive business environments.
+                  At Land Marvel,We{"\n"}&nbsp;develop premium commercial spaces that combine modern architecture, strategic locations, and future-ready infrastructure to create productive business environments.
                 </p>
                 <p className="mt-3 text-base text-muted-foreground leading-relaxed">
                   Every commercial development is thoughtfully planned to support offices, retail spaces, showrooms, and mixed-use business destinations while delivering excellent investment potential and long-term value.
