@@ -111,7 +111,7 @@ function PortfolioPage() {
         eyebrow="Commercial Spaces"
         icon={<Building2 className="w-5 h-5" />}
         title="Commercial Spaces Designed For Growth"
-        desc="Land Marvel develops premium commercial environments that support business growth, visibility, and long-term investment returns. Located in strategic business corridors, our commercial developments create opportunities for entrepreneurs, investors, and enterprises."
+        desc="At Land Marvel,We develop premium commercial environments that support business growth, visibility, and long-term investment returns. Located in strategic business corridors, our commercial developments create opportunities for entrepreneurs, investors, and enterprises."
         features={[
           "Premium Office Spaces",
           "Retail & Shopping Destinations",
