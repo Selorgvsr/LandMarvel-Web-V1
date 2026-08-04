@@ -133,7 +133,7 @@ function Hero() {
   );
 }
 
-function SectionHeading({ eyebrow, title, desc, center = true }: { eyebrow: string; title: string; desc?: string; center?: boolean }) {
+function SectionHeading({ eyebrow, title, desc, center = true }: { eyebrow: string; title: string; desc?: React.ReactNode; center?: boolean }) {
   return (
     <div className={`max-w-2xl ${center ? "mx-auto text-center" : ""}`}>
       <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-accent">{eyebrow}</span>
