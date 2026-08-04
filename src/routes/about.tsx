@@ -164,7 +164,7 @@ function HeroSection() {
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full h-full object-cover scale-105"
+        className="absolute inset-0 w-full h-full object-cover"
         style={{ filter: 'brightness(1.2) contrast(1.15) saturate(1.1)' }}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-black/10" />
