@@ -224,7 +224,7 @@ function SellSection() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="order-2 lg:order-1">
             <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-accent">Direct Property Buyers</span>
-            <h2 className="mt-4 font-display text-3xl sm:text-3xl sm:text-4xl md:text-5xl lg:text-[56px] font-bold text-primary leading-tight">Sell Your Property Directly to Land Marvel</h2>
+            <h2 className="mt-4 font-display text-3xl sm:text-3xl sm:text-4xl md:text-5xl lg:text-[56px] font-bold text-primary leading-tight">Sell Your Property Directly to{"\u00a0"}<br/>Land Marvel</h2>
             <p className="mt-6 text-muted-foreground text-lg lg:text-xl leading-relaxed">
               Own a land, building, apartment, villa, or commercial property? Land Marvel offers a simple and transparent way to sell your property directly to us.
             </p>
