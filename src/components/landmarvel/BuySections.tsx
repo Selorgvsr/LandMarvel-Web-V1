@@ -96,7 +96,7 @@ export function LandInvestmentSection() {
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div className="relative group overflow-hidden rounded-[24px] shadow-[var(--shadow-elegant)]">
             <img src={landAerial} alt="Aerial view of plotted township" width={1024} height={1024} loading="lazy"
-              className="w-full h-[480px] object-cover group-hover:scale-105 transition-transform duration-700" />
+              className="w-full h-[260px] sm:h-[380px] lg:h-[480px] object-cover group-hover:scale-105 transition-transform duration-700" />
             <div className="absolute bottom-5 left-5 bg-white/90 backdrop-blur rounded-2xl px-5 py-3 shadow-md">
               <div className="text-xs uppercase tracking-wider !text-blue-600">Land Marvel</div>
               <div className="font-display font-bold !text-blue-600">Strategic Land Investments</div>
@@ -144,7 +144,7 @@ export function LandInvestmentSection() {
           </div>
           <div className="order-first lg:order-last relative overflow-hidden rounded-[24px] shadow-[var(--shadow-elegant)] group">
             <img src={plot2} alt="Growth corridor location" width={1024} height={768} loading="lazy"
-              className="w-full h-[440px] object-cover group-hover:scale-105 transition-transform duration-700" />
+              className="w-full h-[240px] sm:h-[350px] lg:h-[440px] object-cover group-hover:scale-105 transition-transform duration-700" />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent" />
           </div>
         </div>
@@ -171,7 +171,7 @@ export function LandInvestmentSection() {
         <div className="mt-20 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div className="relative overflow-hidden rounded-[24px] shadow-[var(--shadow-elegant)] group">
             <img src={landSiteVisitAsset.url} alt="Property consultant on site visit" width={1024} height={1024} loading="lazy"
-              className="w-full h-[440px] object-cover group-hover:scale-105 transition-transform duration-700" />
+              className="w-full h-[240px] sm:h-[350px] lg:h-[440px] object-cover group-hover:scale-105 transition-transform duration-700" />
           </div>
           <div>
             <SectionHeading
@@ -306,7 +306,7 @@ export function ResidentialLivingSection() {
         <div className="mt-20 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div className="relative overflow-hidden rounded-[24px] shadow-[var(--shadow-elegant)] group">
             <img src={resFamily.url} alt="Happy family in front of a modern home" width={1024} height={1024} loading="lazy"
-              className="w-full h-[480px] object-cover group-hover:scale-105 transition-transform duration-700" />
+              className="w-full h-[260px] sm:h-[380px] lg:h-[480px] object-cover group-hover:scale-105 transition-transform duration-700" />
             <div className="absolute bottom-5 left-5 bg-white/90 backdrop-blur rounded-2xl px-5 py-3 shadow-md flex items-center gap-3">
               <Users className="w-5 h-5 text-[var(--gold)]" />
               <div>
@@ -372,7 +372,7 @@ export function CommercialSolutionsSection() {
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div className="relative overflow-hidden rounded-[24px] shadow-[var(--shadow-elegant)] group">
             <img src={comHero.url} alt="Modern commercial business district" width={1024} height={1024} loading="lazy"
-              className="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-700" />
+              className="w-full h-[270px] sm:h-[390px] lg:h-[500px] object-cover group-hover:scale-105 transition-transform duration-700" />
             <div className="absolute top-5 right-5 bg-[var(--gold)] text-primary px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wide shadow-md">
               Commercial Real Estate
             </div>
@@ -475,7 +475,7 @@ export function CommercialSolutionsSection() {
           </div>
           <div className="order-first lg:order-last relative overflow-hidden rounded-[24px] shadow-[var(--shadow-elegant)] group">
             <img src={comSuccess.url} alt="Commercial business district" width={1024} height={1024} loading="lazy"
-              className="w-full h-[460px] object-cover group-hover:scale-105 transition-transform duration-700" />
+              className="w-full h-[250px] sm:h-[360px] lg:h-[460px] object-cover group-hover:scale-105 transition-transform duration-700" />
             <div className="absolute bottom-5 right-5 bg-white/90 backdrop-blur rounded-2xl px-5 py-3 shadow-md flex items-center gap-3">
               <Award className="w-5 h-5 text-[var(--gold)]" />
               <div>

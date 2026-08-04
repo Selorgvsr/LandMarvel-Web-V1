@@ -199,7 +199,7 @@ function ProjectsPage() {
       <Header />
 
       {/* HERO */}
-      <section className="relative min-h-[560px] h-[100svh] sm:min-h-[640px] w-full overflow-hidden">
+      <section className="relative min-h-[460px] h-[88svh] sm:min-h-[600px] sm:h-[92svh] lg:min-h-[640px] w-full overflow-hidden">
         <video src={projectHeroVideo.url} autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover scale-105" style={{ filter: 'brightness(1.2) contrast(1.15) saturate(1.1)' }} />
         <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-black/10" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
@@ -283,7 +283,7 @@ function ProjectsPage() {
                 <div className="font-display text-2xl font-bold">200+</div>
                 <p className="text-xs text-primary-foreground/80 font-medium">Projects Delivered</p>
               </div>
-              <img src={aboutImg} alt="Why invest with Land Marvel" className="w-full h-[480px] object-cover group-hover:scale-105 transition-transform duration-700" />
+              <img src={aboutImg} alt="Why invest with Land Marvel" className="w-full h-[260px] sm:h-[380px] lg:h-[480px] object-cover group-hover:scale-105 transition-transform duration-700" />
             </div>
             <div className="space-y-6">
               <h2 className="font-display text-3xl md:text-4xl font-bold text-primary">Why Choose Our Projects</h2>

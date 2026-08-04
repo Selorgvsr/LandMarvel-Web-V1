@@ -93,7 +93,7 @@ function Header() {
 
 function Hero() {
   return (
-    <section id="top" className="relative min-h-[560px] h-[100svh] sm:min-h-[640px] w-full overflow-hidden">
+    <section id="top" className="relative min-h-[460px] h-[88svh] sm:min-h-[600px] sm:h-[92svh] lg:min-h-[640px] w-full overflow-hidden">
       <video src={homeHeroVideo.url} autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover scale-105" style={{ filter: 'brightness(1.2) contrast(1.15) saturate(1.1)' }} />
       <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-black/10" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
@@ -190,7 +190,7 @@ function BuySection() {
               width={1200}
               height={800}
               loading="lazy"
-              className="w-full h-[500px] lg:h-[600px] object-cover rounded-3xl shadow-[var(--shadow-elegant)] group-hover:scale-[1.02] transition-transform duration-700"
+              className="w-full h-[260px] sm:h-[380px] md:h-[460px] lg:h-[600px] object-cover rounded-3xl shadow-[var(--shadow-elegant)] group-hover:scale-[1.02] transition-transform duration-700"
             />
           </div>
           <div>
@@ -250,7 +250,7 @@ function SellSection() {
               width={1200}
               height={800}
               loading="lazy"
-              className="w-full h-[500px] lg:h-[600px] object-cover rounded-3xl shadow-[var(--shadow-elegant)] group-hover:scale-[1.02] transition-transform duration-700"
+              className="w-full h-[260px] sm:h-[380px] md:h-[460px] lg:h-[600px] object-cover rounded-3xl shadow-[var(--shadow-elegant)] group-hover:scale-[1.02] transition-transform duration-700"
             />
           </div>
         </div>
@@ -271,7 +271,7 @@ function ExchangeSection() {
               width={1200}
               height={800}
               loading="lazy"
-              className="w-full h-[500px] lg:h-[600px] object-cover rounded-3xl shadow-[var(--shadow-elegant)] group-hover:scale-[1.02] transition-transform duration-700"
+              className="w-full h-[260px] sm:h-[380px] md:h-[460px] lg:h-[600px] object-cover rounded-3xl shadow-[var(--shadow-elegant)] group-hover:scale-[1.02] transition-transform duration-700"
             />
           </div>
           <div>
@@ -613,7 +613,7 @@ function PortfolioShowcase() {
             <Link
               key={c.title}
               to="/portfolio"
-              className="group relative block rounded-[30px] overflow-hidden min-h-[440px] shadow-[0_20px_50px_-20px_rgba(10,29,99,0.35)] hover:-translate-y-2 transition-all duration-500"
+              className="group relative block rounded-[30px] overflow-hidden min-h-[300px] sm:min-h-[380px] lg:min-h-[440px] shadow-[0_20px_50px_-20px_rgba(10,29,99,0.35)] hover:-translate-y-2 transition-all duration-500"
               style={{ ["--glow" as any]: c.glow }}
             >
               {/* gradient background */}

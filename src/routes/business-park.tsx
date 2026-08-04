@@ -157,7 +157,7 @@ function BusinessParkPage() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-start">
               <div>
                 <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-elegant)] group">
-                  <img src={gallery[activeImg]} alt="Land Marvel Business Park" className="w-full h-[460px] object-cover group-hover:scale-105 transition-transform duration-700" />
+                  <img src={gallery[activeImg]} alt="Land Marvel Business Park" className="w-full h-[250px] sm:h-[360px] lg:h-[460px] object-cover group-hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="mt-4 grid grid-cols-4 gap-2">
                   {gallery.map((g, i) => (
@@ -197,7 +197,7 @@ function BusinessParkPage() {
           <section className="py-16 sm:py-20" style={{ background: "var(--gradient-soft)" }}>
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-start">
               <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-elegant)] lg:sticky lg:top-44">
-                <img src={com2} alt="Business amenities" className="w-full h-[520px] object-cover" />
+                <img src={com2} alt="Business amenities" className="w-full h-[280px] sm:h-[400px] lg:h-[520px] object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6 text-primary-foreground">
                   <div className="text-xs font-semibold tracking-[0.2em] uppercase text-[var(--gold)]">World-Class Facilities</div>
@@ -274,7 +274,7 @@ function BusinessParkPage() {
                 <iframe
                   title="Land Marvel Business Park — Location"
                   src="https://www.google.com/maps?q=Indira+Nagar+Chennai&output=embed"
-                  className="w-full h-[520px] border-0"
+                  className="w-full h-[280px] sm:h-[400px] lg:h-[520px] border-0"
                   loading="lazy"
                 />
               </div>

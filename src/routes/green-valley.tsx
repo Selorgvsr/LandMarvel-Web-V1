@@ -248,7 +248,7 @@ function GreenValleyPage() {
               <iframe
                 title="Green Valley Township location map"
                 src="https://www.google.com/maps?q=Kilambakkam,+Chennai&output=embed"
-                className="w-full h-[420px]"
+                className="w-full h-[240px] sm:h-[340px] lg:h-[420px]"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />

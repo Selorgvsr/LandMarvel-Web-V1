@@ -157,7 +157,7 @@ function HeightsPage() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-start">
               <div>
                 <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-elegant)] group">
-                  <img src={gallery[activeImg]} alt="Land Marvel Heights" className="w-full h-[460px] object-cover group-hover:scale-105 transition-transform duration-700" />
+                  <img src={gallery[activeImg]} alt="Land Marvel Heights" className="w-full h-[250px] sm:h-[360px] lg:h-[460px] object-cover group-hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="mt-4 grid grid-cols-3 gap-2">
                   {gallery.map((g, i) => (
@@ -197,7 +197,7 @@ function HeightsPage() {
           <section className="py-16 sm:py-20" style={{ background: "var(--gradient-soft)" }}>
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-start">
               <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-elegant)] lg:sticky lg:top-44">
-                <img src={res2} alt="Lifestyle amenities" className="w-full h-[520px] object-cover" />
+                <img src={res2} alt="Lifestyle amenities" className="w-full h-[280px] sm:h-[400px] lg:h-[520px] object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6 text-primary-foreground">
                   <div className="text-xs font-semibold tracking-[0.2em] uppercase text-[var(--gold)]">World-Class Living</div>
@@ -274,7 +274,7 @@ function HeightsPage() {
                 <iframe
                   title="Land Marvel Heights — Location"
                   src="https://www.google.com/maps?q=Thiruvanmiyur+LB+Road+Chennai&output=embed"
-                  className="w-full h-[520px] border-0"
+                  className="w-full h-[280px] sm:h-[400px] lg:h-[520px] border-0"
                   loading="lazy"
                 />
               </div>

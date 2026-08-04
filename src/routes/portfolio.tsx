@@ -331,7 +331,7 @@ function SplitSection({ image, video, alt, imageLeft, eyebrow, icon, title, desc
                   muted
                   loop
                   playsInline
-                  className="w-full h-[420px] lg:h-[560px] object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                  className="w-full h-[240px] sm:h-[360px] md:h-[440px] lg:h-[560px] object-cover transition-transform duration-700 group-hover:scale-[1.04]"
                 />
               ) : (
                 <img
@@ -340,7 +340,7 @@ function SplitSection({ image, video, alt, imageLeft, eyebrow, icon, title, desc
                   width={1280}
                   height={960}
                   loading="lazy"
-                  className="w-full h-[420px] lg:h-[560px] object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                  className="w-full h-[240px] sm:h-[360px] md:h-[440px] lg:h-[560px] object-cover transition-transform duration-700 group-hover:scale-[1.04]"
                 />
               )}
             </div>
