@@ -181,7 +181,7 @@ function CategorySection({ icon, title, description, projects }: { icon: string;
   return (
     <div className="mb-20">
       <div className="mb-10 text-center">
-        <h3 className="font-display text-3xl md:text-4xl font-bold text-primary">
+        <h3 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-primary">
           {title}
         </h3>
         <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">{description}</p>
@@ -240,7 +240,7 @@ function ProjectsPage() {
       <section className="py-20 lg:py-24 section-navy">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-primary">Ongoing Projects</h2>
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-primary">Ongoing Projects</h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
               Explore our latest developments designed for living, investment, and business growth.
             </p>
@@ -256,7 +256,7 @@ function ProjectsPage() {
       <section className="py-20 sm:py-28 section-gold">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-primary">Completed Projects</h2>
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-primary">Completed Projects</h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">A glimpse of communities we've built across Chennai.</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
@@ -286,7 +286,7 @@ function ProjectsPage() {
               <img src={aboutImg} alt="Why invest with Land Marvel" className="w-full h-[260px] sm:h-[380px] lg:h-[480px] object-cover group-hover:scale-105 transition-transform duration-700" />
             </div>
             <div className="space-y-6">
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-primary">Why Choose Our Projects</h2>
+              <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-primary">Why Choose Our Projects</h2>
               <ul className="space-y-4">
                 {[
                   "Prime Chennai Locations",
@@ -322,7 +322,7 @@ function ProjectsPage() {
             ].map((s) => (
               <div key={s.label} className="space-y-2">
                 <s.icon className="w-8 h-8 mx-auto text-[var(--gold)]" />
-                <div className="font-display text-4xl md:text-5xl font-bold">{s.value}</div>
+                <div className="font-display text-3xl sm:text-4xl md:text-5xl font-bold">{s.value}</div>
                 <div className="text-primary-foreground/85">{s.label}</div>
               </div>
             ))}
@@ -335,7 +335,7 @@ function ProjectsPage() {
         <img src={ctaImg} alt="" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-[image:var(--gradient-hero)]" />
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 text-center text-primary-foreground space-y-6">
-          <h2 className="font-display text-4xl md:text-5xl font-bold">Looking For The Perfect Property?</h2>
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold">Looking For The Perfect Property?</h2>
           <p className="text-lg text-primary-foreground/90 max-w-2xl mx-auto">
             Our experts will help you choose the ideal plot, residential home, or commercial investment.
           </p>

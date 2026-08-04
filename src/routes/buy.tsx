@@ -203,7 +203,7 @@ function HeroSection() {
           <span className="inline-flex items-center gap-2 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-[10px] sm:text-xs font-medium tracking-wide sm:tracking-[0.2em] uppercase">
             <span className="w-1.5 h-1.5 rounded-full bg-[var(--gold)]" /> Buy Premium Property
           </span>
-          <h1 className="mt-4 sm:mt-6 font-display text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.15] sm:leading-[1.05] drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)] animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <h1 className="mt-4 sm:mt-6 font-display text-2xl sm:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.15] sm:leading-[1.05] drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)] animate-in fade-in slide-in-from-bottom-4 duration-700">
             Together, we create financial peace, complete transparency &amp; quality in{" "}
             <span className="text-[var(--gold)]">property investments.</span>
           </h1>
@@ -241,7 +241,7 @@ function BuyPage() {
         <section className="pt-16 sm:pt-20 section-navy">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-2xl text-center">
             <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-accent">Ongoing Projects</span>
-            <h2 className="mt-3 font-display text-4xl sm:text-5xl font-bold text-primary">Our Ongoing Projects</h2>
+            <h2 className="mt-3 font-display text-3xl sm:text-3xl sm:text-4xl md:text-5xl font-bold text-primary">Our Ongoing Projects</h2>
             <p className="mt-4 text-base sm:text-lg text-muted-foreground">
               Discover carefully selected investment opportunities across plots, residential homes, and commercial developments.
             </p>
@@ -260,7 +260,7 @@ function BuyPage() {
           <img src={buyCta} alt="Luxury aerial township" width={1920} height={900} loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-primary/85" />
           <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center text-primary-foreground max-w-3xl">
-            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold">Can't Find The Right Property?</h2>
+            <h2 className="font-display text-3xl sm:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">Can't Find The Right Property?</h2>
             <p className="mt-5 text-lg text-white/85">
               Our property advisors will help you find the perfect plot, apartment, villa, or commercial investment.
             </p>

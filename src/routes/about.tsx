@@ -567,7 +567,7 @@ function StatCard({
         <div className="w-14 h-14 rounded-2xl bg-primary/5 flex items-center justify-center mx-auto mb-5">
           <stat.icon className="w-7 h-7 text-primary" />
         </div>
-        <div className="font-display text-4xl font-bold text-foreground mb-2">
+        <div className="font-display text-3xl sm:text-4xl font-bold text-foreground mb-2">
           {displayValue}
         </div>
         <div className="text-muted-foreground text-sm">{stat.label}</div>

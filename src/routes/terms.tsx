@@ -190,7 +190,7 @@ function TermsPage() {
               <span className="inline-block px-4 py-1.5 rounded-full bg-[var(--gold)]/15 text-[var(--gold)] text-xs font-semibold tracking-widest uppercase mb-6">
                 Legal
               </span>
-              <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+              <h1 className="font-display text-3xl sm:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
                 Terms & Conditions
               </h1>
               <p className="text-lg text-white/70 leading-relaxed">

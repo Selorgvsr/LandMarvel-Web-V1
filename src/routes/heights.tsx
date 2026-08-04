@@ -117,7 +117,7 @@ function HeightsPage() {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-xs font-semibold tracking-[0.2em] uppercase">
               <span className="w-1.5 h-1.5 rounded-full bg-[var(--gold)]" /> Premium Residential Development
             </span>
-            <h1 className="mt-5 font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+            <h1 className="mt-5 font-display text-3xl sm:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               Land Marvel <span className="text-[var(--gold)]">Heights</span>
             </h1>
             <p className="mt-3 text-lg text-white/85 flex items-center justify-center gap-2">

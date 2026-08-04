@@ -447,7 +447,7 @@ export function CommercialSolutionsSection() {
           <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-6">
             {comStats.map((s) => (
               <div key={s.label} className="text-center bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-7 hover:border-[var(--gold)]/50 hover:bg-white/10 transition-all">
-                <div className="font-display text-4xl sm:text-5xl font-bold text-[var(--gold)]">{s.value}</div>
+                <div className="font-display text-3xl sm:text-3xl sm:text-4xl md:text-5xl font-bold text-[var(--gold)]">{s.value}</div>
                 <div className="mt-2 text-sm uppercase tracking-wider text-white/80">{s.label}</div>
               </div>
             ))}
