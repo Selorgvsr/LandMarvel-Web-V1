@@ -157,14 +157,14 @@ function AboutPage() {
 /* ─── SECTION 1: HERO ─── */
 function HeroSection() {
   return (
-    <section className="relative min-h-[560px] h-[100svh] sm:min-h-[640px] w-full overflow-hidden">
+    <section className="relative min-h-[460px] h-[88svh] sm:min-h-[600px] sm:h-[92svh] lg:min-h-[640px] w-full overflow-hidden">
       <video
         src={aboutHeroVideo.url}
         autoPlay
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full h-full object-cover scale-105"
+        className="absolute inset-0 w-full h-full object-cover"
         style={{ filter: 'brightness(1.2) contrast(1.15) saturate(1.1)' }}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-black/10" />
@@ -226,7 +226,7 @@ function WhoWeAreSection() {
               <img
                 src={aboutWhoWeAre}
                 alt="Land Marvel corporate headquarters"
-                className="w-full h-[500px] lg:h-[600px] object-cover hover:scale-105 transition-transform duration-700"
+                className="w-full h-[260px] sm:h-[380px] md:h-[460px] lg:h-[600px] object-cover hover:scale-105 transition-transform duration-700"
                 loading="lazy"
               />
             </div>
@@ -410,7 +410,7 @@ function QualitySection() {
               <img
                 src={aboutQuality}
                 alt="Premium interior showcasing quality construction"
-                className="w-full h-[500px] lg:h-[600px] object-cover hover:scale-105 transition-transform duration-700"
+                className="w-full h-[260px] sm:h-[380px] md:h-[460px] lg:h-[600px] object-cover hover:scale-105 transition-transform duration-700"
                 loading="lazy"
               />
             </div>
@@ -567,7 +567,7 @@ function StatCard({
         <div className="w-14 h-14 rounded-2xl bg-primary/5 flex items-center justify-center mx-auto mb-5">
           <stat.icon className="w-7 h-7 text-primary" />
         </div>
-        <div className="font-display text-4xl font-bold text-foreground mb-2">
+        <div className="font-display text-3xl sm:text-4xl font-bold text-foreground mb-2">
           {displayValue}
         </div>
         <div className="text-muted-foreground text-sm">{stat.label}</div>

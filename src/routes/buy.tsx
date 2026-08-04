@@ -194,8 +194,8 @@ function CategorySection({ id, eyebrow, title, items, alt = false }: { id: strin
 
 function HeroSection() {
   return (
-    <section className="relative min-h-[560px] h-[100svh] sm:min-h-[640px] w-full overflow-hidden">
-      <video src={buyHeroVideoAsset.url} autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover scale-105" style={{ filter: 'brightness(1.2) contrast(1.15) saturate(1.1)' }} />
+    <section className="relative min-h-[460px] h-[88svh] sm:min-h-[600px] sm:h-[92svh] lg:min-h-[640px] w-full overflow-hidden">
+      <video src={buyHeroVideoAsset.url} autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover" style={{ filter: 'brightness(1.2) contrast(1.15) saturate(1.1)' }} />
       <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-black/10" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
       <div className="relative z-10 h-full container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center text-primary-foreground">
@@ -203,7 +203,7 @@ function HeroSection() {
           <span className="inline-flex items-center gap-2 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-[10px] sm:text-xs font-medium tracking-wide sm:tracking-[0.2em] uppercase">
             <span className="w-1.5 h-1.5 rounded-full bg-[var(--gold)]" /> Buy Premium Property
           </span>
-          <h1 className="mt-4 sm:mt-6 font-display text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.15] sm:leading-[1.05] drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)] animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <h1 className="mt-4 sm:mt-6 font-display text-2xl sm:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.15] sm:leading-[1.05] drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)] animate-in fade-in slide-in-from-bottom-4 duration-700">
             Together, we create financial peace, complete transparency &amp; quality in{" "}
             <span className="text-[var(--gold)]">property investments.</span>
           </h1>
@@ -241,7 +241,7 @@ function BuyPage() {
         <section className="pt-16 sm:pt-20 section-navy">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-2xl text-center">
             <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-accent">Ongoing Projects</span>
-            <h2 className="mt-3 font-display text-4xl sm:text-5xl font-bold text-primary">Our Ongoing Projects</h2>
+            <h2 className="mt-3 font-display text-3xl sm:text-3xl sm:text-4xl md:text-5xl font-bold text-primary">Our Ongoing Projects</h2>
             <p className="mt-4 text-base sm:text-lg text-muted-foreground">
               Discover carefully selected investment opportunities across plots, residential homes, and commercial developments.
             </p>
@@ -260,15 +260,15 @@ function BuyPage() {
           <img src={buyCta} alt="Luxury aerial township" width={1920} height={900} loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-primary/85" />
           <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center text-primary-foreground max-w-3xl">
-            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold">Can't Find The Right Property?</h2>
+            <h2 className="font-display text-3xl sm:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">Can't Find The Right Property?</h2>
             <p className="mt-5 text-lg text-white/85">
               Our property advisors will help you find the perfect plot, apartment, villa, or commercial investment.
             </p>
             <div className="mt-10 flex flex-wrap gap-4 justify-center">
-              <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-13 px-7 rounded-xl">
+              <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-auto min-h-13 py-3 px-5 sm:px-7 rounded-xl whitespace-normal text-center w-full sm:w-auto">
                 <a href="tel:+910000000000"><Phone className="mr-2 w-4 h-4" />Talk To Expert</a>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-13 px-7 rounded-xl">
+              <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-auto min-h-13 py-3 px-5 sm:px-7 rounded-xl whitespace-normal text-center w-full sm:w-auto">
                 <Link to="/" hash="contact"><Calendar className="mr-2 w-4 h-4" />Schedule Visit</Link>
               </Button>
             </div>

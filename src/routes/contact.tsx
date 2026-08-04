@@ -127,8 +127,8 @@ function ContactPage() {
       <Header />
 
       {/* HERO */}
-      <section className="relative min-h-[560px] h-[100svh] sm:min-h-[640px] w-full overflow-hidden">
-        <video src={contactHeroVideo.url} autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover scale-105" style={{ filter: 'brightness(1.2) contrast(1.15) saturate(1.1)' }} />
+      <section className="relative min-h-[460px] h-[88svh] sm:min-h-[600px] sm:h-[92svh] lg:min-h-[640px] w-full overflow-hidden">
+        <video src={contactHeroVideo.url} autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover" style={{ filter: 'brightness(1.2) contrast(1.15) saturate(1.1)' }} />
         <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-black/10" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
         <div className="relative z-10 h-full container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center text-primary-foreground">
@@ -168,7 +168,7 @@ function ContactPage() {
       <section className="py-20 section-navy">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto space-y-3 mb-12">
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-primary">Let's Start a Conversation</h2>
+            <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-primary">Let's Start a Conversation</h2>
             <p className="text-muted-foreground">We're here to answer your questions and help you find the right property solution.</p>
           </div>
 

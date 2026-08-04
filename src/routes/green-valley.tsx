@@ -96,7 +96,7 @@ function GreenValleyPage() {
       {/* HERO BAND */}
       <section className="bg-[image:var(--gradient-primary)] text-primary-foreground py-14 sm:py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-display text-4xl sm:text-5xl font-bold">Project</h1>
+          <h1 className="font-display text-3xl sm:text-3xl sm:text-4xl md:text-5xl font-bold">Project</h1>
           <p className="mt-3 text-[var(--gold)] text-base sm:text-lg">
             Highway Land = 25% Faster Gains than your Flat. Data Proven.
           </p>
@@ -248,7 +248,7 @@ function GreenValleyPage() {
               <iframe
                 title="Green Valley Township location map"
                 src="https://www.google.com/maps?q=Kilambakkam,+Chennai&output=embed"
-                className="w-full h-[420px]"
+                className="w-full h-[240px] sm:h-[340px] lg:h-[420px]"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />

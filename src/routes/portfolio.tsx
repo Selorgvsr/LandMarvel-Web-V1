@@ -331,7 +331,7 @@ function SplitSection({ image, video, alt, imageLeft, eyebrow, icon, title, desc
                   muted
                   loop
                   playsInline
-                  className="w-full h-[420px] lg:h-[560px] object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                  className="w-full h-[240px] sm:h-[360px] md:h-[440px] lg:h-[560px] object-cover transition-transform duration-700 group-hover:scale-[1.04]"
                 />
               ) : (
                 <img
@@ -340,7 +340,7 @@ function SplitSection({ image, video, alt, imageLeft, eyebrow, icon, title, desc
                   width={1280}
                   height={960}
                   loading="lazy"
-                  className="w-full h-[420px] lg:h-[560px] object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                  className="w-full h-[240px] sm:h-[360px] md:h-[440px] lg:h-[560px] object-cover transition-transform duration-700 group-hover:scale-[1.04]"
                 />
               )}
             </div>
@@ -352,7 +352,7 @@ function SplitSection({ image, video, alt, imageLeft, eyebrow, icon, title, desc
             >
               {icon} {eyebrow}
             </div>
-            <h2 className="mt-5 font-display text-4xl sm:text-5xl lg:text-[52px] leading-[1.08] font-bold" style={{ color: NAVY }}>
+            <h2 className="mt-5 font-display text-3xl sm:text-3xl sm:text-4xl md:text-5xl lg:text-[52px] leading-[1.08] font-bold" style={{ color: NAVY }}>
               {title}
             </h2>
             <p className="mt-6 text-lg lg:text-xl text-muted-foreground leading-relaxed whitespace-pre-line">{desc}</p>
@@ -403,7 +403,7 @@ function Sustainability() {
         >
           <Leaf className="w-4 h-4" style={{ color: GREEN }} /> Sustainability
         </span>
-        <h2 className="mt-5 font-display text-4xl sm:text-5xl lg:text-[56px] font-bold max-w-3xl mx-auto leading-tight">
+        <h2 className="mt-5 font-display text-3xl sm:text-3xl sm:text-4xl md:text-5xl lg:text-[56px] font-bold max-w-3xl mx-auto leading-tight">
           Building Sustainable Communities
         </h2>
         <p className="mt-6 text-lg lg:text-xl text-white/85 max-w-3xl mx-auto leading-relaxed">
@@ -447,7 +447,7 @@ function FutureCta() {
         >
           Future Of Living
         </span>
-        <h2 className="mt-5 font-display text-4xl sm:text-5xl lg:text-[60px] font-bold leading-[1.05]">
+        <h2 className="mt-5 font-display text-3xl sm:text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-bold leading-[1.05]">
           Creating The Future Of Sustainable Living
         </h2>
         <p className="mt-6 text-lg lg:text-xl text-white/85 leading-relaxed">

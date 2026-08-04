@@ -117,7 +117,7 @@ function BusinessParkPage() {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-xs font-semibold tracking-[0.2em] uppercase">
               <span className="w-1.5 h-1.5 rounded-full bg-[var(--gold)]" /> Premium Commercial Development
             </span>
-            <h1 className="mt-5 font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+            <h1 className="mt-5 font-display text-3xl sm:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               Land Marvel <span className="text-[var(--gold)]">Business Park</span>
             </h1>
             <p className="mt-3 text-lg text-white/85 flex items-center justify-center gap-2">
@@ -157,7 +157,7 @@ function BusinessParkPage() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-start">
               <div>
                 <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-elegant)] group">
-                  <img src={gallery[activeImg]} alt="Land Marvel Business Park" className="w-full h-[460px] object-cover group-hover:scale-105 transition-transform duration-700" />
+                  <img src={gallery[activeImg]} alt="Land Marvel Business Park" className="w-full h-[250px] sm:h-[360px] lg:h-[460px] object-cover group-hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="mt-4 grid grid-cols-4 gap-2">
                   {gallery.map((g, i) => (
@@ -197,7 +197,7 @@ function BusinessParkPage() {
           <section className="py-16 sm:py-20" style={{ background: "var(--gradient-soft)" }}>
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-start">
               <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-elegant)] lg:sticky lg:top-44">
-                <img src={com2} alt="Business amenities" className="w-full h-[520px] object-cover" />
+                <img src={com2} alt="Business amenities" className="w-full h-[280px] sm:h-[400px] lg:h-[520px] object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6 text-primary-foreground">
                   <div className="text-xs font-semibold tracking-[0.2em] uppercase text-[var(--gold)]">World-Class Facilities</div>
@@ -274,7 +274,7 @@ function BusinessParkPage() {
                 <iframe
                   title="Land Marvel Business Park — Location"
                   src="https://www.google.com/maps?q=Indira+Nagar+Chennai&output=embed"
-                  className="w-full h-[520px] border-0"
+                  className="w-full h-[280px] sm:h-[400px] lg:h-[520px] border-0"
                   loading="lazy"
                 />
               </div>
@@ -333,10 +333,10 @@ function BusinessParkPage() {
               Explore premium commercial opportunities designed for business success, sustainable growth, and long-term value with Land Marvel.
             </p>
             <div className="mt-8 flex flex-wrap gap-4 justify-center">
-              <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-13 px-7 rounded-xl">
+              <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-auto min-h-13 py-3 px-5 sm:px-7 rounded-xl whitespace-normal text-center w-full sm:w-auto">
                 <Link to="/contact"><Calendar className="mr-2 w-4 h-4" /> Schedule a Site Visit</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-13 px-7 rounded-xl">
+              <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-auto min-h-13 py-3 px-5 sm:px-7 rounded-xl whitespace-normal text-center w-full sm:w-auto">
                 <a href="tel:+918667769670"><Phone className="mr-2 w-4 h-4" /> Talk To Expert</a>
               </Button>
             </div>

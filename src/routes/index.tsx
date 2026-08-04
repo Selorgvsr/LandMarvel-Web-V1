@@ -93,8 +93,8 @@ function Header() {
 
 function Hero() {
   return (
-    <section id="top" className="relative min-h-[560px] h-[100svh] sm:min-h-[640px] w-full overflow-hidden">
-      <video src={homeHeroVideo.url} autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover scale-105" style={{ filter: 'brightness(1.2) contrast(1.15) saturate(1.1)' }} />
+    <section id="top" className="relative min-h-[460px] h-[88svh] sm:min-h-[600px] sm:h-[92svh] lg:min-h-[640px] w-full overflow-hidden">
+      <video src={homeHeroVideo.url} autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover" style={{ filter: 'brightness(1.2) contrast(1.15) saturate(1.1)' }} />
       <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-black/10" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
       <div className="relative z-10 h-full container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center text-primary-foreground">
@@ -102,7 +102,7 @@ function Hero() {
           <span className="inline-flex items-center gap-2 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-[10px] sm:text-xs font-medium tracking-wide uppercase animate-in fade-in slide-in-from-bottom-4 duration-700">
             <Star className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[var(--gold)]" /> Financial peace in property investment
           </span>
-          <h1 className="mt-4 sm:mt-6 font-display text-[1.5rem] leading-[1.1] sm:text-4xl md:text-5xl lg:text-6xl sm:leading-[1.05] font-bold break-words drop-shadow-[0_4px_20px_rgba(0,0,0,0.55)] animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <h1 className="mt-4 sm:mt-6 font-display text-[1.5rem] leading-[1.1] sm:text-3xl sm:text-4xl md:text-5xl lg:text-6xl sm:leading-[1.05] font-bold break-words drop-shadow-[0_4px_20px_rgba(0,0,0,0.55)] animate-in fade-in slide-in-from-bottom-4 duration-700">
             Find Your Dream Home, Apartment, Villa, Plotted Layout &amp; Commercial Space With{" "}
             <span className="text-[var(--gold)] whitespace-nowrap">Land Marvel</span>
           </h1>
@@ -137,7 +137,7 @@ function SectionHeading({ eyebrow, title, desc, center = true }: { eyebrow: stri
   return (
     <div className={`max-w-2xl ${center ? "mx-auto text-center" : ""}`}>
       <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-accent">{eyebrow}</span>
-      <h2 className="mt-3 font-display text-4xl sm:text-5xl font-bold text-primary">{title}</h2>
+      <h2 className="mt-3 font-display text-3xl sm:text-3xl sm:text-4xl md:text-5xl font-bold text-primary">{title}</h2>
       {desc && <p className="mt-4 text-base sm:text-lg text-muted-foreground">{desc}</p>}
     </div>
   );
@@ -151,13 +151,13 @@ function About() {
         <div className="relative">
           <img src={aboutImg} alt="Premium residential building" width={1200} height={900} loading="lazy" className="rounded-2xl shadow-[var(--shadow-elegant)] w-full h-auto" />
           <div className="absolute -bottom-6 -right-6 hidden sm:block bg-[image:var(--gradient-primary)] text-primary-foreground rounded-2xl p-6 shadow-[var(--shadow-elegant)]">
-            <div className="font-display text-4xl font-bold">30+</div>
+            <div className="font-display text-3xl sm:text-4xl font-bold">30+</div>
             <div className="text-sm text-white/80">Years of Trust</div>
           </div>
         </div>
         <div>
           <span className="text-xs font-semibold tracking-[0.2em] uppercase text-accent"></span>
-          <h2 className="mt-3 font-display text-4xl sm:text-5xl font-bold text-primary leading-tight">
+          <h2 className="mt-3 font-display text-3xl sm:text-3xl sm:text-4xl md:text-5xl font-bold text-primary leading-tight">
             Your Trusted Guide.<br/>Building Financial Peace.
           </h2>
           <p className="mt-5 text-muted-foreground text-lg leading-relaxed">
@@ -190,12 +190,12 @@ function BuySection() {
               width={1200}
               height={800}
               loading="lazy"
-              className="w-full h-[500px] lg:h-[600px] object-cover rounded-3xl shadow-[var(--shadow-elegant)] group-hover:scale-[1.02] transition-transform duration-700"
+              className="w-full h-[260px] sm:h-[380px] md:h-[460px] lg:h-[600px] object-cover rounded-3xl shadow-[var(--shadow-elegant)] group-hover:scale-[1.02] transition-transform duration-700"
             />
           </div>
           <div>
             <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-accent">Find Your Perfect Property</span>
-            <h2 className="mt-4 font-display text-4xl sm:text-5xl lg:text-[56px] font-bold text-primary leading-tight">Buy Your Dream Property With Confidence</h2>
+            <h2 className="mt-4 font-display text-3xl sm:text-3xl sm:text-4xl md:text-5xl lg:text-[56px] font-bold text-primary leading-tight">Buy Your Dream Property With Confidence</h2>
             <p className="mt-6 text-muted-foreground text-lg lg:text-xl leading-relaxed">
               Discover premium plots, residential apartments, villas, and commercial spaces in Chennai's most sought-after locations. Every property is carefully selected to offer excellent value, clear ownership, and long-term investment potential.
             </p>
@@ -224,7 +224,7 @@ function SellSection() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="order-2 lg:order-1">
             <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-accent">Direct Property Buyers</span>
-            <h2 className="mt-4 font-display text-4xl sm:text-5xl lg:text-[56px] font-bold text-primary leading-tight">Sell Your Property Directly to Land Marvel</h2>
+            <h2 className="mt-4 font-display text-3xl sm:text-3xl sm:text-4xl md:text-5xl lg:text-[56px] font-bold text-primary leading-tight">Sell Your Property Directly to Land Marvel</h2>
             <p className="mt-6 text-muted-foreground text-lg lg:text-xl leading-relaxed">
               Own a land, building, apartment, villa, or commercial property? Land Marvel offers a simple and transparent way to sell your property directly to us.
             </p>
@@ -250,7 +250,7 @@ function SellSection() {
               width={1200}
               height={800}
               loading="lazy"
-              className="w-full h-[500px] lg:h-[600px] object-cover rounded-3xl shadow-[var(--shadow-elegant)] group-hover:scale-[1.02] transition-transform duration-700"
+              className="w-full h-[260px] sm:h-[380px] md:h-[460px] lg:h-[600px] object-cover rounded-3xl shadow-[var(--shadow-elegant)] group-hover:scale-[1.02] transition-transform duration-700"
             />
           </div>
         </div>
@@ -271,12 +271,12 @@ function ExchangeSection() {
               width={1200}
               height={800}
               loading="lazy"
-              className="w-full h-[500px] lg:h-[600px] object-cover rounded-3xl shadow-[var(--shadow-elegant)] group-hover:scale-[1.02] transition-transform duration-700"
+              className="w-full h-[260px] sm:h-[380px] md:h-[460px] lg:h-[600px] object-cover rounded-3xl shadow-[var(--shadow-elegant)] group-hover:scale-[1.02] transition-transform duration-700"
             />
           </div>
           <div>
             <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-accent">Smart Property Exchange</span>
-            <h2 className="mt-4 font-display text-4xl sm:text-5xl lg:text-[56px] font-bold text-primary leading-tight">Upgrade Your Property Through Direct Exchange</h2>
+            <h2 className="mt-4 font-display text-3xl sm:text-3xl sm:text-4xl md:text-5xl lg:text-[56px] font-bold text-primary leading-tight">Upgrade Your Property Through Direct Exchange</h2>
             <p className="mt-6 text-muted-foreground text-lg lg:text-xl leading-relaxed">
               Looking to move from your existing property into a better location, larger space, or a new investment opportunity? Land Marvel's Property Exchange Program makes it easier than ever.
             </p>
@@ -419,7 +419,7 @@ function Stats() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 lg:grid-cols-4 gap-10 text-primary-foreground text-center">
         {stats.map(([n, l]) => (
           <div key={l}>
-            <div className="font-display text-5xl sm:text-6xl font-bold text-[var(--gold)]">{n}</div>
+            <div className="font-display text-3xl sm:text-5xl md:text-6xl font-bold text-[var(--gold)]">{n}</div>
             <div className="mt-2 text-sm sm:text-base text-white/85 uppercase tracking-wider">{l}</div>
           </div>
         ))}
@@ -464,7 +464,7 @@ function Awards() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="max-w-2xl mx-auto text-center">
           <span className="text-xs font-semibold tracking-[0.2em] uppercase text-[var(--gold)]">Recognition</span>
-          <h2 className="mt-3 font-display text-4xl sm:text-5xl font-bold">Recognized For Excellence</h2>
+          <h2 className="mt-3 font-display text-3xl sm:text-3xl sm:text-4xl md:text-5xl font-bold">Recognized For Excellence</h2>
         </div>
         <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {items.map(({ icon: Icon, label }) => (
@@ -514,7 +514,7 @@ function FinalCTA() {
     <section id="contact" className="py-20 sm:py-24 text-primary-foreground section-gold">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
         <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-[var(--gold)]">Stop Guessing. Start Owning.</span>
-        <h2 className="mt-4 font-display text-4xl sm:text-5xl lg:text-6xl font-bold">Your Dream Property Awaits</h2>
+        <h2 className="mt-4 font-display text-3xl sm:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">Your Dream Property Awaits</h2>
         <p className="mt-5 text-lg text-white/85">
           If property investment stress keeps you up at night, partnering with Land Marvel is the decision that changes that. Book a free site visit — no obligation, just clarity on your best property option.
         </p>
@@ -600,7 +600,7 @@ function PortfolioShowcase() {
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <span className="inline-block text-xs font-semibold tracking-[0.25em] uppercase text-accent">Our Expertise</span>
-          <h2 className="mt-3 font-display text-4xl sm:text-5xl font-bold text-primary">
+          <h2 className="mt-3 font-display text-3xl sm:text-3xl sm:text-4xl md:text-5xl font-bold text-primary">
             Explore Innovation, Design & Future Living
           </h2>
           <p className="mt-5 text-base sm:text-lg text-muted-foreground">
@@ -613,7 +613,7 @@ function PortfolioShowcase() {
             <Link
               key={c.title}
               to="/portfolio"
-              className="group relative block rounded-[30px] overflow-hidden min-h-[440px] shadow-[0_20px_50px_-20px_rgba(10,29,99,0.35)] hover:-translate-y-2 transition-all duration-500"
+              className="group relative block rounded-[30px] overflow-hidden min-h-[300px] sm:min-h-[380px] lg:min-h-[440px] shadow-[0_20px_50px_-20px_rgba(10,29,99,0.35)] hover:-translate-y-2 transition-all duration-500"
               style={{ ["--glow" as any]: c.glow }}
             >
               {/* gradient background */}

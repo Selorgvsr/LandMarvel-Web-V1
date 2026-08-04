@@ -96,7 +96,7 @@ export function LandInvestmentSection() {
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div className="relative group overflow-hidden rounded-[24px] shadow-[var(--shadow-elegant)]">
             <img src={landAerial} alt="Aerial view of plotted township" width={1024} height={1024} loading="lazy"
-              className="w-full h-[480px] object-cover group-hover:scale-105 transition-transform duration-700" />
+              className="w-full h-[260px] sm:h-[380px] lg:h-[480px] object-cover group-hover:scale-105 transition-transform duration-700" />
             <div className="absolute bottom-5 left-5 bg-white/90 backdrop-blur rounded-2xl px-5 py-3 shadow-md">
               <div className="text-xs uppercase tracking-wider !text-blue-600">Land Marvel</div>
               <div className="font-display font-bold !text-blue-600">Strategic Land Investments</div>
@@ -144,7 +144,7 @@ export function LandInvestmentSection() {
           </div>
           <div className="order-first lg:order-last relative overflow-hidden rounded-[24px] shadow-[var(--shadow-elegant)] group">
             <img src={plot2} alt="Growth corridor location" width={1024} height={768} loading="lazy"
-              className="w-full h-[440px] object-cover group-hover:scale-105 transition-transform duration-700" />
+              className="w-full h-[240px] sm:h-[350px] lg:h-[440px] object-cover group-hover:scale-105 transition-transform duration-700" />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent" />
           </div>
         </div>
@@ -171,7 +171,7 @@ export function LandInvestmentSection() {
         <div className="mt-20 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div className="relative overflow-hidden rounded-[24px] shadow-[var(--shadow-elegant)] group">
             <img src={landSiteVisitAsset.url} alt="Property consultant on site visit" width={1024} height={1024} loading="lazy"
-              className="w-full h-[440px] object-cover group-hover:scale-105 transition-transform duration-700" />
+              className="w-full h-[240px] sm:h-[350px] lg:h-[440px] object-cover group-hover:scale-105 transition-transform duration-700" />
           </div>
           <div>
             <SectionHeading
@@ -180,7 +180,7 @@ export function LandInvestmentSection() {
               desc="We encourage investors to visit project locations and understand the surrounding infrastructure, future growth opportunities, and investment potential firsthand. Our experts provide complete guidance to help you make confident and informed decisions."
             />
             <div className="mt-7">
-              <Button asChild size="lg" className="bg-[image:var(--gradient-primary)] hover:opacity-90 h-13 px-7 rounded-xl">
+              <Button asChild size="lg" className="bg-[image:var(--gradient-primary)] hover:opacity-90 h-auto min-h-13 py-3 px-5 sm:px-7 rounded-xl whitespace-normal text-center w-full sm:w-auto">
                 <Link to="/contact"><Calendar className="mr-2 w-4 h-4" /> Book Site Visit</Link>
               </Button>
             </div>
@@ -201,10 +201,10 @@ export function LandInvestmentSection() {
                 Explore premium plots in strategic locations and build long-term wealth through smart land investments with Land Marvel.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
-                <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-13 px-7 rounded-xl">
+                <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-auto min-h-13 py-3 px-5 sm:px-7 rounded-xl whitespace-normal text-center w-full sm:w-auto">
                   <a href="#plots">Explore Plot Project <ArrowRight className="ml-2 w-4 h-4" /></a>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-13 px-7 rounded-xl">
+                <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-auto min-h-13 py-3 px-5 sm:px-7 rounded-xl whitespace-normal text-center w-full sm:w-auto">
                   <Link to="/contact"><Phone className="mr-2 w-4 h-4" />Talk To Investment Expert</Link>
                 </Button>
               </div>
@@ -306,7 +306,7 @@ export function ResidentialLivingSection() {
         <div className="mt-20 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div className="relative overflow-hidden rounded-[24px] shadow-[var(--shadow-elegant)] group">
             <img src={resFamily.url} alt="Happy family in front of a modern home" width={1024} height={1024} loading="lazy"
-              className="w-full h-[480px] object-cover group-hover:scale-105 transition-transform duration-700" />
+              className="w-full h-[260px] sm:h-[380px] lg:h-[480px] object-cover group-hover:scale-105 transition-transform duration-700" />
             <div className="absolute bottom-5 left-5 bg-white/90 backdrop-blur rounded-2xl px-5 py-3 shadow-md flex items-center gap-3">
               <Users className="w-5 h-5 text-[var(--gold)]" />
               <div>
@@ -372,7 +372,7 @@ export function CommercialSolutionsSection() {
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div className="relative overflow-hidden rounded-[24px] shadow-[var(--shadow-elegant)] group">
             <img src={comHero.url} alt="Modern commercial business district" width={1024} height={1024} loading="lazy"
-              className="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-700" />
+              className="w-full h-[270px] sm:h-[390px] lg:h-[500px] object-cover group-hover:scale-105 transition-transform duration-700" />
             <div className="absolute top-5 right-5 bg-[var(--gold)] text-primary px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wide shadow-md">
               Commercial Real Estate
             </div>
@@ -447,7 +447,7 @@ export function CommercialSolutionsSection() {
           <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-6">
             {comStats.map((s) => (
               <div key={s.label} className="text-center bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-7 hover:border-[var(--gold)]/50 hover:bg-white/10 transition-all">
-                <div className="font-display text-4xl sm:text-5xl font-bold text-[var(--gold)]">{s.value}</div>
+                <div className="font-display text-3xl sm:text-3xl sm:text-4xl md:text-5xl font-bold text-[var(--gold)]">{s.value}</div>
                 <div className="mt-2 text-sm uppercase tracking-wider text-white/80">{s.label}</div>
               </div>
             ))}
@@ -465,17 +465,17 @@ export function CommercialSolutionsSection() {
               desc="Our commercial developments are designed to support productivity, visibility, customer engagement, and sustainable growth. From premium office environments to thriving retail destinations, every project reflects our commitment to excellence and innovation."
             />
             <div className="mt-7 flex flex-wrap gap-4">
-              <Button asChild size="lg" className="bg-[image:var(--gradient-primary)] hover:opacity-90 h-13 px-7 rounded-xl">
+              <Button asChild size="lg" className="bg-[image:var(--gradient-primary)] hover:opacity-90 h-auto min-h-13 py-3 px-5 sm:px-7 rounded-xl whitespace-normal text-center w-full sm:w-auto">
                 <a href="#commercial"><Eye className="mr-2 w-4 h-4" />Explore Commercial Project</a>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground h-13 px-7 rounded-xl">
+              <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground h-auto min-h-13 py-3 px-5 sm:px-7 rounded-xl whitespace-normal text-center w-full sm:w-auto">
                 <Link to="/contact"><Calendar className="mr-2 w-4 h-4" />Schedule Business Consultation</Link>
               </Button>
             </div>
           </div>
           <div className="order-first lg:order-last relative overflow-hidden rounded-[24px] shadow-[var(--shadow-elegant)] group">
             <img src={comSuccess.url} alt="Commercial business district" width={1024} height={1024} loading="lazy"
-              className="w-full h-[460px] object-cover group-hover:scale-105 transition-transform duration-700" />
+              className="w-full h-[250px] sm:h-[360px] lg:h-[460px] object-cover group-hover:scale-105 transition-transform duration-700" />
             <div className="absolute bottom-5 right-5 bg-white/90 backdrop-blur rounded-2xl px-5 py-3 shadow-md flex items-center gap-3">
               <Award className="w-5 h-5 text-[var(--gold)]" />
               <div>
@@ -500,10 +500,10 @@ export function CommercialSolutionsSection() {
                 Discover office spaces, retail destinations, industrial facilities, and business opportunities designed to help your enterprise grow and succeed.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
-                <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-13 px-7 rounded-xl">
+                <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-auto min-h-13 py-3 px-5 sm:px-7 rounded-xl whitespace-normal text-center w-full sm:w-auto">
                   <Link to="/contact"><Phone className="mr-2 w-4 h-4" />Talk To Commercial Expert</Link>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-13 px-7 rounded-xl">
+                <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-auto min-h-13 py-3 px-5 sm:px-7 rounded-xl whitespace-normal text-center w-full sm:w-auto">
                   <a href="#commercial">View Commercial Project <ArrowRight className="ml-2 w-4 h-4" /></a>
                 </Button>
               </div>

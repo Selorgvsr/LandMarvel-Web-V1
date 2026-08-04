@@ -60,7 +60,7 @@ function SectionHeading({ eyebrow, title, desc }: { eyebrow: string; title: stri
   return (
     <div className="max-w-2xl mx-auto text-center">
       <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-accent">{eyebrow}</span>
-      <h2 className="mt-3 font-display text-4xl sm:text-5xl font-bold text-primary">{title}</h2>
+      <h2 className="mt-3 font-display text-3xl sm:text-3xl sm:text-4xl md:text-5xl font-bold text-primary">{title}</h2>
       {desc && <p className="mt-4 text-base sm:text-lg text-muted-foreground">{desc}</p>}
     </div>
   );
@@ -242,8 +242,8 @@ function SellPage() {
       <Header />
       <main>
         {/* Hero — Full-screen video */}
-        <section className="relative min-h-[560px] h-[100svh] sm:min-h-[640px] w-full overflow-hidden">
-          <video src={sellHeroVideo.url} autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover scale-105" style={{ filter: 'brightness(1.2) contrast(1.15) saturate(1.1)' }} />
+        <section className="relative min-h-[460px] h-[88svh] sm:min-h-[600px] sm:h-[92svh] lg:min-h-[640px] w-full overflow-hidden">
+          <video src={sellHeroVideo.url} autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover" style={{ filter: 'brightness(1.2) contrast(1.15) saturate(1.1)' }} />
           <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-black/10" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
           <div className="relative z-10 h-full container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center text-primary-foreground">
@@ -251,7 +251,7 @@ function SellPage() {
               <span className="inline-flex items-center gap-2 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-[10px] sm:text-xs font-medium tracking-wide sm:tracking-[0.2em] uppercase">
                 <span className="w-1.5 h-1.5 rounded-full bg-[var(--gold)]" /> Sell Property
               </span>
-              <h1 className="mt-4 sm:mt-6 font-display text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.15] sm:leading-[1.05] drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)] animate-in fade-in slide-in-from-bottom-4 duration-700">
+              <h1 className="mt-4 sm:mt-6 font-display text-2xl sm:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.15] sm:leading-[1.05] drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)] animate-in fade-in slide-in-from-bottom-4 duration-700">
                 Sell Your Property With <span className="text-[var(--gold)]">Confidence</span>
               </h1>
               <p className="mt-4 sm:mt-6 text-sm sm:text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] whitespace-pre-line">
@@ -289,16 +289,16 @@ function SellPage() {
           <img src={sellCta} alt="Luxury aerial township at sunset" width={1920} height={900} loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-primary/85" />
           <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center text-primary-foreground max-w-3xl">
-            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold">Ready To Sell Your Property?</h2>
+            <h2 className="font-display text-3xl sm:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">Ready To Sell Your Property?</h2>
             <p className="mt-5 text-lg text-white/85 whitespace-pre-line">
               Submit your property details today and connect with serious buyers through{"\u00a0"}<br />
               Land Marvel.
             </p>
             <div className="mt-10 flex flex-wrap gap-4 justify-center">
-              <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-13 px-7 rounded-xl">
+              <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-auto min-h-13 py-3 px-5 sm:px-7 rounded-xl whitespace-normal text-center w-full sm:w-auto">
                 <a href="#form"><FileText className="mr-2 w-4 h-4" />Submit Property</a>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-13 px-7 rounded-xl">
+              <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-auto min-h-13 py-3 px-5 sm:px-7 rounded-xl whitespace-normal text-center w-full sm:w-auto">
                 <Link to="/" hash="contact"><Phone className="mr-2 w-4 h-4" />Contact Our Team</Link>
               </Button>
             </div>
