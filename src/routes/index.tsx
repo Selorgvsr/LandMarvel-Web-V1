@@ -133,7 +133,7 @@ function Hero() {
   );
 }
 
-function SectionHeading({ eyebrow, title, desc, center = true }: { eyebrow: string; title: string; desc?: string; center?: boolean }) {
+function SectionHeading({ eyebrow, title, desc, center = true }: { eyebrow: string; title: string; desc?: React.ReactNode; center?: boolean }) {
   return (
     <div className={`max-w-2xl ${center ? "mx-auto text-center" : ""}`}>
       <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-accent">{eyebrow}</span>
@@ -278,7 +278,8 @@ function ExchangeSection() {
             <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-accent">Smart Property Exchange</span>
             <h2 className="mt-4 font-display text-3xl sm:text-3xl sm:text-4xl md:text-5xl lg:text-[56px] font-bold text-primary leading-tight">Upgrade Your Property Through Direct Exchange</h2>
             <p className="mt-6 text-muted-foreground text-lg lg:text-xl leading-relaxed">
-              Looking to move from your existing property into a better location, larger space, or a new investment opportunity? Land Marvel's Property Exchange Program makes it easier than ever.
+              Looking to move from your existing property into a better location, larger space, or a new investment opportunity?{"\u00a0"}<br/>
+              Land Marvel's Property Exchange Program makes it easier than ever.
             </p>
             <p className="mt-4 text-muted-foreground text-lg lg:text-xl leading-relaxed">
               Exchange your land, apartment, villa, or commercial property directly with us and explore suitable alternatives within our portfolio. Benefit from transparent valuations, direct transactions, and a streamlined process without the complexity of managing separate buying and selling deals.
@@ -489,7 +490,7 @@ function ThreeStepPlan() {
   return (
     <section className="py-20 sm:py-28 section-navy">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading eyebrow="Your Journey With Us" title="A Simple 3-Step Plan" desc="Property investment shouldn't feel overwhelming. Here's how Land Marvel makes it clear." />
+        <SectionHeading eyebrow="Your Journey With Us" title="A Simple 3-Step Plan" desc={<>Property investment shouldn't feel overwhelming. Here's how{"\u00a0"}<br/>Land Marvel makes it clear.</>} />
         <div className="mt-14 grid md:grid-cols-3 gap-7">
           {steps.map((s) => (
             <div key={s.n} className="relative bg-card rounded-2xl p-8 border border-border hover:border-accent hover:shadow-[var(--shadow-elegant)] transition-all">
