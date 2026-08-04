@@ -333,10 +333,10 @@ function BusinessParkPage() {
               Explore premium commercial opportunities designed for business success, sustainable growth, and long-term value with Land Marvel.
             </p>
             <div className="mt-8 flex flex-wrap gap-4 justify-center">
-              <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-13 px-7 rounded-xl">
+              <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-auto min-h-13 py-3 px-5 sm:px-7 rounded-xl whitespace-normal text-center w-full sm:w-auto">
                 <Link to="/contact"><Calendar className="mr-2 w-4 h-4" /> Schedule a Site Visit</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-13 px-7 rounded-xl">
+              <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-auto min-h-13 py-3 px-5 sm:px-7 rounded-xl whitespace-normal text-center w-full sm:w-auto">
                 <a href="tel:+918667769670"><Phone className="mr-2 w-4 h-4" /> Talk To Expert</a>
               </Button>
             </div>

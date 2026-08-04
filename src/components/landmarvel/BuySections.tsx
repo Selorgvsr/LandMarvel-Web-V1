@@ -180,7 +180,7 @@ export function LandInvestmentSection() {
               desc="We encourage investors to visit project locations and understand the surrounding infrastructure, future growth opportunities, and investment potential firsthand. Our experts provide complete guidance to help you make confident and informed decisions."
             />
             <div className="mt-7">
-              <Button asChild size="lg" className="bg-[image:var(--gradient-primary)] hover:opacity-90 h-13 px-7 rounded-xl">
+              <Button asChild size="lg" className="bg-[image:var(--gradient-primary)] hover:opacity-90 h-auto min-h-13 py-3 px-5 sm:px-7 rounded-xl whitespace-normal text-center w-full sm:w-auto">
                 <Link to="/contact"><Calendar className="mr-2 w-4 h-4" /> Book Site Visit</Link>
               </Button>
             </div>
@@ -201,10 +201,10 @@ export function LandInvestmentSection() {
                 Explore premium plots in strategic locations and build long-term wealth through smart land investments with Land Marvel.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
-                <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-13 px-7 rounded-xl">
+                <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-auto min-h-13 py-3 px-5 sm:px-7 rounded-xl whitespace-normal text-center w-full sm:w-auto">
                   <a href="#plots">Explore Plot Project <ArrowRight className="ml-2 w-4 h-4" /></a>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-13 px-7 rounded-xl">
+                <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-auto min-h-13 py-3 px-5 sm:px-7 rounded-xl whitespace-normal text-center w-full sm:w-auto">
                   <Link to="/contact"><Phone className="mr-2 w-4 h-4" />Talk To Investment Expert</Link>
                 </Button>
               </div>
@@ -465,10 +465,10 @@ export function CommercialSolutionsSection() {
               desc="Our commercial developments are designed to support productivity, visibility, customer engagement, and sustainable growth. From premium office environments to thriving retail destinations, every project reflects our commitment to excellence and innovation."
             />
             <div className="mt-7 flex flex-wrap gap-4">
-              <Button asChild size="lg" className="bg-[image:var(--gradient-primary)] hover:opacity-90 h-13 px-7 rounded-xl">
+              <Button asChild size="lg" className="bg-[image:var(--gradient-primary)] hover:opacity-90 h-auto min-h-13 py-3 px-5 sm:px-7 rounded-xl whitespace-normal text-center w-full sm:w-auto">
                 <a href="#commercial"><Eye className="mr-2 w-4 h-4" />Explore Commercial Project</a>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground h-13 px-7 rounded-xl">
+              <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground h-auto min-h-13 py-3 px-5 sm:px-7 rounded-xl whitespace-normal text-center w-full sm:w-auto">
                 <Link to="/contact"><Calendar className="mr-2 w-4 h-4" />Schedule Business Consultation</Link>
               </Button>
             </div>
@@ -500,10 +500,10 @@ export function CommercialSolutionsSection() {
                 Discover office spaces, retail destinations, industrial facilities, and business opportunities designed to help your enterprise grow and succeed.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
-                <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-13 px-7 rounded-xl">
+                <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-auto min-h-13 py-3 px-5 sm:px-7 rounded-xl whitespace-normal text-center w-full sm:w-auto">
                   <Link to="/contact"><Phone className="mr-2 w-4 h-4" />Talk To Commercial Expert</Link>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-13 px-7 rounded-xl">
+                <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-auto min-h-13 py-3 px-5 sm:px-7 rounded-xl whitespace-normal text-center w-full sm:w-auto">
                   <a href="#commercial">View Commercial Project <ArrowRight className="ml-2 w-4 h-4" /></a>
                 </Button>
               </div>
