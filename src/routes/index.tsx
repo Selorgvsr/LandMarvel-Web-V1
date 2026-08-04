@@ -278,7 +278,8 @@ function ExchangeSection() {
             <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-accent">Smart Property Exchange</span>
             <h2 className="mt-4 font-display text-3xl sm:text-3xl sm:text-4xl md:text-5xl lg:text-[56px] font-bold text-primary leading-tight">Upgrade Your Property Through Direct Exchange</h2>
             <p className="mt-6 text-muted-foreground text-lg lg:text-xl leading-relaxed">
-              Looking to move from your existing property into a better location, larger space, or a new investment opportunity? Land Marvel's Property Exchange Program makes it easier than ever.
+              Looking to move from your existing property into a better location, larger space, or a new investment opportunity?{"\u00a0"}<br/>
+              Land Marvel's Property Exchange Program makes it easier than ever.
             </p>
             <p className="mt-4 text-muted-foreground text-lg lg:text-xl leading-relaxed">
               Exchange your land, apartment, villa, or commercial property directly with us and explore suitable alternatives within our portfolio. Benefit from transparent valuations, direct transactions, and a streamlined process without the complexity of managing separate buying and selling deals.
