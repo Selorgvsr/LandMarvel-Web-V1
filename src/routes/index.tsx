@@ -490,7 +490,7 @@ function ThreeStepPlan() {
   return (
     <section className="py-20 sm:py-28 section-navy">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading eyebrow="Your Journey With Us" title="A Simple 3-Step Plan" desc="Property investment shouldn't feel overwhelming. Here's how Land Marvel makes it clear." />
+        <SectionHeading eyebrow="Your Journey With Us" title="A Simple 3-Step Plan" desc={<>Property investment shouldn't feel overwhelming. Here's how{"\u00a0"}<br/>Land Marvel makes it clear.</>} />
         <div className="mt-14 grid md:grid-cols-3 gap-7">
           {steps.map((s) => (
             <div key={s.n} className="relative bg-card rounded-2xl p-8 border border-border hover:border-accent hover:shadow-[var(--shadow-elegant)] transition-all">
