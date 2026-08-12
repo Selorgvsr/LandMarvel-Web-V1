@@ -124,9 +124,10 @@ function Hero() {
               ["30+", "Years"], ["200+", "Projects"], ["2K+", "Families"], ["6+", "Locations"],
             ].map(([n, l]) => (
               <div key={l} className="min-w-0 border-l-2 border-[var(--gold)] pl-3 sm:pl-4">
-                <div className="font-display text-xl sm:text-3xl font-bold">{n}</div>
-                <div className="text-xs sm:text-sm text-white/85 truncate">{l}</div>
+                <div className="font-display text-lg sm:text-xl md:text-2xl font-bold">{n}</div>
+                <div className="text-[11px] sm:text-xs md:text-sm text-white/85 truncate">{l}</div>
               </div>
+
             ))}
           </div>
 
