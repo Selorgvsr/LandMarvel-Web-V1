@@ -102,13 +102,14 @@ function Hero() {
           <span className="inline-flex items-center gap-2 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-[10px] sm:text-xs font-medium tracking-wide uppercase animate-in fade-in slide-in-from-bottom-4 duration-700">
             <Star className="w-3 h-3 sm:w-3.5 sm:h-3.5 shrink-0 text-[var(--gold)]" /> Financial peace in property investment
           </span>
-          <h1 className="mt-4 sm:mt-6 font-display text-2xl leading-[1.15] sm:text-4xl md:text-5xl lg:text-6xl sm:leading-[1.05] font-bold break-words hyphens-auto drop-shadow-[0_4px_20px_rgba(0,0,0,0.55)] animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <h1 className="mt-3 sm:mt-5 font-display text-xl leading-snug sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:leading-tight font-bold break-words hyphens-auto drop-shadow-[0_4px_20px_rgba(0,0,0,0.55)] animate-in fade-in slide-in-from-bottom-4 duration-700">
             Find Your Dream Home, Apartment, Villa, Plotted Layout &amp; Commercial Space With{" "}
             <span className="text-[var(--gold)]">Land Marvel</span>
           </h1>
-          <p className="mt-4 sm:mt-6 text-sm sm:text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <p className="mt-3 sm:mt-5 text-xs sm:text-sm md:text-base lg:text-lg text-white/90 max-w-2xl leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] animate-in fade-in slide-in-from-bottom-4 duration-700">
             Finding the right property shouldn't feel like a gamble. Premium locations. Verified projects. Zero confusion — we've helped 2,000+ families invest with confidence.
           </p>
+
 
           <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 animate-in fade-in slide-in-from-bottom-4 duration-700">
             <Button asChild size="lg" className="w-full sm:w-auto bg-white text-primary hover:bg-white/90 shadow-[var(--shadow-elegant)] h-11 sm:h-12 px-5 sm:px-7 text-sm sm:text-base">
