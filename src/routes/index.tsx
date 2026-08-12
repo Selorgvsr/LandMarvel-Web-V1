@@ -110,7 +110,7 @@ function Hero() {
             Finding the right property shouldn't feel like a gamble. Premium locations. Verified projects. Zero confusion — we've helped 2,000+ families invest with confidence.
           </p>
 
-          <div className="mt-6 sm:mt-10 flex flex-col xs:flex-row flex-wrap gap-3 sm:gap-4 animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 animate-in fade-in slide-in-from-bottom-4 duration-700">
             <Button asChild size="lg" className="w-full sm:w-auto bg-white text-primary hover:bg-white/90 shadow-[var(--shadow-elegant)] h-11 sm:h-12 px-5 sm:px-7 text-sm sm:text-base">
               <a href="#projects">Explore Project <ArrowRight className="ml-2 w-4 h-4" /></a>
             </Button>
