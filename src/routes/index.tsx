@@ -104,6 +104,7 @@ function Hero() {
           </span>
           <h1 className="mt-3 sm:mt-5 font-display text-xl leading-snug sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:leading-tight font-bold break-words hyphens-auto drop-shadow-[0_4px_20px_rgba(0,0,0,0.55)] animate-in fade-in slide-in-from-bottom-4 duration-700">
             Find Your Dream Home, Apartment, Villa, Plotted Layout &amp; Commercial Space With{" "}
+            <br />
             <span className="text-[var(--gold)]">Land Marvel</span>
           </h1>
           <p className="mt-3 sm:mt-5 text-xs sm:text-sm md:text-base lg:text-lg text-white/90 max-w-2xl leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] animate-in fade-in slide-in-from-bottom-4 duration-700">
