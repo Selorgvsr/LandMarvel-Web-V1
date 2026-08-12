@@ -110,11 +110,11 @@ function Hero() {
             Finding the right property shouldn't feel like a gamble. Premium locations. Verified projects. Zero confusion — we've helped 2,000+ families invest with confidence.
           </p>
 
-          <div className="mt-6 sm:mt-10 flex flex-wrap gap-3 sm:gap-4 animate-in fade-in slide-in-from-bottom-4 duration-700">
-            <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 shadow-[var(--shadow-elegant)] h-11 sm:h-12 px-5 sm:px-7 text-sm sm:text-base">
+          <div className="mt-6 sm:mt-10 flex flex-col xs:flex-row flex-wrap gap-3 sm:gap-4 animate-in fade-in slide-in-from-bottom-4 duration-700">
+            <Button asChild size="lg" className="w-full sm:w-auto bg-white text-primary hover:bg-white/90 shadow-[var(--shadow-elegant)] h-11 sm:h-12 px-5 sm:px-7 text-sm sm:text-base">
               <a href="#projects">Explore Project <ArrowRight className="ml-2 w-4 h-4" /></a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-11 sm:h-12 px-5 sm:px-7 text-sm sm:text-base">
+            <Button asChild size="lg" variant="outline" className="w-full sm:w-auto border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-11 sm:h-12 px-5 sm:px-7 text-sm sm:text-base">
               <a href="#contact">Contact Us</a>
             </Button>
           </div>
@@ -122,12 +122,13 @@ function Hero() {
             {[
               ["30+", "Years"], ["200+", "Projects"], ["2K+", "Families"], ["6+", "Locations"],
             ].map(([n, l]) => (
-              <div key={l} className="border-l-2 border-[var(--gold)] pl-3 sm:pl-4">
-                <div className="font-display text-2xl sm:text-3xl font-bold">{n}</div>
-                <div className="text-xs sm:text-sm text-white/85">{l}</div>
+              <div key={l} className="min-w-0 border-l-2 border-[var(--gold)] pl-3 sm:pl-4">
+                <div className="font-display text-xl sm:text-3xl font-bold">{n}</div>
+                <div className="text-xs sm:text-sm text-white/85 truncate">{l}</div>
               </div>
             ))}
           </div>
+
         </div>
       </div>
     </section>
