@@ -93,21 +93,27 @@ function Header() {
 
 function Hero() {
   return (
-    <section id="top" className="relative min-h-[520px] h-auto py-20 sm:py-24 sm:min-h-[620px] lg:min-h-[680px] lg:h-[92svh] w-full overflow-hidden">
+    <section id="top" className="relative min-h-[500px] h-auto py-16 sm:py-20 sm:min-h-[600px] lg:min-h-[640px] lg:h-[92svh] w-full overflow-hidden">
       <video src={homeHeroVideo.url} autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover" style={{ filter: 'brightness(1.2) contrast(1.15) saturate(1.1)' }} />
       <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-black/10" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
       <div className="relative z-10 h-full container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center text-primary-foreground">
-        <div className="w-full max-w-3xl min-w-0">
+        <div className="w-full max-w-[46rem] xl:max-w-[52rem] min-w-0">
           <span className="inline-flex items-center gap-2 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 text-[10px] sm:text-xs font-medium tracking-wide uppercase animate-in fade-in slide-in-from-bottom-4 duration-700">
             <Star className="w-3 h-3 sm:w-3.5 sm:h-3.5 shrink-0 text-[var(--gold)]" /> Financial peace in property investment
           </span>
-          <h1 className="mt-3 sm:mt-5 font-display text-xl leading-snug sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:leading-tight font-bold break-words hyphens-auto drop-shadow-[0_4px_20px_rgba(0,0,0,0.55)] animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <h1
+            className="mt-3 sm:mt-5 font-display font-bold leading-[1.15] break-words hyphens-auto drop-shadow-[0_4px_20px_rgba(0,0,0,0.55)] animate-in fade-in slide-in-from-bottom-4 duration-700"
+            style={{ fontSize: "clamp(1.35rem, 3.2vw, 3rem)" }}
+          >
             Find Your Dream Home, Apartment, Villa, Plotted Layout &amp; Commercial Space With{" "}
             <br />
             <span className="text-[var(--gold)]">Land Marvel</span>
           </h1>
-          <p className="mt-3 sm:mt-5 text-xs sm:text-sm md:text-base lg:text-lg text-white/90 max-w-2xl leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <p
+            className="mt-3 sm:mt-5 text-white/90 max-w-2xl leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] animate-in fade-in slide-in-from-bottom-4 duration-700"
+            style={{ fontSize: "clamp(0.8rem, 1.15vw, 1.075rem)" }}
+          >
             Finding the right property shouldn't feel like a gamble. Premium locations. Verified projects. Zero confusion — we've helped 2,000+ families invest with confidence.
           </p>
 
