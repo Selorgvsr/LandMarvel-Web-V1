@@ -142,14 +142,6 @@ function ContactPage() {
             <p className="mt-4 sm:mt-6 text-sm sm:text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
               Whether you're looking to buy, sell, exchange properties, or learn more about our ongoing projects, our team is here to assist you every step of the way.
             </p>
-            <div className="mt-6 sm:mt-10 flex flex-wrap gap-3 sm:gap-4">
-              <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-11 sm:h-13 px-5 sm:px-7 text-sm sm:text-base rounded-xl shadow-[var(--shadow-elegant)]">
-                <a href="tel:+919498050649"><Phone className="w-4 h-4" /> Call Now</a>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-11 sm:h-13 px-5 sm:px-7 text-sm sm:text-base rounded-xl backdrop-blur">
-                <a href="mailto:suresh@landmarvel.com"><Mail className="w-4 h-4" /> Email Us</a>
-              </Button>
-            </div>
             <div className="mt-8 sm:mt-12 grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-3xl">
               {[
                 ["30+", "Years"], ["200+", "Project"], ["2K+", "Happy Families"], ["24/7", "Support"],
