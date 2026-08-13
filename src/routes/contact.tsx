@@ -202,14 +202,6 @@ function ContactPage() {
           <div className="mt-16 rounded-2xl bg-[image:var(--gradient-primary)] text-primary-foreground p-8 md:p-10 text-center space-y-4 shadow-[var(--shadow-elegant)]">
             <h3 className="font-display text-2xl md:text-3xl font-bold">Need Immediate Assistance?</h3>
             <p className="text-primary-foreground/85 max-w-2xl mx-auto">Our property advisors are available to guide you through buying, selling, exchanging, and investing in premium real estate.</p>
-            <div className="flex flex-wrap gap-3 justify-center pt-2">
-              <Button asChild size="lg" className="h-12 rounded-xl bg-[var(--gold)] text-primary hover:opacity-90 font-semibold">
-                <a href="tel:+919498050649"><Phone className="w-4 h-4" /> Call Now</a>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="h-12 rounded-xl bg-transparent border-white text-white hover:bg-white hover:text-primary">
-                <a href="mailto:suresh@landmarvel.com"><Mail className="w-4 h-4" /> Email Us</a>
-              </Button>
-            </div>
           </div>
         </div>
       </section>
