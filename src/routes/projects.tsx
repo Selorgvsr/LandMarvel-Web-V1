@@ -303,7 +303,7 @@ function ProjectsPage() {
                 ))}
               </ul>
               <Button size="lg" className="h-[52px] rounded-xl bg-[image:var(--gradient-primary)] hover:opacity-90 px-7 mt-4">
-                Talk To Project Expert <ArrowRight className="w-4 h-4" />
+                Book Site Visit <ArrowRight className="w-4 h-4" />
               </Button>
             </div>
           </div>
