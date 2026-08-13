@@ -262,9 +262,6 @@ function SellPage() {
                 <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-11 sm:h-13 px-5 sm:px-7 text-sm sm:text-base rounded-xl shadow-[var(--shadow-elegant)]">
                   <a href="#form">Sell Property Now <ArrowRight className="ml-2 w-4 h-4" /></a>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-11 sm:h-13 px-5 sm:px-7 text-sm sm:text-base rounded-xl backdrop-blur">
-                  <a href="tel:+918667769670"><Phone className="mr-2 w-4 h-4" />Talk To Expert</a>
-                </Button>
               </div>
               <div className="mt-8 sm:mt-12 grid grid-cols-3 gap-4 sm:gap-6 max-w-md">
                 {[["100+", "Listings"], ["200+", "Sold"], ["30+", "Years"]].map(([n, l]) => (
