@@ -50,6 +50,7 @@ export function SiteHeader() {
                   key={l.label}
                   to={l.to}
                   onClick={() => setOpen(false)}
+                  activeProps={{ className: "text-primary font-semibold" }}
                   className="text-lg font-medium text-foreground hover:text-accent"
                 >
                   {l.label}
