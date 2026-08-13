@@ -31,6 +31,7 @@ export function SiteHeader() {
             <Link
               key={l.label}
               to={l.to}
+              activeProps={{ className: "text-primary underline decoration-2 underline-offset-8" }}
               className="text-foreground/80 hover:text-primary transition-colors font-bold text-lg xl:text-2xl whitespace-nowrap"
             >
               {l.label}
