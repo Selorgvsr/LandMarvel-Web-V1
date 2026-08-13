@@ -532,7 +532,7 @@ function FinalCTA() {
         </p>
         <div className="mt-10 flex flex-wrap gap-4 justify-center">
           <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 h-12 px-7"><Link to="/contact">Book a Free Site Visit</Link></Button>
-          <Button asChild size="lg" variant="outline" className="border-white/40 bg-transparent text-white hover:bg-white/10 hover:text-white h-12 px-7"><a href="tel:+910000000000">Talk To An Advisor</a></Button>
+          
         </div>
       </div>
     </section>
