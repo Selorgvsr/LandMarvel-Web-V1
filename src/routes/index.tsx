@@ -182,7 +182,7 @@ function About() {
               </li>
             ))}
           </ul>
-          <Button className="mt-8 bg-[image:var(--gradient-primary)] h-12 px-7">Learn More <ArrowRight className="ml-2 w-4 h-4" /></Button>
+          <Button asChild className="mt-8 bg-[image:var(--gradient-primary)] h-12 px-7"><Link to="/about">Learn More <ArrowRight className="ml-2 w-4 h-4" /></Link></Button>
         </div>
       </div>
     </section>
@@ -454,9 +454,6 @@ function Locations() {
               <div className="mt-2 font-semibold text-sm">{l}</div>
             </div>
           ))}
-        </div>
-        <div className="mt-12 text-center">
-          <Button size="lg" className="bg-[image:var(--gradient-primary)] h-12 px-7">Explore Locations <ArrowRight className="ml-2 w-4 h-4" /></Button>
         </div>
       </div>
     </section>
