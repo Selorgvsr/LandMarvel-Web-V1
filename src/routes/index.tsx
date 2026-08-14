@@ -510,7 +510,7 @@ function ThreeStepPlan() {
         </div>
         <div className="mt-12 text-center">
           <Button asChild size="lg" className="bg-[image:var(--gradient-primary)] h-12 px-8">
-            <Link to="/contact">Book a Free Site Visit <ArrowRight className="ml-2 w-4 h-4" /></Link>
+            <Link to="/contact">Book a Site Visit <ArrowRight className="ml-2 w-4 h-4" /></Link>
           </Button>
         </div>
       </div>
@@ -525,10 +525,10 @@ function FinalCTA() {
         <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-[var(--gold)]">Stop Guessing. Start Owning.</span>
         <h2 className="mt-4 font-display text-3xl sm:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">Your Dream Property Awaits</h2>
         <p className="mt-5 text-lg text-white/85">
-          If property investment stress keeps you up at night, partnering with Land Marvel is the decision that changes that. Book a free site visit — no obligation, just clarity on your best property option.
+          If property investment stress keeps you up at night, partnering with Land Marvel is the decision that changes that. Book a site visit — no obligation, just clarity on your best property option.
         </p>
         <div className="mt-10 flex flex-wrap gap-4 justify-center">
-          <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 h-12 px-7"><Link to="/contact">Book a Free Site Visit</Link></Button>
+          <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 h-12 px-7"><Link to="/contact">Book a Site Visit</Link></Button>
           
         </div>
       </div>
