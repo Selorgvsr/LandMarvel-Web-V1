@@ -93,12 +93,12 @@ function SellForm() {
           <div className="grid sm:grid-cols-2 gap-6">
             <div className="space-y-2">
               <Label htmlFor="name" className="text-primary font-semibold">Full Name</Label>
-              <Input id="name" required placeholder="Enter Your Full Name" className="h-12 rounded-xl" />
+              <Input id="name" required placeholder="Enter Your Full Name" className="h-12 rounded-xl text-white placeholder:text-white/60" />
             </div>
             <div className="space-y-2">
               <Label htmlFor="type" className="text-primary font-semibold">Property Type</Label>
               <Select required>
-                <SelectTrigger id="type" className="h-12 rounded-xl">
+                <SelectTrigger id="type" className="h-12 rounded-xl text-white">
                   <SelectValue placeholder="Select Property Type" />
                 </SelectTrigger>
                 <SelectContent>
@@ -111,11 +111,11 @@ function SellForm() {
             </div>
             <div className="space-y-2">
               <Label htmlFor="email" className="text-primary font-semibold">Email Address</Label>
-              <Input id="email" type="email" required placeholder="Enter Your Email Address" className="h-12 rounded-xl" />
+              <Input id="email" type="email" required placeholder="Enter Your Email Address" className="h-12 rounded-xl text-white placeholder:text-white/60" />
             </div>
             <div className="space-y-2">
               <Label htmlFor="phone" className="text-primary font-semibold">Phone Number</Label>
-              <Input id="phone" type="tel" required placeholder="Enter Your Phone Number" className="h-12 rounded-xl" />
+              <Input id="phone" type="tel" required placeholder="Enter Your Phone Number" className="h-12 rounded-xl text-white placeholder:text-white/60" />
             </div>
             <div className="space-y-2 sm:col-span-2">
               <Label htmlFor="files" className="text-primary font-semibold">Upload Property Images / Documents</Label>
@@ -126,10 +126,10 @@ function SellForm() {
                 <div className="w-12 h-12 grid place-items-center rounded-full bg-[image:var(--gradient-primary)] text-primary-foreground">
                   <Upload className="w-5 h-5" />
                 </div>
-                <div className="font-medium text-foreground">
+                <div className="font-medium text-white">
                   {fileName || "Click to upload or drag & drop"}
                 </div>
-                <div className="text-xs text-muted-foreground">JPG, PNG, PDF, DOC, DOCX — up to 10MB each</div>
+                <div className="text-xs text-white/70">JPG, PNG, PDF, DOC, DOCX — up to 10MB each</div>
                 <input
                   id="files"
                   name="files"
@@ -145,7 +145,7 @@ function SellForm() {
                   }}
                 />
               </label>
-              <p className="text-xs text-muted-foreground">Upload photos, layouts, approvals, or supporting property documents.</p>
+              <p className="text-xs text-white/70">Upload photos, layouts, approvals, or supporting property documents.</p>
             </div>
             <div className="space-y-2 sm:col-span-2">
               <Label htmlFor="desc" className="text-primary font-semibold">Property Description</Label>
@@ -153,7 +153,7 @@ function SellForm() {
                 id="desc"
                 required
                 placeholder="Describe your property including location, area, amenities, expected price, and any additional information."
-                className="rounded-xl resize-none"
+                className="rounded-xl resize-none text-white placeholder:text-white/60"
                 style={{ height: 180 }}
               />
             </div>
