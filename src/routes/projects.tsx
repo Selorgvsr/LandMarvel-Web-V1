@@ -215,11 +215,11 @@ function ProjectsPage() {
               Discover Land Marvel's ongoing developments across premium plots, residential communities, and commercial spaces in Chennai's fastest-growing locations.
             </p>
             <div className="mt-6 sm:mt-10 flex flex-wrap gap-3 sm:gap-4">
-              <Button size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-11 sm:h-13 px-5 sm:px-7 text-sm sm:text-base rounded-xl shadow-[var(--shadow-elegant)]">
-                Explore Project <ArrowRight className="ml-2 w-4 h-4" />
+              <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-11 sm:h-13 px-5 sm:px-7 text-sm sm:text-base rounded-xl shadow-[var(--shadow-elegant)]">
+                <Link to="/projects" hash="ongoing-projects">Explore Project <ArrowRight className="ml-2 w-4 h-4" /></Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-11 sm:h-13 px-5 sm:px-7 text-sm sm:text-base rounded-xl backdrop-blur">
-                Book Site Visit
+              <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-11 sm:h-13 px-5 sm:px-7 text-sm sm:text-base rounded-xl backdrop-blur">
+                <Link to="/contact">Book Site Visit</Link>
               </Button>
             </div>
             <div className="mt-8 sm:mt-12 grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-3xl">
@@ -237,7 +237,7 @@ function ProjectsPage() {
       </section>
 
       {/* ONGOING PROJECTS */}
-      <section className="py-20 lg:py-24 section-navy">
+      <section id="ongoing-projects" className="py-20 lg:py-24 section-navy">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-primary">Ongoing Projects</h2>
@@ -337,11 +337,11 @@ function ProjectsPage() {
             Our experts will help you choose the ideal plot, residential home, or commercial investment.
           </p>
           <div className="flex flex-wrap gap-3 justify-center pt-2">
-            <Button size="lg" className="h-[52px] rounded-xl bg-[var(--gold)] text-primary hover:opacity-90 px-7 font-semibold">
-              <Calendar className="w-4 h-4" /> Schedule Site Visit
+            <Button asChild size="lg" className="h-[52px] rounded-xl bg-[var(--gold)] text-primary hover:opacity-90 px-7 font-semibold">
+              <Link to="/contact"><Calendar className="w-4 h-4 mr-2" /> Schedule Site Visit</Link>
             </Button>
-            <Button size="lg" variant="outline" className="h-[52px] rounded-xl bg-transparent border-white text-white hover:bg-white hover:text-primary px-7">
-              <Phone className="w-4 h-4" /> Contact Sales Team
+            <Button asChild size="lg" variant="outline" className="h-[52px] rounded-xl bg-transparent border-white text-white hover:bg-white hover:text-primary px-7">
+              <Link to="/contact"><Phone className="w-4 h-4 mr-2" /> Contact Sales Team</Link>
             </Button>
           </div>
         </div>
