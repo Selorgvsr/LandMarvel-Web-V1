@@ -84,22 +84,22 @@ function ContactForm() {
       <div className="grid sm:grid-cols-2 gap-5">
         <div className="space-y-2">
           <Label htmlFor="name" className="text-white">Full Name</Label>
-          <Input id="name" name="name" placeholder="Enter Your Full Name" maxLength={100} required />
+          <Input id="name" name="name" placeholder="Enter Your Full Name" maxLength={100} required className="text-white placeholder:text-white/60" />
         </div>
         <div className="space-y-2">
           <Label htmlFor="email" className="text-white">Email Address</Label>
-          <Input id="email" name="email" type="email" placeholder="Enter Your Email Address" maxLength={255} required />
+          <Input id="email" name="email" type="email" placeholder="Enter Your Email Address" maxLength={255} required className="text-white placeholder:text-white/60" />
         </div>
       </div>
       <div className="grid sm:grid-cols-2 gap-5">
         <div className="space-y-2">
           <Label htmlFor="phone" className="text-white">Phone Number</Label>
-          <Input id="phone" name="phone" type="tel" placeholder="Enter Your Phone Number" maxLength={20} required />
+          <Input id="phone" name="phone" type="tel" placeholder="Enter Your Phone Number" maxLength={20} required className="text-white placeholder:text-white/60" />
         </div>
         <div className="space-y-2">
           <Label htmlFor="subject" className="text-white">Subject</Label>
           <Select value={subject} onValueChange={setSubject}>
-            <SelectTrigger id="subject"><SelectValue placeholder="Select a subject" /></SelectTrigger>
+            <SelectTrigger id="subject" className="text-white"><SelectValue placeholder="Select a subject" /></SelectTrigger>
             <SelectContent>
               <SelectItem value="general">General Enquiry</SelectItem>
               <SelectItem value="buy">Buy Property</SelectItem>
@@ -112,7 +112,7 @@ function ContactForm() {
       </div>
       <div className="space-y-2">
         <Label htmlFor="message" className="text-white">Message</Label>
-        <Textarea id="message" name="message" placeholder="Tell us how we can help you." rows={5} maxLength={1000} required />
+        <Textarea id="message" name="message" placeholder="Tell us how we can help you." rows={5} maxLength={1000} required className="text-white placeholder:text-white/60" />
       </div>
       <Button type="submit" disabled={submitting} className="w-full h-12 rounded-xl bg-primary text-primary-foreground hover:bg-primary/90 text-base font-semibold shadow-[var(--shadow-card)]">
         <Send className="w-4 h-4" /> {submitting ? "Sending..." : "Send Message"}
