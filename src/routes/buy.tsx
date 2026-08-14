@@ -212,7 +212,7 @@ function HeroSection() {
               <a href="#plots">Browse Properties <ArrowRight className="ml-2 w-4 h-4" /></a>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-11 sm:h-13 px-5 sm:px-7 text-sm sm:text-base rounded-xl backdrop-blur">
-              <Link to="/" hash="contact"><Calendar className="mr-2 w-4 h-4" />Book Site Visit</Link>
+              <Link to="/contact"><Calendar className="mr-2 w-4 h-4" />Book Site Visit</Link>
             </Button>
           </div>
           <div className="mt-8 sm:mt-12 grid grid-cols-3 gap-4 sm:gap-6 max-w-md">
