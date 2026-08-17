@@ -2,8 +2,7 @@ import buyHeroVideoAsset from "@/assets/buy-hero-video.mp4.asset.json";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
 import {
-  Menu, MapPin, ArrowRight, Phone, Mail, Calendar, Eye,
-  Facebook, Instagram, Twitter, Linkedin, Building2, Ruler, Home,
+  Menu, MapPin, Mail, Facebook, Instagram, Twitter, Linkedin, Building2, Ruler, Home,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
