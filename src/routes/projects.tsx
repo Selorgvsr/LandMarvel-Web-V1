@@ -1,8 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import {
-  Menu, MapPin, ArrowRight, Check, Calendar, Eye, Ruler, Home, Building2,
-  Phone, Mail, Facebook, Instagram, Twitter, Linkedin, TrendingUp, Shield,
+  Menu, MapPin, Check, Calendar, Ruler, Home, Building2,
+  Mail, Facebook, Instagram, Twitter, Linkedin, TrendingUp, Shield,
   Award, Users,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
