@@ -155,19 +155,19 @@ function ProjectCard({ p }: { p: Project }) {
           {isComingSoon ? (
             <>
               <Button disabled className="w-full h-[52px] rounded-xl bg-muted text-muted-foreground cursor-not-allowed">
-                <Calendar className="w-4 h-4 mr-1.5 shrink-0" /> Book Visit
+                Book Visit
               </Button>
               <Button disabled variant="outline" className="w-full h-[52px] rounded-xl cursor-not-allowed">
-                <Eye className="w-4 h-4 mr-1.5 shrink-0" /> Details
+                Details
               </Button>
             </>
           ) : (
             <>
               <Button asChild className="w-full h-[52px] rounded-xl bg-primary text-primary-foreground hover:bg-primary/90">
-                <Link to="/contact"><Calendar className="w-4 h-4 mr-1.5 shrink-0" /> Book Visit</Link>
+                <Link to="/contact">Book Visit</Link>
               </Button>
               <Button asChild variant="outline" className="w-full h-[52px] rounded-xl border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                <Link to={(p.detailsLink ?? "/contact") as "/green-valley" | "/heights" | "/business-park" | "/contact"}><Eye className="w-4 h-4 mr-1.5 shrink-0" /> Details</Link>
+                <Link to={(p.detailsLink ?? "/contact") as "/green-valley" | "/heights" | "/business-park" | "/contact"}>Details</Link>
               </Button>
             </>
           )}
