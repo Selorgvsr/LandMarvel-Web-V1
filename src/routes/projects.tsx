@@ -336,12 +336,12 @@ function ProjectsPage() {
           <p className="text-lg text-primary-foreground/90 max-w-2xl mx-auto">
             Our experts will help you choose the ideal plot, residential home, or commercial investment.
           </p>
-          <div className="flex flex-wrap gap-3 justify-center pt-2">
-            <Button asChild size="lg" className="h-[52px] rounded-xl bg-[var(--gold)] text-primary hover:opacity-90 px-7 font-semibold">
-              <Link to="/contact"><Calendar className="w-4 h-4 mr-2" /> Schedule Site Visit</Link>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
+            <Button asChild size="lg" className="h-[52px] rounded-xl bg-[var(--gold)] text-primary hover:opacity-90 px-7 font-semibold w-full sm:w-auto">
+              <Link to="/contact">Schedule Site Visit</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="h-[52px] rounded-xl bg-transparent border-white text-white hover:bg-white hover:text-primary px-7">
-              <Link to="/contact"><Phone className="w-4 h-4 mr-2" /> Contact Sales Team</Link>
+            <Button asChild size="lg" variant="outline" className="h-[52px] rounded-xl bg-transparent border-white text-white hover:bg-white hover:text-primary px-7 w-full sm:w-auto">
+              <Link to="/contact">Contact Sales Team</Link>
             </Button>
           </div>
         </div>
