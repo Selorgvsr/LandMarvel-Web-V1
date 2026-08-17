@@ -127,23 +127,23 @@ function PropertyCard({ p }: { p: Property }) {
             <div className="text-sm font-semibold text-primary leading-tight">{p.type}</div>
           </div>
         </div>
-        <div className="mt-6 grid grid-cols-2 gap-3">
+        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2">
           {isComingSoon ? (
             <>
               <Button disabled className="bg-muted text-muted-foreground h-12 rounded-xl text-sm cursor-not-allowed">
-                <Calendar className="w-4 h-4 mr-1.5" /> Book Visit
+                Book Visit
               </Button>
               <Button disabled variant="outline" className="h-12 rounded-xl text-sm cursor-not-allowed">
-                <Eye className="w-4 h-4 mr-1.5" /> Details
+                Details
               </Button>
             </>
           ) : (
             <>
               <Button asChild className="bg-[image:var(--gradient-primary)] hover:opacity-90 h-12 rounded-xl text-sm">
-                <Link to="/contact"><Calendar className="w-4 h-4 mr-1.5" /> Book Visit</Link>
+                <Link to="/contact">Book Visit</Link>
               </Button>
               <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground h-12 rounded-xl text-sm">
-                <Link to={(p.detailsLink ?? "/contact") as "/green-valley" | "/heights" | "/business-park" | "/contact"}><Eye className="w-4 h-4 mr-1.5" /> Details</Link>
+                <Link to={(p.detailsLink ?? "/contact") as "/green-valley" | "/heights" | "/business-park" | "/contact"}>Details</Link>
               </Button>
             </>
           )}
