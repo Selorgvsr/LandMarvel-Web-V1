@@ -206,12 +206,12 @@ function HeroSection() {
             Together, we create financial peace, complete transparency &amp; quality in{" "}
             <span className="text-[var(--gold)]">property investments.</span>
           </h1>
-          <div className="mt-6 sm:mt-10 flex flex-wrap gap-3 sm:gap-4">
-            <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-11 sm:h-13 px-5 sm:px-7 text-sm sm:text-base rounded-xl shadow-[var(--shadow-elegant)]">
-              <a href="#plots">Browse Properties <ArrowRight className="ml-2 w-4 h-4" /></a>
+          <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-11 sm:h-13 px-5 sm:px-7 text-sm sm:text-base rounded-xl shadow-[var(--shadow-elegant)] w-full sm:w-auto">
+              <a href="#plots">Browse Properties</a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-11 sm:h-13 px-5 sm:px-7 text-sm sm:text-base rounded-xl backdrop-blur">
-              <Link to="/contact"><Calendar className="mr-2 w-4 h-4" />Book Site Visit</Link>
+            <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-11 sm:h-13 px-5 sm:px-7 text-sm sm:text-base rounded-xl backdrop-blur w-full sm:w-auto">
+              <Link to="/contact">Book Site Visit</Link>
             </Button>
           </div>
           <div className="mt-8 sm:mt-12 grid grid-cols-3 gap-4 sm:gap-6 max-w-md">
