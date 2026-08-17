@@ -1,8 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import {
-  Menu, MapPin, ArrowRight, Check, Calendar, Eye, Ruler, Home, Building2,
-  Phone, Mail, Facebook, Instagram, Twitter, Linkedin, TrendingUp, Shield,
+  Menu, MapPin, Check, Calendar, Ruler, Home, Building2,
+  Mail, Facebook, Instagram, Twitter, Linkedin, TrendingUp, Shield,
   Award, Users,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -155,19 +155,19 @@ function ProjectCard({ p }: { p: Project }) {
           {isComingSoon ? (
             <>
               <Button disabled className="w-full h-[52px] rounded-xl bg-muted text-muted-foreground cursor-not-allowed">
-                <Calendar className="w-4 h-4 mr-1.5 shrink-0" /> Book Visit
+                Book Visit
               </Button>
               <Button disabled variant="outline" className="w-full h-[52px] rounded-xl cursor-not-allowed">
-                <Eye className="w-4 h-4 mr-1.5 shrink-0" /> Details
+                Details
               </Button>
             </>
           ) : (
             <>
               <Button asChild className="w-full h-[52px] rounded-xl bg-primary text-primary-foreground hover:bg-primary/90">
-                <Link to="/contact"><Calendar className="w-4 h-4 mr-1.5 shrink-0" /> Book Visit</Link>
+                <Link to="/contact">Book Visit</Link>
               </Button>
               <Button asChild variant="outline" className="w-full h-[52px] rounded-xl border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                <Link to={(p.detailsLink ?? "/contact") as "/green-valley" | "/heights" | "/business-park" | "/contact"}><Eye className="w-4 h-4 mr-1.5 shrink-0" /> Details</Link>
+                <Link to={(p.detailsLink ?? "/contact") as "/green-valley" | "/heights" | "/business-park" | "/contact"}>Details</Link>
               </Button>
             </>
           )}
@@ -214,11 +214,11 @@ function ProjectsPage() {
             <p className="mt-4 sm:mt-6 text-sm sm:text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
               Discover Land Marvel's ongoing developments across premium plots, residential communities, and commercial spaces in Chennai's fastest-growing locations.
             </p>
-            <div className="mt-6 sm:mt-10 flex flex-wrap gap-3 sm:gap-4">
-              <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-11 sm:h-13 px-5 sm:px-7 text-sm sm:text-base rounded-xl shadow-[var(--shadow-elegant)]">
-                <Link to="/projects" hash="ongoing-projects">Explore Project <ArrowRight className="ml-2 w-4 h-4" /></Link>
+            <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4">
+              <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-11 sm:h-13 px-5 sm:px-7 text-sm sm:text-base rounded-xl shadow-[var(--shadow-elegant)] w-full sm:w-auto">
+                <Link to="/projects" hash="ongoing-projects">Explore Project</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-11 sm:h-13 px-5 sm:px-7 text-sm sm:text-base rounded-xl backdrop-blur">
+              <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-11 sm:h-13 px-5 sm:px-7 text-sm sm:text-base rounded-xl backdrop-blur w-full sm:w-auto">
                 <Link to="/contact">Book Site Visit</Link>
               </Button>
             </div>
@@ -336,12 +336,12 @@ function ProjectsPage() {
           <p className="text-lg text-primary-foreground/90 max-w-2xl mx-auto">
             Our experts will help you choose the ideal plot, residential home, or commercial investment.
           </p>
-          <div className="flex flex-wrap gap-3 justify-center pt-2">
-            <Button asChild size="lg" className="h-[52px] rounded-xl bg-[var(--gold)] text-primary hover:opacity-90 px-7 font-semibold">
-              <Link to="/contact"><Calendar className="w-4 h-4 mr-2" /> Schedule Site Visit</Link>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
+            <Button asChild size="lg" className="h-[52px] rounded-xl bg-[var(--gold)] text-primary hover:opacity-90 px-7 font-semibold w-full sm:w-auto">
+              <Link to="/contact">Schedule Site Visit</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="h-[52px] rounded-xl bg-transparent border-white text-white hover:bg-white hover:text-primary px-7">
-              <Link to="/contact"><Phone className="w-4 h-4 mr-2" /> Contact Sales Team</Link>
+            <Button asChild size="lg" variant="outline" className="h-[52px] rounded-xl bg-transparent border-white text-white hover:bg-white hover:text-primary px-7 w-full sm:w-auto">
+              <Link to="/contact">Contact Sales Team</Link>
             </Button>
           </div>
         </div>

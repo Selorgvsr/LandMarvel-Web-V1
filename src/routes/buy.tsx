@@ -2,8 +2,7 @@ import buyHeroVideoAsset from "@/assets/buy-hero-video.mp4.asset.json";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
 import {
-  Menu, MapPin, ArrowRight, Phone, Mail, Calendar, Eye,
-  Facebook, Instagram, Twitter, Linkedin, Building2, Ruler, Home,
+  Menu, MapPin, Mail, Facebook, Instagram, Twitter, Linkedin, Building2, Ruler, Home,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -128,23 +127,23 @@ function PropertyCard({ p }: { p: Property }) {
             <div className="text-sm font-semibold text-primary leading-tight">{p.type}</div>
           </div>
         </div>
-        <div className="mt-6 grid grid-cols-2 gap-3">
+        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2">
           {isComingSoon ? (
             <>
               <Button disabled className="bg-muted text-muted-foreground h-12 rounded-xl text-sm cursor-not-allowed">
-                <Calendar className="w-4 h-4 mr-1.5" /> Book Visit
+                Book Visit
               </Button>
               <Button disabled variant="outline" className="h-12 rounded-xl text-sm cursor-not-allowed">
-                <Eye className="w-4 h-4 mr-1.5" /> Details
+                Details
               </Button>
             </>
           ) : (
             <>
               <Button asChild className="bg-[image:var(--gradient-primary)] hover:opacity-90 h-12 rounded-xl text-sm">
-                <Link to="/contact"><Calendar className="w-4 h-4 mr-1.5" /> Book Visit</Link>
+                <Link to="/contact">Book Visit</Link>
               </Button>
               <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground h-12 rounded-xl text-sm">
-                <Link to={(p.detailsLink ?? "/contact") as "/green-valley" | "/heights" | "/business-park" | "/contact"}><Eye className="w-4 h-4 mr-1.5" /> Details</Link>
+                <Link to={(p.detailsLink ?? "/contact") as "/green-valley" | "/heights" | "/business-park" | "/contact"}>Details</Link>
               </Button>
             </>
           )}
@@ -207,12 +206,12 @@ function HeroSection() {
             Together, we create financial peace, complete transparency &amp; quality in{" "}
             <span className="text-[var(--gold)]">property investments.</span>
           </h1>
-          <div className="mt-6 sm:mt-10 flex flex-wrap gap-3 sm:gap-4">
-            <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-11 sm:h-13 px-5 sm:px-7 text-sm sm:text-base rounded-xl shadow-[var(--shadow-elegant)]">
-              <a href="#plots">Browse Properties <ArrowRight className="ml-2 w-4 h-4" /></a>
+          <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-11 sm:h-13 px-5 sm:px-7 text-sm sm:text-base rounded-xl shadow-[var(--shadow-elegant)] w-full sm:w-auto">
+              <a href="#plots">Browse Properties</a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-11 sm:h-13 px-5 sm:px-7 text-sm sm:text-base rounded-xl backdrop-blur">
-              <Link to="/contact"><Calendar className="mr-2 w-4 h-4" />Book Site Visit</Link>
+            <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-11 sm:h-13 px-5 sm:px-7 text-sm sm:text-base rounded-xl backdrop-blur w-full sm:w-auto">
+              <Link to="/contact">Book Site Visit</Link>
             </Button>
           </div>
           <div className="mt-8 sm:mt-12 grid grid-cols-3 gap-4 sm:gap-6 max-w-md">
@@ -264,14 +263,14 @@ function BuyPage() {
             <p className="mt-5 text-lg text-white/85">
               Our property advisors will help you find the perfect plot, apartment, villa, or commercial investment.
             </p>
-            <div className="mt-10 flex flex-wrap gap-4 justify-center">
-              <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-auto min-h-13 py-3 px-5 sm:px-7 rounded-xl whitespace-normal text-center w-full sm:w-auto">
-                <a href="tel:+910000000000"><Phone className="mr-2 w-4 h-4" />Talk To Expert</a>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-auto min-h-13 py-3 px-5 sm:px-7 rounded-xl whitespace-normal text-center w-full sm:w-auto">
-                <Link to="/" hash="contact"><Calendar className="mr-2 w-4 h-4" />Schedule Visit</Link>
-              </Button>
-            </div>
+          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg" className="bg-[var(--gold)] text-primary hover:bg-[var(--gold)]/90 h-auto min-h-13 py-3 px-5 sm:px-7 rounded-xl whitespace-normal text-center w-full sm:w-auto">
+              <a href="tel:+910000000000">Talk To Expert</a>
+            </Button>
+            <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white h-auto min-h-13 py-3 px-5 sm:px-7 rounded-xl whitespace-normal text-center w-full sm:w-auto">
+              <Link to="/" hash="contact">Schedule Visit</Link>
+            </Button>
+          </div>
           </div>
         </section>
       </main>
