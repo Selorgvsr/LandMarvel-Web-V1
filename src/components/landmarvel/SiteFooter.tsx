@@ -51,7 +51,7 @@ export function SiteFooter() {
         <div>
           <h4 className="font-display text-lg font-semibold">Get in Touch</h4>
           <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
-            <li className="flex items-center gap-2"><Phone className="w-4 h-4 text-primary" /><span>+91 94441 26249</span></li>
+            <li className="flex items-center gap-2"><Phone className="w-4 h-4 text-primary" /><span>+91 94441 26240</span></li>
             <li className="flex items-center gap-2"><Mail className="w-4 h-4 text-primary" /><span>suresh@landmarvel.com</span></li>
           </ul>
         </div>
