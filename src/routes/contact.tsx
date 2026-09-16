@@ -168,8 +168,8 @@ function ContactPage() {
             {/* Left: Info */}
             <div className="space-y-6">
               {[
-                { icon: MapPin, title: "Visit Our Office", lines: ["Land Marvel Group", "Chennai, Tamil Nadu"] },
-                { icon: Phone, title: "Call Us", lines: ["+91 94980 50649"] },
+                { icon: MapPin, title: "Visit Our Office", lines: ["Land Marvel ", "Chennai, Tamil Nadu"] },
+                { icon: Phone, title: "Call Us", lines: ["+91 94441 26240"] },
                 { icon: Mail, title: "Email Us", lines: ["suresh@landmarvel.com"] },
                 { icon: Clock, title: "Business Hours", lines: ["Monday – Saturday", "9:00 AM – 6:00 PM"] },
               ].map((c) => (
